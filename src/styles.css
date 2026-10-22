@@ -93,7 +93,6 @@
   --animate-spin-in: spin-in 0.3s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
   --animate-grow-x: grow-x 0.5s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
   --animate-toast-in: toast-in 0.25s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
-  --animate-logo-glow: logo-glow 4s ease-in-out infinite; /* the app's name: a slow, soft glow */
 
   @keyframes fade-up {
     from { opacity: 0; transform: translateY(6px); }
@@ -122,10 +121,6 @@
   }
   @keyframes toast-in {
     from { opacity: 0; transform: translateY(10px) scale(0.97); }
-  }
-  @keyframes logo-glow {
-    0%, 100% { text-shadow: 0 0 0 transparent, 0 0 0 transparent; }
-    50% { text-shadow: 0 0 10px var(--logo-glow), 0 0 2px var(--logo-glow); }
   }
   @keyframes draw-ring {
     from { stroke-dasharray: 0 1000; }
@@ -167,7 +162,7 @@
   --ring-edge-blue: #4b6d96;
   --ring-edge-green: #4b7d60;
   --ring-edge-red: #995b5b;
-  --logo-glow: rgb(125 165 220 / 0.55);
+  --logo-glow: 0 0 10px rgb(125 165 220 / 0.55), 0 0 2px rgb(125 165 220 / 0.55);
 
   --color-slate-50: #1f1f1f;
   --color-slate-100: #242424;
@@ -307,7 +302,8 @@
     --ring-edge-blue: var(--color-card-blue);
     --ring-edge-green: var(--color-card-green);
     --ring-edge-red: var(--color-card-red);
-    --logo-glow: rgb(96 165 250 / 0.45); /* the glow round the app's name (dark mode has its own) */
+    /* The still glow round the app's name. Stronger than dark mode's, so it shows on white. */
+    --logo-glow: 0 0 14px rgb(59 130 246 / 0.6), 0 0 4px rgb(96 165 250 / 0.5);
   }
   :focus-visible {
     outline: 2px solid var(--color-blue-400);
@@ -429,6 +425,10 @@
   }
   .label {
     @apply mb-1.5 block text-sm font-medium text-slate-700;
+  }
+  /* The app's name next to the logo and on the login page: a soft, still blue glow. */
+  .logo-glow {
+    text-shadow: var(--logo-glow);
   }
   .page-title {
     @apply truncate text-lg font-semibold text-slate-900 sm:text-xl;

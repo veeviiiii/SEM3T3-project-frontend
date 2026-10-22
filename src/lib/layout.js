@@ -93,7 +93,7 @@ export function renderHeader(user) {
       <div class="flex h-16 shrink-0 items-center justify-between gap-2 px-5">
         <a href="${homeFor(user.role)}" class="group flex items-center gap-2 font-display text-[17px] font-bold tracking-tight text-slate-900">
           <span class="transition-transform duration-500 group-hover:rotate-180">${logoMark()}</span>
-          <span class="animate-logo-glow">Smart Scheduling</span>
+          <span class="logo-glow">Smart Scheduling</span>
         </a>
         <button type="button" id="close-menu" class="rounded-md p-1 text-slate-500 hover:bg-slate-100 lg:hidden" aria-label="Close menu">${icon('panel')}</button>
       </div>
