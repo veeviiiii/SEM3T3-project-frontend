@@ -41,12 +41,14 @@ const STATS = [
   { label: 'Cancelled', field: 'cancelled', colour: 'bg-card-red' },
 ];
 
-// The ring chart: one piece per kind of change. `colour` is for the SVG drawing (a CSS variable from
-// styles.css, so it changes with light / dark mode), `text` for the percentage.
+// The ring chart: one piece per kind of change, coloured exactly like its number card above.
+// `colour` fills the piece and `edge` outlines it (CSS variables from styles.css, so they change with
+// light / dark mode: in dark mode the card colours are dark, so the outline keeps the piece visible).
+// `text` is for the percentage.
 const RING = [
-  { label: 'Waiting for a new time', field: 'pending', colour: 'var(--chart-blue)', text: 'text-blue-700' },
-  { label: 'Moved', field: 'moved', colour: 'var(--chart-green)', text: 'text-green-700' },
-  { label: 'Cancelled', field: 'cancelled', colour: 'var(--chart-red)', text: 'text-red-600' },
+  { label: 'Waiting for a new time', field: 'pending', colour: 'var(--color-card-blue)', edge: 'var(--ring-edge-blue)', text: 'text-blue-700' },
+  { label: 'Moved', field: 'moved', colour: 'var(--color-card-green)', edge: 'var(--ring-edge-green)', text: 'text-green-700' },
+  { label: 'Cancelled', field: 'cancelled', colour: 'var(--color-card-red)', edge: 'var(--ring-edge-red)', text: 'text-red-600' },
 ];
 
 // The "What" choices in the form: the word above the second dropdown.
@@ -175,13 +177,20 @@ function drawRing(summary) {
   const shown = parts.filter((p) => p.value > 0);
   const gap = shown.length > 1 ? 6 : 0; // a small white gap between the pieces
   let start = 0;
+  const edge = 1.5; // the outline's width
   const pieces = shown
     .map((p, i) => {
-      const length = (p.value / total) * around;
+      const length = Math.max((p.value / total) * around - gap, 2 * edge + 1);
+      // Each piece is drawn twice: a wide arc in the outline colour, then a slightly thinner and shorter
+      // arc in the card colour on top, which leaves a thin outline all round.
       // .ring-piece (styles.css) draws each piece in, one after the other.
-      const piece = `<circle class="ring-piece" style="stroke: ${p.colour}; animation-delay: ${i * 150}ms" cx="90" cy="90" r="${radius}" fill="none" stroke-width="26"
-        stroke-dasharray="${Math.max(length - gap, 1)} ${around}" stroke-dashoffset="${-start}" />`;
-      start += length;
+      const timing = `animation-delay: ${i * 150}ms`;
+      const piece = `
+        <circle class="ring-piece" style="stroke: ${p.edge}; ${timing}" cx="90" cy="90" r="${radius}" fill="none" stroke-width="26"
+          stroke-dasharray="${length} ${around}" stroke-dashoffset="${-start}" />
+        <circle class="ring-piece" style="stroke: ${p.colour}; ${timing}" cx="90" cy="90" r="${radius}" fill="none" stroke-width="${26 - 2 * edge}"
+          stroke-dasharray="${length - 2 * edge} ${around}" stroke-dashoffset="${-(start + edge)}" />`;
+      start += (p.value / total) * around;
       return piece;
     })
     .join('');
@@ -198,7 +207,7 @@ function drawRing(summary) {
       .map(
         (p) => `
       <li class="flex items-center gap-2 text-sm">
-        <span class="h-3.5 w-3.5 shrink-0 rounded" style="background: ${p.colour}" aria-hidden="true"></span>
+        <span class="h-3.5 w-3.5 shrink-0 rounded" style="background: ${p.colour}; box-shadow: inset 0 0 0 1.5px ${p.edge}" aria-hidden="true"></span>
         <span class="min-w-0 flex-1 text-slate-700">${p.label}</span>
         <span class="tabular-nums text-slate-700">${escapeHtml(p.value)}</span>
         <span class="text-slate-300" aria-hidden="true">|</span>

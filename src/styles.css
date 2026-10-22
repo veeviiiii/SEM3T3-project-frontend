@@ -158,6 +158,10 @@
   --chart-green: #6aa982;
   --chart-red: #cf7a76;
   --chart-orange: #cc9362;
+  /* The dashboard ring uses the number cards' own colours, with these lighter outlines */
+  --ring-edge-blue: #4b6d96;
+  --ring-edge-green: #4b7d60;
+  --ring-edge-red: #995b5b;
 
   --color-slate-50: #1f1f1f;
   --color-slate-100: #242424;
@@ -292,6 +296,11 @@
     --chart-green: #b7ebc6;
     --chart-red: #fca5a5;
     --chart-orange: #ffc896;
+    /* The outline round each piece of the dashboard ring. In light mode it is the card colour itself
+       (no visible outline); dark mode sets lighter ones so the dark pieces stand out. */
+    --ring-edge-blue: var(--color-card-blue);
+    --ring-edge-green: var(--color-card-green);
+    --ring-edge-red: var(--color-card-red);
   }
   :focus-visible {
     outline: 2px solid var(--color-blue-400);
