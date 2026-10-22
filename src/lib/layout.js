@@ -36,7 +36,7 @@ const NAV = {
     ['/rooms.html', 'Rooms', 'rooms'],
   ],
 };
-// Links at the very bottom of the menu, under a line (like "Settings" in the design).
+// Links at the very bottom of the menu, under a line (like "Settings" in the design). "Log out" goes under them.
 const NAV_BOTTOM = {
   hod: [['/settings.html', 'Settings', 'settings']],
   faculty: [],
@@ -102,12 +102,14 @@ export function renderHeader(user) {
           <span class="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-white text-sm font-semibold text-slate-800">${escapeHtml(initials(user.name))}</span>
           <p class="mt-2 truncate text-sm font-semibold text-slate-900">${escapeHtml(user.name)}</p>
           <p class="text-xs text-slate-700">${ROLE_NAME[user.role] || ''}</p>
-          <button type="button" id="logout" class="group mt-3 inline-flex items-center gap-1.5 rounded-full bg-white px-4 py-2 text-sm font-medium text-slate-900 shadow-sm transition hover:-translate-y-px hover:shadow-md">
-            Log out <span class="transition-transform group-hover:translate-x-1">${icon('arrow-right', 'h-4 w-4')}</span>
-          </button>
         </div>
       </div>
-      ${bottom.length ? `<div class="space-y-1 border-t border-slate-200 px-3 py-3">${bottom.map(navLink).join('')}</div>` : ''}
+      <div class="space-y-1 border-t border-slate-200 px-3 py-3">
+        ${bottom.map(navLink).join('')}
+        <button type="button" id="logout" class="flex w-full items-center gap-3 rounded-lg px-3 py-2 text-left text-sm text-slate-600 transition duration-200 hover:translate-x-1 hover:bg-red-50 hover:text-red-700">
+          ${icon('logout')}Log out
+        </button>
+      </div>
     </aside>
 
     <div id="topbar" class="relative z-30 mx-auto flex max-w-7xl flex-wrap items-center gap-3 px-4 pb-2 pt-5 sm:px-6">
