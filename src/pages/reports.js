@@ -24,9 +24,9 @@ if (user) {
   loadTrends();
   loadActivity();
   $('#load-more').addEventListener('click', loadMore);
-  // Light / dark mode switched: draw the charts again with the new axis colours.
+  // Light / dark mode switched: draw the charts again with the new colours, at once (no grow-in animation).
   window.addEventListener('themechange', () => {
-    if (trends) drawCharts();
+    if (trends) drawCharts({ animate: false });
   });
 }
 
@@ -92,15 +92,16 @@ function drawTrends(box) {
 /** Axis text and grid lines: grey on white in light mode, lighter grey on charcoal in dark mode. */
 function axisColours() {
   const dark = document.documentElement.classList.contains('dark');
-  return { text: dark ? '#999999' : '#64748b', grid: dark ? '#2e2e2e' : '#eef0f4' };
+  return { text: dark ? '#999999' : '#64748b', grid: dark ? '#262626' : '#eef0f4' };
 }
 
 /** The current value of one of the COLOURS variables, e.g. "#b7ebc6" (Chart.js needs a real colour). */
 const colour = (name) => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
 
-/** The two Chart.js charts. Called again when light / dark mode is switched. */
-function drawCharts() {
+/** The two Chart.js charts. Called again (without animation) when light / dark mode is switched. */
+function drawCharts({ animate = true } = {}) {
   charts.forEach((c) => c.destroy());
+  const motion = animate ? {} : { animation: false };
   const axis = axisColours();
   Chart.defaults.color = axis.text;
   Chart.defaults.borderColor = axis.grid;
@@ -120,6 +121,7 @@ function drawCharts() {
         ],
       },
       options: {
+        ...motion,
         responsive: true,
         maintainAspectRatio: false,
         interaction: { mode: 'index', intersect: false },
@@ -141,6 +143,7 @@ function drawCharts() {
         ],
       },
       options: {
+        ...motion,
         responsive: true,
         maintainAspectRatio: false,
         plugins: {

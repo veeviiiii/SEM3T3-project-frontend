@@ -136,22 +136,22 @@
    - the pastel cards become gently tinted panels of the same four colours. */
 .dark {
   color-scheme: dark; /* dark date pickers and scrollbars, and the browser leaves our own dark colours alone */
-  --color-white: #202020; /* cards, the menu, inputs */
-  --color-canvas: #191919; /* the page behind them */
-  --color-nav: #2c2c2c; /* the selected menu item: a quiet grey, like Notion's sidebar */
+  --color-white: #191919; /* cards, the menu, inputs */
+  --color-canvas: #121212; /* the page behind them */
+  --color-nav: #262626; /* the selected menu item: a quiet grey, like Notion's sidebar */
   --color-ink: #f5f5f5; /* text on the main buttons */
-  --color-brand: #33618f; /* main buttons: a muted blue with light text */
-  --color-brand-strong: #3b6fa3;
-  --color-card-blue: #1e2a38;
-  --color-card-red: #332222;
-  --color-card-green: #1e2e25;
-  --color-card-orange: #33281d;
-  --color-heat-0: #242424;
-  --color-heat-1: #1f2833;
-  --color-heat-2: #233247;
-  --color-heat-3: #2a3f5c;
-  --color-heat-4: #345075;
-  --color-heat-5: #3f6190;
+  --color-brand: #2f5a86; /* main buttons: a muted blue with light text */
+  --color-brand-strong: #376797;
+  --color-card-blue: #18232f;
+  --color-card-red: #2a1b1b;
+  --color-card-green: #18251e;
+  --color-card-orange: #2a2118;
+  --color-heat-0: #1d1d1d;
+  --color-heat-1: #18222d;
+  --color-heat-2: #1d2b3f;
+  --color-heat-3: #243752;
+  --color-heat-4: #2e476a;
+  --color-heat-5: #395887;
   --color-heat-ink: #e6eefb;
   /* Charts and the ring: softer mid-tones that sit well on charcoal */
   --chart-blue: #6f94c4;
@@ -159,24 +159,24 @@
   --chart-red: #cf7a76;
   --chart-orange: #cc9362;
 
-  --color-slate-50: #262626;
-  --color-slate-100: #2b2b2b;
-  --color-slate-200: #333333;
-  --color-slate-300: #434343;
-  --color-slate-400: #6e6e6e;
-  --color-slate-500: #999999;
-  --color-slate-600: #ababab;
-  --color-slate-700: #c5c5c5;
-  --color-slate-800: #d9d9d9;
-  --color-slate-900: #ececec;
-  --color-slate-950: #f7f7f7;
+  --color-slate-50: #1f1f1f;
+  --color-slate-100: #242424;
+  --color-slate-200: #2c2c2c;
+  --color-slate-300: #3a3a3a;
+  --color-slate-400: #686868;
+  --color-slate-500: #959595;
+  --color-slate-600: #a8a8a8;
+  --color-slate-700: #c2c2c2;
+  --color-slate-800: #d6d6d6;
+  --color-slate-900: #e9e9e9;
+  --color-slate-950: #f5f5f5;
 
   /* Each colour, light tint (50) to dark text (950), turned round and toned down for a dark background. */
   /* red */
-  --color-red-50: oklch(27% 0.025 25);
-  --color-red-100: oklch(30% 0.032 25);
-  --color-red-200: oklch(36% 0.045 25);
-  --color-red-300: oklch(45% 0.065 25);
+  --color-red-50: oklch(23% 0.022 25);
+  --color-red-100: oklch(26% 0.028 25);
+  --color-red-200: oklch(32% 0.04 25);
+  --color-red-300: oklch(41% 0.06 25);
   --color-red-400: oklch(58% 0.085 25);
   --color-red-500: oklch(66% 0.095 25);
   --color-red-600: oklch(73% 0.09 25);
@@ -185,10 +185,10 @@
   --color-red-900: oklch(89% 0.045 25);
   --color-red-950: oklch(93% 0.03 25);
   /* orange */
-  --color-orange-50: oklch(27% 0.025 55);
-  --color-orange-100: oklch(30% 0.032 55);
-  --color-orange-200: oklch(36% 0.045 55);
-  --color-orange-300: oklch(45% 0.065 55);
+  --color-orange-50: oklch(23% 0.022 55);
+  --color-orange-100: oklch(26% 0.028 55);
+  --color-orange-200: oklch(32% 0.04 55);
+  --color-orange-300: oklch(41% 0.06 55);
   --color-orange-400: oklch(58% 0.085 55);
   --color-orange-500: oklch(66% 0.095 55);
   --color-orange-600: oklch(73% 0.09 55);
@@ -197,10 +197,10 @@
   --color-orange-900: oklch(89% 0.045 55);
   --color-orange-950: oklch(93% 0.03 55);
   /* green */
-  --color-green-50: oklch(27% 0.025 155);
-  --color-green-100: oklch(30% 0.032 155);
-  --color-green-200: oklch(36% 0.045 155);
-  --color-green-300: oklch(45% 0.065 155);
+  --color-green-50: oklch(23% 0.022 155);
+  --color-green-100: oklch(26% 0.028 155);
+  --color-green-200: oklch(32% 0.04 155);
+  --color-green-300: oklch(41% 0.06 155);
   --color-green-400: oklch(58% 0.085 155);
   --color-green-500: oklch(66% 0.095 155);
   --color-green-600: oklch(73% 0.09 155);
@@ -209,10 +209,10 @@
   --color-green-900: oklch(89% 0.045 155);
   --color-green-950: oklch(93% 0.03 155);
   /* blue */
-  --color-blue-50: oklch(27% 0.025 250);
-  --color-blue-100: oklch(30% 0.032 250);
-  --color-blue-200: oklch(36% 0.045 250);
-  --color-blue-300: oklch(45% 0.065 250);
+  --color-blue-50: oklch(23% 0.022 250);
+  --color-blue-100: oklch(26% 0.028 250);
+  --color-blue-200: oklch(32% 0.04 250);
+  --color-blue-300: oklch(41% 0.06 250);
   --color-blue-400: oklch(58% 0.085 250);
   --color-blue-500: oklch(66% 0.095 250);
   --color-blue-600: oklch(73% 0.09 250);
@@ -227,18 +227,28 @@
   box-shadow: 0 0 0 1px var(--color-slate-200), 0 24px 60px -16px rgb(0 0 0 / 0.8);
 }
 
-/* While switching between light and dark, the colours fade instead of jumping. */
-.theme-fade,
-.theme-fade *,
-.theme-fade *::before,
-.theme-fade *::after {
-  transition:
-    background-color 0.3s ease,
-    border-color 0.3s ease,
-    color 0.3s ease,
-    fill 0.3s ease,
-    stroke 0.3s ease,
-    box-shadow 0.3s ease !important;
+/* Switching between light and dark (theme.js adds .theme-switching): the browser takes a picture of the
+   old colours and fades it into the new ones. The graphics card does the fading, so it stays smooth even
+   on a slow computer. Underneath, the new colours appear at once (no per-element colour transitions). */
+.theme-switching *,
+.theme-switching *::before,
+.theme-switching *::after {
+  transition: none !important;
+}
+.theme-switching::view-transition-group(*) {
+  animation-duration: 0.3s;
+}
+.theme-switching::view-transition-old(root) {
+  animation: theme-out 0.3s ease both;
+}
+.theme-switching::view-transition-new(root) {
+  animation: theme-in 0.3s ease both;
+}
+@keyframes theme-out {
+  to { opacity: 0; }
+}
+@keyframes theme-in {
+  from { opacity: 0; }
 }
 
 /* Moving to another page: the old page fades out and the new one fades in, rising a little,
