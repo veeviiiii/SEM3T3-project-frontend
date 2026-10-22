@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard · Smart Scheduling</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+    <script>
+      // Light or dark mode: apply the saved choice (or the computer's setting) before the page is drawn,
+      // so it never flashes. The toggle button is in src/lib/theme.js.
+      try {
+        const saved = localStorage.getItem('theme');
+        if (saved === 'dark' || (!saved && matchMedia('(prefers-color-scheme: dark)').matches)) document.documentElement.classList.add('dark');
+      } catch {}
+      // A page-change animation can be skipped (for example in a hidden tab). That is fine, so it is not an error.
+      addEventListener('pageswap', (event) => event.viewTransition?.ready.catch(() => {}));
+      addEventListener('pagereveal', (event) => event.viewTransition?.ready.catch(() => {}));
+    </script>
+    <!-- Runs before the page is first shown, so the menu is already drawn (and page changes animate smoothly). -->
+    <script type="module" src="/src/pages/hod.js" blocking="render"></script>
+  </head>
+  <body class="min-h-screen bg-canvas text-slate-800">
+    <header id="app-header"></header>
+
+    <main class="mx-auto max-w-7xl px-4 pb-10 pt-2 sm:px-6">
+      <!-- Moved into the top bar by renderHeader(); hod.js puts the greeting in it. -->
+      <h1 class="page-title" id="greeting">Dashboard</h1>
+
+      <!-- Filled in after "Save" in the form: which classes were cancelled. -->
+      <section class="mb-4 hidden" id="saved" aria-live="polite"></section>
+
+      <div class="grid grid-cols-1 gap-4 xl:grid-cols-[minmax(0,1fr)_20rem]">
+        <!-- Row 1, left: the number cards -->
+        <section class="min-w-0 xl:col-start-1" id="stats" aria-label="This week in numbers"></section>
+
+        <!-- Row 1, right: the actions (they open the same form, with "What" already chosen) -->
+        <div class="grid grid-cols-2 content-start gap-3 md:grid-cols-3 xl:col-start-2 xl:grid-cols-2">
+          <button type="button" class="btn-primary whitespace-nowrap px-3 py-3" data-kind="faculty_leave" id="mark-absence">
+            Mark absence <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg>
+          </button>
+          <button type="button" class="btn-secondary whitespace-nowrap px-3 py-3" data-kind="room_closure">
+            Close a room <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg>
+          </button>
+          <button type="button" class="btn-secondary col-span-2 whitespace-nowrap px-3 py-3 md:col-span-1 xl:col-span-2" data-kind="batch_event">
+            Batch event <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg>
+          </button>
+        </div>
+
+        <!-- Row 2, left: calendar of this week's changes, then the classes waiting for a decision -->
+        <div class="flex min-w-0 flex-col gap-4 xl:col-start-1">
+          <section class="card p-4">
+            <div class="mb-3 flex flex-wrap items-center justify-between gap-2">
+              <div class="flex items-baseline gap-3">
+                <h2 class="font-medium text-slate-900">Calendar</h2>
+                <span class="text-xs text-slate-500" id="calendar-label"></span>
+              </div>
+              <div class="flex items-center gap-1">
+                <button type="button" class="rounded-md p-1.5 text-slate-600 hover:bg-slate-100" id="prev-week" aria-label="Previous week">
+                  <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+                </button>
+                <button type="button" class="rounded-md bg-slate-100 px-3 py-1 text-xs font-medium text-slate-800 hover:bg-slate-200" id="this-week">This week</button>
+                <button type="button" class="rounded-md p-1.5 text-slate-600 hover:bg-slate-100" id="next-week" aria-label="Next week">
+                  <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+                </button>
+              </div>
+            </div>
+            <p class="mb-3 text-xs text-slate-500">Only the classes that changed: waiting for a new time, cancelled, moved or in another room.</p>
+            <div id="changes-grid"></div>
+          </section>
+
+          <section class="card p-4">
+            <div class="mb-3 flex items-center justify-between gap-2">
+              <h2 class="font-medium text-slate-900">Waiting for you</h2>
+              <a href="/approvals.html" class="text-xs font-medium text-slate-500 hover:text-slate-800">Open Approvals ›</a>
+            </div>
+            <div id="waiting"></div>
+          </section>
+        </div>
+
+        <!-- Row 2, right: latest activity, then this week's changes as a ring -->
+        <div class="flex min-w-0 flex-col gap-4 xl:col-start-2">
+          <section class="card p-4">
+            <div class="mb-3 flex items-center justify-between gap-2">
+              <h2 class="font-medium text-slate-900">Recent activity</h2>
+              <a href="/reports.html" class="text-xs font-medium text-slate-500 hover:text-slate-800">See all ›</a>
+            </div>
+            <div id="activity"></div>
+          </section>
+
+          <section class="card p-4">
+            <div class="mb-2 flex items-center justify-between gap-2">
+              <h2 class="font-medium text-slate-900">Changes this week</h2>
+              <span class="text-xs text-slate-500" id="breakdown-label"></span>
+            </div>
+            <div id="breakdown"></div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <dialog id="absence-dialog" class="m-auto w-[calc(100%-2rem)] max-w-md rounded-2xl bg-white shadow-xl backdrop:bg-black/50 backdrop:backdrop-blur-[2px]" aria-labelledby="absence-title">
+      <form id="absence-form" class="grid gap-4 p-6" novalidate>
+        <h2 class="text-lg font-semibold text-slate-900" id="absence-title">Mark absence / close a room</h2>
+
+        <div class="grid gap-3 sm:grid-cols-2">
+          <div>
+            <label class="label" for="kind">What</label>
+            <select class="input" id="kind">
+              <option value="faculty_leave">Teacher on leave</option>
+              <option value="room_closure">Room closed</option>
+              <option value="batch_event">Batch event</option>
+            </select>
+          </div>
+          <div>
+            <label class="label" for="target" id="target-label">Teacher</label>
+            <select class="input" id="target" aria-describedby="target-error"></select>
+            <p class="mt-1 hidden text-sm text-red-600" id="target-error" data-error></p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="label" for="absence-from">From</label>
+            <input class="input" id="absence-from" type="date" aria-describedby="from-error" />
+            <p class="mt-1 hidden text-sm text-red-600" id="from-error" data-error></p>
+          </div>
+          <div>
+            <label class="label" for="absence-to">To</label>
+            <input class="input" id="absence-to" type="date" aria-describedby="to-error" />
+            <p class="mt-1 hidden text-sm text-red-600" id="to-error" data-error></p>
+          </div>
+        </div>
+
+        <fieldset aria-describedby="periods-error">
+          <legend class="label">When in the day</legend>
+          <div class="flex flex-wrap gap-4 text-sm">
+            <label class="flex items-center gap-2"><input type="radio" name="scope" value="day" class="accent-blue-400" checked /> Whole day</label>
+            <label class="flex items-center gap-2"><input type="radio" name="scope" value="some" class="accent-blue-400" /> Only some periods</label>
+          </div>
+          <div class="mt-2 hidden" id="period-boxes">
+            <div class="flex flex-wrap gap-2" id="period-list"></div>
+          </div>
+          <p class="mt-1 hidden text-sm text-red-600" id="periods-error" data-error></p>
+        </fieldset>
+
+        <div>
+          <label class="label" for="absence-reason">Reason</label>
+          <input class="input" id="absence-reason" type="text" placeholder="For example: AC repair" aria-describedby="reason-error" />
+          <p class="mt-1 hidden text-sm text-red-600" id="reason-error" data-error></p>
+        </div>
+
+        <p class="hidden rounded-lg bg-red-50 px-3 py-2 text-sm text-red-800" id="form-error" role="alert" data-error></p>
+
+        <div class="flex justify-end gap-2">
+          <button type="button" class="btn-secondary" id="cancel-absence">Cancel</button>
+          <button type="submit" class="btn-primary" id="save-absence">Save</button>
+        </div>
+      </form>
+    </dialog>
+  </body>
+</html>

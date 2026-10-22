@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rooms · Smart Scheduling</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+    <script>
+      // Light or dark mode: apply the saved choice (or the computer's setting) before the page is drawn,
+      // so it never flashes. The toggle button is in src/lib/theme.js.
+      try {
+        const saved = localStorage.getItem('theme');
+        if (saved === 'dark' || (!saved && matchMedia('(prefers-color-scheme: dark)').matches)) document.documentElement.classList.add('dark');
+      } catch {}
+      // A page-change animation can be skipped (for example in a hidden tab). That is fine, so it is not an error.
+      addEventListener('pageswap', (event) => event.viewTransition?.ready.catch(() => {}));
+      addEventListener('pagereveal', (event) => event.viewTransition?.ready.catch(() => {}));
+    </script>
+    <!-- Runs before the page is first shown, so the menu is already drawn (and page changes animate smoothly). -->
+    <script type="module" src="/src/pages/rooms.js" blocking="render"></script>
+  </head>
+  <body class="min-h-screen bg-canvas text-slate-800">
+    <header id="app-header"></header>
+
+    <main class="mx-auto max-w-7xl px-4 pb-10 pt-2 sm:px-6">
+      <!-- Moved into the top bar by renderHeader(). -->
+      <h1 class="page-title">Rooms</h1>
+      <p class="mb-4 text-sm text-slate-500">Which rooms and labs are free right now, or at any date and period.</p>
+
+      <section class="card mb-4 p-4">
+        <div class="flex flex-wrap items-end gap-4">
+          <div class="w-full sm:w-44">
+            <label class="label" for="date">Date</label>
+            <input class="input" id="date" type="date" disabled />
+          </div>
+          <div class="w-full sm:w-52">
+            <label class="label" for="period">Period</label>
+            <select class="input" id="period" disabled></select>
+          </div>
+          <fieldset>
+            <legend class="label">Show</legend>
+            <div class="inline-flex gap-1 rounded-lg border border-slate-200 bg-white p-1">
+              <label class="cursor-pointer">
+                <input type="radio" name="kind" value="all" class="peer sr-only" checked />
+                <span class="block rounded-md px-3 py-1.5 text-sm font-medium text-slate-500 hover:text-slate-900 peer-checked:bg-card-blue peer-checked:text-slate-900 peer-focus-visible:outline-2 peer-focus-visible:outline-blue-400">All</span>
+              </label>
+              <label class="cursor-pointer">
+                <input type="radio" name="kind" value="room" class="peer sr-only" />
+                <span class="block rounded-md px-3 py-1.5 text-sm font-medium text-slate-500 hover:text-slate-900 peer-checked:bg-card-blue peer-checked:text-slate-900 peer-focus-visible:outline-2 peer-focus-visible:outline-blue-400">Rooms</span>
+              </label>
+              <label class="cursor-pointer">
+                <input type="radio" name="kind" value="lab" class="peer sr-only" />
+                <span class="block rounded-md px-3 py-1.5 text-sm font-medium text-slate-500 hover:text-slate-900 peer-checked:bg-card-blue peer-checked:text-slate-900 peer-focus-visible:outline-2 peer-focus-visible:outline-blue-400">Labs</span>
+              </label>
+            </div>
+          </fieldset>
+        </div>
+      </section>
+
+      <section>
+        <div class="mb-3 flex flex-wrap items-baseline justify-between gap-2">
+          <h2 class="font-medium text-slate-900" id="results-title">Rooms and labs</h2>
+          <p class="text-sm font-medium text-slate-600" id="summary" aria-live="polite"></p>
+        </div>
+        <div id="rooms"></div>
+      </section>
+    </main>
+  </body>
+</html>

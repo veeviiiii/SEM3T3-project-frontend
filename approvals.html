@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Approvals · Smart Scheduling</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+    <script>
+      // Light or dark mode: apply the saved choice (or the computer's setting) before the page is drawn,
+      // so it never flashes. The toggle button is in src/lib/theme.js.
+      try {
+        const saved = localStorage.getItem('theme');
+        if (saved === 'dark' || (!saved && matchMedia('(prefers-color-scheme: dark)').matches)) document.documentElement.classList.add('dark');
+      } catch {}
+      // A page-change animation can be skipped (for example in a hidden tab). That is fine, so it is not an error.
+      addEventListener('pageswap', (event) => event.viewTransition?.ready.catch(() => {}));
+      addEventListener('pagereveal', (event) => event.viewTransition?.ready.catch(() => {}));
+    </script>
+    <!-- Runs before the page is first shown, so the menu is already drawn (and page changes animate smoothly). -->
+    <script type="module" src="/src/pages/approvals.js" blocking="render"></script>
+  </head>
+  <body class="min-h-screen bg-canvas text-slate-800">
+    <header id="app-header"></header>
+
+    <main class="mx-auto max-w-7xl px-4 pb-10 pt-2 sm:px-6">
+      <!-- Moved into the top bar by renderHeader(). -->
+      <h1 class="page-title">Approvals</h1>
+      <p class="mb-4 text-sm text-slate-500">Choose a new slot for every cancelled class, or keep it cancelled.</p>
+
+      <div class="grid grid-cols-1 items-start gap-4 lg:grid-cols-[20rem_minmax(0,1fr)]">
+        <!-- Left: the list of proposals, with tabs -->
+        <section class="card p-0 lg:sticky lg:top-4" aria-label="Classes needing a decision">
+          <div class="flex items-center justify-between gap-2 border-b border-slate-100 px-4 py-3">
+            <h2 class="font-medium text-slate-900">Classes</h2>
+            <div class="flex gap-1" role="group" aria-label="Show">
+              <button type="button" class="flex items-center gap-1.5 rounded-md px-2.5 py-1 text-xs font-medium text-slate-500 hover:text-slate-900 aria-pressed:bg-card-blue aria-pressed:text-slate-900" data-status="pending" aria-pressed="true">
+                Waiting
+                <span class="hidden rounded-full bg-card-yellow px-1.5 text-[11px] font-semibold text-slate-900" id="pending-count"></span>
+              </button>
+              <button type="button" class="rounded-md px-2.5 py-1 text-xs font-medium text-slate-500 hover:text-slate-900 aria-pressed:bg-card-blue aria-pressed:text-slate-900" data-status="approved" aria-pressed="false">Approved</button>
+              <button type="button" class="rounded-md px-2.5 py-1 text-xs font-medium text-slate-500 hover:text-slate-900 aria-pressed:bg-card-blue aria-pressed:text-slate-900" data-status="rejected" aria-pressed="false">Rejected</button>
+            </div>
+          </div>
+          <div class="p-2" id="proposal-list"></div>
+        </section>
+
+        <!-- Right: the chosen proposal -->
+        <section class="min-w-0" id="detail" aria-label="The chosen class"></section>
+      </div>
+    </main>
+  </body>
+</html>

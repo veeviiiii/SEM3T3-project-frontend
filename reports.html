@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reports · Smart Scheduling</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+    <script>
+      // Light or dark mode: apply the saved choice (or the computer's setting) before the page is drawn,
+      // so it never flashes. The toggle button is in src/lib/theme.js.
+      try {
+        const saved = localStorage.getItem('theme');
+        if (saved === 'dark' || (!saved && matchMedia('(prefers-color-scheme: dark)').matches)) document.documentElement.classList.add('dark');
+      } catch {}
+      // A page-change animation can be skipped (for example in a hidden tab). That is fine, so it is not an error.
+      addEventListener('pageswap', (event) => event.viewTransition?.ready.catch(() => {}));
+      addEventListener('pagereveal', (event) => event.viewTransition?.ready.catch(() => {}));
+    </script>
+    <!-- Runs before the page is first shown, so the menu is already drawn (and page changes animate smoothly). -->
+    <script type="module" src="/src/pages/reports.js" blocking="render"></script>
+  </head>
+  <body class="min-h-screen bg-canvas text-slate-800">
+    <header id="app-header"></header>
+
+    <main class="mx-auto max-w-7xl px-4 pb-10 pt-2 sm:px-6">
+      <!-- Moved into the top bar by renderHeader(). -->
+      <h1 class="page-title">Reports</h1>
+      <p class="mb-4 text-sm text-slate-500">How often classes move or get cancelled, how busy the rooms are, and the full activity log.</p>
+
+      <div id="trends" class="mb-4"></div>
+
+      <section class="card p-4">
+        <div class="mb-3 flex flex-wrap items-baseline justify-between gap-2">
+          <h2 class="font-medium text-slate-900">Activity log</h2>
+          <p class="text-sm text-slate-500" id="activity-count" aria-live="polite"></p>
+        </div>
+        <div id="activity"></div>
+        <div class="mt-4 hidden text-center" id="more-row">
+          <button type="button" class="btn-secondary" id="load-more">Load more</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,203 @@
+{
+  "items": [
+    {
+      "id": 22,
+      "to": "kabir.malhotra@example.com",
+      "subject": "DAA on Thu 29 Oct 12:00 is cancelled",
+      "body": "Dr. Anil Sharma is on leave. A new time will be shared once the HOD decides.\n\n- Smart Scheduling System (demo)",
+      "created_at": "2026-10-28T09:13:20+05:30",
+      "status": "sent",
+      "delivered_to": "test-inbox@example.com"
+    },
+    {
+      "id": 21,
+      "to": "riya.patel@example.com",
+      "subject": "Discrete Mathematics on Thu 29 Oct 15:00 is cancelled",
+      "body": "Dr. Anil Sharma is on leave. A new time will be shared once the HOD decides.\n\n- Smart Scheduling System (demo)",
+      "created_at": "2026-10-28T09:13:20+05:30",
+      "status": "sent",
+      "delivered_to": "test-inbox@example.com"
+    },
+    {
+      "id": 20,
+      "to": "riya.patel@example.com",
+      "subject": "DAA on Thu 29 Oct 10:00 is cancelled",
+      "body": "Dr. Anil Sharma is on leave. A new time will be shared once the HOD decides.\n\n- Smart Scheduling System (demo)",
+      "created_at": "2026-10-28T09:13:20+05:30",
+      "status": "sent",
+      "delivered_to": "test-inbox@example.com"
+    },
+    {
+      "id": 19,
+      "to": "rakesh.jain@example.com",
+      "subject": "3 classes need a new slot",
+      "body": "Dr. Anil Sharma is on leave on Thu 29 Oct (full day). Review the suggested slots.\n\n- Smart Scheduling System (demo)",
+      "created_at": "2026-10-28T09:12:20+05:30",
+      "status": "sent",
+      "delivered_to": "test-inbox@example.com"
+    },
+    {
+      "id": 18,
+      "to": "anil.sharma@example.com",
+      "subject": "Leave recorded for Thu 29 Oct",
+      "body": "Your leave for Thu 29 Oct (full day) is recorded. 3 classes were cancelled and sent to the HOD for new slots.\n\n- Smart Scheduling System (demo)",
+      "created_at": "2026-10-28T09:12:20+05:30",
+      "status": "sent",
+      "delivered_to": "test-inbox@example.com"
+    },
+    {
+      "id": 17,
+      "to": "neha.gupta@example.com",
+      "subject": "OOP Lab at 15:00 on Fri 30 Oct moved to LAB-4",
+      "body": "LAB-2 is closed (AC repair). The class stays at the same time but is now in LAB-4.\n\n- Smart Scheduling System (demo)",
+      "created_at": "2026-10-27T11:32:20+05:30",
+      "status": "sent",
+      "delivered_to": "test-inbox@example.com"
+    },
+    {
+      "id": 16,
+      "to": "riya.patel@example.com",
+      "subject": "OOP Lab at 15:00 on Fri 30 Oct moved to LAB-4",
+      "body": "LAB-2 is closed (AC repair). The class stays at the same time but is now in LAB-4.\n\n- Smart Scheduling System (demo)",
+      "created_at": "2026-10-27T11:32:20+05:30",
+      "status": "sent",
+      "delivered_to": "test-inbox@example.com"
+    },
+    {
+      "id": 15,
+      "to": "neha.gupta@example.com",
+      "subject": "OOP Lab at 14:00 on Fri 30 Oct moved to LAB-4",
+      "body": "LAB-2 is closed (AC repair). The class stays at the same time but is now in LAB-4.\n\n- Smart Scheduling System (demo)",
+      "created_at": "2026-10-27T11:32:20+05:30",
+      "status": "sent",
+      "delivered_to": "test-inbox@example.com"
+    },
+    {
+      "id": 14,
+      "to": "riya.patel@example.com",
+      "subject": "OOP Lab at 14:00 on Fri 30 Oct moved to LAB-4",
+      "body": "LAB-2 is closed (AC repair). The class stays at the same time but is now in LAB-4.\n\n- Smart Scheduling System (demo)",
+      "created_at": "2026-10-27T11:32:20+05:30",
+      "status": "sent",
+      "delivered_to": "test-inbox@example.com"
+    },
+    {
+      "id": 13,
+      "to": "neha.gupta@example.com",
+      "subject": "OOP Lab on Fri 30 Oct 15:00 is cancelled",
+      "body": "LAB-2 is closed (AC repair). A new time will be shared once the HOD decides.\n\n- Smart Scheduling System (demo)",
+      "created_at": "2026-10-27T11:21:20+05:30",
+      "status": "sent",
+      "delivered_to": "test-inbox@example.com"
+    },
+    {
+      "id": 12,
+      "to": "riya.patel@example.com",
+      "subject": "OOP Lab on Fri 30 Oct 15:00 is cancelled",
+      "body": "LAB-2 is closed (AC repair). A new time will be shared once the HOD decides.\n\n- Smart Scheduling System (demo)",
+      "created_at": "2026-10-27T11:21:20+05:30",
+      "status": "sent",
+      "delivered_to": "test-inbox@example.com"
+    },
+    {
+      "id": 11,
+      "to": "neha.gupta@example.com",
+      "subject": "OOP Lab on Fri 30 Oct 14:00 is cancelled",
+      "body": "LAB-2 is closed (AC repair). A new time will be shared once the HOD decides.\n\n- Smart Scheduling System (demo)",
+      "created_at": "2026-10-27T11:21:20+05:30",
+      "status": "sent",
+      "delivered_to": "test-inbox@example.com"
+    },
+    {
+      "id": 10,
+      "to": "riya.patel@example.com",
+      "subject": "OOP Lab on Fri 30 Oct 14:00 is cancelled",
+      "body": "LAB-2 is closed (AC repair). A new time will be shared once the HOD decides.\n\n- Smart Scheduling System (demo)",
+      "created_at": "2026-10-27T11:21:20+05:30",
+      "status": "sent",
+      "delivered_to": "test-inbox@example.com"
+    },
+    {
+      "id": 9,
+      "to": "rakesh.jain@example.com",
+      "subject": "2 classes need a new slot",
+      "body": "LAB-2 is closed (AC repair) on Fri 30 Oct (full day). Review the suggested slots.\n\n- Smart Scheduling System (demo)",
+      "created_at": "2026-10-27T11:20:20+05:30",
+      "status": "sent",
+      "delivered_to": "test-inbox@example.com"
+    },
+    {
+      "id": 8,
+      "to": "priya.verma@example.com",
+      "subject": "Programming in C on Mon 26 Oct stays cancelled",
+      "body": "No new slot will be scheduled. The topic will be covered in the next class.\n\n- Smart Scheduling System (demo)",
+      "created_at": "2026-10-26T08:07:20+05:30",
+      "status": "sent",
+      "delivered_to": "test-inbox@example.com"
+    },
+    {
+      "id": 7,
+      "to": "isha.nair@example.com",
+      "subject": "Programming in C on Mon 26 Oct stays cancelled",
+      "body": "No new slot will be scheduled. The topic will be covered in the next class.\n\n- Smart Scheduling System (demo)",
+      "created_at": "2026-10-26T08:07:20+05:30",
+      "status": "sent",
+      "delivered_to": "test-inbox@example.com"
+    },
+    {
+      "id": 6,
+      "to": "priya.verma@example.com",
+      "subject": "Programming in C moved to Tue 27 Oct 10:00",
+      "body": "Your Mon 26 Oct 09:00 class with Dr. Priya Verma is now on Tue 27 Oct at 10:00 in R-101.\n\n- Smart Scheduling System (demo)",
+      "created_at": "2026-10-26T08:05:20+05:30",
+      "status": "sent",
+      "delivered_to": "test-inbox@example.com"
+    },
+    {
+      "id": 5,
+      "to": "aarav.shah@example.com",
+      "subject": "Programming in C moved to Tue 27 Oct 10:00",
+      "body": "Your Mon 26 Oct 09:00 class with Dr. Priya Verma is now on Tue 27 Oct at 10:00 in R-101.\n\n- Smart Scheduling System (demo)",
+      "created_at": "2026-10-26T08:05:20+05:30",
+      "status": "sent",
+      "delivered_to": "test-inbox@example.com"
+    },
+    {
+      "id": 4,
+      "to": "isha.nair@example.com",
+      "subject": "Programming in C on Mon 26 Oct 10:00 is cancelled",
+      "body": "Dr. Priya Verma is on leave. A new time will be shared once the HOD decides.\n\n- Smart Scheduling System (demo)",
+      "created_at": "2026-10-25T18:41:20+05:30",
+      "status": "sent",
+      "delivered_to": "test-inbox@example.com"
+    },
+    {
+      "id": 3,
+      "to": "aarav.shah@example.com",
+      "subject": "Programming in C on Mon 26 Oct 09:00 is cancelled",
+      "body": "Dr. Priya Verma is on leave. A new time will be shared once the HOD decides.\n\n- Smart Scheduling System (demo)",
+      "created_at": "2026-10-25T18:41:20+05:30",
+      "status": "sent",
+      "delivered_to": "test-inbox@example.com"
+    },
+    {
+      "id": 2,
+      "to": "rakesh.jain@example.com",
+      "subject": "2 classes need a new slot",
+      "body": "Dr. Priya Verma is on leave on Mon 26 Oct (periods 1-4). Review the suggested slots.\n\n- Smart Scheduling System (demo)",
+      "created_at": "2026-10-25T18:40:20+05:30",
+      "status": "sent",
+      "delivered_to": "test-inbox@example.com"
+    },
+    {
+      "id": 1,
+      "to": "priya.verma@example.com",
+      "subject": "Leave recorded for Mon 26 Oct",
+      "body": "Your leave for Mon 26 Oct (periods 1-4) is recorded. 2 classes were cancelled and sent to the HOD for new slots.\n\n- Smart Scheduling System (demo)",
+      "created_at": "2026-10-25T18:40:20+05:30",
+      "status": "sent",
+      "delivered_to": "test-inbox@example.com"
+    }
+  ],
+  "total": 22
+}

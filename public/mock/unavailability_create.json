@@ -1,0 +1,855 @@
+{
+  "unavailability": {
+    "id": 3,
+    "kind": "faculty_leave",
+    "target": {
+      "type": "faculty",
+      "id": 1,
+      "label": "Dr. Anil Sharma"
+    },
+    "start_date": "2026-10-29",
+    "end_date": "2026-10-29",
+    "periods": null,
+    "reason": "Attending a conference",
+    "status": "active",
+    "created_by": {
+      "id": 1,
+      "name": "Dr. Anil Sharma",
+      "role": "faculty"
+    },
+    "created_at": "2026-10-28T09:12:00+05:30",
+    "affected_count": 3,
+    "pending_count": 3
+  },
+  "affected": [
+    {
+      "key": "161-2026-10-29",
+      "session_id": 161,
+      "date": "2026-10-29",
+      "day": "Thu",
+      "period": 2,
+      "start": "10:00",
+      "end": "11:00",
+      "batch": {
+        "id": 3,
+        "code": "S3-A"
+      },
+      "subject": {
+        "id": 7,
+        "code": "DAA",
+        "name": "Design and Analysis of Algorithms",
+        "kind": "theory"
+      },
+      "faculty": {
+        "id": 1,
+        "code": "AS",
+        "name": "Dr. Anil Sharma"
+      },
+      "space": {
+        "id": 3,
+        "code": "R-103",
+        "kind": "room"
+      },
+      "status": "pending",
+      "reason": "Dr. Anil Sharma on leave",
+      "proposal_id": 5,
+      "moved_to": null,
+      "moved_from": null
+    },
+    {
+      "key": "186-2026-10-29",
+      "session_id": 186,
+      "date": "2026-10-29",
+      "day": "Thu",
+      "period": 4,
+      "start": "12:00",
+      "end": "13:00",
+      "batch": {
+        "id": 4,
+        "code": "S3-B"
+      },
+      "subject": {
+        "id": 7,
+        "code": "DAA",
+        "name": "Design and Analysis of Algorithms",
+        "kind": "theory"
+      },
+      "faculty": {
+        "id": 1,
+        "code": "AS",
+        "name": "Dr. Anil Sharma"
+      },
+      "space": {
+        "id": 4,
+        "code": "R-104",
+        "kind": "room"
+      },
+      "status": "pending",
+      "reason": "Dr. Anil Sharma on leave",
+      "proposal_id": 7,
+      "moved_to": null,
+      "moved_from": null
+    },
+    {
+      "key": "164-2026-10-29",
+      "session_id": 164,
+      "date": "2026-10-29",
+      "day": "Thu",
+      "period": 6,
+      "start": "15:00",
+      "end": "16:00",
+      "batch": {
+        "id": 3,
+        "code": "S3-A"
+      },
+      "subject": {
+        "id": 10,
+        "code": "DM",
+        "name": "Discrete Mathematics",
+        "kind": "theory"
+      },
+      "faculty": {
+        "id": 1,
+        "code": "AS",
+        "name": "Dr. Anil Sharma"
+      },
+      "space": {
+        "id": 3,
+        "code": "R-103",
+        "kind": "room"
+      },
+      "status": "pending",
+      "reason": "Dr. Anil Sharma on leave",
+      "proposal_id": 6,
+      "moved_to": null,
+      "moved_from": null
+    }
+  ],
+  "proposals": [
+    {
+      "id": 5,
+      "status": "pending",
+      "version": 1,
+      "unavailability_id": 3,
+      "reason": "Dr. Anil Sharma on leave",
+      "original": {
+        "session_id": 161,
+        "date": "2026-10-29",
+        "day": "Thu",
+        "period": 2,
+        "start": "10:00",
+        "end": "11:00",
+        "batch": {
+          "id": 3,
+          "code": "S3-A"
+        },
+        "subject": {
+          "id": 7,
+          "code": "DAA",
+          "name": "Design and Analysis of Algorithms",
+          "kind": "theory"
+        },
+        "faculty": {
+          "id": 1,
+          "code": "AS",
+          "name": "Dr. Anil Sharma"
+        },
+        "space": {
+          "id": 3,
+          "code": "R-103",
+          "kind": "room"
+        }
+      },
+      "options": [
+        {
+          "rank": 1,
+          "date": "2026-10-30",
+          "day": "Fri",
+          "period": 2,
+          "start": "10:00",
+          "end": "11:00",
+          "space": {
+            "id": 3,
+            "code": "R-103",
+            "kind": "room"
+          },
+          "score": 76,
+          "breakdown": [
+            {
+              "rule": "same_week",
+              "label": "Same week",
+              "points": 3.0
+            },
+            {
+              "rule": "same_room",
+              "label": "Same room",
+              "points": 2.0
+            },
+            {
+              "rule": "preferred_hours",
+              "label": "Teacher's preferred hours",
+              "points": 2.0
+            },
+            {
+              "rule": "batch_load",
+              "label": "Batch not overloaded",
+              "points": 2.0
+            },
+            {
+              "rule": "sooner",
+              "label": "Sooner",
+              "points": 0.86
+            }
+          ],
+          "warnings": []
+        },
+        {
+          "rank": 2,
+          "date": "2026-10-31",
+          "day": "Sat",
+          "period": 3,
+          "start": "11:00",
+          "end": "12:00",
+          "space": {
+            "id": 3,
+            "code": "R-103",
+            "kind": "room"
+          },
+          "score": 75,
+          "breakdown": [
+            {
+              "rule": "same_week",
+              "label": "Same week",
+              "points": 3.0
+            },
+            {
+              "rule": "same_room",
+              "label": "Same room",
+              "points": 2.0
+            },
+            {
+              "rule": "preferred_hours",
+              "label": "Teacher's preferred hours",
+              "points": 2.0
+            },
+            {
+              "rule": "batch_load",
+              "label": "Batch not overloaded",
+              "points": 2.0
+            },
+            {
+              "rule": "sooner",
+              "label": "Sooner",
+              "points": 0.71
+            }
+          ],
+          "warnings": [
+            "Saturday"
+          ]
+        },
+        {
+          "rank": 3,
+          "date": "2026-10-30",
+          "day": "Fri",
+          "period": 7,
+          "start": "16:00",
+          "end": "17:00",
+          "space": {
+            "id": 3,
+            "code": "R-103",
+            "kind": "room"
+          },
+          "score": 60,
+          "breakdown": [
+            {
+              "rule": "same_week",
+              "label": "Same week",
+              "points": 3.0
+            },
+            {
+              "rule": "same_room",
+              "label": "Same room",
+              "points": 2.0
+            },
+            {
+              "rule": "batch_load",
+              "label": "Batch not overloaded",
+              "points": 2.0
+            },
+            {
+              "rule": "sooner",
+              "label": "Sooner",
+              "points": 0.86
+            }
+          ],
+          "warnings": [
+            "Last period of the day"
+          ]
+        },
+        {
+          "rank": 4,
+          "date": "2026-10-31",
+          "day": "Sat",
+          "period": 5,
+          "start": "14:00",
+          "end": "15:00",
+          "space": {
+            "id": 3,
+            "code": "R-103",
+            "kind": "room"
+          },
+          "score": 59,
+          "breakdown": [
+            {
+              "rule": "same_week",
+              "label": "Same week",
+              "points": 3.0
+            },
+            {
+              "rule": "same_room",
+              "label": "Same room",
+              "points": 2.0
+            },
+            {
+              "rule": "batch_load",
+              "label": "Batch not overloaded",
+              "points": 2.0
+            },
+            {
+              "rule": "sooner",
+              "label": "Sooner",
+              "points": 0.71
+            }
+          ],
+          "warnings": [
+            "Saturday"
+          ]
+        },
+        {
+          "rank": 5,
+          "date": "2026-10-31",
+          "day": "Sat",
+          "period": 6,
+          "start": "15:00",
+          "end": "16:00",
+          "space": {
+            "id": 3,
+            "code": "R-103",
+            "kind": "room"
+          },
+          "score": 59,
+          "breakdown": [
+            {
+              "rule": "same_week",
+              "label": "Same week",
+              "points": 3.0
+            },
+            {
+              "rule": "same_room",
+              "label": "Same room",
+              "points": 2.0
+            },
+            {
+              "rule": "batch_load",
+              "label": "Batch not overloaded",
+              "points": 2.0
+            },
+            {
+              "rule": "sooner",
+              "label": "Sooner",
+              "points": 0.71
+            }
+          ],
+          "warnings": [
+            "Saturday"
+          ]
+        }
+      ],
+      "recommended_rank": 1,
+      "decision": null,
+      "created_at": "2026-10-28T09:12:00+05:30"
+    },
+    {
+      "id": 6,
+      "status": "pending",
+      "version": 1,
+      "unavailability_id": 3,
+      "reason": "Dr. Anil Sharma on leave",
+      "original": {
+        "session_id": 164,
+        "date": "2026-10-29",
+        "day": "Thu",
+        "period": 6,
+        "start": "15:00",
+        "end": "16:00",
+        "batch": {
+          "id": 3,
+          "code": "S3-A"
+        },
+        "subject": {
+          "id": 10,
+          "code": "DM",
+          "name": "Discrete Mathematics",
+          "kind": "theory"
+        },
+        "faculty": {
+          "id": 1,
+          "code": "AS",
+          "name": "Dr. Anil Sharma"
+        },
+        "space": {
+          "id": 3,
+          "code": "R-103",
+          "kind": "room"
+        }
+      },
+      "options": [
+        {
+          "rank": 1,
+          "date": "2026-10-30",
+          "day": "Fri",
+          "period": 2,
+          "start": "10:00",
+          "end": "11:00",
+          "space": {
+            "id": 3,
+            "code": "R-103",
+            "kind": "room"
+          },
+          "score": 76,
+          "breakdown": [
+            {
+              "rule": "same_week",
+              "label": "Same week",
+              "points": 3.0
+            },
+            {
+              "rule": "same_room",
+              "label": "Same room",
+              "points": 2.0
+            },
+            {
+              "rule": "preferred_hours",
+              "label": "Teacher's preferred hours",
+              "points": 2.0
+            },
+            {
+              "rule": "batch_load",
+              "label": "Batch not overloaded",
+              "points": 2.0
+            },
+            {
+              "rule": "sooner",
+              "label": "Sooner",
+              "points": 0.86
+            }
+          ],
+          "warnings": []
+        },
+        {
+          "rank": 2,
+          "date": "2026-10-31",
+          "day": "Sat",
+          "period": 3,
+          "start": "11:00",
+          "end": "12:00",
+          "space": {
+            "id": 3,
+            "code": "R-103",
+            "kind": "room"
+          },
+          "score": 75,
+          "breakdown": [
+            {
+              "rule": "same_week",
+              "label": "Same week",
+              "points": 3.0
+            },
+            {
+              "rule": "same_room",
+              "label": "Same room",
+              "points": 2.0
+            },
+            {
+              "rule": "preferred_hours",
+              "label": "Teacher's preferred hours",
+              "points": 2.0
+            },
+            {
+              "rule": "batch_load",
+              "label": "Batch not overloaded",
+              "points": 2.0
+            },
+            {
+              "rule": "sooner",
+              "label": "Sooner",
+              "points": 0.71
+            }
+          ],
+          "warnings": [
+            "Saturday"
+          ]
+        },
+        {
+          "rank": 3,
+          "date": "2026-10-30",
+          "day": "Fri",
+          "period": 7,
+          "start": "16:00",
+          "end": "17:00",
+          "space": {
+            "id": 3,
+            "code": "R-103",
+            "kind": "room"
+          },
+          "score": 60,
+          "breakdown": [
+            {
+              "rule": "same_week",
+              "label": "Same week",
+              "points": 3.0
+            },
+            {
+              "rule": "same_room",
+              "label": "Same room",
+              "points": 2.0
+            },
+            {
+              "rule": "batch_load",
+              "label": "Batch not overloaded",
+              "points": 2.0
+            },
+            {
+              "rule": "sooner",
+              "label": "Sooner",
+              "points": 0.86
+            }
+          ],
+          "warnings": [
+            "Last period of the day"
+          ]
+        },
+        {
+          "rank": 4,
+          "date": "2026-10-31",
+          "day": "Sat",
+          "period": 5,
+          "start": "14:00",
+          "end": "15:00",
+          "space": {
+            "id": 3,
+            "code": "R-103",
+            "kind": "room"
+          },
+          "score": 59,
+          "breakdown": [
+            {
+              "rule": "same_week",
+              "label": "Same week",
+              "points": 3.0
+            },
+            {
+              "rule": "same_room",
+              "label": "Same room",
+              "points": 2.0
+            },
+            {
+              "rule": "batch_load",
+              "label": "Batch not overloaded",
+              "points": 2.0
+            },
+            {
+              "rule": "sooner",
+              "label": "Sooner",
+              "points": 0.71
+            }
+          ],
+          "warnings": [
+            "Saturday"
+          ]
+        },
+        {
+          "rank": 5,
+          "date": "2026-10-31",
+          "day": "Sat",
+          "period": 6,
+          "start": "15:00",
+          "end": "16:00",
+          "space": {
+            "id": 3,
+            "code": "R-103",
+            "kind": "room"
+          },
+          "score": 59,
+          "breakdown": [
+            {
+              "rule": "same_week",
+              "label": "Same week",
+              "points": 3.0
+            },
+            {
+              "rule": "same_room",
+              "label": "Same room",
+              "points": 2.0
+            },
+            {
+              "rule": "batch_load",
+              "label": "Batch not overloaded",
+              "points": 2.0
+            },
+            {
+              "rule": "sooner",
+              "label": "Sooner",
+              "points": 0.71
+            }
+          ],
+          "warnings": [
+            "Saturday"
+          ]
+        }
+      ],
+      "recommended_rank": 2,
+      "decision": null,
+      "created_at": "2026-10-28T09:12:00+05:30"
+    },
+    {
+      "id": 7,
+      "status": "pending",
+      "version": 1,
+      "unavailability_id": 3,
+      "reason": "Dr. Anil Sharma on leave",
+      "original": {
+        "session_id": 186,
+        "date": "2026-10-29",
+        "day": "Thu",
+        "period": 4,
+        "start": "12:00",
+        "end": "13:00",
+        "batch": {
+          "id": 4,
+          "code": "S3-B"
+        },
+        "subject": {
+          "id": 7,
+          "code": "DAA",
+          "name": "Design and Analysis of Algorithms",
+          "kind": "theory"
+        },
+        "faculty": {
+          "id": 1,
+          "code": "AS",
+          "name": "Dr. Anil Sharma"
+        },
+        "space": {
+          "id": 4,
+          "code": "R-104",
+          "kind": "room"
+        }
+      },
+      "options": [
+        {
+          "rank": 1,
+          "date": "2026-10-30",
+          "day": "Fri",
+          "period": 3,
+          "start": "11:00",
+          "end": "12:00",
+          "space": {
+            "id": 4,
+            "code": "R-104",
+            "kind": "room"
+          },
+          "score": 76,
+          "breakdown": [
+            {
+              "rule": "same_week",
+              "label": "Same week",
+              "points": 3.0
+            },
+            {
+              "rule": "same_room",
+              "label": "Same room",
+              "points": 2.0
+            },
+            {
+              "rule": "preferred_hours",
+              "label": "Teacher's preferred hours",
+              "points": 2.0
+            },
+            {
+              "rule": "batch_load",
+              "label": "Batch not overloaded",
+              "points": 2.0
+            },
+            {
+              "rule": "sooner",
+              "label": "Sooner",
+              "points": 0.86
+            }
+          ],
+          "warnings": []
+        },
+        {
+          "rank": 2,
+          "date": "2026-10-30",
+          "day": "Fri",
+          "period": 7,
+          "start": "16:00",
+          "end": "17:00",
+          "space": {
+            "id": 4,
+            "code": "R-104",
+            "kind": "room"
+          },
+          "score": 60,
+          "breakdown": [
+            {
+              "rule": "same_week",
+              "label": "Same week",
+              "points": 3.0
+            },
+            {
+              "rule": "same_room",
+              "label": "Same room",
+              "points": 2.0
+            },
+            {
+              "rule": "batch_load",
+              "label": "Batch not overloaded",
+              "points": 2.0
+            },
+            {
+              "rule": "sooner",
+              "label": "Sooner",
+              "points": 0.86
+            }
+          ],
+          "warnings": [
+            "Last period of the day"
+          ]
+        },
+        {
+          "rank": 3,
+          "date": "2026-10-31",
+          "day": "Sat",
+          "period": 5,
+          "start": "14:00",
+          "end": "15:00",
+          "space": {
+            "id": 4,
+            "code": "R-104",
+            "kind": "room"
+          },
+          "score": 59,
+          "breakdown": [
+            {
+              "rule": "same_week",
+              "label": "Same week",
+              "points": 3.0
+            },
+            {
+              "rule": "same_room",
+              "label": "Same room",
+              "points": 2.0
+            },
+            {
+              "rule": "batch_load",
+              "label": "Batch not overloaded",
+              "points": 2.0
+            },
+            {
+              "rule": "sooner",
+              "label": "Sooner",
+              "points": 0.71
+            }
+          ],
+          "warnings": [
+            "Saturday"
+          ]
+        },
+        {
+          "rank": 4,
+          "date": "2026-10-31",
+          "day": "Sat",
+          "period": 6,
+          "start": "15:00",
+          "end": "16:00",
+          "space": {
+            "id": 4,
+            "code": "R-104",
+            "kind": "room"
+          },
+          "score": 59,
+          "breakdown": [
+            {
+              "rule": "same_week",
+              "label": "Same week",
+              "points": 3.0
+            },
+            {
+              "rule": "same_room",
+              "label": "Same room",
+              "points": 2.0
+            },
+            {
+              "rule": "batch_load",
+              "label": "Batch not overloaded",
+              "points": 2.0
+            },
+            {
+              "rule": "sooner",
+              "label": "Sooner",
+              "points": 0.71
+            }
+          ],
+          "warnings": [
+            "Saturday"
+          ]
+        },
+        {
+          "rank": 5,
+          "date": "2026-10-31",
+          "day": "Sat",
+          "period": 7,
+          "start": "16:00",
+          "end": "17:00",
+          "space": {
+            "id": 4,
+            "code": "R-104",
+            "kind": "room"
+          },
+          "score": 59,
+          "breakdown": [
+            {
+              "rule": "same_week",
+              "label": "Same week",
+              "points": 3.0
+            },
+            {
+              "rule": "same_room",
+              "label": "Same room",
+              "points": 2.0
+            },
+            {
+              "rule": "batch_load",
+              "label": "Batch not overloaded",
+              "points": 2.0
+            },
+            {
+              "rule": "sooner",
+              "label": "Sooner",
+              "points": 0.71
+            }
+          ],
+          "warnings": [
+            "Last period of the day",
+            "Saturday"
+          ]
+        }
+      ],
+      "recommended_rank": 1,
+      "decision": null,
+      "created_at": "2026-10-28T09:12:00+05:30"
+    }
+  ]
+}

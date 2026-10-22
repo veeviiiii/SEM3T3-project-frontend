@@ -1,0 +1,46 @@
+{
+  "weights": {
+    "same_time": 3,
+    "same_week": 3,
+    "same_room": 2,
+    "preferred_hours": 2,
+    "batch_load": 2,
+    "sooner": 1
+  },
+  "k": 5,
+  "max_batch_classes_per_day": 6,
+  "min_notice_hours": 12,
+  "search_weeks": 2,
+  "rules": [
+    {
+      "rule": "same_time",
+      "label": "Same time",
+      "description": "Only the room changes, so nobody's day changes."
+    },
+    {
+      "rule": "same_week",
+      "label": "Same week",
+      "description": "The class stays in the week it was planned for."
+    },
+    {
+      "rule": "same_room",
+      "label": "Same room",
+      "description": "The class keeps its usual room."
+    },
+    {
+      "rule": "preferred_hours",
+      "label": "Teacher's preferred hours",
+      "description": "The slot is one of the teacher's preferred periods."
+    },
+    {
+      "rule": "batch_load",
+      "label": "Batch not overloaded",
+      "description": "The batch stays within the daily class limit."
+    },
+    {
+      "rule": "sooner",
+      "label": "Sooner",
+      "description": "Closer to the original date scores higher; the points fade out over 7 days."
+    }
+  ]
+}

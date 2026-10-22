@@ -1,0 +1,13 @@
+{
+  "access_token": "mock-token-hod",
+  "token_type": "bearer",
+  "expires_in": 28800,
+  "user": {
+    "id": 3,
+    "name": "Dr. Rakesh Jain",
+    "email": "rakesh.jain@example.com",
+    "role": "hod",
+    "faculty_id": 3,
+    "batch_id": null
+  }
+}

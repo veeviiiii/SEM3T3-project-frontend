@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "code": "S1-A",
+    "name": "Semester 1, Section A",
+    "semester": 1,
+    "section": "A",
+    "size": 62,
+    "home_space_id": 1
+  },
+  {
+    "id": 2,
+    "code": "S1-B",
+    "name": "Semester 1, Section B",
+    "semester": 1,
+    "section": "B",
+    "size": 60,
+    "home_space_id": 2
+  },
+  {
+    "id": 3,
+    "code": "S3-A",
+    "name": "Semester 3, Section A",
+    "semester": 3,
+    "section": "A",
+    "size": 58,
+    "home_space_id": 3
+  },
+  {
+    "id": 4,
+    "code": "S3-B",
+    "name": "Semester 3, Section B",
+    "semester": 3,
+    "section": "B",
+    "size": 57,
+    "home_space_id": 4
+  },
+  {
+    "id": 5,
+    "code": "S5-A",
+    "name": "Semester 5, Section A",
+    "semester": 5,
+    "section": "A",
+    "size": 55,
+    "home_space_id": 5
+  },
+  {
+    "id": 6,
+    "code": "S5-B",
+    "name": "Semester 5, Section B",
+    "semester": 5,
+    "section": "B",
+    "size": 54,
+    "home_space_id": 6
+  }
+]

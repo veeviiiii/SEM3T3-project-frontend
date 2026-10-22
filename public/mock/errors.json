@@ -1,0 +1,46 @@
+{
+  "401_unauthorized": {
+    "detail": "Please log in again.",
+    "code": "UNAUTHORIZED"
+  },
+  "403_forbidden": {
+    "detail": "Only the HOD can do this.",
+    "code": "FORBIDDEN"
+  },
+  "404_not_found": {
+    "detail": "Proposal 99 was not found.",
+    "code": "NOT_FOUND"
+  },
+  "400_validation": {
+    "detail": "Please check the highlighted fields.",
+    "code": "VALIDATION",
+    "fields": [
+      {
+        "field": "start_date",
+        "message": "Leave cannot start in the past"
+      }
+    ]
+  },
+  "409_clash": {
+    "detail": "This slot is no longer free.",
+    "code": "CLASH",
+    "clashes": [
+      {
+        "resource": "batch",
+        "message": "S3-A already has OOP in this slot"
+      }
+    ]
+  },
+  "409_stale": {
+    "detail": "Someone else changed this proposal. Reload to see the latest version.",
+    "code": "STALE"
+  },
+  "409_already_decided": {
+    "detail": "A decision was already made for this class.",
+    "code": "ALREADY_DECIDED"
+  },
+  "400_slot_in_past": {
+    "detail": "This slot has already started.",
+    "code": "SLOT_IN_PAST"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "changes": [
+    {
+      "kind": "faculty_leave",
+      "target_id": 9,
+      "start_date": "2026-10-30",
+      "end_date": "2026-10-30",
+      "periods": null,
+      "reason": "What-if: medical leave"
+    },
+    {
+      "kind": "room_closure",
+      "target_id": 5,
+      "start_date": "2026-10-30",
+      "end_date": "2026-10-30",
+      "periods": null,
+      "reason": "What-if: projector repair"
+    }
+  ]
+}

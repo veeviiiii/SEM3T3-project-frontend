@@ -1,0 +1,84 @@
+{
+  "items": [
+    {
+      "id": 20,
+      "kind": "class_cancelled",
+      "title": "DAA on Thu 29 Oct 10:00 is cancelled",
+      "body": "Dr. Anil Sharma is on leave. A new time will be shared once the HOD decides.",
+      "created_at": "2026-10-28T09:13:00+05:30",
+      "read": false,
+      "ref": {
+        "type": "timetable",
+        "id": null,
+        "week_start": "2026-10-26"
+      }
+    },
+    {
+      "id": 21,
+      "kind": "class_cancelled",
+      "title": "Discrete Mathematics on Thu 29 Oct 15:00 is cancelled",
+      "body": "Dr. Anil Sharma is on leave. A new time will be shared once the HOD decides.",
+      "created_at": "2026-10-28T09:13:00+05:30",
+      "read": false,
+      "ref": {
+        "type": "timetable",
+        "id": null,
+        "week_start": "2026-10-26"
+      }
+    },
+    {
+      "id": 14,
+      "kind": "class_moved",
+      "title": "OOP Lab at 14:00 on Fri 30 Oct moved to LAB-4",
+      "body": "LAB-2 is closed (AC repair). The class stays at the same time but is now in LAB-4.",
+      "created_at": "2026-10-27T11:32:00+05:30",
+      "read": true,
+      "ref": {
+        "type": "timetable",
+        "id": null,
+        "week_start": "2026-10-26"
+      }
+    },
+    {
+      "id": 16,
+      "kind": "class_moved",
+      "title": "OOP Lab at 15:00 on Fri 30 Oct moved to LAB-4",
+      "body": "LAB-2 is closed (AC repair). The class stays at the same time but is now in LAB-4.",
+      "created_at": "2026-10-27T11:32:00+05:30",
+      "read": true,
+      "ref": {
+        "type": "timetable",
+        "id": null,
+        "week_start": "2026-10-26"
+      }
+    },
+    {
+      "id": 10,
+      "kind": "class_cancelled",
+      "title": "OOP Lab on Fri 30 Oct 14:00 is cancelled",
+      "body": "LAB-2 is closed (AC repair). A new time will be shared once the HOD decides.",
+      "created_at": "2026-10-27T11:21:00+05:30",
+      "read": true,
+      "ref": {
+        "type": "timetable",
+        "id": null,
+        "week_start": "2026-10-26"
+      }
+    },
+    {
+      "id": 12,
+      "kind": "class_cancelled",
+      "title": "OOP Lab on Fri 30 Oct 15:00 is cancelled",
+      "body": "LAB-2 is closed (AC repair). A new time will be shared once the HOD decides.",
+      "created_at": "2026-10-27T11:21:00+05:30",
+      "read": true,
+      "ref": {
+        "type": "timetable",
+        "id": null,
+        "week_start": "2026-10-26"
+      }
+    }
+  ],
+  "total": 6,
+  "unread": 2
+}

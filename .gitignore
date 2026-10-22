@@ -1,0 +1,17 @@
+node_modules
+dist
+build
+
+# Secrets: never commit these
+.env
+.env.*
+!.env.example
+*.local
+
+# Logs and OS files
+*.log
+.DS_Store
+Thumbs.db
+
+# Personal Claude Code settings
+.claude/settings.local.json

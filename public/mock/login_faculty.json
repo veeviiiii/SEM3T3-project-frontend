@@ -1,0 +1,13 @@
+{
+  "access_token": "mock-token-faculty",
+  "token_type": "bearer",
+  "expires_in": 28800,
+  "user": {
+    "id": 1,
+    "name": "Dr. Anil Sharma",
+    "email": "anil.sharma@example.com",
+    "role": "faculty",
+    "faculty_id": 1,
+    "batch_id": null
+  }
+}

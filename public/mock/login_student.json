@@ -1,0 +1,13 @@
+{
+  "access_token": "mock-token-student",
+  "token_type": "bearer",
+  "expires_in": 28800,
+  "user": {
+    "id": 15,
+    "name": "Riya Patel",
+    "email": "riya.patel@example.com",
+    "role": "student",
+    "faculty_id": null,
+    "batch_id": 3
+  }
+}

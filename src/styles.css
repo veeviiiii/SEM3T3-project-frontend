@@ -1,0 +1,478 @@
+@import "tailwindcss";
+
+/* dark:... classes apply while <html> has class="dark" (src/lib/theme.js switches it). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* The Campus Atlas fonts, served from public/fonts/ (SIL Open Font License, see OFL-*.txt there). */
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("/fonts/space-grotesk-latin.woff2") format("woff2");
+  font-weight: 500 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/inter-latin.woff2") format("woff2");
+  font-weight: 400 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("/fonts/ibm-plex-mono-400-latin.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("/fonts/ibm-plex-mono-500-latin.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Silkscreen";
+  src: url("/fonts/silkscreen-700-latin.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* The design's colours, fonts and animations. Use them like any Tailwind class:
+   bg-card-blue, font-display, animate-fade-up...
+
+   The app uses five pastel colours only, each with one meaning:
+     blue   = normal / as planned, and anything selected
+     yellow = waiting for a decision
+     green  = moved, free, done
+     red    = cancelled, closed, errors
+     orange = room changed, warnings, labs, avatars
+   Greys are for text, lines and backgrounds. */
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Space Grotesk", "Inter", ui-sans-serif, system-ui, sans-serif; /* headings and big numbers */
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace; /* small uppercase labels */
+  --font-pixel: "Silkscreen", monospace; /* the logo */
+
+  /* Every other Tailwind colour is switched off, so it cannot creep back in. */
+  --color-pink-*: initial;
+  --color-rose-*: initial;
+  --color-fuchsia-*: initial;
+  --color-purple-*: initial;
+  --color-violet-*: initial;
+  --color-indigo-*: initial;
+  --color-sky-*: initial;
+  --color-cyan-*: initial;
+  --color-teal-*: initial;
+  --color-emerald-*: initial;
+  --color-lime-*: initial;
+  --color-amber-*: initial;
+
+  /* Tailwind's palest yellows are lemony; these match the design's warm yellow. */
+  --color-yellow-50: #fffaeb;
+  --color-yellow-100: #fff3cf;
+  --color-yellow-200: #ffe7a3;
+  --color-yellow-300: #ffd367;
+
+  --color-canvas: #f5f6fa; /* page background behind the white cards */
+  --color-nav: #cce0ff; /* the selected menu item */
+  --color-brand: #b9d4ff; /* main buttons */
+  --color-brand-strong: #a3c5ff; /* main buttons on hover */
+  --color-ink: #0f172a; /* dark text that stays dark in both modes, for the main buttons */
+  --color-card-yellow: #ffd367;
+  --color-card-blue: #cce0ff;
+  --color-card-red: #fca5a5;
+  --color-card-green: #b7ebc6;
+  --color-card-orange: #ffc896;
+
+  /* Reports heatmap, quiet to busy */
+  --color-heat-0: #f2f4f7;
+  --color-heat-1: #e6efff;
+  --color-heat-2: #cce0ff;
+  --color-heat-3: #b3d0ff;
+  --color-heat-4: #94bbf7;
+  --color-heat-5: #739fee;
+  --color-heat-ink: #1e3a6e;
+
+  /* Short and gentle: nothing should feel slow. */
+  --animate-fade-up: fade-up 0.3s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+  --animate-fade-in: fade-in 0.2s ease-out backwards;
+  --animate-pop-in: pop-in 0.16s ease-out backwards;
+  --animate-badge-pop: badge-pop 0.3s ease-out backwards;
+  --animate-bell-ring: bell-ring 0.6s ease-in-out;
+  --animate-spin-in: spin-in 0.3s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+  --animate-grow-x: grow-x 0.5s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+  --animate-toast-in: toast-in 0.25s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(6px); }
+  }
+  @keyframes fade-in {
+    from { opacity: 0; }
+  }
+  @keyframes pop-in {
+    from { opacity: 0; transform: translateY(-4px) scale(0.98); }
+  }
+  @keyframes badge-pop {
+    0% { transform: scale(0.4); }
+    70% { transform: scale(1.15); }
+  }
+  @keyframes bell-ring {
+    20% { transform: rotate(14deg); }
+    40% { transform: rotate(-10deg); }
+    60% { transform: rotate(6deg); }
+    80% { transform: rotate(-3deg); }
+  }
+  @keyframes spin-in {
+    from { opacity: 0; transform: rotate(-90deg) scale(0.6); }
+  }
+  @keyframes grow-x {
+    from { transform: scaleX(0); }
+  }
+  @keyframes toast-in {
+    from { opacity: 0; transform: translateY(10px) scale(0.97); }
+  }
+  @keyframes draw-ring {
+    from { stroke-dasharray: 0 1000; }
+  }
+}
+
+/* Dark mode. Every Tailwind colour is a CSS variable, so giving the variables darker values here
+   re-colours every page at once, with the same class names:
+   - the greys flip: white cards become dark, dark text becomes light;
+   - the soft colour tints (bg-yellow-50...) become deep tints, and their text (text-yellow-900...) becomes light;
+   - the pastel cards become deep versions of the same five colours. */
+.dark {
+  color-scheme: dark; /* dark date pickers and scrollbars */
+  --color-white: #161a24;
+  --color-canvas: #0d1017;
+  --color-nav: #26314d;
+  --color-brand: #a9c8ff;
+  --color-brand-strong: #c4daff;
+  --color-card-yellow: #3b3220;
+  --color-card-blue: #1f2c47;
+  --color-card-red: #432325;
+  --color-card-green: #1c3a2a;
+  --color-card-orange: #42301e;
+  --color-heat-0: #1c212d;
+  --color-heat-1: #1c2740;
+  --color-heat-2: #213258;
+  --color-heat-3: #2a4275;
+  --color-heat-4: #3a568f;
+  --color-heat-5: #4566a8;
+  --color-heat-ink: #e3ecff;
+
+  --color-slate-50: #1c212d;
+  --color-slate-100: #232937;
+  --color-slate-200: #2d3445;
+  --color-slate-300: #3d4558;
+  --color-slate-400: #6c7488;
+  --color-slate-500: #9199ac;
+  --color-slate-600: #a9b0c0;
+  --color-slate-700: #c3c9d5;
+  --color-slate-800: #dbe0e8;
+  --color-slate-900: #eef1f6;
+  --color-slate-950: #f8fafc;
+
+  /* Each colour, light tint (50) to dark text (950), turned round for a dark background. */
+  /* red */
+  --color-red-50: oklch(25% 0.04 25);
+  --color-red-100: oklch(29% 0.055 25);
+  --color-red-200: oklch(35% 0.075 25);
+  --color-red-300: oklch(45% 0.1 25);
+  --color-red-400: oklch(58% 0.14 25);
+  --color-red-500: oklch(66% 0.16 25);
+  --color-red-600: oklch(74% 0.15 25);
+  --color-red-700: oklch(80% 0.12 25);
+  --color-red-800: oklch(86% 0.09 25);
+  --color-red-900: oklch(90% 0.065 25);
+  --color-red-950: oklch(94% 0.04 25);
+  /* orange */
+  --color-orange-50: oklch(25% 0.04 50);
+  --color-orange-100: oklch(29% 0.055 50);
+  --color-orange-200: oklch(35% 0.075 50);
+  --color-orange-300: oklch(45% 0.1 50);
+  --color-orange-400: oklch(58% 0.14 50);
+  --color-orange-500: oklch(66% 0.16 50);
+  --color-orange-600: oklch(74% 0.15 50);
+  --color-orange-700: oklch(80% 0.12 50);
+  --color-orange-800: oklch(86% 0.09 50);
+  --color-orange-900: oklch(90% 0.065 50);
+  --color-orange-950: oklch(94% 0.04 50);
+  /* yellow */
+  --color-yellow-50: oklch(25% 0.036 88);
+  --color-yellow-100: oklch(29% 0.05 88);
+  --color-yellow-200: oklch(35% 0.068 88);
+  --color-yellow-300: oklch(45% 0.09 88);
+  --color-yellow-400: oklch(58% 0.126 88);
+  --color-yellow-500: oklch(66% 0.144 88);
+  --color-yellow-600: oklch(74% 0.135 88);
+  --color-yellow-700: oklch(80% 0.108 88);
+  --color-yellow-800: oklch(86% 0.081 88);
+  --color-yellow-900: oklch(90% 0.059 88);
+  --color-yellow-950: oklch(94% 0.036 88);
+  /* green */
+  --color-green-50: oklch(25% 0.04 150);
+  --color-green-100: oklch(29% 0.055 150);
+  --color-green-200: oklch(35% 0.075 150);
+  --color-green-300: oklch(45% 0.1 150);
+  --color-green-400: oklch(58% 0.14 150);
+  --color-green-500: oklch(66% 0.16 150);
+  --color-green-600: oklch(74% 0.15 150);
+  --color-green-700: oklch(80% 0.12 150);
+  --color-green-800: oklch(86% 0.09 150);
+  --color-green-900: oklch(90% 0.065 150);
+  --color-green-950: oklch(94% 0.04 150);
+  /* blue */
+  --color-blue-50: oklch(25% 0.04 260);
+  --color-blue-100: oklch(29% 0.055 260);
+  --color-blue-200: oklch(35% 0.075 260);
+  --color-blue-300: oklch(45% 0.1 260);
+  --color-blue-400: oklch(58% 0.14 260);
+  --color-blue-500: oklch(66% 0.16 260);
+  --color-blue-600: oklch(74% 0.15 260);
+  --color-blue-700: oklch(80% 0.12 260);
+  --color-blue-800: oklch(86% 0.09 260);
+  --color-blue-900: oklch(90% 0.065 260);
+  --color-blue-950: oklch(94% 0.04 260);
+}
+
+/* While switching between light and dark, the colours fade instead of jumping. */
+.theme-fade,
+.theme-fade *,
+.theme-fade *::before,
+.theme-fade *::after {
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease,
+    fill 0.3s ease,
+    stroke 0.3s ease,
+    box-shadow 0.3s ease !important;
+}
+
+/* Moving to another page: the old page fades out and the new one fades in, rising a little,
+   while the menu and the top bar stay where they are. (Browsers without this feature just open the page.) */
+@view-transition {
+  navigation: auto;
+}
+#sidebar {
+  view-transition-name: sidebar;
+}
+#topbar {
+  view-transition-name: topbar;
+}
+::view-transition-old(root) {
+  animation: page-out 0.14s ease-in both;
+}
+::view-transition-new(root) {
+  animation: page-in 0.24s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+::view-transition-group(sidebar),
+::view-transition-group(topbar) {
+  animation-duration: 0.24s;
+}
+@keyframes page-out {
+  to { opacity: 0; }
+}
+@keyframes page-in {
+  from { opacity: 0; transform: translateY(6px); }
+}
+
+@layer base {
+  /* Soft blue for every focus ring, tick box and radio button, and yellow for selected text,
+     instead of the browser's bright blue. */
+  :root {
+    accent-color: var(--color-blue-400);
+    -webkit-tap-highlight-color: transparent;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-blue-400);
+    outline-offset: 2px;
+  }
+  ::selection {
+    background-color: color-mix(in oklab, #ffd367 60%, transparent);
+  }
+
+  /* Headings use Space Grotesk everywhere. */
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+  }
+
+  /* Table headings are small mono capitals. */
+  thead th {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  /* Things drawn after the data arrives (a new tab, another week...) ease in, one shortly after the other.
+     (Option cards and timetable chips are animated with Motion in the page scripts instead.) */
+  main .card,
+  main :is(tbody > tr, ul > li, ol > li):not(.option-card) {
+    animation: var(--animate-fade-up);
+  }
+  main :is(.card, tbody > tr, ul > li, ol > li):nth-child(2) { animation-delay: 30ms; }
+  main :is(.card, tbody > tr, ul > li, ol > li):nth-child(3) { animation-delay: 60ms; }
+  main :is(.card, tbody > tr, ul > li, ol > li):nth-child(4) { animation-delay: 90ms; }
+  main :is(.card, tbody > tr, ul > li, ol > li):nth-child(5) { animation-delay: 120ms; }
+  main :is(.card, tbody > tr, ul > li, ol > li):nth-child(n + 6) { animation-delay: 150ms; }
+
+  /* Pop-up forms slide up and the page behind them fades. */
+  dialog[open] {
+    animation: var(--animate-toast-in);
+  }
+  dialog[open]::backdrop {
+    animation: var(--animate-fade-in);
+  }
+
+  /* The ring chart on the dashboard draws itself. */
+  .ring-piece {
+    animation: draw-ring 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+  }
+}
+
+/* A few reusable classes so every page looks the same.
+   Use them like: <button class="btn-primary">Approve</button> */
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-brand px-4 py-2.5 text-sm font-medium text-ink transition duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-sm font-medium text-slate-800 transition duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-danger {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border border-red-200 bg-white px-4 py-2.5 text-sm font-medium text-red-600 transition duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-400 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  /* Buttons rise a little on hover and press in on click. The main one glows.
+     (translate / scale, not transform, so they never fight the Motion animations in the page scripts.) */
+  :is(.btn-primary, .btn-secondary, .btn-danger):not(:disabled):hover {
+    translate: 0 -1px;
+  }
+  :is(.btn-primary, .btn-secondary, .btn-danger):not(:disabled):active {
+    translate: 0 0;
+    scale: 0.97;
+  }
+  .btn-primary:not(:disabled):hover {
+    background-color: var(--color-brand-strong);
+    box-shadow: 0 8px 22px -8px var(--color-brand);
+  }
+  .btn-secondary:not(:disabled):hover {
+    border-color: var(--color-slate-300);
+    background-color: var(--color-slate-50);
+    box-shadow: 0 6px 16px -10px rgb(15 23 42 / 0.25);
+  }
+  .btn-danger:not(:disabled):hover {
+    background-color: var(--color-red-50);
+    box-shadow: 0 6px 16px -10px var(--color-red-300);
+  }
+
+  .card {
+    @apply rounded-xl border border-slate-200/70 bg-white p-5 transition-[box-shadow,border-color] duration-300;
+  }
+  .card:hover {
+    box-shadow: 0 12px 30px -20px rgb(15 23 42 / 0.3);
+  }
+  /* Cards you can click (or that stand alone, like a room): lift and glow on hover. */
+  .lift {
+    @apply transition-[translate,box-shadow] duration-300;
+  }
+  .lift:hover {
+    translate: 0 -3px;
+    box-shadow: 0 16px 32px -18px rgb(15 23 42 / 0.4);
+  }
+  .dark .card:hover {
+    border-color: rgb(169 200 255 / 0.18);
+    box-shadow: 0 0 0 1px rgb(169 200 255 / 0.06), 0 14px 36px -18px rgb(169 200 255 / 0.22);
+  }
+  .dark .lift:hover {
+    box-shadow: 0 0 0 1px rgb(169 200 255 / 0.2), 0 16px 36px -14px rgb(169 200 255 / 0.3);
+  }
+
+  .input {
+    @apply w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-800 transition placeholder:text-slate-400 hover:border-slate-300 focus:border-blue-300 focus:ring-4 focus:ring-blue-100 focus:outline-none disabled:bg-slate-50;
+  }
+  .label {
+    @apply mb-1.5 block text-sm font-medium text-slate-700;
+  }
+  .page-title {
+    @apply truncate text-lg font-semibold text-slate-900 sm:text-xl;
+  }
+
+  /* Drop-downs (<select class="input">): a rounded white list with soft pastel rows instead of the
+     browser's own list with its bright blue highlight. Older browsers keep their normal list. */
+  @supports (appearance: base-select) {
+    select.input,
+    select.input::picker(select) {
+      appearance: base-select;
+    }
+    select.input {
+      @apply flex cursor-pointer items-center justify-between gap-2;
+    }
+    select.input:open {
+      @apply border-blue-300 ring-4 ring-blue-100;
+    }
+    select.input::picker-icon {
+      color: var(--color-slate-400);
+      transition: rotate 0.2s ease;
+    }
+    select.input:open::picker-icon {
+      rotate: 180deg;
+    }
+    select.input::picker(select) {
+      @apply my-1.5 max-h-72 rounded-xl border border-slate-200 bg-white p-1 shadow-lg;
+      scrollbar-width: thin;
+      scrollbar-color: var(--color-slate-300) transparent;
+      opacity: 0;
+      translate: 0 -4px;
+      transition:
+        opacity 0.15s ease-out,
+        translate 0.15s ease-out,
+        display 0.15s allow-discrete,
+        overlay 0.15s allow-discrete;
+    }
+    select.input:open::picker(select) {
+      opacity: 1;
+      translate: 0 0;
+    }
+    @starting-style {
+      select.input:open::picker(select) {
+        opacity: 0;
+        translate: 0 -4px;
+      }
+    }
+    select.input option {
+      @apply flex items-center gap-2 rounded-lg px-2.5 py-2 text-sm text-slate-700 transition-colors;
+    }
+    select.input option:hover,
+    select.input option:focus-visible {
+      @apply bg-blue-50 text-slate-900 outline-none;
+    }
+    select.input option:checked {
+      @apply bg-card-blue font-medium text-slate-900;
+    }
+    select.input option::checkmark {
+      @apply order-1 ml-auto text-slate-600;
+    }
+  }
+}
+
+/* Less motion for people who asked their computer for it: everything appears at once. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}

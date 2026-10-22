@@ -1,0 +1,19 @@
+{
+  "ok": false,
+  "clashes": [
+    {
+      "resource": "faculty",
+      "message": "Dr. Anil Sharma is not free in this slot"
+    },
+    {
+      "resource": "batch",
+      "message": "S3-A already has OOP in this slot"
+    },
+    {
+      "resource": "space",
+      "message": "R-103 is used by S3-A in this slot"
+    }
+  ],
+  "score": null,
+  "breakdown": []
+}

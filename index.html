@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in · Smart Scheduling</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+    <script>
+      // Light or dark mode: apply the saved choice (or the computer's setting) before the page is drawn,
+      // so it never flashes. The toggle button is in src/lib/theme.js.
+      try {
+        const saved = localStorage.getItem('theme');
+        if (saved === 'dark' || (!saved && matchMedia('(prefers-color-scheme: dark)').matches)) document.documentElement.classList.add('dark');
+      } catch {}
+      // A page-change animation can be skipped (for example in a hidden tab). That is fine, so it is not an error.
+      addEventListener('pageswap', (event) => event.viewTransition?.ready.catch(() => {}));
+      addEventListener('pagereveal', (event) => event.viewTransition?.ready.catch(() => {}));
+    </script>
+    <!-- Runs before the page is first shown, so the menu is already drawn (and page changes animate smoothly). -->
+    <script type="module" src="/src/pages/login.js" blocking="render"></script>
+  </head>
+  <body class="min-h-screen bg-gradient-to-b from-[#d4e1f6] to-[#ebe3cf] text-slate-800 dark:from-[#0f1424] dark:to-[#17150f]">
+    <button type="button" id="theme-toggle" class="fixed right-4 top-4 flex h-10 w-10 items-center justify-center rounded-full bg-white text-slate-700 shadow-sm transition hover:-translate-y-px hover:text-slate-900 hover:shadow-md" aria-label="Dark mode" aria-pressed="false"></button>
+
+    <main class="mx-auto flex min-h-screen max-w-md flex-col justify-center px-4 py-10">
+      <div class="mb-6 text-center">
+        <span class="group mx-auto mb-3 flex h-14 w-14 animate-fade-up items-center justify-center rounded-2xl bg-white shadow-sm transition hover:shadow-[0_0_28px_-4px_#cce0ff]">
+          <svg class="h-8 w-8 text-blue-400 transition-transform duration-500 group-hover:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M5.8 15.6 15.6 5.8M8.4 18.2l9.8-9.8"/></svg>
+        </span>
+        <h1 class="font-pixel text-sm tracking-wide text-slate-900">SMART SCHEDULING</h1>
+        <p class="mt-1 text-sm text-slate-600">The department timetable that fixes itself when someone is away.</p>
+      </div>
+
+      <section class="animate-fade-up rounded-2xl bg-white p-6 shadow-sm [animation-delay:80ms]">
+        <h2 class="font-medium text-slate-900">Try the demo</h2>
+        <p class="mt-1 text-sm text-slate-500">Pick a person to see the app through their eyes.</p>
+        <div class="mt-4 grid gap-2">
+          <button type="button" class="flex items-center gap-3 rounded-xl border border-slate-200 px-3 py-2.5 text-left text-sm transition duration-200 hover:-translate-y-0.5 hover:border-slate-300 hover:bg-slate-50 hover:shadow-md active:scale-[0.99] focus-visible:outline-2 focus-visible:outline-blue-400 disabled:opacity-50" data-demo="rakesh.jain@example.com">
+            <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-card-orange text-xs font-semibold text-slate-900" aria-hidden="true">RJ</span>
+            <span class="min-w-0"><span class="block font-medium text-slate-900">HOD</span><span class="block text-slate-500">Dr. Rakesh Jain: approves changes</span></span>
+          </button>
+          <button type="button" class="flex items-center gap-3 rounded-xl border border-slate-200 px-3 py-2.5 text-left text-sm transition duration-200 hover:-translate-y-0.5 hover:border-slate-300 hover:bg-slate-50 hover:shadow-md active:scale-[0.99] focus-visible:outline-2 focus-visible:outline-blue-400 disabled:opacity-50" data-demo="anil.sharma@example.com">
+            <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-card-yellow text-xs font-semibold text-slate-900" aria-hidden="true">AS</span>
+            <span class="min-w-0"><span class="block font-medium text-slate-900">Faculty</span><span class="block text-slate-500">Dr. Anil Sharma: on leave Thursday</span></span>
+          </button>
+          <button type="button" class="flex items-center gap-3 rounded-xl border border-slate-200 px-3 py-2.5 text-left text-sm transition duration-200 hover:-translate-y-0.5 hover:border-slate-300 hover:bg-slate-50 hover:shadow-md active:scale-[0.99] focus-visible:outline-2 focus-visible:outline-blue-400 disabled:opacity-50" data-demo="riya.patel@example.com">
+            <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-card-blue text-xs font-semibold text-slate-900" aria-hidden="true">RP</span>
+            <span class="min-w-0"><span class="block font-medium text-slate-900">Student</span><span class="block text-slate-500">Riya Patel, S3-A</span></span>
+          </button>
+        </div>
+
+        <div class="my-5 flex items-center gap-3 text-xs text-slate-400">
+          <span class="h-px flex-1 bg-slate-200"></span>or sign in with email<span class="h-px flex-1 bg-slate-200"></span>
+        </div>
+
+        <form id="login-form" class="grid gap-3" novalidate>
+          <div>
+            <label class="label" for="email">Email</label>
+            <input class="input" id="email" type="email" autocomplete="username" required />
+          </div>
+          <div>
+            <label class="label" for="password">Password</label>
+            <input class="input" id="password" type="password" autocomplete="current-password" required />
+          </div>
+          <p id="login-error" class="hidden rounded-lg bg-red-50 px-3 py-2 text-sm text-red-800" role="alert"></p>
+          <button type="submit" class="btn-primary">Sign in</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

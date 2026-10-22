@@ -1,0 +1,8 @@
+{
+  "kind": "faculty_leave",
+  "target_id": 1,
+  "start_date": "2026-10-29",
+  "end_date": "2026-10-29",
+  "periods": null,
+  "reason": "Attending a conference"
+}
