@@ -233,7 +233,7 @@ function optionCard(p, opt) {
       ${
         opt.warnings.length
           ? `<ul class="mt-3 space-y-1">${opt.warnings
-              .map((w) => `<li class="rounded-md bg-yellow-50 px-2 py-1 text-sm text-yellow-800"><span aria-hidden="true">⚠</span> ${escapeHtml(w)}</li>`)
+              .map((w) => `<li class="rounded-md bg-orange-50 px-2 py-1 text-sm text-orange-800"><span aria-hidden="true">⚠</span> ${escapeHtml(w)}</li>`)
               .join('')}</ul>`
           : ''
       }

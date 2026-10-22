@@ -36,12 +36,12 @@ export function addDays(isoDate, days) {
 /**
  * How to show a timetable entry, based on its status (CONTRACT.md section 3.2).
  * Returns Tailwind classes for the card and a short badge text.
- * Every class is a soft coloured chip, like the calendar in the design. A normal class is lavender.
+ * A changed class is a soft coloured chip, like the calendar in the design. A normal class is white.
  */
 export function statusInfo(entry) {
   switch (entry.status) {
     case 'pending':
-      return { card: 'border-yellow-200 bg-yellow-50 text-yellow-950', badge: 'New time coming', badgeClass: 'bg-yellow-200 text-yellow-900', strike: false };
+      return { card: 'border-blue-200 bg-blue-50 text-blue-950', badge: 'New time coming', badgeClass: 'bg-blue-200 text-blue-900', strike: false };
     case 'cancelled':
       return { card: 'border-red-200 bg-red-50 text-red-950', badge: 'Cancelled', badgeClass: 'bg-red-200 text-red-900', strike: true };
     case 'moved_away':
@@ -66,7 +66,7 @@ export function statusInfo(entry) {
         strike: false,
       };
     default: // "scheduled"
-      return { card: 'border-blue-100 bg-blue-50 text-blue-950', badge: '', badgeClass: '', strike: false };
+      return { card: 'border-slate-200 bg-white text-slate-800 shadow-sm', badge: '', badgeClass: '', strike: false };
   }
 }
 

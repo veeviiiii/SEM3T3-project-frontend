@@ -129,7 +129,7 @@ function renderResult(r) {
       <li class="lift rounded-xl border border-slate-200/70 bg-white p-3">
         <p class="font-medium">${escapeHtml(step.label)}</p>
         <p class="mt-1 text-sm text-slate-600">${step.affected.length
-          ? step.affected.map((e) => `<span class="mr-1 mt-1 inline-block rounded bg-yellow-100 px-2 py-0.5 text-xs text-yellow-900">${classLine(e)}</span>`).join('')
+          ? step.affected.map((e) => `<span class="mr-1 mt-1 inline-block rounded bg-blue-100 px-2 py-0.5 text-xs text-blue-900">${classLine(e)}</span>`).join('')
           : 'No classes hit by this change.'}</p>
       </li>`)
     .join('');
@@ -140,7 +140,7 @@ function renderResult(r) {
         <td class="py-2 pr-3">${escapeHtml(item.original.subject.name)} <span class="text-slate-500">· ${escapeHtml(item.original.batch.code)}</span></td>
         <td class="py-2 pr-3">${escapeHtml(formatDate(item.original.date))} ${item.original.start}</td>
         <td class="py-2 pr-3">${o
-          ? `<span class="font-medium text-green-700">${escapeHtml(formatDate(o.date))} ${o.start}, ${escapeHtml(o.space.code)}</span>${o.warnings.length ? ` <span class="text-xs text-yellow-700">(${escapeHtml(o.warnings.join(', '))})</span>` : ''}`
+          ? `<span class="font-medium text-green-700">${escapeHtml(formatDate(o.date))} ${o.start}, ${escapeHtml(o.space.code)}</span>${o.warnings.length ? ` <span class="text-xs text-orange-700">(${escapeHtml(o.warnings.join(', '))})</span>` : ''}`
           : '<span class="font-medium text-red-700">No free slot: the HOD decides</span>'}</td>
         <td class="py-2 text-right">${o ? o.score : '-'}</td>
       </tr>`;
@@ -149,9 +149,9 @@ function renderResult(r) {
 
   $('#result').innerHTML = `
     <div class="grid grid-cols-2 gap-3 md:grid-cols-4">
-      ${card('Classes hit', s.classes_affected, 'bg-card-blue')}
+      ${card('Classes hit', s.classes_affected, 'bg-card-orange')}
       ${card('Can be moved', s.classes_placed, 'bg-card-green')}
-      ${card('Need the HOD', s.classes_unplaced, s.classes_unplaced ? 'bg-card-red' : 'bg-card-yellow')}
+      ${card('Need the HOD', s.classes_unplaced, s.classes_unplaced ? 'bg-card-red' : 'bg-card-blue')}
       ${card('Worked out in', `${r.runtime_ms} ms`)}
     </div>
     <h2 class="mb-2 mt-5 font-medium text-slate-900">Step by step</h2>

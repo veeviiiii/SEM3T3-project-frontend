@@ -33,10 +33,10 @@ import {
 } from '../lib/ui.js';
 
 // The four number cards: label, field of getAnalyticsSummary(), and card colour (full class names for Tailwind).
-// The same meaning everywhere: blue = as planned, yellow = waiting, green = moved, red = cancelled.
+// The same meaning everywhere: blue = waiting, green = moved, red = cancelled. The total is orange.
 const STATS = [
-  { label: 'Classes this week', field: 'classes_total', colour: 'bg-card-blue' },
-  { label: 'Waiting for you', field: 'pending_approvals', colour: 'bg-card-yellow' },
+  { label: 'Classes this week', field: 'classes_total', colour: 'bg-card-orange' },
+  { label: 'Waiting for you', field: 'pending_approvals', colour: 'bg-card-blue' },
   { label: 'Moved', field: 'moved', colour: 'bg-card-green' },
   { label: 'Cancelled', field: 'cancelled', colour: 'bg-card-red' },
 ];
@@ -44,7 +44,7 @@ const STATS = [
 // The ring chart: one piece per kind of change. `colour` is for the SVG drawing (the same pastels as the
 // cards, see styles.css), `text` for the percentage.
 const RING = [
-  { label: 'Waiting for a new time', field: 'pending', colour: '#ffd367', text: 'text-yellow-700' },
+  { label: 'Waiting for a new time', field: 'pending', colour: '#cce0ff', text: 'text-blue-700' },
   { label: 'Moved', field: 'moved', colour: '#b7ebc6', text: 'text-green-700' },
   { label: 'Cancelled', field: 'cancelled', colour: '#fca5a5', text: 'text-red-600' },
 ];
@@ -135,7 +135,7 @@ function drawStats(summary) {
         <span>This week</span>
         <span class="rounded-full bg-white px-2 py-0.5 font-medium text-slate-800">${escapeHtml(pills[s.field])}</span>
       </div>`;
-    // "Waiting for you" is the yellow one and opens the Approvals page.
+    // "Waiting for you" is the blue one and opens the Approvals page.
     return s.field === 'pending_approvals'
       ? `<a href="/approvals.html" class="lift flex min-h-36 animate-fade-up flex-col rounded-xl ${s.colour} p-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400" ${delay}>${inside}</a>`
       : `<div class="lift flex min-h-36 animate-fade-up flex-col rounded-xl ${s.colour} p-4" ${delay}>${inside}</div>`;
@@ -282,8 +282,8 @@ async function loadWaiting() {
             </div>
           </td>
           <td class="hidden px-3 py-3 md:table-cell">
-            <span class="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full bg-yellow-50 px-2 py-0.5 text-xs font-medium text-yellow-700">
-              <span class="h-1.5 w-1.5 rounded-full bg-yellow-500" aria-hidden="true"></span>Waiting
+            <span class="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full bg-blue-50 px-2 py-0.5 text-xs font-medium text-blue-700">
+              <span class="h-1.5 w-1.5 rounded-full bg-blue-400" aria-hidden="true"></span>Waiting
             </span>
           </td>
           <td class="hidden px-3 py-3 sm:table-cell">

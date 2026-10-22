@@ -38,13 +38,12 @@
 /* The design's colours, fonts and animations. Use them like any Tailwind class:
    bg-card-blue, font-display, animate-fade-up...
 
-   The app uses five pastel colours only, each with one meaning:
-     blue   = normal / as planned, and anything selected
-     yellow = waiting for a decision
+   The app uses four pastel colours only, each with one meaning:
+     blue   = waiting for a decision, and anything selected
      green  = moved, free, done
      red    = cancelled, closed, errors
-     orange = room changed, warnings, labs, avatars
-   Greys are for text, lines and backgrounds. */
+     orange = room changed, warnings, labs, totals, avatars
+   Greys are for text, lines, backgrounds and normal (unchanged) classes. */
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-display: "Space Grotesk", "Inter", ui-sans-serif, system-ui, sans-serif; /* headings and big numbers */
@@ -64,19 +63,13 @@
   --color-emerald-*: initial;
   --color-lime-*: initial;
   --color-amber-*: initial;
-
-  /* Tailwind's palest yellows are lemony; these match the design's warm yellow. */
-  --color-yellow-50: #fffaeb;
-  --color-yellow-100: #fff3cf;
-  --color-yellow-200: #ffe7a3;
-  --color-yellow-300: #ffd367;
+  --color-yellow-*: initial;
 
   --color-canvas: #f5f6fa; /* page background behind the white cards */
   --color-nav: #cce0ff; /* the selected menu item */
   --color-brand: #b9d4ff; /* main buttons */
   --color-brand-strong: #a3c5ff; /* main buttons on hover */
   --color-ink: #0f172a; /* dark text that stays dark in both modes, for the main buttons */
-  --color-card-yellow: #ffd367;
   --color-card-blue: #cce0ff;
   --color-card-red: #fca5a5;
   --color-card-green: #b7ebc6;
@@ -137,16 +130,15 @@
 /* Dark mode. Every Tailwind colour is a CSS variable, so giving the variables darker values here
    re-colours every page at once, with the same class names:
    - the greys flip: white cards become dark, dark text becomes light;
-   - the soft colour tints (bg-yellow-50...) become deep tints, and their text (text-yellow-900...) becomes light;
-   - the pastel cards become deep versions of the same five colours. */
+   - the soft colour tints (bg-blue-50...) become deep tints, and their text (text-blue-900...) becomes light;
+   - the pastel cards become deep versions of the same four colours. */
 .dark {
-  color-scheme: dark; /* dark date pickers and scrollbars */
+  color-scheme: dark; /* dark date pickers and scrollbars, and the browser leaves our own dark colours alone */
   --color-white: #161a24;
   --color-canvas: #0d1017;
   --color-nav: #26314d;
   --color-brand: #a9c8ff;
   --color-brand-strong: #c4daff;
-  --color-card-yellow: #3b3220;
   --color-card-blue: #1f2c47;
   --color-card-red: #432325;
   --color-card-green: #1c3a2a;
@@ -196,18 +188,6 @@
   --color-orange-800: oklch(86% 0.09 50);
   --color-orange-900: oklch(90% 0.065 50);
   --color-orange-950: oklch(94% 0.04 50);
-  /* yellow */
-  --color-yellow-50: oklch(25% 0.036 88);
-  --color-yellow-100: oklch(29% 0.05 88);
-  --color-yellow-200: oklch(35% 0.068 88);
-  --color-yellow-300: oklch(45% 0.09 88);
-  --color-yellow-400: oklch(58% 0.126 88);
-  --color-yellow-500: oklch(66% 0.144 88);
-  --color-yellow-600: oklch(74% 0.135 88);
-  --color-yellow-700: oklch(80% 0.108 88);
-  --color-yellow-800: oklch(86% 0.081 88);
-  --color-yellow-900: oklch(90% 0.059 88);
-  --color-yellow-950: oklch(94% 0.036 88);
   /* green */
   --color-green-50: oklch(25% 0.04 150);
   --color-green-100: oklch(29% 0.055 150);
@@ -277,9 +257,11 @@
 }
 
 @layer base {
-  /* Soft blue for every focus ring, tick box and radio button, and yellow for selected text,
-     instead of the browser's bright blue. */
   :root {
+    /* The app has its own dark mode, so tell the browser not to darken the light one by itself
+       (Brave's Night mode and Chrome's auto dark mode do that otherwise). .dark sets color-scheme: dark. */
+    color-scheme: only light;
+    /* Soft blue for every focus ring, tick box, radio button and selected text, instead of the browser's bright blue. */
     accent-color: var(--color-blue-400);
     -webkit-tap-highlight-color: transparent;
   }
@@ -288,7 +270,7 @@
     outline-offset: 2px;
   }
   ::selection {
-    background-color: color-mix(in oklab, #ffd367 60%, transparent);
+    background-color: var(--color-blue-200);
   }
 
   /* Headings use Space Grotesk everywhere. */

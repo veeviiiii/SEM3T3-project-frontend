@@ -98,7 +98,7 @@ export function renderHeader(user) {
       </div>
       <nav class="flex-1 space-y-1 overflow-y-auto px-3 py-2">${NAV[user.role].map(navLink).join('')}</nav>
       <div class="p-3">
-        <div class="rounded-2xl bg-card-yellow p-4 text-center">
+        <div class="rounded-2xl bg-card-blue p-4 text-center">
           <span class="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-white text-sm font-semibold text-slate-800">${escapeHtml(initials(user.name))}</span>
           <p class="mt-2 truncate text-sm font-semibold text-slate-900">${escapeHtml(user.name)}</p>
           <p class="text-xs text-slate-700">${ROLE_NAME[user.role] || ''}</p>
