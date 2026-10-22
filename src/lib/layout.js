@@ -91,8 +91,9 @@ export function renderHeader(user) {
     <div id="sidebar-backdrop" class="fixed inset-0 z-40 hidden animate-fade-in bg-black/40 backdrop-blur-[2px] lg:hidden"></div>
     <aside id="sidebar" class="invisible fixed inset-y-0 left-0 z-50 flex w-64 -translate-x-full flex-col border-r border-slate-200 bg-white transition-transform duration-300 ease-out motion-reduce:transition-none lg:visible lg:translate-x-0" aria-label="Main menu">
       <div class="flex h-16 shrink-0 items-center justify-between gap-2 px-5">
-        <a href="${homeFor(user.role)}" class="group flex items-center gap-2 font-pixel text-[11px] tracking-wide text-slate-900">
-          <span class="transition-transform duration-500 group-hover:rotate-180">${logoMark()}</span> SMART SCHEDULING
+        <a href="${homeFor(user.role)}" class="group flex items-center gap-2 font-display text-[17px] font-bold tracking-tight text-slate-900">
+          <span class="transition-transform duration-500 group-hover:rotate-180">${logoMark()}</span>
+          <span class="animate-logo-glow">Smart Scheduling</span>
         </a>
         <button type="button" id="close-menu" class="rounded-md p-1 text-slate-500 hover:bg-slate-100 lg:hidden" aria-label="Close menu">${icon('panel')}</button>
       </div>
