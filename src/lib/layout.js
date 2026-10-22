@@ -76,7 +76,7 @@ function navLink([href, label, iconName]) {
   const active = window.location.pathname === href;
   return `<a href="${href}" class="flex items-center gap-3 rounded-lg px-3 py-2 text-sm transition duration-200 ${
     active
-      ? 'bg-nav font-medium text-slate-900 dark:shadow-[0_0_20px_-6px_rgb(120_150_255/0.45)]'
+      ? 'bg-nav font-medium text-slate-900'
       : 'text-slate-600 hover:translate-x-1 hover:bg-blue-50 hover:text-slate-900'
   }" ${active ? 'aria-current="page"' : ''}>${icon(iconName)}${label}</a>`;
 }
@@ -126,7 +126,7 @@ export function renderHeader(user) {
       </button>
       <button type="button" id="bell" class="group relative flex h-10 w-10 items-center justify-center rounded-full bg-white text-slate-700 shadow-sm transition hover:-translate-y-px hover:text-slate-900 hover:shadow-md" aria-label="Notifications" aria-expanded="false" aria-controls="notif-panel">
         <span class="origin-top group-hover:animate-bell-ring">${icon('bell', 'h-5 w-5')}</span>
-        <span id="bell-count" class="absolute -right-1 -top-1 hidden min-w-5 animate-badge-pop rounded-full bg-red-300 px-1 text-center text-xs font-bold leading-5 text-red-950 shadow-[0_0_10px_var(--color-red-300)]"></span>
+        <span id="bell-count" class="absolute -right-1 -top-1 hidden min-w-5 animate-badge-pop rounded-full bg-red-300 px-1 text-center text-xs font-bold leading-5 text-red-950 shadow-[0_0_10px_var(--color-red-300)] dark:shadow-none"></span>
       </button>
       <section id="notif-panel" class="absolute left-4 right-4 top-full z-40 mt-1 hidden origin-top-right animate-pop-in rounded-xl border border-slate-200 bg-white shadow-lg sm:left-auto sm:right-6 sm:w-96" aria-label="Notifications">
         <div class="flex items-center justify-between gap-2 border-b border-slate-200 px-4 py-3">
@@ -359,7 +359,7 @@ function setupNotifications(user) {
               (n) => `
             <li>
               <button type="button" class="flex w-full gap-3 rounded-lg px-2 py-3 text-left transition hover:translate-x-0.5 hover:bg-blue-50 focus-visible:bg-blue-50 focus-visible:-outline-offset-2 disabled:opacity-50">
-                <span class="mt-1.5 h-2 w-2 shrink-0 rounded-full ${n.read ? '' : 'bg-blue-400 shadow-[0_0_8px_var(--color-blue-300)]'}" aria-hidden="true"></span>
+                <span class="mt-1.5 h-2 w-2 shrink-0 rounded-full ${n.read ? '' : 'bg-blue-400 shadow-[0_0_8px_var(--color-blue-300)] dark:shadow-none'}" aria-hidden="true"></span>
                 <span class="min-w-0 flex-1">
                   ${n.read ? '' : '<span class="sr-only">Unread: </span>'}
                   <span class="block text-sm ${n.read ? 'text-slate-700' : 'font-bold text-slate-900'}">${escapeHtml(n.title)}</span>

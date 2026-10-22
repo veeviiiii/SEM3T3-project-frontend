@@ -14,9 +14,9 @@ const SHADES = [
   'bg-heat-4 text-heat-ink',
   'bg-heat-5 text-heat-ink',
 ];
-// The app's pastels, with the same meaning as on the dashboard: moved = green, cancelled = red.
-// Rooms are blue and labs are orange.
-const COLOURS = { moved: '#b7ebc6', cancelled: '#fca5a5', rooms: '#cce0ff', labs: '#ffc896' };
+// The app's chart colours, with the same meaning as on the dashboard: moved = green, cancelled = red.
+// Rooms are blue and labs are orange. They are CSS variables (styles.css), so dark mode gets softer ones.
+const COLOURS = { moved: '--chart-green', cancelled: '--chart-red', rooms: '--chart-blue', labs: '--chart-orange' };
 
 const user = requireLogin(['hod']);
 if (user) {
@@ -50,7 +50,7 @@ async function loadTrends() {
 /** A small colour key, like the one under the ring chart in the design. */
 const key = (items) => `
   <ul class="flex flex-wrap gap-x-3 gap-y-1 text-xs text-slate-600">${items
-    .map(([label, colour]) => `<li class="flex items-center gap-1.5"><span class="h-2.5 w-2.5 rounded-[3px]" style="background: ${colour}" aria-hidden="true"></span>${label}</li>`)
+    .map(([label, colour]) => `<li class="flex items-center gap-1.5"><span class="h-2.5 w-2.5 rounded-[3px]" style="background: var(${colour})" aria-hidden="true"></span>${label}</li>`)
     .join('')}</ul>`;
 
 function drawTrends(box) {
@@ -89,11 +89,14 @@ function drawTrends(box) {
   drawByFaculty($('#by-faculty'), trends.by_faculty);
 }
 
-/** Axis text and grid lines: grey on white in light mode, lighter grey on dark in dark mode. */
+/** Axis text and grid lines: grey on white in light mode, lighter grey on charcoal in dark mode. */
 function axisColours() {
   const dark = document.documentElement.classList.contains('dark');
-  return { text: dark ? '#9199ac' : '#64748b', grid: dark ? '#2d3445' : '#eef0f4' };
+  return { text: dark ? '#999999' : '#64748b', grid: dark ? '#2e2e2e' : '#eef0f4' };
 }
+
+/** The current value of one of the COLOURS variables, e.g. "#b7ebc6" (Chart.js needs a real colour). */
+const colour = (name) => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
 
 /** The two Chart.js charts. Called again when light / dark mode is switched. */
 function drawCharts() {
@@ -112,8 +115,8 @@ function drawCharts() {
       data: {
         labels: trends.weeks.map((w) => formatDate(w.week_start)),
         datasets: [
-          { label: 'Moved', data: trends.weeks.map((w) => w.moved), backgroundColor: COLOURS.moved, ...bar },
-          { label: 'Cancelled', data: trends.weeks.map((w) => w.cancelled), backgroundColor: COLOURS.cancelled, ...bar },
+          { label: 'Moved', data: trends.weeks.map((w) => w.moved), backgroundColor: colour(COLOURS.moved), ...bar },
+          { label: 'Cancelled', data: trends.weeks.map((w) => w.cancelled), backgroundColor: colour(COLOURS.cancelled), ...bar },
         ],
       },
       options: {
@@ -132,7 +135,7 @@ function drawCharts() {
           {
             label: 'Used',
             data: trends.room_utilisation.map((r) => r.pct),
-            backgroundColor: trends.room_utilisation.map((r) => (r.space.kind === 'lab' ? COLOURS.labs : COLOURS.rooms)),
+            backgroundColor: trends.room_utilisation.map((r) => colour(r.space.kind === 'lab' ? COLOURS.labs : COLOURS.rooms)),
             ...bar,
           },
         ],

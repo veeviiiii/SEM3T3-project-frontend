@@ -127,91 +127,104 @@
   }
 }
 
-/* Dark mode. Every Tailwind colour is a CSS variable, so giving the variables darker values here
-   re-colours every page at once, with the same class names:
-   - the greys flip: white cards become dark, dark text becomes light;
-   - the soft colour tints (bg-blue-50...) become deep tints, and their text (text-blue-900...) becomes light;
-   - the pastel cards become deep versions of the same four colours. */
+/* Dark mode, in the calm style of Notion and Obsidian: neutral charcoal greys (no blue tint),
+   flat panels with thin borders instead of glows, and soft, muted colours.
+   Every Tailwind colour is a CSS variable, so giving the variables dark values here re-colours every
+   page at once, with the same class names:
+   - the greys flip: white cards become charcoal panels, dark text becomes light;
+   - the soft colour tints (bg-blue-50...) become quiet tints, and their text (text-blue-900...) becomes light;
+   - the pastel cards become gently tinted panels of the same four colours. */
 .dark {
   color-scheme: dark; /* dark date pickers and scrollbars, and the browser leaves our own dark colours alone */
-  --color-white: #161a24;
-  --color-canvas: #0d1017;
-  --color-nav: #26314d;
-  --color-brand: #a9c8ff;
-  --color-brand-strong: #c4daff;
-  --color-card-blue: #1f2c47;
-  --color-card-red: #432325;
-  --color-card-green: #1c3a2a;
-  --color-card-orange: #42301e;
-  --color-heat-0: #1c212d;
-  --color-heat-1: #1c2740;
-  --color-heat-2: #213258;
-  --color-heat-3: #2a4275;
-  --color-heat-4: #3a568f;
-  --color-heat-5: #4566a8;
-  --color-heat-ink: #e3ecff;
+  --color-white: #202020; /* cards, the menu, inputs */
+  --color-canvas: #191919; /* the page behind them */
+  --color-nav: #2c2c2c; /* the selected menu item: a quiet grey, like Notion's sidebar */
+  --color-ink: #f5f5f5; /* text on the main buttons */
+  --color-brand: #33618f; /* main buttons: a muted blue with light text */
+  --color-brand-strong: #3b6fa3;
+  --color-card-blue: #1e2a38;
+  --color-card-red: #332222;
+  --color-card-green: #1e2e25;
+  --color-card-orange: #33281d;
+  --color-heat-0: #242424;
+  --color-heat-1: #1f2833;
+  --color-heat-2: #233247;
+  --color-heat-3: #2a3f5c;
+  --color-heat-4: #345075;
+  --color-heat-5: #3f6190;
+  --color-heat-ink: #e6eefb;
+  /* Charts and the ring: softer mid-tones that sit well on charcoal */
+  --chart-blue: #6f94c4;
+  --chart-green: #6aa982;
+  --chart-red: #cf7a76;
+  --chart-orange: #cc9362;
 
-  --color-slate-50: #1c212d;
-  --color-slate-100: #232937;
-  --color-slate-200: #2d3445;
-  --color-slate-300: #3d4558;
-  --color-slate-400: #6c7488;
-  --color-slate-500: #9199ac;
-  --color-slate-600: #a9b0c0;
-  --color-slate-700: #c3c9d5;
-  --color-slate-800: #dbe0e8;
-  --color-slate-900: #eef1f6;
-  --color-slate-950: #f8fafc;
+  --color-slate-50: #262626;
+  --color-slate-100: #2b2b2b;
+  --color-slate-200: #333333;
+  --color-slate-300: #434343;
+  --color-slate-400: #6e6e6e;
+  --color-slate-500: #999999;
+  --color-slate-600: #ababab;
+  --color-slate-700: #c5c5c5;
+  --color-slate-800: #d9d9d9;
+  --color-slate-900: #ececec;
+  --color-slate-950: #f7f7f7;
 
-  /* Each colour, light tint (50) to dark text (950), turned round for a dark background. */
+  /* Each colour, light tint (50) to dark text (950), turned round and toned down for a dark background. */
   /* red */
-  --color-red-50: oklch(25% 0.04 25);
-  --color-red-100: oklch(29% 0.055 25);
-  --color-red-200: oklch(35% 0.075 25);
-  --color-red-300: oklch(45% 0.1 25);
-  --color-red-400: oklch(58% 0.14 25);
-  --color-red-500: oklch(66% 0.16 25);
-  --color-red-600: oklch(74% 0.15 25);
-  --color-red-700: oklch(80% 0.12 25);
-  --color-red-800: oklch(86% 0.09 25);
-  --color-red-900: oklch(90% 0.065 25);
-  --color-red-950: oklch(94% 0.04 25);
+  --color-red-50: oklch(27% 0.025 25);
+  --color-red-100: oklch(30% 0.032 25);
+  --color-red-200: oklch(36% 0.045 25);
+  --color-red-300: oklch(45% 0.065 25);
+  --color-red-400: oklch(58% 0.085 25);
+  --color-red-500: oklch(66% 0.095 25);
+  --color-red-600: oklch(73% 0.09 25);
+  --color-red-700: oklch(79% 0.08 25);
+  --color-red-800: oklch(85% 0.06 25);
+  --color-red-900: oklch(89% 0.045 25);
+  --color-red-950: oklch(93% 0.03 25);
   /* orange */
-  --color-orange-50: oklch(25% 0.04 50);
-  --color-orange-100: oklch(29% 0.055 50);
-  --color-orange-200: oklch(35% 0.075 50);
-  --color-orange-300: oklch(45% 0.1 50);
-  --color-orange-400: oklch(58% 0.14 50);
-  --color-orange-500: oklch(66% 0.16 50);
-  --color-orange-600: oklch(74% 0.15 50);
-  --color-orange-700: oklch(80% 0.12 50);
-  --color-orange-800: oklch(86% 0.09 50);
-  --color-orange-900: oklch(90% 0.065 50);
-  --color-orange-950: oklch(94% 0.04 50);
+  --color-orange-50: oklch(27% 0.025 55);
+  --color-orange-100: oklch(30% 0.032 55);
+  --color-orange-200: oklch(36% 0.045 55);
+  --color-orange-300: oklch(45% 0.065 55);
+  --color-orange-400: oklch(58% 0.085 55);
+  --color-orange-500: oklch(66% 0.095 55);
+  --color-orange-600: oklch(73% 0.09 55);
+  --color-orange-700: oklch(79% 0.08 55);
+  --color-orange-800: oklch(85% 0.06 55);
+  --color-orange-900: oklch(89% 0.045 55);
+  --color-orange-950: oklch(93% 0.03 55);
   /* green */
-  --color-green-50: oklch(25% 0.04 150);
-  --color-green-100: oklch(29% 0.055 150);
-  --color-green-200: oklch(35% 0.075 150);
-  --color-green-300: oklch(45% 0.1 150);
-  --color-green-400: oklch(58% 0.14 150);
-  --color-green-500: oklch(66% 0.16 150);
-  --color-green-600: oklch(74% 0.15 150);
-  --color-green-700: oklch(80% 0.12 150);
-  --color-green-800: oklch(86% 0.09 150);
-  --color-green-900: oklch(90% 0.065 150);
-  --color-green-950: oklch(94% 0.04 150);
+  --color-green-50: oklch(27% 0.025 155);
+  --color-green-100: oklch(30% 0.032 155);
+  --color-green-200: oklch(36% 0.045 155);
+  --color-green-300: oklch(45% 0.065 155);
+  --color-green-400: oklch(58% 0.085 155);
+  --color-green-500: oklch(66% 0.095 155);
+  --color-green-600: oklch(73% 0.09 155);
+  --color-green-700: oklch(79% 0.08 155);
+  --color-green-800: oklch(85% 0.06 155);
+  --color-green-900: oklch(89% 0.045 155);
+  --color-green-950: oklch(93% 0.03 155);
   /* blue */
-  --color-blue-50: oklch(25% 0.04 260);
-  --color-blue-100: oklch(29% 0.055 260);
-  --color-blue-200: oklch(35% 0.075 260);
-  --color-blue-300: oklch(45% 0.1 260);
-  --color-blue-400: oklch(58% 0.14 260);
-  --color-blue-500: oklch(66% 0.16 260);
-  --color-blue-600: oklch(74% 0.15 260);
-  --color-blue-700: oklch(80% 0.12 260);
-  --color-blue-800: oklch(86% 0.09 260);
-  --color-blue-900: oklch(90% 0.065 260);
-  --color-blue-950: oklch(94% 0.04 260);
+  --color-blue-50: oklch(27% 0.025 250);
+  --color-blue-100: oklch(30% 0.032 250);
+  --color-blue-200: oklch(36% 0.045 250);
+  --color-blue-300: oklch(45% 0.065 250);
+  --color-blue-400: oklch(58% 0.085 250);
+  --color-blue-500: oklch(66% 0.095 250);
+  --color-blue-600: oklch(73% 0.09 250);
+  --color-blue-700: oklch(79% 0.08 250);
+  --color-blue-800: oklch(85% 0.06 250);
+  --color-blue-900: oklch(89% 0.045 250);
+  --color-blue-950: oklch(93% 0.03 250);
+}
+
+/* Dark mode: pop-up forms get a thin edge, because shadows hardly show on charcoal. */
+.dark dialog {
+  box-shadow: 0 0 0 1px var(--color-slate-200), 0 24px 60px -16px rgb(0 0 0 / 0.8);
 }
 
 /* While switching between light and dark, the colours fade instead of jumping. */
@@ -264,6 +277,11 @@
     /* Soft blue for every focus ring, tick box, radio button and selected text, instead of the browser's bright blue. */
     accent-color: var(--color-blue-400);
     -webkit-tap-highlight-color: transparent;
+    /* Charts and the dashboard ring (dark mode has softer versions, see .dark) */
+    --chart-blue: #cce0ff;
+    --chart-green: #b7ebc6;
+    --chart-red: #fca5a5;
+    --chart-orange: #ffc896;
   }
   :focus-visible {
     outline: 2px solid var(--color-blue-400);
@@ -366,12 +384,18 @@
     translate: 0 -3px;
     box-shadow: 0 16px 32px -18px rgb(15 23 42 / 0.4);
   }
+  /* Dark mode stays flat, like Notion: no glows, just a slightly brighter border or a soft dark shadow. */
   .dark .card:hover {
-    border-color: rgb(169 200 255 / 0.18);
-    box-shadow: 0 0 0 1px rgb(169 200 255 / 0.06), 0 14px 36px -18px rgb(169 200 255 / 0.22);
+    border-color: var(--color-slate-300);
+    box-shadow: none;
   }
   .dark .lift:hover {
-    box-shadow: 0 0 0 1px rgb(169 200 255 / 0.2), 0 16px 36px -14px rgb(169 200 255 / 0.3);
+    box-shadow: 0 0 0 1px rgb(255 255 255 / 0.06), 0 12px 28px -16px rgb(0 0 0 / 0.8);
+  }
+  .dark .btn-primary:not(:disabled):hover,
+  .dark .btn-secondary:not(:disabled):hover,
+  .dark .btn-danger:not(:disabled):hover {
+    box-shadow: none;
   }
 
   .input {

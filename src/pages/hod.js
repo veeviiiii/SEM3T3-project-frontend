@@ -41,12 +41,12 @@ const STATS = [
   { label: 'Cancelled', field: 'cancelled', colour: 'bg-card-red' },
 ];
 
-// The ring chart: one piece per kind of change. `colour` is for the SVG drawing (the same pastels as the
-// cards, see styles.css), `text` for the percentage.
+// The ring chart: one piece per kind of change. `colour` is for the SVG drawing (a CSS variable from
+// styles.css, so it changes with light / dark mode), `text` for the percentage.
 const RING = [
-  { label: 'Waiting for a new time', field: 'pending', colour: '#cce0ff', text: 'text-blue-700' },
-  { label: 'Moved', field: 'moved', colour: '#b7ebc6', text: 'text-green-700' },
-  { label: 'Cancelled', field: 'cancelled', colour: '#fca5a5', text: 'text-red-600' },
+  { label: 'Waiting for a new time', field: 'pending', colour: 'var(--chart-blue)', text: 'text-blue-700' },
+  { label: 'Moved', field: 'moved', colour: 'var(--chart-green)', text: 'text-green-700' },
+  { label: 'Cancelled', field: 'cancelled', colour: 'var(--chart-red)', text: 'text-red-600' },
 ];
 
 // The "What" choices in the form: the word above the second dropdown.
@@ -179,7 +179,7 @@ function drawRing(summary) {
     .map((p, i) => {
       const length = (p.value / total) * around;
       // .ring-piece (styles.css) draws each piece in, one after the other.
-      const piece = `<circle class="ring-piece" style="animation-delay: ${i * 150}ms" cx="90" cy="90" r="${radius}" fill="none" stroke="${p.colour}" stroke-width="26"
+      const piece = `<circle class="ring-piece" style="stroke: ${p.colour}; animation-delay: ${i * 150}ms" cx="90" cy="90" r="${radius}" fill="none" stroke-width="26"
         stroke-dasharray="${Math.max(length - gap, 1)} ${around}" stroke-dashoffset="${-start}" />`;
       start += length;
       return piece;

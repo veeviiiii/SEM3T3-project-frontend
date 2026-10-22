@@ -148,7 +148,7 @@ function renderDetail(p) {
   const planned = `
     <div class="card flex flex-wrap items-start gap-4 p-4">
       <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-card-orange text-sm font-semibold text-slate-800" aria-hidden="true">${escapeHtml(initials(o.subject.name))}</span>
-      <div class="min-w-0 flex-1">
+      <div class="min-w-0 flex-1 basis-48">
         <p class="text-xs font-medium text-slate-500">The class as planned</p>
         <h2 class="text-lg font-semibold text-slate-900">${escapeHtml(o.subject.name)}</h2>
         <p class="text-sm text-slate-600">
@@ -205,7 +205,7 @@ function optionCard(p, opt) {
   const score = Math.max(0, Math.min(100, Number(opt.score) || 0));
   const where = `${formatDate(opt.date)} ${opt.start}, ${opt.space.code}`;
   return `
-    <li class="option-card lift flex flex-col rounded-xl border bg-white p-4 ${recommended ? 'border-blue-300 shadow-[0_0_28px_-10px_var(--color-brand)] ring-2 ring-card-blue dark:ring-brand/50' : 'border-slate-200/70'}">
+    <li class="option-card lift flex flex-col rounded-xl border bg-white p-4 ${recommended ? 'border-blue-300 shadow-[0_0_28px_-10px_var(--color-brand)] ring-2 ring-card-blue dark:shadow-none dark:ring-brand/70' : 'border-slate-200/70'}">
       <div class="flex flex-wrap items-start justify-between gap-2">
         <div>
           <p class="font-medium text-slate-900">${escapeHtml(formatDate(opt.date))} · ${escapeHtml(opt.start)}-${escapeHtml(opt.end)}</p>
@@ -216,7 +216,7 @@ function optionCard(p, opt) {
 
       <div class="mt-3 flex items-center gap-3">
         <div class="h-2 flex-1 rounded-full bg-slate-100" aria-hidden="true">
-          <div class="h-2 origin-left animate-grow-x rounded-full ${recommended ? 'bg-brand-strong shadow-[0_0_10px_var(--color-brand)]' : 'bg-slate-400'}" style="width: ${score}%"></div>
+          <div class="h-2 origin-left animate-grow-x rounded-full ${recommended ? 'bg-brand-strong shadow-[0_0_10px_var(--color-brand)] dark:shadow-none' : 'bg-slate-400'}" style="width: ${score}%"></div>
         </div>
         <span class="text-sm font-medium text-slate-700">Score ${score}<span class="font-normal text-slate-500"> / 100</span></span>
       </div>
