@@ -292,13 +292,16 @@
 ::view-transition-group(topbar) {
   animation-duration: 0.24s;
 }
-/* The highlight behind the current menu item glides from the old page's item to the new one. */
-.nav-pill {
-  view-transition-name: nav-pill;
-}
-::view-transition-group(nav-pill) {
-  animation-duration: 0.3s;
-  animation-timing-function: cubic-bezier(0.2, 0.7, 0.2, 1);
+/* On wide screens the menu does not fade: the new page's menu shows at once, and motion.js slides its
+   highlight from the item you clicked, behind the words. (Not while switching theme: that fades everything.) */
+@media (min-width: 64rem) {
+  :root:not(.theme-switching)::view-transition-old(sidebar) {
+    animation: none;
+    opacity: 0;
+  }
+  :root:not(.theme-switching)::view-transition-new(sidebar) {
+    animation: none;
+  }
 }
 @keyframes page-out {
   to { opacity: 0; }

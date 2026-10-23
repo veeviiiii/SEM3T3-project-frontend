@@ -12,6 +12,7 @@ export function setupMotion() {
   if (prefersReducedMotion()) return;
   setupReveal();
   setupPills();
+  setupNavPill();
   setupSpotlight();
   setupTilt();
 }
@@ -99,6 +100,45 @@ function setupPills() {
 /** Call after a page picks a tab from code (setting a radio's .checked sends no event), so the pill follows. */
 export function refreshPills() {
   pillMovers.forEach((move) => move());
+}
+
+// ------------------------------------------------------------------ menu highlight between pages
+
+/**
+ * The highlight behind the current menu item (.nav-pill) glides from the item you clicked on the old page.
+ * The old page remembers how high the highlight was; the new page starts it there and slides it home.
+ * It moves inside the menu, behind the words, so the item you clicked never disappears.
+ */
+function setupNavPill() {
+  const KEY = 'nav-pill-from';
+  const pill = document.querySelector('#sidebar .nav-pill');
+  if (!pill) return;
+
+  document.getElementById('sidebar').addEventListener('click', (event) => {
+    const link = event.target instanceof Element ? event.target.closest('a[href]') : null;
+    // A Ctrl/Shift click opens another tab, so this page stays and there is nothing to slide.
+    if (!link || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+    try {
+      sessionStorage.setItem(KEY, String(pill.getBoundingClientRect().top));
+    } catch {
+      // Storage blocked: the next page just shows its highlight without sliding.
+    }
+  });
+
+  let from = null;
+  try {
+    from = sessionStorage.getItem(KEY);
+    sessionStorage.removeItem(KEY);
+  } catch {
+    return;
+  }
+  if (from === null) return;
+  const now = pill.getBoundingClientRect();
+  // Start inside this part of the menu (Settings sits in a separate part at the bottom), so the pill
+  // never slides over the profile card or makes the menu scroll.
+  const area = pill.parentElement.parentElement.getBoundingClientRect();
+  const start = Math.min(Math.max(Number(from), area.top), area.bottom - now.height);
+  if (Number.isFinite(start) && start !== now.top) animate(pill, { y: [start - now.top, 0] }, SPRING);
 }
 
 // ------------------------------------------------------------------ spotlight on cards

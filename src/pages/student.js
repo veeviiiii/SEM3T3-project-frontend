@@ -72,17 +72,24 @@ function renderChanges(changed) {
     renderEmpty($('#changes'), 'Nothing changed this week', 'Every class is on as planned.');
     return;
   }
+  // In date order. Each row reads top to bottom: the day, what happened, which class, and why.
+  changed.sort((a, b) => a.date.localeCompare(b.date) || a.period - b.period);
   $('#changes').innerHTML = `<ul class="grid gap-2 md:grid-cols-2">${changed
     .map((e) => {
       const info = statusInfo(e);
+      const [day, date] = formatDate(e.date).split(' ');
       return `
-        <li class="flex items-start gap-3 rounded-xl border p-3 ${info.card}">
-          <div class="flex-1">
-            <p class="font-semibold">${escapeHtml(e.subject.name)}</p>
-            <p class="text-sm opacity-80">${escapeHtml(formatDate(e.date))}, ${e.start} · ${escapeHtml(e.space.code)} · ${escapeHtml(e.faculty.name)}</p>
-            ${e.reason ? `<p class="mt-1 text-xs opacity-80">${escapeHtml(e.reason)}</p>` : ''}
+        <li class="flex gap-3 rounded-xl border p-3 ${info.card}">
+          <div class="flex w-11 shrink-0 flex-col items-center self-start rounded-lg bg-white/70 py-1.5" aria-hidden="true">
+            <span class="text-[10px] font-medium uppercase tracking-wide opacity-80">${escapeHtml(day)}</span>
+            <span class="text-lg font-semibold leading-tight">${escapeHtml(date)}</span>
           </div>
-          <span class="shrink-0 rounded px-2 py-0.5 text-xs font-semibold ${info.badgeClass}">${escapeHtml(info.badge)}</span>
+          <div class="min-w-0 flex-1">
+            <span class="inline-block rounded px-2 py-0.5 text-xs font-semibold ${info.badgeClass}">${escapeHtml(info.badge)}</span>
+            <p class="mt-1 font-semibold leading-snug">${escapeHtml(e.subject.name)}</p>
+            <p class="text-sm opacity-80"><span class="sr-only">${escapeHtml(formatDate(e.date))}, </span>${escapeHtml(e.start)} · ${escapeHtml(e.space.code)} · ${escapeHtml(e.faculty.name)}</p>
+            ${e.reason ? `<p class="mt-1 text-xs opacity-80">Why: ${escapeHtml(e.reason)}</p>` : ''}
+          </div>
         </li>`;
     })
     .join('')}</ul>`;

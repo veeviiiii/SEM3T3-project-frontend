@@ -77,11 +77,12 @@ export function requireLogin(allowedRoles = ['hod', 'faculty', 'student']) {
 
 /**
  * One menu link. The page you are on is highlighted by a pill behind it (.nav-pill), which glides
- * from the old item to the new one when you change page (styles.css).
+ * from the old item to the new one when you change page (motion.js). The menu section around the
+ * links is "isolate", so the pill always stays behind the words of every link.
  */
 function navLink([href, label, iconName]) {
   const active = window.location.pathname === href;
-  return `<a href="${href}" class="relative isolate flex items-center gap-3 rounded-lg px-3 py-2 text-sm transition duration-200 ${
+  return `<a href="${href}" class="relative flex items-center gap-3 rounded-lg px-3 py-2 text-sm transition duration-200 ${
     active ? 'font-medium text-slate-900' : 'text-slate-600 hover:translate-x-1 hover:bg-blue-50 hover:text-slate-900'
   }" ${active ? 'aria-current="page"' : ''}>${
     active ? '<span class="nav-pill absolute inset-0 -z-10 rounded-lg bg-nav" aria-hidden="true"></span>' : ''
@@ -136,7 +137,7 @@ export function renderHeader(user) {
           <span class="hs-tooltip-content tip hidden" role="tooltip">Close menu</span>
         </div>
       </div>
-      <nav class="flex-1 space-y-1 overflow-y-auto px-3 py-2">${NAV[user.role].map(navLink).join('')}</nav>
+      <nav class="isolate flex-1 space-y-1 overflow-y-auto px-3 py-2">${NAV[user.role].map(navLink).join('')}</nav>
       <div class="p-3">
         <div class="rounded-2xl bg-card-blue p-4 text-center">
           <span class="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-white text-sm font-semibold text-slate-800">${escapeHtml(initials(user.name))}</span>
@@ -144,7 +145,7 @@ export function renderHeader(user) {
           <p class="text-xs text-slate-700">${ROLE_NAME[user.role] || ''}</p>
         </div>
       </div>
-      <div class="space-y-1 border-t border-slate-200 px-3 py-3">
+      <div class="isolate space-y-1 border-t border-slate-200 px-3 py-3">
         ${bottom.map(navLink).join('')}
         <button type="button" id="logout" data-logout class="flex w-full items-center gap-3 rounded-lg px-3 py-2 text-left text-sm text-slate-600 transition duration-200 hover:translate-x-1 hover:bg-red-50 hover:text-red-700">
           ${icon('logout')}Log out
