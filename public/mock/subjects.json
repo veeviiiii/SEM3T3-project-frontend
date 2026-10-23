@@ -1,128 +1,72 @@
 [
   {
     "id": 1,
-    "code": "MATH1",
-    "name": "Engineering Mathematics I",
+    "code": "DS6A-201",
+    "name": "Design and Analysis of Algorithm",
     "kind": "theory",
-    "semester": 1
+    "semester": 3
   },
   {
     "id": 2,
-    "code": "PROG",
-    "name": "Programming in C",
+    "code": "DS6A-202",
+    "name": "Probability Distributions",
     "kind": "theory",
-    "semester": 1
+    "semester": 3
   },
   {
     "id": 3,
-    "code": "PHY",
-    "name": "Engineering Physics",
-    "kind": "theory",
-    "semester": 1
-  },
-  {
-    "id": 4,
-    "code": "COMM",
-    "name": "Communication Skills",
-    "kind": "theory",
-    "semester": 1
-  },
-  {
-    "id": 5,
-    "code": "EVS",
-    "name": "Environmental Studies",
-    "kind": "theory",
-    "semester": 1
-  },
-  {
-    "id": 6,
-    "code": "PROG-LAB",
-    "name": "C Programming Lab",
-    "kind": "lab",
-    "semester": 1
-  },
-  {
-    "id": 7,
-    "code": "DAA",
-    "name": "Design and Analysis of Algorithms",
-    "kind": "theory",
-    "semester": 3
-  },
-  {
-    "id": 8,
-    "code": "OOP",
-    "name": "Object-Oriented Programming",
-    "kind": "theory",
-    "semester": 3
-  },
-  {
-    "id": 9,
-    "code": "CA",
+    "code": "DS6A-203",
     "name": "Computer Architecture",
     "kind": "theory",
     "semester": 3
   },
   {
+    "id": 4,
+    "code": "DS6A-204",
+    "name": "Numerical Methods/Engineering Economics",
+    "kind": "theory",
+    "semester": 3
+  },
+  {
+    "id": 5,
+    "code": "DS6A-205",
+    "name": "Communication Skills",
+    "kind": "theory",
+    "semester": 3
+  },
+  {
+    "id": 6,
+    "code": "DS6A-206",
+    "name": "Object Oriented Programming",
+    "kind": "theory",
+    "semester": 3
+  },
+  {
+    "id": 7,
+    "code": "DS6A-201 (Lab)",
+    "name": "Design and Analysis of Algorithm (Lab)",
+    "kind": "lab",
+    "semester": 3
+  },
+  {
+    "id": 8,
+    "code": "DS6A-204 (Lab)",
+    "name": "Numerical Methods/Engineering Economics (Lab)",
+    "kind": "lab",
+    "semester": 3
+  },
+  {
+    "id": 9,
+    "code": "DS6A-206 (Lab)",
+    "name": "Object Oriented Programming (Lab)",
+    "kind": "lab",
+    "semester": 3
+  },
+  {
     "id": 10,
-    "code": "DM",
-    "name": "Discrete Mathematics",
-    "kind": "theory",
+    "code": "Comprehensive Viva-Voce",
+    "name": "Comprehensive Viva-Voce",
+    "kind": "viva",
     "semester": 3
-  },
-  {
-    "id": 11,
-    "code": "PROB",
-    "name": "Probability and Statistics",
-    "kind": "theory",
-    "semester": 3
-  },
-  {
-    "id": 12,
-    "code": "OOP-LAB",
-    "name": "OOP Lab",
-    "kind": "lab",
-    "semester": 3
-  },
-  {
-    "id": 13,
-    "code": "ML",
-    "name": "Machine Learning",
-    "kind": "theory",
-    "semester": 5
-  },
-  {
-    "id": 14,
-    "code": "DBMS",
-    "name": "Database Management Systems",
-    "kind": "theory",
-    "semester": 5
-  },
-  {
-    "id": 15,
-    "code": "OS",
-    "name": "Operating Systems",
-    "kind": "theory",
-    "semester": 5
-  },
-  {
-    "id": 16,
-    "code": "CN",
-    "name": "Computer Networks",
-    "kind": "theory",
-    "semester": 5
-  },
-  {
-    "id": 17,
-    "code": "DV",
-    "name": "Data Visualisation",
-    "kind": "theory",
-    "semester": 5
-  },
-  {
-    "id": 18,
-    "code": "ML-LAB",
-    "name": "Machine Learning Lab",
-    "kind": "lab",
-    "semester": 5
   }
 ]

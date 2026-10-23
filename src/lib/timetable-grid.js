@@ -55,7 +55,7 @@ export function renderTimetableGrid(container, week, calendar, { show = 'faculty
   //    otherwise today (or the first day that has classes).
   const before = container.dataset.week;
   container.dataset.week = week.week_start;
-  let day = before && container.dataset.day ? Math.min(Number(container.dataset.day), dates.length - 1) : startDay(dates, byDate, calendar.today);
+  let day = before && container.dataset.phoneDay ? Math.min(Number(container.dataset.phoneDay), dates.length - 1) : startDay(dates, byDate, calendar.today);
 
   // 5. Phones (below 768px): day buttons + the chosen day's list. Wider screens: the grid, which may
   //    scroll sideways on a tablet; the page itself does not. The 1px gaps between white cells, on a
@@ -80,7 +80,7 @@ export function renderTimetableGrid(container, week, calendar, { show = 'faculty
   const showDay = () => {
     const date = dates[day];
     const entries = byDate.get(date);
-    container.dataset.day = day;
+    container.dataset.phoneDay = day;
     container.querySelectorAll('[data-day]').forEach((b) => b.setAttribute('aria-pressed', String(Number(b.dataset.day) === day)));
     const count = entries.length === 1 ? '1 class' : `${entries.length} classes`;
     container.querySelector('[data-day-title]').textContent = `${formatDate(date)}${date === calendar.today ? ' · Today' : ''} · ${count}`;

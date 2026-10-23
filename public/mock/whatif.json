@@ -4,78 +4,112 @@
       "index": 0,
       "change": {
         "kind": "faculty_leave",
-        "target_id": 9,
+        "target_id": 6,
         "start_date": "2026-10-30",
         "end_date": "2026-10-30",
         "periods": null,
         "reason": "What-if: medical leave"
       },
-      "label": "Dr. Vikram Singh on leave, Fri 30 Oct",
+      "label": "Ms. Khushi Patidar on leave, Fri 30 Oct",
       "affected": [
         {
-          "key": "215-2026-10-30",
-          "session_id": 215,
+          "key": "123-2026-10-30",
+          "session_id": 123,
           "date": "2026-10-30",
           "day": "Fri",
           "period": 3,
           "start": "11:00",
           "end": "12:00",
           "batch": {
-            "id": 5,
-            "code": "S5-A"
+            "id": 1,
+            "code": "AI&DS-3"
           },
           "subject": {
-            "id": 16,
-            "code": "CN",
-            "name": "Computer Networks",
+            "id": 6,
+            "code": "DS6A-206",
+            "name": "Object Oriented Programming",
             "kind": "theory"
           },
           "faculty": {
-            "id": 9,
-            "code": "VS",
-            "name": "Dr. Vikram Singh"
+            "id": 6,
+            "code": "KP",
+            "name": "Ms. Khushi Patidar"
           },
           "space": {
-            "id": 5,
-            "code": "R-201",
+            "id": 1,
+            "code": "B-002",
             "kind": "room"
           },
           "status": "pending",
-          "reason": "Dr. Vikram Singh on leave",
+          "reason": "Ms. Khushi Patidar on leave",
           "proposal_id": 0,
           "moved_to": null,
           "moved_from": null
         },
         {
-          "key": "216-2026-10-30",
-          "session_id": 216,
+          "key": "124-2026-10-30",
+          "session_id": 124,
+          "date": "2026-10-30",
+          "day": "Fri",
+          "period": 4,
+          "start": "13:00",
+          "end": "14:00",
+          "batch": {
+            "id": 1,
+            "code": "AI&DS-3"
+          },
+          "subject": {
+            "id": 9,
+            "code": "DS6A-206 (Lab)",
+            "name": "Object Oriented Programming (Lab)",
+            "kind": "lab"
+          },
+          "faculty": {
+            "id": 6,
+            "code": "KP",
+            "name": "Ms. Khushi Patidar"
+          },
+          "space": {
+            "id": 1,
+            "code": "B-002",
+            "kind": "room"
+          },
+          "status": "pending",
+          "reason": "Ms. Khushi Patidar on leave",
+          "proposal_id": 0,
+          "moved_to": null,
+          "moved_from": null
+        },
+        {
+          "key": "125-2026-10-30",
+          "session_id": 125,
           "date": "2026-10-30",
           "day": "Fri",
           "period": 5,
           "start": "14:00",
           "end": "15:00",
           "batch": {
-            "id": 5,
-            "code": "S5-A"
+            "id": 1,
+            "code": "AI&DS-3"
           },
           "subject": {
-            "id": 15,
-            "code": "OS",
-            "name": "Operating Systems",
-            "kind": "theory"
+            "id": 9,
+            "code": "DS6A-206 (Lab)",
+            "name": "Object Oriented Programming (Lab)",
+            "kind": "lab"
           },
           "faculty": {
-            "id": 9,
-            "code": "VS",
-            "name": "Dr. Vikram Singh"
+            "id": 6,
+            "code": "KP",
+            "name": "Ms. Khushi Patidar"
           },
           "space": {
-            "id": 5,
-            "code": "R-201",
+            "id": 1,
+            "code": "B-002",
             "kind": "room"
           },
           "status": "pending",
-          "reason": "Dr. Vikram Singh on leave",
+          "reason": "Ms. Khushi Patidar on leave",
           "proposal_id": 0,
           "moved_to": null,
           "moved_from": null
@@ -86,78 +120,78 @@
       "index": 1,
       "change": {
         "kind": "room_closure",
-        "target_id": 5,
+        "target_id": 1,
         "start_date": "2026-10-30",
         "end_date": "2026-10-30",
         "periods": null,
         "reason": "What-if: projector repair"
       },
-      "label": "R-201 closed, Fri 30 Oct",
+      "label": "B-002 closed, Fri 30 Oct",
       "affected": [
         {
-          "key": "214-2026-10-30",
-          "session_id": 214,
+          "key": "121-2026-10-30",
+          "session_id": 121,
           "date": "2026-10-30",
           "day": "Fri",
           "period": 1,
           "start": "09:00",
           "end": "10:00",
           "batch": {
-            "id": 5,
-            "code": "S5-A"
+            "id": 1,
+            "code": "AI&DS-3"
           },
           "subject": {
-            "id": 14,
-            "code": "DBMS",
-            "name": "Database Management Systems",
+            "id": 1,
+            "code": "DS6A-201",
+            "name": "Design and Analysis of Algorithm",
             "kind": "theory"
           },
           "faculty": {
-            "id": 7,
-            "code": "AM",
-            "name": "Dr. Arjun Mehta"
+            "id": 1,
+            "code": "RV",
+            "name": "Ms. Ritika Verma"
           },
           "space": {
-            "id": 5,
-            "code": "R-201",
+            "id": 1,
+            "code": "B-002",
             "kind": "room"
           },
           "status": "pending",
-          "reason": "R-201 closed",
+          "reason": "B-002 closed",
           "proposal_id": 0,
           "moved_to": null,
           "moved_from": null
         },
         {
-          "key": "217-2026-10-30",
-          "session_id": 217,
+          "key": "122-2026-10-30",
+          "session_id": 122,
           "date": "2026-10-30",
           "day": "Fri",
-          "period": 6,
-          "start": "15:00",
-          "end": "16:00",
+          "period": 2,
+          "start": "10:00",
+          "end": "11:00",
           "batch": {
-            "id": 5,
-            "code": "S5-A"
+            "id": 1,
+            "code": "AI&DS-3"
           },
           "subject": {
-            "id": 17,
-            "code": "DV",
-            "name": "Data Visualisation",
+            "id": 1,
+            "code": "DS6A-201",
+            "name": "Design and Analysis of Algorithm",
             "kind": "theory"
           },
           "faculty": {
-            "id": 11,
-            "code": "MT",
-            "name": "Dr. Manish Tiwari"
+            "id": 1,
+            "code": "RV",
+            "name": "Ms. Ritika Verma"
           },
           "space": {
-            "id": 5,
-            "code": "R-201",
+            "id": 1,
+            "code": "B-002",
             "kind": "room"
           },
           "status": "pending",
-          "reason": "R-201 closed",
+          "reason": "B-002 closed",
           "proposal_id": 0,
           "moved_to": null,
           "moved_from": null
@@ -168,30 +202,161 @@
   "plan": [
     {
       "original": {
-        "session_id": 215,
+        "session_id": 121,
+        "date": "2026-10-30",
+        "day": "Fri",
+        "period": 1,
+        "start": "09:00",
+        "end": "10:00",
+        "batch": {
+          "id": 1,
+          "code": "AI&DS-3"
+        },
+        "subject": {
+          "id": 1,
+          "code": "DS6A-201",
+          "name": "Design and Analysis of Algorithm",
+          "kind": "theory"
+        },
+        "faculty": {
+          "id": 1,
+          "code": "RV",
+          "name": "Ms. Ritika Verma"
+        },
+        "space": {
+          "id": 1,
+          "code": "B-002",
+          "kind": "room"
+        }
+      },
+      "option": {
+        "rank": 1,
+        "date": "2026-11-04",
+        "day": "Wed",
+        "period": 2,
+        "start": "10:00",
+        "end": "11:00",
+        "space": {
+          "id": 1,
+          "code": "B-002",
+          "kind": "room"
+        },
+        "score": 48,
+        "breakdown": [
+          {
+            "rule": "same_room",
+            "label": "Same room",
+            "points": 2.0
+          },
+          {
+            "rule": "preferred_hours",
+            "label": "Teacher's preferred hours",
+            "points": 2.0
+          },
+          {
+            "rule": "batch_load",
+            "label": "Batch not overloaded",
+            "points": 2.0
+          },
+          {
+            "rule": "sooner",
+            "label": "Sooner",
+            "points": 0.29
+          }
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "original": {
+        "session_id": 122,
+        "date": "2026-10-30",
+        "day": "Fri",
+        "period": 2,
+        "start": "10:00",
+        "end": "11:00",
+        "batch": {
+          "id": 1,
+          "code": "AI&DS-3"
+        },
+        "subject": {
+          "id": 1,
+          "code": "DS6A-201",
+          "name": "Design and Analysis of Algorithm",
+          "kind": "theory"
+        },
+        "faculty": {
+          "id": 1,
+          "code": "RV",
+          "name": "Ms. Ritika Verma"
+        },
+        "space": {
+          "id": 1,
+          "code": "B-002",
+          "kind": "room"
+        }
+      },
+      "option": {
+        "rank": 1,
+        "date": "2026-11-03",
+        "day": "Tue",
+        "period": 6,
+        "start": "15:00",
+        "end": "16:00",
+        "space": {
+          "id": 1,
+          "code": "B-002",
+          "kind": "room"
+        },
+        "score": 34,
+        "breakdown": [
+          {
+            "rule": "same_room",
+            "label": "Same room",
+            "points": 2.0
+          },
+          {
+            "rule": "batch_load",
+            "label": "Batch not overloaded",
+            "points": 2.0
+          },
+          {
+            "rule": "sooner",
+            "label": "Sooner",
+            "points": 0.43
+          }
+        ],
+        "warnings": [
+          "Last period of the day"
+        ]
+      }
+    },
+    {
+      "original": {
+        "session_id": 123,
         "date": "2026-10-30",
         "day": "Fri",
         "period": 3,
         "start": "11:00",
         "end": "12:00",
         "batch": {
-          "id": 5,
-          "code": "S5-A"
+          "id": 1,
+          "code": "AI&DS-3"
         },
         "subject": {
-          "id": 16,
-          "code": "CN",
-          "name": "Computer Networks",
+          "id": 6,
+          "code": "DS6A-206",
+          "name": "Object Oriented Programming",
           "kind": "theory"
         },
         "faculty": {
-          "id": 9,
-          "code": "VS",
-          "name": "Dr. Vikram Singh"
+          "id": 6,
+          "code": "KP",
+          "name": "Ms. Khushi Patidar"
         },
         "space": {
-          "id": 5,
-          "code": "R-201",
+          "id": 1,
+          "code": "B-002",
           "kind": "room"
         }
       },
@@ -199,12 +364,12 @@
         "rank": 1,
         "date": "2026-10-29",
         "day": "Thu",
-        "period": 5,
-        "start": "14:00",
-        "end": "15:00",
+        "period": 2,
+        "start": "10:00",
+        "end": "11:00",
         "space": {
-          "id": 5,
-          "code": "R-201",
+          "id": 1,
+          "code": "B-002",
           "kind": "room"
         },
         "score": 76,
@@ -240,43 +405,43 @@
     },
     {
       "original": {
-        "session_id": 216,
+        "session_id": 124,
         "date": "2026-10-30",
         "day": "Fri",
-        "period": 5,
-        "start": "14:00",
-        "end": "15:00",
+        "period": 4,
+        "start": "13:00",
+        "end": "14:00",
         "batch": {
-          "id": 5,
-          "code": "S5-A"
+          "id": 1,
+          "code": "AI&DS-3"
         },
         "subject": {
-          "id": 15,
-          "code": "OS",
-          "name": "Operating Systems",
-          "kind": "theory"
+          "id": 9,
+          "code": "DS6A-206 (Lab)",
+          "name": "Object Oriented Programming (Lab)",
+          "kind": "lab"
         },
         "faculty": {
-          "id": 9,
-          "code": "VS",
-          "name": "Dr. Vikram Singh"
+          "id": 6,
+          "code": "KP",
+          "name": "Ms. Khushi Patidar"
         },
         "space": {
-          "id": 5,
-          "code": "R-201",
+          "id": 1,
+          "code": "B-002",
           "kind": "room"
         }
       },
       "option": {
-        "rank": 2,
-        "date": "2026-10-31",
-        "day": "Sat",
-        "period": 5,
-        "start": "14:00",
-        "end": "15:00",
+        "rank": 1,
+        "date": "2026-10-29",
+        "day": "Thu",
+        "period": 3,
+        "start": "11:00",
+        "end": "12:00",
         "space": {
-          "id": 5,
-          "code": "R-201",
+          "id": 1,
+          "code": "B-002",
           "kind": "room"
         },
         "score": 76,
@@ -307,53 +472,51 @@
             "points": 0.86
           }
         ],
-        "warnings": [
-          "Saturday"
-        ]
+        "warnings": []
       }
     },
     {
       "original": {
-        "session_id": 214,
+        "session_id": 125,
         "date": "2026-10-30",
         "day": "Fri",
+        "period": 5,
+        "start": "14:00",
+        "end": "15:00",
+        "batch": {
+          "id": 1,
+          "code": "AI&DS-3"
+        },
+        "subject": {
+          "id": 9,
+          "code": "DS6A-206 (Lab)",
+          "name": "Object Oriented Programming (Lab)",
+          "kind": "lab"
+        },
+        "faculty": {
+          "id": 6,
+          "code": "KP",
+          "name": "Ms. Khushi Patidar"
+        },
+        "space": {
+          "id": 1,
+          "code": "B-002",
+          "kind": "room"
+        }
+      },
+      "option": {
+        "rank": 1,
+        "date": "2026-10-29",
+        "day": "Thu",
         "period": 1,
         "start": "09:00",
         "end": "10:00",
-        "batch": {
-          "id": 5,
-          "code": "S5-A"
-        },
-        "subject": {
-          "id": 14,
-          "code": "DBMS",
-          "name": "Database Management Systems",
-          "kind": "theory"
-        },
-        "faculty": {
-          "id": 7,
-          "code": "AM",
-          "name": "Dr. Arjun Mehta"
-        },
         "space": {
-          "id": 5,
-          "code": "R-201",
-          "kind": "room"
-        }
-      },
-      "option": {
-        "rank": 2,
-        "date": "2026-10-31",
-        "day": "Sat",
-        "period": 6,
-        "start": "15:00",
-        "end": "16:00",
-        "space": {
-          "id": 5,
-          "code": "R-201",
+          "id": 1,
+          "code": "B-002",
           "kind": "room"
         },
-        "score": 76,
+        "score": 60,
         "breakdown": [
           {
             "rule": "same_week",
@@ -366,11 +529,6 @@
             "points": 2.0
           },
           {
-            "rule": "preferred_hours",
-            "label": "Teacher's preferred hours",
-            "points": 2.0
-          },
-          {
             "rule": "batch_load",
             "label": "Batch not overloaded",
             "points": 2.0
@@ -379,75 +537,6 @@
             "rule": "sooner",
             "label": "Sooner",
             "points": 0.86
-          }
-        ],
-        "warnings": [
-          "Saturday"
-        ]
-      }
-    },
-    {
-      "original": {
-        "session_id": 217,
-        "date": "2026-10-30",
-        "day": "Fri",
-        "period": 6,
-        "start": "15:00",
-        "end": "16:00",
-        "batch": {
-          "id": 5,
-          "code": "S5-A"
-        },
-        "subject": {
-          "id": 17,
-          "code": "DV",
-          "name": "Data Visualisation",
-          "kind": "theory"
-        },
-        "faculty": {
-          "id": 11,
-          "code": "MT",
-          "name": "Dr. Manish Tiwari"
-        },
-        "space": {
-          "id": 5,
-          "code": "R-201",
-          "kind": "room"
-        }
-      },
-      "option": {
-        "rank": 3,
-        "date": "2026-10-30",
-        "day": "Fri",
-        "period": 6,
-        "start": "15:00",
-        "end": "16:00",
-        "space": {
-          "id": 7,
-          "code": "R-203",
-          "kind": "room"
-        },
-        "score": 69,
-        "breakdown": [
-          {
-            "rule": "same_time",
-            "label": "Same time",
-            "points": 3.0
-          },
-          {
-            "rule": "same_week",
-            "label": "Same week",
-            "points": 3.0
-          },
-          {
-            "rule": "batch_load",
-            "label": "Batch not overloaded",
-            "points": 2.0
-          },
-          {
-            "rule": "sooner",
-            "label": "Sooner",
-            "points": 1.0
           }
         ],
         "warnings": []
@@ -455,8 +544,8 @@
     }
   ],
   "summary": {
-    "classes_affected": 4,
-    "classes_placed": 4,
+    "classes_affected": 5,
+    "classes_placed": 5,
     "classes_unplaced": 0
   },
   "runtime_ms": 3.8

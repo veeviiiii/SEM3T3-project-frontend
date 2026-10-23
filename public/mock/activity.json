@@ -1,131 +1,11 @@
 {
   "items": [
     {
-      "id": 22,
+      "id": 13,
       "at": "2026-10-28T09:13:00+05:30",
       "actor": null,
       "action": "notifications.sent",
       "summary": "Sent 5 alerts and 5 emails",
-      "ref": {
-        "type": "unavailability",
-        "id": 3,
-        "week_start": null
-      }
-    },
-    {
-      "id": 21,
-      "at": "2026-10-28T09:12:00+05:30",
-      "actor": null,
-      "action": "proposals.created",
-      "summary": "3 rescheduling proposals sent to the HOD",
-      "ref": {
-        "type": "unavailability",
-        "id": 3,
-        "week_start": null
-      }
-    },
-    {
-      "id": 20,
-      "at": "2026-10-28T09:12:00+05:30",
-      "actor": null,
-      "action": "classes.cancelled",
-      "summary": "3 classes cancelled: DAA (S3-A) Thu 29 Oct P2, DM (S3-A) Thu 29 Oct P6, DAA (S3-B) Thu 29 Oct P4",
-      "ref": {
-        "type": "unavailability",
-        "id": 3,
-        "week_start": null
-      }
-    },
-    {
-      "id": 19,
-      "at": "2026-10-28T09:12:00+05:30",
-      "actor": {
-        "id": 1,
-        "name": "Dr. Anil Sharma",
-        "role": "faculty"
-      },
-      "action": "unavailability.created",
-      "summary": "Dr. Anil Sharma marked leave for Thu 29 Oct (full day)",
-      "ref": {
-        "type": "unavailability",
-        "id": 3,
-        "week_start": null
-      }
-    },
-    {
-      "id": 18,
-      "at": "2026-10-27T11:32:30+05:30",
-      "actor": null,
-      "action": "notifications.sent",
-      "summary": "Sent 2 alerts and 2 emails",
-      "ref": {
-        "type": "proposal",
-        "id": 4,
-        "week_start": null
-      }
-    },
-    {
-      "id": 16,
-      "at": "2026-10-27T11:32:30+05:30",
-      "actor": null,
-      "action": "notifications.sent",
-      "summary": "Sent 2 alerts and 2 emails",
-      "ref": {
-        "type": "proposal",
-        "id": 3,
-        "week_start": null
-      }
-    },
-    {
-      "id": 17,
-      "at": "2026-10-27T11:32:00+05:30",
-      "actor": {
-        "id": 3,
-        "name": "Dr. Rakesh Jain",
-        "role": "hod"
-      },
-      "action": "proposal.approved",
-      "summary": "Approved: OOP-LAB (S3-A) Fri 30 Oct P6 -> LAB-4, same time",
-      "ref": {
-        "type": "proposal",
-        "id": 4,
-        "week_start": null
-      }
-    },
-    {
-      "id": 15,
-      "at": "2026-10-27T11:32:00+05:30",
-      "actor": {
-        "id": 3,
-        "name": "Dr. Rakesh Jain",
-        "role": "hod"
-      },
-      "action": "proposal.approved",
-      "summary": "Approved: OOP-LAB (S3-A) Fri 30 Oct P5 -> LAB-4, same time",
-      "ref": {
-        "type": "proposal",
-        "id": 3,
-        "week_start": null
-      }
-    },
-    {
-      "id": 14,
-      "at": "2026-10-27T11:21:00+05:30",
-      "actor": null,
-      "action": "notifications.sent",
-      "summary": "Sent 5 alerts and 5 emails",
-      "ref": {
-        "type": "unavailability",
-        "id": 2,
-        "week_start": null
-      }
-    },
-    {
-      "id": 13,
-      "at": "2026-10-27T11:20:00+05:30",
-      "actor": null,
-      "action": "proposals.created",
-      "summary": "2 rescheduling proposals sent to the HOD",
       "ref": {
         "type": "unavailability",
         "id": 2,
@@ -134,10 +14,10 @@
     },
     {
       "id": 12,
-      "at": "2026-10-27T11:20:00+05:30",
+      "at": "2026-10-28T09:12:00+05:30",
       "actor": null,
-      "action": "classes.cancelled",
-      "summary": "2 classes cancelled: OOP-LAB (S3-A) Fri 30 Oct P5, OOP-LAB (S3-A) Fri 30 Oct P6",
+      "action": "proposals.created",
+      "summary": "3 rescheduling proposals sent to the HOD",
       "ref": {
         "type": "unavailability",
         "id": 2,
@@ -146,14 +26,10 @@
     },
     {
       "id": 11,
-      "at": "2026-10-27T11:20:00+05:30",
-      "actor": {
-        "id": 3,
-        "name": "Dr. Rakesh Jain",
-        "role": "hod"
-      },
-      "action": "unavailability.created",
-      "summary": "LAB-2 closed on Fri 30 Oct (full day): AC repair",
+      "at": "2026-10-28T09:12:00+05:30",
+      "actor": null,
+      "action": "classes.cancelled",
+      "summary": "3 classes cancelled: DS6A-201 (AI&DS-3) Thu 29 Oct P1, DS6A-201 (Lab) (AI&DS-3) Thu 29 Oct P2, DS6A-201 (Lab) (AI&DS-3) Thu 29 Oct P3",
       "ref": {
         "type": "unavailability",
         "id": 2,
@@ -162,6 +38,22 @@
     },
     {
       "id": 10,
+      "at": "2026-10-28T09:12:00+05:30",
+      "actor": {
+        "id": 1,
+        "name": "Ms. Ritika Verma",
+        "role": "faculty"
+      },
+      "action": "unavailability.created",
+      "summary": "Ms. Ritika Verma marked leave for Thu 29 Oct (full day)",
+      "ref": {
+        "type": "unavailability",
+        "id": 2,
+        "week_start": null
+      }
+    },
+    {
+      "id": 9,
       "at": "2026-10-26T08:07:30+05:30",
       "actor": null,
       "action": "notifications.sent",
@@ -173,15 +65,15 @@
       }
     },
     {
-      "id": 9,
+      "id": 8,
       "at": "2026-10-26T08:07:00+05:30",
       "actor": {
-        "id": 3,
-        "name": "Dr. Rakesh Jain",
+        "id": 7,
+        "name": "Govind Maheswari",
         "role": "hod"
       },
       "action": "proposal.rejected",
-      "summary": "Rejected: PROG (S1-B) Mon 26 Oct P2 stays cancelled",
+      "summary": "Rejected: DS6A-202 (AI&DS-3) Tue 27 Oct P5 stays cancelled",
       "ref": {
         "type": "proposal",
         "id": 2,
@@ -189,7 +81,7 @@
       }
     },
     {
-      "id": 8,
+      "id": 7,
       "at": "2026-10-26T08:05:30+05:30",
       "actor": null,
       "action": "notifications.sent",
@@ -201,15 +93,15 @@
       }
     },
     {
-      "id": 7,
+      "id": 6,
       "at": "2026-10-26T08:05:00+05:30",
       "actor": {
-        "id": 3,
-        "name": "Dr. Rakesh Jain",
+        "id": 7,
+        "name": "Govind Maheswari",
         "role": "hod"
       },
       "action": "proposal.approved",
-      "summary": "Approved: PROG (S1-A) Mon 26 Oct P1 -> Tue 27 Oct 10:00 in R-101",
+      "summary": "Approved: DS6A-202 (AI&DS-3) Tue 27 Oct P3 -> Wed 28 Oct 10:00 in B-002",
       "ref": {
         "type": "proposal",
         "id": 1,
@@ -217,7 +109,7 @@
       }
     },
     {
-      "id": 6,
+      "id": 5,
       "at": "2026-10-25T18:41:00+05:30",
       "actor": null,
       "action": "notifications.sent",
@@ -229,7 +121,7 @@
       }
     },
     {
-      "id": 5,
+      "id": 4,
       "at": "2026-10-25T18:40:00+05:30",
       "actor": null,
       "action": "proposals.created",
@@ -241,27 +133,11 @@
       }
     },
     {
-      "id": 4,
+      "id": 3,
       "at": "2026-10-25T18:40:00+05:30",
       "actor": null,
       "action": "classes.cancelled",
-      "summary": "2 classes cancelled: PROG (S1-A) Mon 26 Oct P1, PROG (S1-B) Mon 26 Oct P2",
-      "ref": {
-        "type": "unavailability",
-        "id": 1,
-        "week_start": null
-      }
-    },
-    {
-      "id": 3,
-      "at": "2026-10-25T18:40:00+05:30",
-      "actor": {
-        "id": 2,
-        "name": "Dr. Priya Verma",
-        "role": "faculty"
-      },
-      "action": "unavailability.created",
-      "summary": "Dr. Priya Verma marked leave for Mon 26 Oct (periods 1-4)",
+      "summary": "2 classes cancelled: DS6A-202 (AI&DS-3) Tue 27 Oct P3, DS6A-202 (AI&DS-3) Tue 27 Oct P5",
       "ref": {
         "type": "unavailability",
         "id": 1,
@@ -270,30 +146,30 @@
     },
     {
       "id": 2,
-      "at": "2026-09-02T16:30:00+05:30",
+      "at": "2026-10-25T18:40:00+05:30",
       "actor": {
-        "id": 3,
-        "name": "Dr. Rakesh Jain",
-        "role": "hod"
+        "id": 2,
+        "name": "Simran Prajapati",
+        "role": "faculty"
       },
-      "action": "settings.updated",
-      "summary": "Ranking weights updated",
+      "action": "unavailability.created",
+      "summary": "Simran Prajapati marked leave for Tue 27 Oct (full day)",
       "ref": {
-        "type": "settings",
-        "id": null,
+        "type": "unavailability",
+        "id": 1,
         "week_start": null
       }
     },
     {
       "id": 1,
-      "at": "2026-09-01T10:00:00+05:30",
+      "at": "2026-07-20T10:00:00+05:30",
       "actor": {
-        "id": 3,
-        "name": "Dr. Rakesh Jain",
+        "id": 7,
+        "name": "Govind Maheswari",
         "role": "hod"
       },
       "action": "import.completed",
-      "summary": "Timetable imported: 144 classes, 0 clashes",
+      "summary": "Timetable imported: 25 classes, 0 clashes",
       "ref": {
         "type": "import",
         "id": null,
@@ -301,5 +177,5 @@
       }
     }
   ],
-  "total": 22
+  "total": 13
 }

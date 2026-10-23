@@ -35,8 +35,9 @@ export class ApiError extends Error {
 
 // ------------------------------------------------------------------ session (token + user)
 
-const TOKEN_KEY = 'sss.token';
-const USER_KEY = 'sss.user';
+// v2: the demo data became the real AI&DS timetable (new people and ids), so logins saved before are not used.
+const TOKEN_KEY = 'sss.token.v2';
+const USER_KEY = 'sss.user.v2';
 
 function store(key, value) {
   try {
@@ -250,7 +251,7 @@ export async function listUnavailability({ from, to, mine } = {}) {
 /**
  * POST /api/unavailability -> UnavailabilityCreated
  * body: { kind, target_id, start_date, end_date, periods (null = whole day), reason }
- * The mock always answers with the Dr. Sharma example.
+ * The mock always answers with the Ms. Ritika Verma example.
  */
 export async function createUnavailability(body) {
   if (!USE_MOCK) return request('POST', '/api/unavailability', { body });

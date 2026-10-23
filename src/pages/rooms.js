@@ -108,7 +108,7 @@ function roomCard({ space, slot }) {
           <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-card-orange text-[11px] font-semibold text-slate-800" aria-hidden="true">${escapeHtml(space.kind === 'lab' ? 'LAB' : 'R')}</span>
           <div class="min-w-0">
             <p class="font-medium text-slate-900">${escapeHtml(space.code)}</p>
-            <p class="truncate text-xs text-slate-500">${escapeHtml(space.name)} · ${escapeHtml(space.capacity)} seats</p>
+            <p class="truncate text-xs text-slate-500">${escapeHtml(space.name)}${space.capacity ? ` · ${escapeHtml(space.capacity)} seats` : ''}</p>
           </div>
         </div>
         <span class="inline-flex shrink-0 items-center gap-1.5 rounded-full px-2 py-0.5 text-xs font-medium ${look.pill}">

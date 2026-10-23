@@ -268,8 +268,8 @@ subscribeToEvents({ notification: (n) => { showToast(n.title); refreshBell(); } 
 To test in mock mode, run `mockEmit('notification')` in the browser console.
 
 **Acceptance**
-- [ ] Typing `ma` shows 6 results (Dr. Manish Tiwari, Machine Learning, …). Clicking one opens the correct timetable.
-- [ ] Logged in as Riya, the bell panel lists 6 notifications. After "Mark all as read" the red unread count disappears.
+- [ ] Typing `ds6a` shows 8 results (Design and Analysis of Algorithm, Probability Distributions, …). Clicking one opens the correct timetable.
+- [ ] Logged in as Riya, the bell panel lists 7 notifications. After "Mark all as read" the red unread count disappears.
 
 ---
 
@@ -311,7 +311,7 @@ const result = await createUnavailability({
 - Show the `Withdraw` button (`btn-danger`) **only while `pending_count === affected_count`** (nothing decided yet).
 - Withdraw flow: `confirm()` → `withdrawUnavailability(id)` → toast → reload the list.
 
-**Acceptance** (as Dr. Anil Sharma)
+**Acceptance** (as Ms. Ritika Verma)
 - [ ] The week shows the Thursday classes in amber.
 - [ ] "Save leave" shows the 3 cancelled classes. Saving with an empty reason shows an error under the Reason field.
 - [ ] The leave list shows the Thursday leave, and Withdraw asks for confirmation first.
@@ -322,7 +322,7 @@ const result = await createUnavailability({
 
 Roles: `['hod']`
 
-**A. Header:** a greeting using `user.name` (e.g. "Good morning, Dr. Jain") as `page-title`, with the primary action top-right (see D).
+**A. Header:** a greeting using `user.name` (e.g. "Good morning, Govind") as `page-title`, with the primary action top-right (see D).
 
 **B. Stat cards** (4 cards) from `getAnalyticsSummary()`:
 
@@ -354,8 +354,8 @@ Roles: `['hod']`
 - Data: `listActivity({ limit: 5 })` (the 5 newest rows).
 - Include a link to `reports.html`.
 
-**Acceptance** (as Dr. Rakesh Jain)
-- [ ] The cards show `144 / 3 / 3 / 1`.
+**Acceptance** (as Govind Maheswari)
+- [ ] The cards show `25 / 3 / 1 / 1`.
 - [ ] 3 pending classes are listed, each with its suggestion.
 - [ ] A student or faculty user opening `hod.html` is redirected (already handled by `requireLogin`).
 
@@ -398,9 +398,9 @@ Roles: `['hod']`
 - `STALE`: tell the user someone else changed this proposal, then reload it.
 - `CLASH`: the slot is now taken; render `err.clashes`.
 
-**Acceptance** (proposal 5 in the mock)
+**Acceptance** (proposal 3 in the mock)
 - [ ] The recommended option is first. Approving it shows a toast and advances to the next waiting proposal.
-- [ ] "Pick another slot" with Fri 30 Oct, period 1, R-103 shows 3 clashes in red.
+- [ ] "Pick another slot" with Fri 30 Oct, period 1, B-002 shows 3 clashes in red.
 - [ ] "Keep cancelled" asks for confirmation, then shows a toast.
 - Note: the mock does not persist. After a reload, an approved proposal shows as pending again. This is expected.
 
@@ -449,13 +449,17 @@ Call the **function**. The HTTP route is listed for reference only and must neve
 
 | Role | Email | Use for |
 |---|---|---|
-| HOD | `rakesh.jain@example.com` | Dashboard, Approvals, Reports |
-| Faculty | `anil.sharma@example.com` | My week, Mark leave (on leave Thursday) |
-| Student | `riya.patel@example.com` | My timetable (two Thursday classes cancelled) |
+| HOD | `govind.maheswari@example.com` | Dashboard, Approvals, Reports |
+| Faculty | `ritika.verma@example.com` | My week, Mark leave (on leave Thursday) |
+| Student | `riya.patel@example.com` | My timetable (three Thursday classes waiting for a new time) |
+
+**Mock data**: the real M.Tech. (Dual Degree) AI&DS 3rd-semester timetable (DAVV, room B-002, Mon-Fri, 6 periods,
+break 12:00-13:00). Demo story on top of it: Simran Prajapati on leave Tue 27 Oct (one class moved, one kept cancelled),
+Ms. Ritika Verma on leave Thu 29 Oct (3 classes waiting for the HOD).
 
 **Mock behaviour**
 - 250 ms artificial latency on every call.
 - Timetable data exists only for the week starting `2026-10-26`; other weeks return empty, and the page must render the empty state.
 - Room availability exists only for Thu 29 Oct and is returned for any date.
 - Mutations are not persisted; a reload resets state.
-- `createUnavailability` always returns the Dr. Sharma example.
+- `createUnavailability` always returns the Ms. Ritika Verma example.

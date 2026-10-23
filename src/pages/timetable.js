@@ -92,8 +92,8 @@ function fillTargets() {
   if (mode === 'room') {
     const rooms = lists.room.filter((s) => s.kind === 'room');
     const labs = lists.room.filter((s) => s.kind === 'lab');
-    select.innerHTML = `<optgroup label="Rooms">${rooms.map(option).join('')}</optgroup>
-                        <optgroup label="Labs">${labs.map(option).join('')}</optgroup>`;
+    const group = (label, list) => (list.length ? `<optgroup label="${label}">${list.map(option).join('')}</optgroup>` : '');
+    select.innerHTML = group('Rooms', rooms) + group('Labs', labs);
   } else {
     select.innerHTML = lists[mode].map(option).join('');
   }
@@ -105,12 +105,12 @@ function changeWeek(days) {
   loadWeek();
 }
 
-/** "S3-A · Semester 3, Section A", "Dr. Manish Tiwari · Assistant Professor", "LAB-4 · Lab 4 · 30 seats" */
+/** "AI&DS-3 · M.Tech. (Dual Degree) AI&DS, Third Semester", "Ms. Ritika Verma · Class Teacher", "B-002 · Room B-002" */
 function describe(item) {
   if (!item) return '';
   if (mode === 'batch') return `${item.code} · ${item.name}`;
   if (mode === 'faculty') return `${item.name} · ${item.designation}`;
-  return `${item.code} · ${item.name} · ${item.capacity} seats`;
+  return `${item.code} · ${item.name}${item.capacity ? ` · ${item.capacity} seats` : ''}`;
 }
 
 async function loadWeek() {

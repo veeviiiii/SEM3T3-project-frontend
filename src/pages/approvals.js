@@ -367,7 +367,9 @@ async function loadCustomForm(p) {
   }
 
   const room = (s) =>
-    `<option value="${escapeHtml(s.id)}" ${s.id === p.original.space.id ? 'selected' : ''}>${escapeHtml(s.code)} · ${escapeHtml(s.capacity)} seats</option>`;
+    `<option value="${escapeHtml(s.id)}" ${s.id === p.original.space.id ? 'selected' : ''}>${escapeHtml(s.code)}${s.capacity ? ` · ${escapeHtml(s.capacity)} seats` : ''}</option>`;
+  // A group of rooms or labs, left out when there are none.
+  const group = (label, list) => (list.length ? `<optgroup label="${label}">${list.map(room).join('')}</optgroup>` : '');
   box.innerHTML = `
     <form class="grid gap-3 sm:grid-cols-3" id="custom-form" novalidate>
       <div>
@@ -386,8 +388,8 @@ async function loadCustomForm(p) {
       <div>
         <label class="label" for="custom-room">Room</label>
         <select class="input" id="custom-room">
-          <optgroup label="Rooms">${slotData.spaces.filter((s) => s.kind === 'room').map(room).join('')}</optgroup>
-          <optgroup label="Labs">${slotData.spaces.filter((s) => s.kind === 'lab').map(room).join('')}</optgroup>
+          ${group('Rooms', slotData.spaces.filter((s) => s.kind === 'room'))}
+          ${group('Labs', slotData.spaces.filter((s) => s.kind === 'lab'))}
         </select>
       </div>
     </form>

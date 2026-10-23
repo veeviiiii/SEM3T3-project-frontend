@@ -1,11 +1,11 @@
 {
   "week_start": "2026-10-26",
-  "classes_total": 144,
-  "scheduled": 137,
+  "classes_total": 25,
+  "scheduled": 20,
   "pending": 3,
   "cancelled": 1,
-  "moved": 3,
-  "active_unavailability": 3,
+  "moved": 1,
+  "active_unavailability": 2,
   "pending_approvals": 3,
-  "room_utilisation_pct": 28.6
+  "room_utilisation_pct": 83.3
 }

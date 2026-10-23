@@ -1,7 +1,7 @@
 {
   "items": [
     {
-      "id": 18,
+      "id": 9,
       "kind": "leave_recorded",
       "title": "Leave recorded for Thu 29 Oct",
       "body": "Your leave for Thu 29 Oct (full day) is recorded. 3 classes were cancelled and sent to the HOD for new slots.",
@@ -9,7 +9,7 @@
       "read": false,
       "ref": {
         "type": "unavailability",
-        "id": 3,
+        "id": 2,
         "week_start": null
       }
     }

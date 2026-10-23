@@ -87,7 +87,7 @@ function greeting() {
   return 'Good evening';
 }
 
-/** "Dr. Rakesh Jain" -> "Dr. Jain", "Rakesh Jain" -> "Rakesh" */
+/** "Dr. Meenu Kumar" -> "Dr. Kumar", "Govind Maheswari" -> "Govind" */
 function shortName(name) {
   const parts = name.split(' ');
   return parts[0].endsWith('.') ? `${parts[0]} ${parts[parts.length - 1]}` : parts[0];

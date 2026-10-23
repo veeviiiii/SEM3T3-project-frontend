@@ -1,38 +1,8 @@
 [
   {
     "type": "faculty",
-    "id": 11,
-    "label": "Dr. Manish Tiwari",
-    "sublabel": "Assistant Professor"
-  },
-  {
-    "type": "subject",
-    "id": 14,
-    "label": "Database Management Systems",
-    "sublabel": "DBMS - Semester 5"
-  },
-  {
-    "type": "subject",
-    "id": 10,
-    "label": "Discrete Mathematics",
-    "sublabel": "DM - Semester 3"
-  },
-  {
-    "type": "subject",
-    "id": 1,
-    "label": "Engineering Mathematics I",
-    "sublabel": "MATH1 - Semester 1"
-  },
-  {
-    "type": "subject",
-    "id": 13,
-    "label": "Machine Learning",
-    "sublabel": "ML - Semester 5"
-  },
-  {
-    "type": "subject",
-    "id": 18,
-    "label": "Machine Learning Lab",
-    "sublabel": "ML-LAB - Semester 5"
+    "id": 7,
+    "label": "Govind Maheswari",
+    "sublabel": "Head of Department"
   }
 ]

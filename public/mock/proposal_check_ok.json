@@ -1,7 +1,7 @@
 {
   "ok": true,
   "clashes": [],
-  "score": 75,
+  "score": 60,
   "breakdown": [
     {
       "rule": "same_week",
@@ -14,11 +14,6 @@
       "points": 2.0
     },
     {
-      "rule": "preferred_hours",
-      "label": "Teacher's preferred hours",
-      "points": 2.0
-    },
-    {
       "rule": "batch_load",
       "label": "Batch not overloaded",
       "points": 2.0
@@ -26,7 +21,7 @@
     {
       "rule": "sooner",
       "label": "Sooner",
-      "points": 0.71
+      "points": 0.86
     }
   ]
 }

@@ -1,176 +1,92 @@
 [
   {
     "id": 1,
-    "code": "AS",
-    "name": "Dr. Anil Sharma",
-    "designation": "Associate Professor",
-    "email": "anil.sharma@example.com",
-    "is_hod": false,
-    "preferred_periods": [
-      1,
-      2,
-      3,
-      4
-    ],
-    "weekly_load": 12
-  },
-  {
-    "id": 2,
-    "code": "PV",
-    "name": "Dr. Priya Verma",
-    "designation": "Assistant Professor",
-    "email": "priya.verma@example.com",
+    "code": "RV",
+    "name": "Ms. Ritika Verma",
+    "designation": "Class Teacher",
+    "email": "ritika.verma@example.com",
     "is_hod": false,
     "preferred_periods": [
       1,
       2,
       3
     ],
-    "weekly_load": 12
+    "weekly_load": 5
+  },
+  {
+    "id": 2,
+    "code": "SP",
+    "name": "Simran Prajapati",
+    "designation": "Faculty",
+    "email": "simran.prajapati@example.com",
+    "is_hod": false,
+    "preferred_periods": [
+      3,
+      5
+    ],
+    "weekly_load": 4
   },
   {
     "id": 3,
-    "code": "RJ",
-    "name": "Dr. Rakesh Jain",
-    "designation": "Professor and Head",
-    "email": "rakesh.jain@example.com",
-    "is_hod": true,
+    "code": "AB",
+    "name": "Ms. Alfia Bagwala",
+    "designation": "Faculty",
+    "email": "alfia.bagwala@example.com",
+    "is_hod": false,
     "preferred_periods": [
-      2,
-      3,
-      4
+      1
     ],
-    "weekly_load": 8
+    "weekly_load": 3
   },
   {
     "id": 4,
-    "code": "NG",
-    "name": "Prof. Neha Gupta",
-    "designation": "Assistant Professor",
-    "email": "neha.gupta@example.com",
+    "code": "PP",
+    "name": "Ms. Pallavi Pandey",
+    "designation": "Faculty",
+    "email": "pallavi.pandey@example.com",
     "is_hod": false,
     "preferred_periods": [
-      3,
       4,
       5,
       6
     ],
-    "weekly_load": 12
+    "weekly_load": 5
   },
   {
     "id": 5,
-    "code": "SK",
-    "name": "Dr. Sameer Khan",
-    "designation": "Associate Professor",
-    "email": "sameer.khan@example.com",
+    "code": "MK",
+    "name": "Dr. Meenu Kumar",
+    "designation": "Faculty",
+    "email": "meenu.kumar@example.com",
     "is_hod": false,
     "preferred_periods": [
-      1,
-      2,
-      5
+      4
     ],
-    "weekly_load": 12
+    "weekly_load": 3
   },
   {
     "id": 6,
-    "code": "KJ",
-    "name": "Prof. Kavita Joshi",
-    "designation": "Assistant Professor",
-    "email": "kavita.joshi@example.com",
+    "code": "KP",
+    "name": "Ms. Khushi Patidar",
+    "designation": "Faculty",
+    "email": "khushi.patidar@example.com",
     "is_hod": false,
     "preferred_periods": [
-      1,
       2,
       3,
-      4
+      4,
+      5
     ],
-    "weekly_load": 12
+    "weekly_load": 5
   },
   {
     "id": 7,
-    "code": "AM",
-    "name": "Dr. Arjun Mehta",
-    "designation": "Assistant Professor",
-    "email": "arjun.mehta@example.com",
-    "is_hod": false,
-    "preferred_periods": [
-      4,
-      5,
-      6
-    ],
-    "weekly_load": 12
-  },
-  {
-    "id": 8,
-    "code": "SR",
-    "name": "Prof. Sunita Rao",
-    "designation": "Assistant Professor",
-    "email": "sunita.rao@example.com",
-    "is_hod": false,
-    "preferred_periods": [
-      2,
-      3,
-      4,
-      5
-    ],
-    "weekly_load": 12
-  },
-  {
-    "id": 9,
-    "code": "VS",
-    "name": "Dr. Vikram Singh",
-    "designation": "Associate Professor",
-    "email": "vikram.singh@example.com",
-    "is_hod": false,
-    "preferred_periods": [
-      1,
-      2,
-      3,
-      4,
-      5
-    ],
-    "weekly_load": 16
-  },
-  {
-    "id": 10,
-    "code": "PA",
-    "name": "Prof. Pooja Agrawal",
-    "designation": "Assistant Professor",
-    "email": "pooja.agrawal@example.com",
-    "is_hod": false,
-    "preferred_periods": [
-      5,
-      6,
-      7
-    ],
-    "weekly_load": 12
-  },
-  {
-    "id": 11,
-    "code": "MT",
-    "name": "Dr. Manish Tiwari",
-    "designation": "Assistant Professor",
-    "email": "manish.tiwari@example.com",
-    "is_hod": false,
-    "preferred_periods": [
-      3,
-      4,
-      5
-    ],
-    "weekly_load": 12
-  },
-  {
-    "id": 12,
-    "code": "RC",
-    "name": "Prof. Ritu Choudhary",
-    "designation": "Assistant Professor",
-    "email": "ritu.choudhary@example.com",
-    "is_hod": false,
-    "preferred_periods": [
-      1,
-      2,
-      6
-    ],
-    "weekly_load": 12
+    "code": "GM",
+    "name": "Govind Maheswari",
+    "designation": "Head of Department",
+    "email": "govind.maheswari@example.com",
+    "is_hod": true,
+    "preferred_periods": [],
+    "weekly_load": 0
   }
 ]

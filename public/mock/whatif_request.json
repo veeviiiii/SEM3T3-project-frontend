@@ -2,7 +2,7 @@
   "changes": [
     {
       "kind": "faculty_leave",
-      "target_id": 9,
+      "target_id": 6,
       "start_date": "2026-10-30",
       "end_date": "2026-10-30",
       "periods": null,
@@ -10,7 +10,7 @@
     },
     {
       "kind": "room_closure",
-      "target_id": 5,
+      "target_id": 1,
       "start_date": "2026-10-30",
       "end_date": "2026-10-30",
       "periods": null,

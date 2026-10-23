@@ -3,49 +3,49 @@
     {
       "week_start": "2026-09-07",
       "cancelled": 0,
-      "moved": 3,
+      "moved": 0,
       "pending": 0
     },
     {
       "week_start": "2026-09-14",
-      "cancelled": 2,
-      "moved": 5,
+      "cancelled": 0,
+      "moved": 0,
       "pending": 0
     },
     {
       "week_start": "2026-09-21",
-      "cancelled": 2,
-      "moved": 1,
+      "cancelled": 0,
+      "moved": 0,
       "pending": 0
     },
     {
       "week_start": "2026-09-28",
       "cancelled": 0,
-      "moved": 5,
+      "moved": 0,
       "pending": 0
     },
     {
       "week_start": "2026-10-05",
-      "cancelled": 2,
-      "moved": 5,
+      "cancelled": 0,
+      "moved": 0,
       "pending": 0
     },
     {
       "week_start": "2026-10-12",
-      "cancelled": 1,
-      "moved": 5,
+      "cancelled": 0,
+      "moved": 0,
       "pending": 0
     },
     {
       "week_start": "2026-10-19",
-      "cancelled": 2,
-      "moved": 4,
+      "cancelled": 0,
+      "moved": 0,
       "pending": 0
     },
     {
       "week_start": "2026-10-26",
       "cancelled": 1,
-      "moved": 3,
+      "moved": 1,
       "pending": 3
     }
   ],
@@ -53,35 +53,8 @@
     {
       "faculty": {
         "id": 1,
-        "code": "AS",
-        "name": "Dr. Anil Sharma"
-      },
-      "leaves": 3,
-      "classes_affected": 6
-    },
-    {
-      "faculty": {
-        "id": 11,
-        "code": "MT",
-        "name": "Dr. Manish Tiwari"
-      },
-      "leaves": 2,
-      "classes_affected": 4
-    },
-    {
-      "faculty": {
-        "id": 6,
-        "code": "KJ",
-        "name": "Prof. Kavita Joshi"
-      },
-      "leaves": 1,
-      "classes_affected": 3
-    },
-    {
-      "faculty": {
-        "id": 10,
-        "code": "PA",
-        "name": "Prof. Pooja Agrawal"
+        "code": "RV",
+        "name": "Ms. Ritika Verma"
       },
       "leaves": 1,
       "classes_affected": 3
@@ -89,407 +62,174 @@
     {
       "faculty": {
         "id": 2,
-        "code": "PV",
-        "name": "Dr. Priya Verma"
+        "code": "SP",
+        "name": "Simran Prajapati"
       },
       "leaves": 1,
       "classes_affected": 2
-    },
-    {
-      "faculty": {
-        "id": 3,
-        "code": "RJ",
-        "name": "Dr. Rakesh Jain"
-      },
-      "leaves": 2,
-      "classes_affected": 2
-    },
-    {
-      "faculty": {
-        "id": 9,
-        "code": "VS",
-        "name": "Dr. Vikram Singh"
-      },
-      "leaves": 1,
-      "classes_affected": 2
-    },
-    {
-      "faculty": {
-        "id": 8,
-        "code": "SR",
-        "name": "Prof. Sunita Rao"
-      },
-      "leaves": 1,
-      "classes_affected": 2
-    },
-    {
-      "faculty": {
-        "id": 7,
-        "code": "AM",
-        "name": "Dr. Arjun Mehta"
-      },
-      "leaves": 1,
-      "classes_affected": 1
-    },
-    {
-      "faculty": {
-        "id": 5,
-        "code": "SK",
-        "name": "Dr. Sameer Khan"
-      },
-      "leaves": 1,
-      "classes_affected": 1
-    },
-    {
-      "faculty": {
-        "id": 4,
-        "code": "NG",
-        "name": "Prof. Neha Gupta"
-      },
-      "leaves": 1,
-      "classes_affected": 1
-    },
-    {
-      "faculty": {
-        "id": 12,
-        "code": "RC",
-        "name": "Prof. Ritu Choudhary"
-      },
-      "leaves": 1,
-      "classes_affected": 1
     }
   ],
   "room_utilisation": [
     {
       "space": {
         "id": 1,
-        "code": "R-101",
+        "code": "B-002",
         "kind": "room"
       },
-      "used": 20,
-      "total": 42,
-      "pct": 47.6
-    },
-    {
-      "space": {
-        "id": 2,
-        "code": "R-102",
-        "kind": "room"
-      },
-      "used": 20,
-      "total": 42,
-      "pct": 47.6
-    },
-    {
-      "space": {
-        "id": 3,
-        "code": "R-103",
-        "kind": "room"
-      },
-      "used": 20,
-      "total": 42,
-      "pct": 47.6
-    },
-    {
-      "space": {
-        "id": 4,
-        "code": "R-104",
-        "kind": "room"
-      },
-      "used": 20,
-      "total": 42,
-      "pct": 47.6
-    },
-    {
-      "space": {
-        "id": 5,
-        "code": "R-201",
-        "kind": "room"
-      },
-      "used": 20,
-      "total": 42,
-      "pct": 47.6
-    },
-    {
-      "space": {
-        "id": 6,
-        "code": "R-202",
-        "kind": "room"
-      },
-      "used": 20,
-      "total": 42,
-      "pct": 47.6
-    },
-    {
-      "space": {
-        "id": 7,
-        "code": "R-203",
-        "kind": "room"
-      },
-      "used": 0,
-      "total": 42,
-      "pct": 0.0
-    },
-    {
-      "space": {
-        "id": 8,
-        "code": "R-204",
-        "kind": "room"
-      },
-      "used": 0,
-      "total": 42,
-      "pct": 0.0
-    },
-    {
-      "space": {
-        "id": 9,
-        "code": "LAB-1",
-        "kind": "lab"
-      },
-      "used": 8,
-      "total": 42,
-      "pct": 19.0
-    },
-    {
-      "space": {
-        "id": 10,
-        "code": "LAB-2",
-        "kind": "lab"
-      },
-      "used": 8,
-      "total": 42,
-      "pct": 19.0
-    },
-    {
-      "space": {
-        "id": 11,
-        "code": "LAB-3",
-        "kind": "lab"
-      },
-      "used": 8,
-      "total": 42,
-      "pct": 19.0
-    },
-    {
-      "space": {
-        "id": 12,
-        "code": "LAB-4",
-        "kind": "lab"
-      },
-      "used": 0,
-      "total": 42,
-      "pct": 0.0
+      "used": 25,
+      "total": 30,
+      "pct": 83.3
     }
   ],
   "heatmap": [
     {
       "day": "Mon",
       "period": 1,
-      "classes": 4
+      "classes": 1
     },
     {
       "day": "Mon",
       "period": 2,
-      "classes": 6
+      "classes": 1
     },
     {
       "day": "Mon",
       "period": 3,
-      "classes": 3
+      "classes": 1
     },
     {
       "day": "Mon",
       "period": 4,
-      "classes": 3
+      "classes": 1
     },
     {
       "day": "Mon",
       "period": 5,
-      "classes": 3
+      "classes": 1
     },
     {
       "day": "Mon",
       "period": 6,
-      "classes": 4
-    },
-    {
-      "day": "Mon",
-      "period": 7,
-      "classes": 0
+      "classes": 1
     },
     {
       "day": "Tue",
       "period": 1,
-      "classes": 5
+      "classes": 1
     },
     {
       "day": "Tue",
       "period": 2,
-      "classes": 2
+      "classes": 1
     },
     {
       "day": "Tue",
       "period": 3,
-      "classes": 5
+      "classes": 1
     },
     {
       "day": "Tue",
       "period": 4,
-      "classes": 5
+      "classes": 1
     },
     {
       "day": "Tue",
       "period": 5,
-      "classes": 4
+      "classes": 1
     },
     {
       "day": "Tue",
       "period": 6,
-      "classes": 3
+      "classes": 0
     },
     {
-      "day": "Tue",
-      "period": 7,
+      "day": "Wed",
+      "period": 1,
       "classes": 1
     },
     {
       "day": "Wed",
-      "period": 1,
-      "classes": 3
-    },
-    {
-      "day": "Wed",
       "period": 2,
-      "classes": 5
+      "classes": 0
     },
     {
       "day": "Wed",
       "period": 3,
-      "classes": 3
+      "classes": 1
     },
     {
       "day": "Wed",
       "period": 4,
-      "classes": 4
+      "classes": 1
     },
     {
       "day": "Wed",
       "period": 5,
-      "classes": 5
+      "classes": 1
     },
     {
       "day": "Wed",
       "period": 6,
-      "classes": 3
-    },
-    {
-      "day": "Wed",
-      "period": 7,
       "classes": 0
     },
     {
       "day": "Thu",
       "period": 1,
-      "classes": 5
+      "classes": 1
     },
     {
       "day": "Thu",
       "period": 2,
-      "classes": 6
+      "classes": 1
     },
     {
       "day": "Thu",
       "period": 3,
-      "classes": 4
+      "classes": 1
     },
     {
       "day": "Thu",
       "period": 4,
-      "classes": 5
+      "classes": 1
     },
     {
       "day": "Thu",
       "period": 5,
-      "classes": 2
+      "classes": 1
     },
     {
       "day": "Thu",
       "period": 6,
-      "classes": 5
-    },
-    {
-      "day": "Thu",
-      "period": 7,
       "classes": 0
     },
     {
       "day": "Fri",
       "period": 1,
-      "classes": 6
+      "classes": 1
     },
     {
       "day": "Fri",
       "period": 2,
-      "classes": 3
+      "classes": 1
     },
     {
       "day": "Fri",
       "period": 3,
-      "classes": 4
+      "classes": 1
     },
     {
       "day": "Fri",
       "period": 4,
-      "classes": 4
+      "classes": 1
     },
     {
       "day": "Fri",
       "period": 5,
-      "classes": 6
+      "classes": 1
     },
     {
       "day": "Fri",
       "period": 6,
-      "classes": 5
-    },
-    {
-      "day": "Fri",
-      "period": 7,
-      "classes": 0
-    },
-    {
-      "day": "Sat",
-      "period": 1,
-      "classes": 4
-    },
-    {
-      "day": "Sat",
-      "period": 2,
-      "classes": 5
-    },
-    {
-      "day": "Sat",
-      "period": 3,
-      "classes": 4
-    },
-    {
-      "day": "Sat",
-      "period": 4,
-      "classes": 5
-    },
-    {
-      "day": "Sat",
-      "period": 5,
-      "classes": 0
-    },
-    {
-      "day": "Sat",
-      "period": 6,
-      "classes": 0
-    },
-    {
-      "day": "Sat",
-      "period": 7,
       "classes": 0
     }
   ]

@@ -4,8 +4,7 @@
     "Tue",
     "Wed",
     "Thu",
-    "Fri",
-    "Sat"
+    "Fri"
   ],
   "periods": [
     {
@@ -25,8 +24,8 @@
     },
     {
       "period": 4,
-      "start": "12:00",
-      "end": "13:00"
+      "start": "13:00",
+      "end": "14:00"
     },
     {
       "period": 5,
@@ -37,19 +36,14 @@
       "period": 6,
       "start": "15:00",
       "end": "16:00"
-    },
-    {
-      "period": 7,
-      "start": "16:00",
-      "end": "17:00"
     }
   ],
   "breaks": [
     {
-      "after_period": 4,
-      "label": "Lunch",
-      "start": "13:00",
-      "end": "14:00"
+      "after_period": 3,
+      "label": "Break",
+      "start": "12:00",
+      "end": "13:00"
     }
   ],
   "timezone": "Asia/Kolkata",

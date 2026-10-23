@@ -1,11 +1,11 @@
 {
   "unavailability": {
-    "id": 3,
+    "id": 2,
     "kind": "faculty_leave",
     "target": {
       "type": "faculty",
       "id": 1,
-      "label": "Dr. Anil Sharma"
+      "label": "Ms. Ritika Verma"
     },
     "start_date": "2026-10-29",
     "end_date": "2026-10-29",
@@ -14,7 +14,7 @@
     "status": "withdrawn",
     "created_by": {
       "id": 1,
-      "name": "Dr. Anil Sharma",
+      "name": "Ms. Ritika Verma",
       "role": "faculty"
     },
     "created_at": "2026-10-28T09:12:00+05:30",
@@ -23,31 +23,65 @@
   },
   "restored": [
     {
-      "key": "161-2026-10-29",
-      "session_id": 161,
+      "key": "116-2026-10-29",
+      "session_id": 116,
+      "date": "2026-10-29",
+      "day": "Thu",
+      "period": 1,
+      "start": "09:00",
+      "end": "10:00",
+      "batch": {
+        "id": 1,
+        "code": "AI&DS-3"
+      },
+      "subject": {
+        "id": 1,
+        "code": "DS6A-201",
+        "name": "Design and Analysis of Algorithm",
+        "kind": "theory"
+      },
+      "faculty": {
+        "id": 1,
+        "code": "RV",
+        "name": "Ms. Ritika Verma"
+      },
+      "space": {
+        "id": 1,
+        "code": "B-002",
+        "kind": "room"
+      },
+      "status": "scheduled",
+      "reason": null,
+      "proposal_id": null,
+      "moved_to": null,
+      "moved_from": null
+    },
+    {
+      "key": "117-2026-10-29",
+      "session_id": 117,
       "date": "2026-10-29",
       "day": "Thu",
       "period": 2,
       "start": "10:00",
       "end": "11:00",
       "batch": {
-        "id": 3,
-        "code": "S3-A"
+        "id": 1,
+        "code": "AI&DS-3"
       },
       "subject": {
         "id": 7,
-        "code": "DAA",
-        "name": "Design and Analysis of Algorithms",
-        "kind": "theory"
+        "code": "DS6A-201 (Lab)",
+        "name": "Design and Analysis of Algorithm (Lab)",
+        "kind": "lab"
       },
       "faculty": {
         "id": 1,
-        "code": "AS",
-        "name": "Dr. Anil Sharma"
+        "code": "RV",
+        "name": "Ms. Ritika Verma"
       },
       "space": {
-        "id": 3,
-        "code": "R-103",
+        "id": 1,
+        "code": "B-002",
         "kind": "room"
       },
       "status": "scheduled",
@@ -57,65 +91,31 @@
       "moved_from": null
     },
     {
-      "key": "186-2026-10-29",
-      "session_id": 186,
+      "key": "118-2026-10-29",
+      "session_id": 118,
       "date": "2026-10-29",
       "day": "Thu",
-      "period": 4,
-      "start": "12:00",
-      "end": "13:00",
+      "period": 3,
+      "start": "11:00",
+      "end": "12:00",
       "batch": {
-        "id": 4,
-        "code": "S3-B"
+        "id": 1,
+        "code": "AI&DS-3"
       },
       "subject": {
         "id": 7,
-        "code": "DAA",
-        "name": "Design and Analysis of Algorithms",
-        "kind": "theory"
+        "code": "DS6A-201 (Lab)",
+        "name": "Design and Analysis of Algorithm (Lab)",
+        "kind": "lab"
       },
       "faculty": {
         "id": 1,
-        "code": "AS",
-        "name": "Dr. Anil Sharma"
+        "code": "RV",
+        "name": "Ms. Ritika Verma"
       },
       "space": {
-        "id": 4,
-        "code": "R-104",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "164-2026-10-29",
-      "session_id": 164,
-      "date": "2026-10-29",
-      "day": "Thu",
-      "period": 6,
-      "start": "15:00",
-      "end": "16:00",
-      "batch": {
-        "id": 3,
-        "code": "S3-A"
-      },
-      "subject": {
-        "id": 10,
-        "code": "DM",
-        "name": "Discrete Mathematics",
-        "kind": "theory"
-      },
-      "faculty": {
         "id": 1,
-        "code": "AS",
-        "name": "Dr. Anil Sharma"
-      },
-      "space": {
-        "id": 3,
-        "code": "R-103",
+        "code": "B-002",
         "kind": "room"
       },
       "status": "scheduled",

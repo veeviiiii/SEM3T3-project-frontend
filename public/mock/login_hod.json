@@ -3,11 +3,11 @@
   "token_type": "bearer",
   "expires_in": 28800,
   "user": {
-    "id": 3,
-    "name": "Dr. Rakesh Jain",
-    "email": "rakesh.jain@example.com",
+    "id": 7,
+    "name": "Govind Maheswari",
+    "email": "govind.maheswari@example.com",
     "role": "hod",
-    "faculty_id": 3,
+    "faculty_id": 7,
     "batch_id": null
   }
 }

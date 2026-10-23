@@ -1,98 +1,10 @@
 [
   {
     "id": 1,
-    "code": "R-101",
-    "name": "Room 101",
+    "code": "B-002",
+    "name": "Room B-002",
     "kind": "room",
-    "capacity": 70,
-    "floor": 1
-  },
-  {
-    "id": 2,
-    "code": "R-102",
-    "name": "Room 102",
-    "kind": "room",
-    "capacity": 70,
-    "floor": 1
-  },
-  {
-    "id": 3,
-    "code": "R-103",
-    "name": "Room 103",
-    "kind": "room",
-    "capacity": 65,
-    "floor": 1
-  },
-  {
-    "id": 4,
-    "code": "R-104",
-    "name": "Room 104",
-    "kind": "room",
-    "capacity": 65,
-    "floor": 1
-  },
-  {
-    "id": 5,
-    "code": "R-201",
-    "name": "Room 201",
-    "kind": "room",
-    "capacity": 65,
-    "floor": 2
-  },
-  {
-    "id": 6,
-    "code": "R-202",
-    "name": "Room 202",
-    "kind": "room",
-    "capacity": 65,
-    "floor": 2
-  },
-  {
-    "id": 7,
-    "code": "R-203",
-    "name": "Room 203",
-    "kind": "room",
-    "capacity": 70,
-    "floor": 2
-  },
-  {
-    "id": 8,
-    "code": "R-204",
-    "name": "Seminar Room 204",
-    "kind": "room",
-    "capacity": 40,
-    "floor": 2
-  },
-  {
-    "id": 9,
-    "code": "LAB-1",
-    "name": "Programming Lab",
-    "kind": "lab",
-    "capacity": 60,
-    "floor": 3
-  },
-  {
-    "id": 10,
-    "code": "LAB-2",
-    "name": "OOP Lab",
-    "kind": "lab",
-    "capacity": 60,
-    "floor": 3
-  },
-  {
-    "id": 11,
-    "code": "LAB-3",
-    "name": "ML Lab",
-    "kind": "lab",
-    "capacity": 60,
-    "floor": 3
-  },
-  {
-    "id": 12,
-    "code": "LAB-4",
-    "name": "Project Lab",
-    "kind": "lab",
-    "capacity": 60,
-    "floor": 3
+    "capacity": null,
+    "floor": null
   }
 ]

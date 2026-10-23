@@ -1,6 +1,6 @@
 {
   "week_start": "2026-10-26",
-  "week_end": "2026-10-31",
+  "week_end": "2026-10-30",
   "filter": {
     "batch_id": null,
     "faculty_id": null,
@@ -17,135 +17,22 @@
       "end": "10:00",
       "batch": {
         "id": 1,
-        "code": "S1-A"
+        "code": "AI&DS-3"
       },
       "subject": {
-        "id": 2,
-        "code": "PROG",
-        "name": "Programming in C",
+        "id": 3,
+        "code": "DS6A-203",
+        "name": "Computer Architecture",
         "kind": "theory"
       },
       "faculty": {
-        "id": 2,
-        "code": "PV",
-        "name": "Dr. Priya Verma"
+        "id": 3,
+        "code": "AB",
+        "name": "Ms. Alfia Bagwala"
       },
       "space": {
         "id": 1,
-        "code": "R-101",
-        "kind": "room"
-      },
-      "status": "moved_away",
-      "reason": "Dr. Priya Verma on leave",
-      "proposal_id": 1,
-      "moved_to": {
-        "date": "2026-10-27",
-        "day": "Tue",
-        "period": 2,
-        "start": "10:00",
-        "end": "11:00",
-        "space": {
-          "id": 1,
-          "code": "R-101",
-          "kind": "room"
-        }
-      },
-      "moved_from": null
-    },
-    {
-      "key": "173-2026-10-26",
-      "session_id": 173,
-      "date": "2026-10-26",
-      "day": "Mon",
-      "period": 1,
-      "start": "09:00",
-      "end": "10:00",
-      "batch": {
-        "id": 4,
-        "code": "S3-B"
-      },
-      "subject": {
-        "id": 8,
-        "code": "OOP",
-        "name": "Object-Oriented Programming",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 4,
-        "code": "NG",
-        "name": "Prof. Neha Gupta"
-      },
-      "space": {
-        "id": 4,
-        "code": "R-104",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "197-2026-10-26",
-      "session_id": 197,
-      "date": "2026-10-26",
-      "day": "Mon",
-      "period": 1,
-      "start": "09:00",
-      "end": "10:00",
-      "batch": {
-        "id": 5,
-        "code": "S5-A"
-      },
-      "subject": {
-        "id": 18,
-        "code": "ML-LAB",
-        "name": "Machine Learning Lab",
-        "kind": "lab"
-      },
-      "faculty": {
-        "id": 5,
-        "code": "SK",
-        "name": "Dr. Sameer Khan"
-      },
-      "space": {
-        "id": 11,
-        "code": "LAB-3",
-        "kind": "lab"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "221-2026-10-26",
-      "session_id": 221,
-      "date": "2026-10-26",
-      "day": "Mon",
-      "period": 1,
-      "start": "09:00",
-      "end": "10:00",
-      "batch": {
-        "id": 6,
-        "code": "S5-B"
-      },
-      "subject": {
-        "id": 16,
-        "code": "CN",
-        "name": "Computer Networks",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 9,
-        "code": "VS",
-        "name": "Dr. Vikram Singh"
-      },
-      "space": {
-        "id": 6,
-        "code": "R-202",
+        "code": "B-002",
         "kind": "room"
       },
       "status": "scheduled",
@@ -164,396 +51,22 @@
       "end": "11:00",
       "batch": {
         "id": 1,
-        "code": "S1-A"
+        "code": "AI&DS-3"
       },
       "subject": {
-        "id": 4,
-        "code": "COMM",
-        "name": "Communication Skills",
+        "id": 6,
+        "code": "DS6A-206",
+        "name": "Object Oriented Programming",
         "kind": "theory"
       },
       "faculty": {
-        "id": 10,
-        "code": "PA",
-        "name": "Prof. Pooja Agrawal"
+        "id": 6,
+        "code": "KP",
+        "name": "Ms. Khushi Patidar"
       },
       "space": {
         "id": 1,
-        "code": "R-101",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "125-2026-10-26",
-      "session_id": 125,
-      "date": "2026-10-26",
-      "day": "Mon",
-      "period": 2,
-      "start": "10:00",
-      "end": "11:00",
-      "batch": {
-        "id": 2,
-        "code": "S1-B"
-      },
-      "subject": {
-        "id": 2,
-        "code": "PROG",
-        "name": "Programming in C",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 2,
-        "code": "PV",
-        "name": "Dr. Priya Verma"
-      },
-      "space": {
-        "id": 2,
-        "code": "R-102",
-        "kind": "room"
-      },
-      "status": "cancelled",
-      "reason": "Dr. Priya Verma on leave",
-      "proposal_id": 2,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "149-2026-10-26",
-      "session_id": 149,
-      "date": "2026-10-26",
-      "day": "Mon",
-      "period": 2,
-      "start": "10:00",
-      "end": "11:00",
-      "batch": {
-        "id": 3,
-        "code": "S3-A"
-      },
-      "subject": {
-        "id": 8,
-        "code": "OOP",
-        "name": "Object-Oriented Programming",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 4,
-        "code": "NG",
-        "name": "Prof. Neha Gupta"
-      },
-      "space": {
-        "id": 3,
-        "code": "R-103",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "174-2026-10-26",
-      "session_id": 174,
-      "date": "2026-10-26",
-      "day": "Mon",
-      "period": 2,
-      "start": "10:00",
-      "end": "11:00",
-      "batch": {
-        "id": 4,
-        "code": "S3-B"
-      },
-      "subject": {
-        "id": 7,
-        "code": "DAA",
-        "name": "Design and Analysis of Algorithms",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 1,
-        "code": "AS",
-        "name": "Dr. Anil Sharma"
-      },
-      "space": {
-        "id": 4,
-        "code": "R-104",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "198-2026-10-26",
-      "session_id": 198,
-      "date": "2026-10-26",
-      "day": "Mon",
-      "period": 2,
-      "start": "10:00",
-      "end": "11:00",
-      "batch": {
-        "id": 5,
-        "code": "S5-A"
-      },
-      "subject": {
-        "id": 18,
-        "code": "ML-LAB",
-        "name": "Machine Learning Lab",
-        "kind": "lab"
-      },
-      "faculty": {
-        "id": 5,
-        "code": "SK",
-        "name": "Dr. Sameer Khan"
-      },
-      "space": {
-        "id": 11,
-        "code": "LAB-3",
-        "kind": "lab"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "222-2026-10-26",
-      "session_id": 222,
-      "date": "2026-10-26",
-      "day": "Mon",
-      "period": 2,
-      "start": "10:00",
-      "end": "11:00",
-      "batch": {
-        "id": 6,
-        "code": "S5-B"
-      },
-      "subject": {
-        "id": 14,
-        "code": "DBMS",
-        "name": "Database Management Systems",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 7,
-        "code": "AM",
-        "name": "Dr. Arjun Mehta"
-      },
-      "space": {
-        "id": 6,
-        "code": "R-202",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "126-2026-10-26",
-      "session_id": 126,
-      "date": "2026-10-26",
-      "day": "Mon",
-      "period": 3,
-      "start": "11:00",
-      "end": "12:00",
-      "batch": {
-        "id": 2,
-        "code": "S1-B"
-      },
-      "subject": {
-        "id": 3,
-        "code": "PHY",
-        "name": "Engineering Physics",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 8,
-        "code": "SR",
-        "name": "Prof. Sunita Rao"
-      },
-      "space": {
-        "id": 2,
-        "code": "R-102",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "150-2026-10-26",
-      "session_id": 150,
-      "date": "2026-10-26",
-      "day": "Mon",
-      "period": 3,
-      "start": "11:00",
-      "end": "12:00",
-      "batch": {
-        "id": 3,
-        "code": "S3-A"
-      },
-      "subject": {
-        "id": 7,
-        "code": "DAA",
-        "name": "Design and Analysis of Algorithms",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 1,
-        "code": "AS",
-        "name": "Dr. Anil Sharma"
-      },
-      "space": {
-        "id": 3,
-        "code": "R-103",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "223-2026-10-26",
-      "session_id": 223,
-      "date": "2026-10-26",
-      "day": "Mon",
-      "period": 3,
-      "start": "11:00",
-      "end": "12:00",
-      "batch": {
-        "id": 6,
-        "code": "S5-B"
-      },
-      "subject": {
-        "id": 15,
-        "code": "OS",
-        "name": "Operating Systems",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 9,
-        "code": "VS",
-        "name": "Dr. Vikram Singh"
-      },
-      "space": {
-        "id": 6,
-        "code": "R-202",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "127-2026-10-26",
-      "session_id": 127,
-      "date": "2026-10-26",
-      "day": "Mon",
-      "period": 4,
-      "start": "12:00",
-      "end": "13:00",
-      "batch": {
-        "id": 2,
-        "code": "S1-B"
-      },
-      "subject": {
-        "id": 1,
-        "code": "MATH1",
-        "name": "Engineering Mathematics I",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 6,
-        "code": "KJ",
-        "name": "Prof. Kavita Joshi"
-      },
-      "space": {
-        "id": 2,
-        "code": "R-102",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "175-2026-10-26",
-      "session_id": 175,
-      "date": "2026-10-26",
-      "day": "Mon",
-      "period": 4,
-      "start": "12:00",
-      "end": "13:00",
-      "batch": {
-        "id": 4,
-        "code": "S3-B"
-      },
-      "subject": {
-        "id": 11,
-        "code": "PROB",
-        "name": "Probability and Statistics",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 8,
-        "code": "SR",
-        "name": "Prof. Sunita Rao"
-      },
-      "space": {
-        "id": 4,
-        "code": "R-104",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "224-2026-10-26",
-      "session_id": 224,
-      "date": "2026-10-26",
-      "day": "Mon",
-      "period": 4,
-      "start": "12:00",
-      "end": "13:00",
-      "batch": {
-        "id": 6,
-        "code": "S5-B"
-      },
-      "subject": {
-        "id": 17,
-        "code": "DV",
-        "name": "Data Visualisation",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 11,
-        "code": "MT",
-        "name": "Dr. Manish Tiwari"
-      },
-      "space": {
-        "id": 6,
-        "code": "R-202",
+        "code": "B-002",
         "kind": "room"
       },
       "status": "scheduled",
@@ -567,27 +80,27 @@
       "session_id": 103,
       "date": "2026-10-26",
       "day": "Mon",
-      "period": 5,
-      "start": "14:00",
-      "end": "15:00",
+      "period": 3,
+      "start": "11:00",
+      "end": "12:00",
       "batch": {
         "id": 1,
-        "code": "S1-A"
+        "code": "AI&DS-3"
       },
       "subject": {
-        "id": 3,
-        "code": "PHY",
-        "name": "Engineering Physics",
+        "id": 2,
+        "code": "DS6A-202",
+        "name": "Probability Distributions",
         "kind": "theory"
       },
       "faculty": {
-        "id": 8,
-        "code": "SR",
-        "name": "Prof. Sunita Rao"
+        "id": 2,
+        "code": "SP",
+        "name": "Simran Prajapati"
       },
       "space": {
         "id": 1,
-        "code": "R-101",
+        "code": "B-002",
         "kind": "room"
       },
       "status": "scheduled",
@@ -597,235 +110,31 @@
       "moved_from": null
     },
     {
-      "key": "151-2026-10-26",
-      "session_id": 151,
-      "date": "2026-10-26",
-      "day": "Mon",
-      "period": 5,
-      "start": "14:00",
-      "end": "15:00",
-      "batch": {
-        "id": 3,
-        "code": "S3-A"
-      },
-      "subject": {
-        "id": 12,
-        "code": "OOP-LAB",
-        "name": "OOP Lab",
-        "kind": "lab"
-      },
-      "faculty": {
-        "id": 4,
-        "code": "NG",
-        "name": "Prof. Neha Gupta"
-      },
-      "space": {
-        "id": 10,
-        "code": "LAB-2",
-        "kind": "lab"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "199-2026-10-26",
-      "session_id": 199,
-      "date": "2026-10-26",
-      "day": "Mon",
-      "period": 5,
-      "start": "14:00",
-      "end": "15:00",
-      "batch": {
-        "id": 5,
-        "code": "S5-A"
-      },
-      "subject": {
-        "id": 14,
-        "code": "DBMS",
-        "name": "Database Management Systems",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 7,
-        "code": "AM",
-        "name": "Dr. Arjun Mehta"
-      },
-      "space": {
-        "id": 5,
-        "code": "R-201",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "152-2026-10-26",
-      "session_id": 152,
-      "date": "2026-10-26",
-      "day": "Mon",
-      "period": 6,
-      "start": "15:00",
-      "end": "16:00",
-      "batch": {
-        "id": 3,
-        "code": "S3-A"
-      },
-      "subject": {
-        "id": 12,
-        "code": "OOP-LAB",
-        "name": "OOP Lab",
-        "kind": "lab"
-      },
-      "faculty": {
-        "id": 4,
-        "code": "NG",
-        "name": "Prof. Neha Gupta"
-      },
-      "space": {
-        "id": 10,
-        "code": "LAB-2",
-        "kind": "lab"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "176-2026-10-26",
-      "session_id": 176,
-      "date": "2026-10-26",
-      "day": "Mon",
-      "period": 6,
-      "start": "15:00",
-      "end": "16:00",
-      "batch": {
-        "id": 4,
-        "code": "S3-B"
-      },
-      "subject": {
-        "id": 10,
-        "code": "DM",
-        "name": "Discrete Mathematics",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 12,
-        "code": "RC",
-        "name": "Prof. Ritu Choudhary"
-      },
-      "space": {
-        "id": 4,
-        "code": "R-104",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "200-2026-10-26",
-      "session_id": 200,
-      "date": "2026-10-26",
-      "day": "Mon",
-      "period": 6,
-      "start": "15:00",
-      "end": "16:00",
-      "batch": {
-        "id": 5,
-        "code": "S5-A"
-      },
-      "subject": {
-        "id": 17,
-        "code": "DV",
-        "name": "Data Visualisation",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 11,
-        "code": "MT",
-        "name": "Dr. Manish Tiwari"
-      },
-      "space": {
-        "id": 5,
-        "code": "R-201",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "225-2026-10-26",
-      "session_id": 225,
-      "date": "2026-10-26",
-      "day": "Mon",
-      "period": 6,
-      "start": "15:00",
-      "end": "16:00",
-      "batch": {
-        "id": 6,
-        "code": "S5-B"
-      },
-      "subject": {
-        "id": 13,
-        "code": "ML",
-        "name": "Machine Learning",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 5,
-        "code": "SK",
-        "name": "Dr. Sameer Khan"
-      },
-      "space": {
-        "id": 6,
-        "code": "R-202",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "104-2026-10-27",
+      "key": "104-2026-10-26",
       "session_id": 104,
-      "date": "2026-10-27",
-      "day": "Tue",
-      "period": 1,
-      "start": "09:00",
-      "end": "10:00",
+      "date": "2026-10-26",
+      "day": "Mon",
+      "period": 4,
+      "start": "13:00",
+      "end": "14:00",
       "batch": {
         "id": 1,
-        "code": "S1-A"
+        "code": "AI&DS-3"
       },
       "subject": {
-        "id": 4,
-        "code": "COMM",
+        "id": 5,
+        "code": "DS6A-205",
         "name": "Communication Skills",
         "kind": "theory"
       },
       "faculty": {
-        "id": 10,
-        "code": "PA",
-        "name": "Prof. Pooja Agrawal"
+        "id": 5,
+        "code": "MK",
+        "name": "Dr. Meenu Kumar"
       },
       "space": {
         "id": 1,
-        "code": "R-101",
+        "code": "B-002",
         "kind": "room"
       },
       "status": "scheduled",
@@ -835,518 +144,31 @@
       "moved_from": null
     },
     {
-      "key": "128-2026-10-27",
-      "session_id": 128,
-      "date": "2026-10-27",
-      "day": "Tue",
-      "period": 1,
-      "start": "09:00",
-      "end": "10:00",
-      "batch": {
-        "id": 2,
-        "code": "S1-B"
-      },
-      "subject": {
-        "id": 1,
-        "code": "MATH1",
-        "name": "Engineering Mathematics I",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 6,
-        "code": "KJ",
-        "name": "Prof. Kavita Joshi"
-      },
-      "space": {
-        "id": 2,
-        "code": "R-102",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "153-2026-10-27",
-      "session_id": 153,
-      "date": "2026-10-27",
-      "day": "Tue",
-      "period": 1,
-      "start": "09:00",
-      "end": "10:00",
-      "batch": {
-        "id": 3,
-        "code": "S3-A"
-      },
-      "subject": {
-        "id": 7,
-        "code": "DAA",
-        "name": "Design and Analysis of Algorithms",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 1,
-        "code": "AS",
-        "name": "Dr. Anil Sharma"
-      },
-      "space": {
-        "id": 3,
-        "code": "R-103",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "177-2026-10-27",
-      "session_id": 177,
-      "date": "2026-10-27",
-      "day": "Tue",
-      "period": 1,
-      "start": "09:00",
-      "end": "10:00",
-      "batch": {
-        "id": 4,
-        "code": "S3-B"
-      },
-      "subject": {
-        "id": 12,
-        "code": "OOP-LAB",
-        "name": "OOP Lab",
-        "kind": "lab"
-      },
-      "faculty": {
-        "id": 7,
-        "code": "AM",
-        "name": "Dr. Arjun Mehta"
-      },
-      "space": {
-        "id": 10,
-        "code": "LAB-2",
-        "kind": "lab"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "201-2026-10-27",
-      "session_id": 201,
-      "date": "2026-10-27",
-      "day": "Tue",
-      "period": 1,
-      "start": "09:00",
-      "end": "10:00",
-      "batch": {
-        "id": 5,
-        "code": "S5-A"
-      },
-      "subject": {
-        "id": 16,
-        "code": "CN",
-        "name": "Computer Networks",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 9,
-        "code": "VS",
-        "name": "Dr. Vikram Singh"
-      },
-      "space": {
-        "id": 5,
-        "code": "R-201",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "101-2026-10-26-new",
-      "session_id": 101,
-      "date": "2026-10-27",
-      "day": "Tue",
-      "period": 2,
-      "start": "10:00",
-      "end": "11:00",
-      "batch": {
-        "id": 1,
-        "code": "S1-A"
-      },
-      "subject": {
-        "id": 2,
-        "code": "PROG",
-        "name": "Programming in C",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 2,
-        "code": "PV",
-        "name": "Dr. Priya Verma"
-      },
-      "space": {
-        "id": 1,
-        "code": "R-101",
-        "kind": "room"
-      },
-      "status": "moved_here",
-      "reason": "Dr. Priya Verma on leave",
-      "proposal_id": 1,
-      "moved_to": null,
-      "moved_from": {
-        "date": "2026-10-26",
-        "day": "Mon",
-        "period": 1,
-        "start": "09:00",
-        "end": "10:00",
-        "space": {
-          "id": 1,
-          "code": "R-101",
-          "kind": "room"
-        }
-      }
-    },
-    {
-      "key": "178-2026-10-27",
-      "session_id": 178,
-      "date": "2026-10-27",
-      "day": "Tue",
-      "period": 2,
-      "start": "10:00",
-      "end": "11:00",
-      "batch": {
-        "id": 4,
-        "code": "S3-B"
-      },
-      "subject": {
-        "id": 12,
-        "code": "OOP-LAB",
-        "name": "OOP Lab",
-        "kind": "lab"
-      },
-      "faculty": {
-        "id": 7,
-        "code": "AM",
-        "name": "Dr. Arjun Mehta"
-      },
-      "space": {
-        "id": 10,
-        "code": "LAB-2",
-        "kind": "lab"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "226-2026-10-27",
-      "session_id": 226,
-      "date": "2026-10-27",
-      "day": "Tue",
-      "period": 2,
-      "start": "10:00",
-      "end": "11:00",
-      "batch": {
-        "id": 6,
-        "code": "S5-B"
-      },
-      "subject": {
-        "id": 13,
-        "code": "ML",
-        "name": "Machine Learning",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 5,
-        "code": "SK",
-        "name": "Dr. Sameer Khan"
-      },
-      "space": {
-        "id": 6,
-        "code": "R-202",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "129-2026-10-27",
-      "session_id": 129,
-      "date": "2026-10-27",
-      "day": "Tue",
-      "period": 3,
-      "start": "11:00",
-      "end": "12:00",
-      "batch": {
-        "id": 2,
-        "code": "S1-B"
-      },
-      "subject": {
-        "id": 3,
-        "code": "PHY",
-        "name": "Engineering Physics",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 8,
-        "code": "SR",
-        "name": "Prof. Sunita Rao"
-      },
-      "space": {
-        "id": 2,
-        "code": "R-102",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "154-2026-10-27",
-      "session_id": 154,
-      "date": "2026-10-27",
-      "day": "Tue",
-      "period": 3,
-      "start": "11:00",
-      "end": "12:00",
-      "batch": {
-        "id": 3,
-        "code": "S3-A"
-      },
-      "subject": {
-        "id": 11,
-        "code": "PROB",
-        "name": "Probability and Statistics",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 6,
-        "code": "KJ",
-        "name": "Prof. Kavita Joshi"
-      },
-      "space": {
-        "id": 3,
-        "code": "R-103",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "179-2026-10-27",
-      "session_id": 179,
-      "date": "2026-10-27",
-      "day": "Tue",
-      "period": 3,
-      "start": "11:00",
-      "end": "12:00",
-      "batch": {
-        "id": 4,
-        "code": "S3-B"
-      },
-      "subject": {
-        "id": 9,
-        "code": "CA",
-        "name": "Computer Architecture",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 3,
-        "code": "RJ",
-        "name": "Dr. Rakesh Jain"
-      },
-      "space": {
-        "id": 4,
-        "code": "R-104",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "202-2026-10-27",
-      "session_id": 202,
-      "date": "2026-10-27",
-      "day": "Tue",
-      "period": 3,
-      "start": "11:00",
-      "end": "12:00",
-      "batch": {
-        "id": 5,
-        "code": "S5-A"
-      },
-      "subject": {
-        "id": 13,
-        "code": "ML",
-        "name": "Machine Learning",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 5,
-        "code": "SK",
-        "name": "Dr. Sameer Khan"
-      },
-      "space": {
-        "id": 5,
-        "code": "R-201",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "227-2026-10-27",
-      "session_id": 227,
-      "date": "2026-10-27",
-      "day": "Tue",
-      "period": 3,
-      "start": "11:00",
-      "end": "12:00",
-      "batch": {
-        "id": 6,
-        "code": "S5-B"
-      },
-      "subject": {
-        "id": 18,
-        "code": "ML-LAB",
-        "name": "Machine Learning Lab",
-        "kind": "lab"
-      },
-      "faculty": {
-        "id": 11,
-        "code": "MT",
-        "name": "Dr. Manish Tiwari"
-      },
-      "space": {
-        "id": 11,
-        "code": "LAB-3",
-        "kind": "lab"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "105-2026-10-27",
+      "key": "105-2026-10-26",
       "session_id": 105,
-      "date": "2026-10-27",
-      "day": "Tue",
-      "period": 4,
-      "start": "12:00",
-      "end": "13:00",
+      "date": "2026-10-26",
+      "day": "Mon",
+      "period": 5,
+      "start": "14:00",
+      "end": "15:00",
       "batch": {
         "id": 1,
-        "code": "S1-A"
+        "code": "AI&DS-3"
       },
       "subject": {
-        "id": 1,
-        "code": "MATH1",
-        "name": "Engineering Mathematics I",
-        "kind": "theory"
+        "id": 8,
+        "code": "DS6A-204 (Lab)",
+        "name": "Numerical Methods/Engineering Economics (Lab)",
+        "kind": "lab"
       },
       "faculty": {
-        "id": 6,
-        "code": "KJ",
-        "name": "Prof. Kavita Joshi"
-      },
-      "space": {
-        "id": 1,
-        "code": "R-101",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "130-2026-10-27",
-      "session_id": 130,
-      "date": "2026-10-27",
-      "day": "Tue",
-      "period": 4,
-      "start": "12:00",
-      "end": "13:00",
-      "batch": {
-        "id": 2,
-        "code": "S1-B"
-      },
-      "subject": {
         "id": 4,
-        "code": "COMM",
-        "name": "Communication Skills",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 10,
-        "code": "PA",
-        "name": "Prof. Pooja Agrawal"
+        "code": "PP",
+        "name": "Ms. Pallavi Pandey"
       },
       "space": {
-        "id": 2,
-        "code": "R-102",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "155-2026-10-27",
-      "session_id": 155,
-      "date": "2026-10-27",
-      "day": "Tue",
-      "period": 4,
-      "start": "12:00",
-      "end": "13:00",
-      "batch": {
-        "id": 3,
-        "code": "S3-A"
-      },
-      "subject": {
-        "id": 10,
-        "code": "DM",
-        "name": "Discrete Mathematics",
-        "kind": "theory"
-      },
-      "faculty": {
         "id": 1,
-        "code": "AS",
-        "name": "Dr. Anil Sharma"
-      },
-      "space": {
-        "id": 3,
-        "code": "R-103",
+        "code": "B-002",
         "kind": "room"
       },
       "status": "scheduled",
@@ -1356,201 +178,31 @@
       "moved_from": null
     },
     {
-      "key": "203-2026-10-27",
-      "session_id": 203,
-      "date": "2026-10-27",
-      "day": "Tue",
-      "period": 4,
-      "start": "12:00",
-      "end": "13:00",
-      "batch": {
-        "id": 5,
-        "code": "S5-A"
-      },
-      "subject": {
-        "id": 15,
-        "code": "OS",
-        "name": "Operating Systems",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 9,
-        "code": "VS",
-        "name": "Dr. Vikram Singh"
-      },
-      "space": {
-        "id": 5,
-        "code": "R-201",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "228-2026-10-27",
-      "session_id": 228,
-      "date": "2026-10-27",
-      "day": "Tue",
-      "period": 4,
-      "start": "12:00",
-      "end": "13:00",
-      "batch": {
-        "id": 6,
-        "code": "S5-B"
-      },
-      "subject": {
-        "id": 18,
-        "code": "ML-LAB",
-        "name": "Machine Learning Lab",
-        "kind": "lab"
-      },
-      "faculty": {
-        "id": 11,
-        "code": "MT",
-        "name": "Dr. Manish Tiwari"
-      },
-      "space": {
-        "id": 11,
-        "code": "LAB-3",
-        "kind": "lab"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "106-2026-10-27",
+      "key": "106-2026-10-26",
       "session_id": 106,
-      "date": "2026-10-27",
-      "day": "Tue",
-      "period": 5,
-      "start": "14:00",
-      "end": "15:00",
+      "date": "2026-10-26",
+      "day": "Mon",
+      "period": 6,
+      "start": "15:00",
+      "end": "16:00",
       "batch": {
         "id": 1,
-        "code": "S1-A"
+        "code": "AI&DS-3"
       },
       "subject": {
-        "id": 6,
-        "code": "PROG-LAB",
-        "name": "C Programming Lab",
+        "id": 8,
+        "code": "DS6A-204 (Lab)",
+        "name": "Numerical Methods/Engineering Economics (Lab)",
         "kind": "lab"
       },
       "faculty": {
-        "id": 2,
-        "code": "PV",
-        "name": "Dr. Priya Verma"
-      },
-      "space": {
-        "id": 9,
-        "code": "LAB-1",
-        "kind": "lab"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "156-2026-10-27",
-      "session_id": 156,
-      "date": "2026-10-27",
-      "day": "Tue",
-      "period": 5,
-      "start": "14:00",
-      "end": "15:00",
-      "batch": {
-        "id": 3,
-        "code": "S3-A"
-      },
-      "subject": {
-        "id": 9,
-        "code": "CA",
-        "name": "Computer Architecture",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 3,
-        "code": "RJ",
-        "name": "Dr. Rakesh Jain"
-      },
-      "space": {
-        "id": 3,
-        "code": "R-103",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "180-2026-10-27",
-      "session_id": 180,
-      "date": "2026-10-27",
-      "day": "Tue",
-      "period": 5,
-      "start": "14:00",
-      "end": "15:00",
-      "batch": {
         "id": 4,
-        "code": "S3-B"
-      },
-      "subject": {
-        "id": 10,
-        "code": "DM",
-        "name": "Discrete Mathematics",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 12,
-        "code": "RC",
-        "name": "Prof. Ritu Choudhary"
+        "code": "PP",
+        "name": "Ms. Pallavi Pandey"
       },
       "space": {
-        "id": 4,
-        "code": "R-104",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "229-2026-10-27",
-      "session_id": 229,
-      "date": "2026-10-27",
-      "day": "Tue",
-      "period": 5,
-      "start": "14:00",
-      "end": "15:00",
-      "batch": {
-        "id": 6,
-        "code": "S5-B"
-      },
-      "subject": {
-        "id": 14,
-        "code": "DBMS",
-        "name": "Database Management Systems",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 7,
-        "code": "AM",
-        "name": "Dr. Arjun Mehta"
-      },
-      "space": {
-        "id": 6,
-        "code": "R-202",
+        "id": 1,
+        "code": "B-002",
         "kind": "room"
       },
       "status": "scheduled",
@@ -1564,61 +216,27 @@
       "session_id": 107,
       "date": "2026-10-27",
       "day": "Tue",
-      "period": 6,
-      "start": "15:00",
-      "end": "16:00",
+      "period": 1,
+      "start": "09:00",
+      "end": "10:00",
       "batch": {
         "id": 1,
-        "code": "S1-A"
+        "code": "AI&DS-3"
       },
       "subject": {
-        "id": 6,
-        "code": "PROG-LAB",
-        "name": "C Programming Lab",
-        "kind": "lab"
-      },
-      "faculty": {
-        "id": 2,
-        "code": "PV",
-        "name": "Dr. Priya Verma"
-      },
-      "space": {
-        "id": 9,
-        "code": "LAB-1",
-        "kind": "lab"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "131-2026-10-27",
-      "session_id": 131,
-      "date": "2026-10-27",
-      "day": "Tue",
-      "period": 6,
-      "start": "15:00",
-      "end": "16:00",
-      "batch": {
-        "id": 2,
-        "code": "S1-B"
-      },
-      "subject": {
-        "id": 5,
-        "code": "EVS",
-        "name": "Environmental Studies",
+        "id": 3,
+        "code": "DS6A-203",
+        "name": "Computer Architecture",
         "kind": "theory"
       },
       "faculty": {
-        "id": 12,
-        "code": "RC",
-        "name": "Prof. Ritu Choudhary"
+        "id": 3,
+        "code": "AB",
+        "name": "Ms. Alfia Bagwala"
       },
       "space": {
-        "id": 2,
-        "code": "R-102",
+        "id": 1,
+        "code": "B-002",
         "kind": "room"
       },
       "status": "scheduled",
@@ -1628,76 +246,155 @@
       "moved_from": null
     },
     {
-      "key": "204-2026-10-27",
-      "session_id": 204,
-      "date": "2026-10-27",
-      "day": "Tue",
-      "period": 6,
-      "start": "15:00",
-      "end": "16:00",
-      "batch": {
-        "id": 5,
-        "code": "S5-A"
-      },
-      "subject": {
-        "id": 17,
-        "code": "DV",
-        "name": "Data Visualisation",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 11,
-        "code": "MT",
-        "name": "Dr. Manish Tiwari"
-      },
-      "space": {
-        "id": 5,
-        "code": "R-201",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "205-2026-10-27",
-      "session_id": 205,
-      "date": "2026-10-27",
-      "day": "Tue",
-      "period": 7,
-      "start": "16:00",
-      "end": "17:00",
-      "batch": {
-        "id": 5,
-        "code": "S5-A"
-      },
-      "subject": {
-        "id": 14,
-        "code": "DBMS",
-        "name": "Database Management Systems",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 7,
-        "code": "AM",
-        "name": "Dr. Arjun Mehta"
-      },
-      "space": {
-        "id": 5,
-        "code": "R-201",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "108-2026-10-28",
+      "key": "108-2026-10-27",
       "session_id": 108,
+      "date": "2026-10-27",
+      "day": "Tue",
+      "period": 2,
+      "start": "10:00",
+      "end": "11:00",
+      "batch": {
+        "id": 1,
+        "code": "AI&DS-3"
+      },
+      "subject": {
+        "id": 6,
+        "code": "DS6A-206",
+        "name": "Object Oriented Programming",
+        "kind": "theory"
+      },
+      "faculty": {
+        "id": 6,
+        "code": "KP",
+        "name": "Ms. Khushi Patidar"
+      },
+      "space": {
+        "id": 1,
+        "code": "B-002",
+        "kind": "room"
+      },
+      "status": "scheduled",
+      "reason": null,
+      "proposal_id": null,
+      "moved_to": null,
+      "moved_from": null
+    },
+    {
+      "key": "109-2026-10-27",
+      "session_id": 109,
+      "date": "2026-10-27",
+      "day": "Tue",
+      "period": 3,
+      "start": "11:00",
+      "end": "12:00",
+      "batch": {
+        "id": 1,
+        "code": "AI&DS-3"
+      },
+      "subject": {
+        "id": 2,
+        "code": "DS6A-202",
+        "name": "Probability Distributions",
+        "kind": "theory"
+      },
+      "faculty": {
+        "id": 2,
+        "code": "SP",
+        "name": "Simran Prajapati"
+      },
+      "space": {
+        "id": 1,
+        "code": "B-002",
+        "kind": "room"
+      },
+      "status": "moved_away",
+      "reason": "Simran Prajapati on leave",
+      "proposal_id": 1,
+      "moved_to": {
+        "date": "2026-10-28",
+        "day": "Wed",
+        "period": 2,
+        "start": "10:00",
+        "end": "11:00",
+        "space": {
+          "id": 1,
+          "code": "B-002",
+          "kind": "room"
+        }
+      },
+      "moved_from": null
+    },
+    {
+      "key": "110-2026-10-27",
+      "session_id": 110,
+      "date": "2026-10-27",
+      "day": "Tue",
+      "period": 4,
+      "start": "13:00",
+      "end": "14:00",
+      "batch": {
+        "id": 1,
+        "code": "AI&DS-3"
+      },
+      "subject": {
+        "id": 5,
+        "code": "DS6A-205",
+        "name": "Communication Skills",
+        "kind": "theory"
+      },
+      "faculty": {
+        "id": 5,
+        "code": "MK",
+        "name": "Dr. Meenu Kumar"
+      },
+      "space": {
+        "id": 1,
+        "code": "B-002",
+        "kind": "room"
+      },
+      "status": "scheduled",
+      "reason": null,
+      "proposal_id": null,
+      "moved_to": null,
+      "moved_from": null
+    },
+    {
+      "key": "111-2026-10-27",
+      "session_id": 111,
+      "date": "2026-10-27",
+      "day": "Tue",
+      "period": 5,
+      "start": "14:00",
+      "end": "15:00",
+      "batch": {
+        "id": 1,
+        "code": "AI&DS-3"
+      },
+      "subject": {
+        "id": 2,
+        "code": "DS6A-202",
+        "name": "Probability Distributions",
+        "kind": "theory"
+      },
+      "faculty": {
+        "id": 2,
+        "code": "SP",
+        "name": "Simran Prajapati"
+      },
+      "space": {
+        "id": 1,
+        "code": "B-002",
+        "kind": "room"
+      },
+      "status": "cancelled",
+      "reason": "Simran Prajapati on leave",
+      "proposal_id": 2,
+      "moved_to": null,
+      "moved_from": null
+    },
+    {
+      "key": "112-2026-10-28",
+      "session_id": 112,
       "date": "2026-10-28",
       "day": "Wed",
       "period": 1,
@@ -1705,22 +402,22 @@
       "end": "10:00",
       "batch": {
         "id": 1,
-        "code": "S1-A"
+        "code": "AI&DS-3"
       },
       "subject": {
-        "id": 2,
-        "code": "PROG",
-        "name": "Programming in C",
+        "id": 3,
+        "code": "DS6A-203",
+        "name": "Computer Architecture",
         "kind": "theory"
       },
       "faculty": {
-        "id": 2,
-        "code": "PV",
-        "name": "Dr. Priya Verma"
+        "id": 3,
+        "code": "AB",
+        "name": "Ms. Alfia Bagwala"
       },
       "space": {
         "id": 1,
-        "code": "R-101",
+        "code": "B-002",
         "kind": "room"
       },
       "status": "scheduled",
@@ -1730,75 +427,7 @@
       "moved_from": null
     },
     {
-      "key": "181-2026-10-28",
-      "session_id": 181,
-      "date": "2026-10-28",
-      "day": "Wed",
-      "period": 1,
-      "start": "09:00",
-      "end": "10:00",
-      "batch": {
-        "id": 4,
-        "code": "S3-B"
-      },
-      "subject": {
-        "id": 8,
-        "code": "OOP",
-        "name": "Object-Oriented Programming",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 4,
-        "code": "NG",
-        "name": "Prof. Neha Gupta"
-      },
-      "space": {
-        "id": 4,
-        "code": "R-104",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "230-2026-10-28",
-      "session_id": 230,
-      "date": "2026-10-28",
-      "day": "Wed",
-      "period": 1,
-      "start": "09:00",
-      "end": "10:00",
-      "batch": {
-        "id": 6,
-        "code": "S5-B"
-      },
-      "subject": {
-        "id": 14,
-        "code": "DBMS",
-        "name": "Database Management Systems",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 7,
-        "code": "AM",
-        "name": "Dr. Arjun Mehta"
-      },
-      "space": {
-        "id": 6,
-        "code": "R-202",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "109-2026-10-28",
+      "key": "109-2026-10-27-new",
       "session_id": 109,
       "date": "2026-10-28",
       "day": "Wed",
@@ -1807,906 +436,67 @@
       "end": "11:00",
       "batch": {
         "id": 1,
-        "code": "S1-A"
+        "code": "AI&DS-3"
       },
       "subject": {
-        "id": 4,
-        "code": "COMM",
-        "name": "Communication Skills",
+        "id": 2,
+        "code": "DS6A-202",
+        "name": "Probability Distributions",
         "kind": "theory"
       },
       "faculty": {
-        "id": 10,
-        "code": "PA",
-        "name": "Prof. Pooja Agrawal"
+        "id": 2,
+        "code": "SP",
+        "name": "Simran Prajapati"
       },
       "space": {
         "id": 1,
-        "code": "R-101",
+        "code": "B-002",
         "kind": "room"
       },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
+      "status": "moved_here",
+      "reason": "Simran Prajapati on leave",
+      "proposal_id": 1,
       "moved_to": null,
-      "moved_from": null
+      "moved_from": {
+        "date": "2026-10-27",
+        "day": "Tue",
+        "period": 3,
+        "start": "11:00",
+        "end": "12:00",
+        "space": {
+          "id": 1,
+          "code": "B-002",
+          "kind": "room"
+        }
+      }
     },
     {
-      "key": "132-2026-10-28",
-      "session_id": 132,
-      "date": "2026-10-28",
-      "day": "Wed",
-      "period": 2,
-      "start": "10:00",
-      "end": "11:00",
-      "batch": {
-        "id": 2,
-        "code": "S1-B"
-      },
-      "subject": {
-        "id": 2,
-        "code": "PROG",
-        "name": "Programming in C",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 2,
-        "code": "PV",
-        "name": "Dr. Priya Verma"
-      },
-      "space": {
-        "id": 2,
-        "code": "R-102",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "157-2026-10-28",
-      "session_id": 157,
-      "date": "2026-10-28",
-      "day": "Wed",
-      "period": 2,
-      "start": "10:00",
-      "end": "11:00",
-      "batch": {
-        "id": 3,
-        "code": "S3-A"
-      },
-      "subject": {
-        "id": 11,
-        "code": "PROB",
-        "name": "Probability and Statistics",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 6,
-        "code": "KJ",
-        "name": "Prof. Kavita Joshi"
-      },
-      "space": {
-        "id": 3,
-        "code": "R-103",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "182-2026-10-28",
-      "session_id": 182,
-      "date": "2026-10-28",
-      "day": "Wed",
-      "period": 2,
-      "start": "10:00",
-      "end": "11:00",
-      "batch": {
-        "id": 4,
-        "code": "S3-B"
-      },
-      "subject": {
-        "id": 9,
-        "code": "CA",
-        "name": "Computer Architecture",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 3,
-        "code": "RJ",
-        "name": "Dr. Rakesh Jain"
-      },
-      "space": {
-        "id": 4,
-        "code": "R-104",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "206-2026-10-28",
-      "session_id": 206,
-      "date": "2026-10-28",
-      "day": "Wed",
-      "period": 2,
-      "start": "10:00",
-      "end": "11:00",
-      "batch": {
-        "id": 5,
-        "code": "S5-A"
-      },
-      "subject": {
-        "id": 14,
-        "code": "DBMS",
-        "name": "Database Management Systems",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 7,
-        "code": "AM",
-        "name": "Dr. Arjun Mehta"
-      },
-      "space": {
-        "id": 5,
-        "code": "R-201",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "133-2026-10-28",
-      "session_id": 133,
-      "date": "2026-10-28",
-      "day": "Wed",
-      "period": 3,
-      "start": "11:00",
-      "end": "12:00",
-      "batch": {
-        "id": 2,
-        "code": "S1-B"
-      },
-      "subject": {
-        "id": 4,
-        "code": "COMM",
-        "name": "Communication Skills",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 10,
-        "code": "PA",
-        "name": "Prof. Pooja Agrawal"
-      },
-      "space": {
-        "id": 2,
-        "code": "R-102",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "207-2026-10-28",
-      "session_id": 207,
-      "date": "2026-10-28",
-      "day": "Wed",
-      "period": 3,
-      "start": "11:00",
-      "end": "12:00",
-      "batch": {
-        "id": 5,
-        "code": "S5-A"
-      },
-      "subject": {
-        "id": 18,
-        "code": "ML-LAB",
-        "name": "Machine Learning Lab",
-        "kind": "lab"
-      },
-      "faculty": {
-        "id": 5,
-        "code": "SK",
-        "name": "Dr. Sameer Khan"
-      },
-      "space": {
-        "id": 11,
-        "code": "LAB-3",
-        "kind": "lab"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "231-2026-10-28",
-      "session_id": 231,
-      "date": "2026-10-28",
-      "day": "Wed",
-      "period": 3,
-      "start": "11:00",
-      "end": "12:00",
-      "batch": {
-        "id": 6,
-        "code": "S5-B"
-      },
-      "subject": {
-        "id": 15,
-        "code": "OS",
-        "name": "Operating Systems",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 9,
-        "code": "VS",
-        "name": "Dr. Vikram Singh"
-      },
-      "space": {
-        "id": 6,
-        "code": "R-202",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "110-2026-10-28",
-      "session_id": 110,
-      "date": "2026-10-28",
-      "day": "Wed",
-      "period": 4,
-      "start": "12:00",
-      "end": "13:00",
-      "batch": {
-        "id": 1,
-        "code": "S1-A"
-      },
-      "subject": {
-        "id": 5,
-        "code": "EVS",
-        "name": "Environmental Studies",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 10,
-        "code": "PA",
-        "name": "Prof. Pooja Agrawal"
-      },
-      "space": {
-        "id": 1,
-        "code": "R-101",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "158-2026-10-28",
-      "session_id": 158,
-      "date": "2026-10-28",
-      "day": "Wed",
-      "period": 4,
-      "start": "12:00",
-      "end": "13:00",
-      "batch": {
-        "id": 3,
-        "code": "S3-A"
-      },
-      "subject": {
-        "id": 10,
-        "code": "DM",
-        "name": "Discrete Mathematics",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 1,
-        "code": "AS",
-        "name": "Dr. Anil Sharma"
-      },
-      "space": {
-        "id": 3,
-        "code": "R-103",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "208-2026-10-28",
-      "session_id": 208,
-      "date": "2026-10-28",
-      "day": "Wed",
-      "period": 4,
-      "start": "12:00",
-      "end": "13:00",
-      "batch": {
-        "id": 5,
-        "code": "S5-A"
-      },
-      "subject": {
-        "id": 18,
-        "code": "ML-LAB",
-        "name": "Machine Learning Lab",
-        "kind": "lab"
-      },
-      "faculty": {
-        "id": 5,
-        "code": "SK",
-        "name": "Dr. Sameer Khan"
-      },
-      "space": {
-        "id": 11,
-        "code": "LAB-3",
-        "kind": "lab"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "232-2026-10-28",
-      "session_id": 232,
-      "date": "2026-10-28",
-      "day": "Wed",
-      "period": 4,
-      "start": "12:00",
-      "end": "13:00",
-      "batch": {
-        "id": 6,
-        "code": "S5-B"
-      },
-      "subject": {
-        "id": 16,
-        "code": "CN",
-        "name": "Computer Networks",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 9,
-        "code": "VS",
-        "name": "Dr. Vikram Singh"
-      },
-      "space": {
-        "id": 6,
-        "code": "R-202",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "111-2026-10-28",
-      "session_id": 111,
-      "date": "2026-10-28",
-      "day": "Wed",
-      "period": 5,
-      "start": "14:00",
-      "end": "15:00",
-      "batch": {
-        "id": 1,
-        "code": "S1-A"
-      },
-      "subject": {
-        "id": 1,
-        "code": "MATH1",
-        "name": "Engineering Mathematics I",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 6,
-        "code": "KJ",
-        "name": "Prof. Kavita Joshi"
-      },
-      "space": {
-        "id": 1,
-        "code": "R-101",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "134-2026-10-28",
-      "session_id": 134,
-      "date": "2026-10-28",
-      "day": "Wed",
-      "period": 5,
-      "start": "14:00",
-      "end": "15:00",
-      "batch": {
-        "id": 2,
-        "code": "S1-B"
-      },
-      "subject": {
-        "id": 6,
-        "code": "PROG-LAB",
-        "name": "C Programming Lab",
-        "kind": "lab"
-      },
-      "faculty": {
-        "id": 12,
-        "code": "RC",
-        "name": "Prof. Ritu Choudhary"
-      },
-      "space": {
-        "id": 9,
-        "code": "LAB-1",
-        "kind": "lab"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "159-2026-10-28",
-      "session_id": 159,
-      "date": "2026-10-28",
-      "day": "Wed",
-      "period": 5,
-      "start": "14:00",
-      "end": "15:00",
-      "batch": {
-        "id": 3,
-        "code": "S3-A"
-      },
-      "subject": {
-        "id": 9,
-        "code": "CA",
-        "name": "Computer Architecture",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 3,
-        "code": "RJ",
-        "name": "Dr. Rakesh Jain"
-      },
-      "space": {
-        "id": 3,
-        "code": "R-103",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "209-2026-10-28",
-      "session_id": 209,
-      "date": "2026-10-28",
-      "day": "Wed",
-      "period": 5,
-      "start": "14:00",
-      "end": "15:00",
-      "batch": {
-        "id": 5,
-        "code": "S5-A"
-      },
-      "subject": {
-        "id": 13,
-        "code": "ML",
-        "name": "Machine Learning",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 5,
-        "code": "SK",
-        "name": "Dr. Sameer Khan"
-      },
-      "space": {
-        "id": 5,
-        "code": "R-201",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "233-2026-10-28",
-      "session_id": 233,
-      "date": "2026-10-28",
-      "day": "Wed",
-      "period": 5,
-      "start": "14:00",
-      "end": "15:00",
-      "batch": {
-        "id": 6,
-        "code": "S5-B"
-      },
-      "subject": {
-        "id": 17,
-        "code": "DV",
-        "name": "Data Visualisation",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 11,
-        "code": "MT",
-        "name": "Dr. Manish Tiwari"
-      },
-      "space": {
-        "id": 6,
-        "code": "R-202",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "135-2026-10-28",
-      "session_id": 135,
-      "date": "2026-10-28",
-      "day": "Wed",
-      "period": 6,
-      "start": "15:00",
-      "end": "16:00",
-      "batch": {
-        "id": 2,
-        "code": "S1-B"
-      },
-      "subject": {
-        "id": 6,
-        "code": "PROG-LAB",
-        "name": "C Programming Lab",
-        "kind": "lab"
-      },
-      "faculty": {
-        "id": 12,
-        "code": "RC",
-        "name": "Prof. Ritu Choudhary"
-      },
-      "space": {
-        "id": 9,
-        "code": "LAB-1",
-        "kind": "lab"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "160-2026-10-28",
-      "session_id": 160,
-      "date": "2026-10-28",
-      "day": "Wed",
-      "period": 6,
-      "start": "15:00",
-      "end": "16:00",
-      "batch": {
-        "id": 3,
-        "code": "S3-A"
-      },
-      "subject": {
-        "id": 8,
-        "code": "OOP",
-        "name": "Object-Oriented Programming",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 4,
-        "code": "NG",
-        "name": "Prof. Neha Gupta"
-      },
-      "space": {
-        "id": 3,
-        "code": "R-103",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "183-2026-10-28",
-      "session_id": 183,
-      "date": "2026-10-28",
-      "day": "Wed",
-      "period": 6,
-      "start": "15:00",
-      "end": "16:00",
-      "batch": {
-        "id": 4,
-        "code": "S3-B"
-      },
-      "subject": {
-        "id": 11,
-        "code": "PROB",
-        "name": "Probability and Statistics",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 8,
-        "code": "SR",
-        "name": "Prof. Sunita Rao"
-      },
-      "space": {
-        "id": 4,
-        "code": "R-104",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "112-2026-10-29",
-      "session_id": 112,
-      "date": "2026-10-29",
-      "day": "Thu",
-      "period": 1,
-      "start": "09:00",
-      "end": "10:00",
-      "batch": {
-        "id": 1,
-        "code": "S1-A"
-      },
-      "subject": {
-        "id": 6,
-        "code": "PROG-LAB",
-        "name": "C Programming Lab",
-        "kind": "lab"
-      },
-      "faculty": {
-        "id": 2,
-        "code": "PV",
-        "name": "Dr. Priya Verma"
-      },
-      "space": {
-        "id": 9,
-        "code": "LAB-1",
-        "kind": "lab"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "136-2026-10-29",
-      "session_id": 136,
-      "date": "2026-10-29",
-      "day": "Thu",
-      "period": 1,
-      "start": "09:00",
-      "end": "10:00",
-      "batch": {
-        "id": 2,
-        "code": "S1-B"
-      },
-      "subject": {
-        "id": 3,
-        "code": "PHY",
-        "name": "Engineering Physics",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 8,
-        "code": "SR",
-        "name": "Prof. Sunita Rao"
-      },
-      "space": {
-        "id": 2,
-        "code": "R-102",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "184-2026-10-29",
-      "session_id": 184,
-      "date": "2026-10-29",
-      "day": "Thu",
-      "period": 1,
-      "start": "09:00",
-      "end": "10:00",
-      "batch": {
-        "id": 4,
-        "code": "S3-B"
-      },
-      "subject": {
-        "id": 9,
-        "code": "CA",
-        "name": "Computer Architecture",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 3,
-        "code": "RJ",
-        "name": "Dr. Rakesh Jain"
-      },
-      "space": {
-        "id": 4,
-        "code": "R-104",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "210-2026-10-29",
-      "session_id": 210,
-      "date": "2026-10-29",
-      "day": "Thu",
-      "period": 1,
-      "start": "09:00",
-      "end": "10:00",
-      "batch": {
-        "id": 5,
-        "code": "S5-A"
-      },
-      "subject": {
-        "id": 17,
-        "code": "DV",
-        "name": "Data Visualisation",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 11,
-        "code": "MT",
-        "name": "Dr. Manish Tiwari"
-      },
-      "space": {
-        "id": 5,
-        "code": "R-201",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "234-2026-10-29",
-      "session_id": 234,
-      "date": "2026-10-29",
-      "day": "Thu",
-      "period": 1,
-      "start": "09:00",
-      "end": "10:00",
-      "batch": {
-        "id": 6,
-        "code": "S5-B"
-      },
-      "subject": {
-        "id": 16,
-        "code": "CN",
-        "name": "Computer Networks",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 9,
-        "code": "VS",
-        "name": "Dr. Vikram Singh"
-      },
-      "space": {
-        "id": 6,
-        "code": "R-202",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "113-2026-10-29",
+      "key": "113-2026-10-28",
       "session_id": 113,
-      "date": "2026-10-29",
-      "day": "Thu",
-      "period": 2,
-      "start": "10:00",
-      "end": "11:00",
+      "date": "2026-10-28",
+      "day": "Wed",
+      "period": 3,
+      "start": "11:00",
+      "end": "12:00",
       "batch": {
         "id": 1,
-        "code": "S1-A"
+        "code": "AI&DS-3"
       },
       "subject": {
-        "id": 6,
-        "code": "PROG-LAB",
-        "name": "C Programming Lab",
-        "kind": "lab"
+        "id": 2,
+        "code": "DS6A-202",
+        "name": "Probability Distributions",
+        "kind": "theory"
       },
       "faculty": {
         "id": 2,
-        "code": "PV",
-        "name": "Dr. Priya Verma"
+        "code": "SP",
+        "name": "Simran Prajapati"
       },
       "space": {
-        "id": 9,
-        "code": "LAB-1",
-        "kind": "lab"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "137-2026-10-29",
-      "session_id": 137,
-      "date": "2026-10-29",
-      "day": "Thu",
-      "period": 2,
-      "start": "10:00",
-      "end": "11:00",
-      "batch": {
-        "id": 2,
-        "code": "S1-B"
-      },
-      "subject": {
         "id": 1,
-        "code": "MATH1",
-        "name": "Engineering Mathematics I",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 6,
-        "code": "KJ",
-        "name": "Prof. Kavita Joshi"
-      },
-      "space": {
-        "id": 2,
-        "code": "R-102",
+        "code": "B-002",
         "kind": "room"
       },
       "status": "scheduled",
@@ -2716,405 +506,31 @@
       "moved_from": null
     },
     {
-      "key": "161-2026-10-29",
-      "session_id": 161,
-      "date": "2026-10-29",
-      "day": "Thu",
-      "period": 2,
-      "start": "10:00",
-      "end": "11:00",
-      "batch": {
-        "id": 3,
-        "code": "S3-A"
-      },
-      "subject": {
-        "id": 7,
-        "code": "DAA",
-        "name": "Design and Analysis of Algorithms",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 1,
-        "code": "AS",
-        "name": "Dr. Anil Sharma"
-      },
-      "space": {
-        "id": 3,
-        "code": "R-103",
-        "kind": "room"
-      },
-      "status": "pending",
-      "reason": "Dr. Anil Sharma on leave",
-      "proposal_id": 5,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "185-2026-10-29",
-      "session_id": 185,
-      "date": "2026-10-29",
-      "day": "Thu",
-      "period": 2,
-      "start": "10:00",
-      "end": "11:00",
-      "batch": {
-        "id": 4,
-        "code": "S3-B"
-      },
-      "subject": {
-        "id": 8,
-        "code": "OOP",
-        "name": "Object-Oriented Programming",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 4,
-        "code": "NG",
-        "name": "Prof. Neha Gupta"
-      },
-      "space": {
-        "id": 4,
-        "code": "R-104",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "211-2026-10-29",
-      "session_id": 211,
-      "date": "2026-10-29",
-      "day": "Thu",
-      "period": 2,
-      "start": "10:00",
-      "end": "11:00",
-      "batch": {
-        "id": 5,
-        "code": "S5-A"
-      },
-      "subject": {
-        "id": 13,
-        "code": "ML",
-        "name": "Machine Learning",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 5,
-        "code": "SK",
-        "name": "Dr. Sameer Khan"
-      },
-      "space": {
-        "id": 5,
-        "code": "R-201",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "235-2026-10-29",
-      "session_id": 235,
-      "date": "2026-10-29",
-      "day": "Thu",
-      "period": 2,
-      "start": "10:00",
-      "end": "11:00",
-      "batch": {
-        "id": 6,
-        "code": "S5-B"
-      },
-      "subject": {
-        "id": 15,
-        "code": "OS",
-        "name": "Operating Systems",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 9,
-        "code": "VS",
-        "name": "Dr. Vikram Singh"
-      },
-      "space": {
-        "id": 6,
-        "code": "R-202",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "114-2026-10-29",
+      "key": "114-2026-10-28",
       "session_id": 114,
-      "date": "2026-10-29",
-      "day": "Thu",
-      "period": 3,
-      "start": "11:00",
-      "end": "12:00",
+      "date": "2026-10-28",
+      "day": "Wed",
+      "period": 4,
+      "start": "13:00",
+      "end": "14:00",
       "batch": {
         "id": 1,
-        "code": "S1-A"
+        "code": "AI&DS-3"
       },
       "subject": {
-        "id": 2,
-        "code": "PROG",
-        "name": "Programming in C",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 2,
-        "code": "PV",
-        "name": "Dr. Priya Verma"
-      },
-      "space": {
-        "id": 1,
-        "code": "R-101",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "138-2026-10-29",
-      "session_id": 138,
-      "date": "2026-10-29",
-      "day": "Thu",
-      "period": 3,
-      "start": "11:00",
-      "end": "12:00",
-      "batch": {
-        "id": 2,
-        "code": "S1-B"
-      },
-      "subject": {
-        "id": 4,
-        "code": "COMM",
+        "id": 5,
+        "code": "DS6A-205",
         "name": "Communication Skills",
         "kind": "theory"
       },
       "faculty": {
-        "id": 10,
-        "code": "PA",
-        "name": "Prof. Pooja Agrawal"
-      },
-      "space": {
-        "id": 2,
-        "code": "R-102",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "162-2026-10-29",
-      "session_id": 162,
-      "date": "2026-10-29",
-      "day": "Thu",
-      "period": 3,
-      "start": "11:00",
-      "end": "12:00",
-      "batch": {
-        "id": 3,
-        "code": "S3-A"
-      },
-      "subject": {
-        "id": 9,
-        "code": "CA",
-        "name": "Computer Architecture",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 3,
-        "code": "RJ",
-        "name": "Dr. Rakesh Jain"
-      },
-      "space": {
-        "id": 3,
-        "code": "R-103",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "212-2026-10-29",
-      "session_id": 212,
-      "date": "2026-10-29",
-      "day": "Thu",
-      "period": 3,
-      "start": "11:00",
-      "end": "12:00",
-      "batch": {
         "id": 5,
-        "code": "S5-A"
-      },
-      "subject": {
-        "id": 16,
-        "code": "CN",
-        "name": "Computer Networks",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 9,
-        "code": "VS",
-        "name": "Dr. Vikram Singh"
+        "code": "MK",
+        "name": "Dr. Meenu Kumar"
       },
       "space": {
-        "id": 5,
-        "code": "R-201",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "139-2026-10-29",
-      "session_id": 139,
-      "date": "2026-10-29",
-      "day": "Thu",
-      "period": 4,
-      "start": "12:00",
-      "end": "13:00",
-      "batch": {
-        "id": 2,
-        "code": "S1-B"
-      },
-      "subject": {
-        "id": 2,
-        "code": "PROG",
-        "name": "Programming in C",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 2,
-        "code": "PV",
-        "name": "Dr. Priya Verma"
-      },
-      "space": {
-        "id": 2,
-        "code": "R-102",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "163-2026-10-29",
-      "session_id": 163,
-      "date": "2026-10-29",
-      "day": "Thu",
-      "period": 4,
-      "start": "12:00",
-      "end": "13:00",
-      "batch": {
-        "id": 3,
-        "code": "S3-A"
-      },
-      "subject": {
-        "id": 11,
-        "code": "PROB",
-        "name": "Probability and Statistics",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 6,
-        "code": "KJ",
-        "name": "Prof. Kavita Joshi"
-      },
-      "space": {
-        "id": 3,
-        "code": "R-103",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "186-2026-10-29",
-      "session_id": 186,
-      "date": "2026-10-29",
-      "day": "Thu",
-      "period": 4,
-      "start": "12:00",
-      "end": "13:00",
-      "batch": {
-        "id": 4,
-        "code": "S3-B"
-      },
-      "subject": {
-        "id": 7,
-        "code": "DAA",
-        "name": "Design and Analysis of Algorithms",
-        "kind": "theory"
-      },
-      "faculty": {
         "id": 1,
-        "code": "AS",
-        "name": "Dr. Anil Sharma"
-      },
-      "space": {
-        "id": 4,
-        "code": "R-104",
-        "kind": "room"
-      },
-      "status": "pending",
-      "reason": "Dr. Anil Sharma on leave",
-      "proposal_id": 7,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "213-2026-10-29",
-      "session_id": 213,
-      "date": "2026-10-29",
-      "day": "Thu",
-      "period": 4,
-      "start": "12:00",
-      "end": "13:00",
-      "batch": {
-        "id": 5,
-        "code": "S5-A"
-      },
-      "subject": {
-        "id": 15,
-        "code": "OS",
-        "name": "Operating Systems",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 9,
-        "code": "VS",
-        "name": "Dr. Vikram Singh"
-      },
-      "space": {
-        "id": 5,
-        "code": "R-201",
+        "code": "B-002",
         "kind": "room"
       },
       "status": "scheduled",
@@ -3124,100 +540,32 @@
       "moved_from": null
     },
     {
-      "key": "236-2026-10-29",
-      "session_id": 236,
-      "date": "2026-10-29",
-      "day": "Thu",
-      "period": 4,
-      "start": "12:00",
-      "end": "13:00",
-      "batch": {
-        "id": 6,
-        "code": "S5-B"
-      },
-      "subject": {
-        "id": 14,
-        "code": "DBMS",
-        "name": "Database Management Systems",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 7,
-        "code": "AM",
-        "name": "Dr. Arjun Mehta"
-      },
-      "space": {
-        "id": 6,
-        "code": "R-202",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "115-2026-10-29",
+      "key": "115-2026-10-28",
       "session_id": 115,
-      "date": "2026-10-29",
-      "day": "Thu",
+      "date": "2026-10-28",
+      "day": "Wed",
       "period": 5,
       "start": "14:00",
       "end": "15:00",
       "batch": {
         "id": 1,
-        "code": "S1-A"
+        "code": "AI&DS-3"
       },
       "subject": {
-        "id": 5,
-        "code": "EVS",
-        "name": "Environmental Studies",
+        "id": 4,
+        "code": "DS6A-204",
+        "name": "Numerical Methods/Engineering Economics",
         "kind": "theory"
       },
       "faculty": {
-        "id": 10,
-        "code": "PA",
-        "name": "Prof. Pooja Agrawal"
+        "id": 4,
+        "code": "PP",
+        "name": "Ms. Pallavi Pandey"
       },
       "space": {
         "id": 1,
-        "code": "R-101",
+        "code": "B-002",
         "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "187-2026-10-29",
-      "session_id": 187,
-      "date": "2026-10-29",
-      "day": "Thu",
-      "period": 5,
-      "start": "14:00",
-      "end": "15:00",
-      "batch": {
-        "id": 4,
-        "code": "S3-B"
-      },
-      "subject": {
-        "id": 12,
-        "code": "OOP-LAB",
-        "name": "OOP Lab",
-        "kind": "lab"
-      },
-      "faculty": {
-        "id": 7,
-        "code": "AM",
-        "name": "Dr. Arjun Mehta"
-      },
-      "space": {
-        "id": 10,
-        "code": "LAB-2",
-        "kind": "lab"
       },
       "status": "scheduled",
       "reason": null,
@@ -3230,888 +578,129 @@
       "session_id": 116,
       "date": "2026-10-29",
       "day": "Thu",
-      "period": 6,
-      "start": "15:00",
-      "end": "16:00",
+      "period": 1,
+      "start": "09:00",
+      "end": "10:00",
       "batch": {
         "id": 1,
-        "code": "S1-A"
+        "code": "AI&DS-3"
       },
       "subject": {
-        "id": 3,
-        "code": "PHY",
-        "name": "Engineering Physics",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 8,
-        "code": "SR",
-        "name": "Prof. Sunita Rao"
-      },
-      "space": {
         "id": 1,
-        "code": "R-101",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "140-2026-10-29",
-      "session_id": 140,
-      "date": "2026-10-29",
-      "day": "Thu",
-      "period": 6,
-      "start": "15:00",
-      "end": "16:00",
-      "batch": {
-        "id": 2,
-        "code": "S1-B"
-      },
-      "subject": {
-        "id": 5,
-        "code": "EVS",
-        "name": "Environmental Studies",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 12,
-        "code": "RC",
-        "name": "Prof. Ritu Choudhary"
-      },
-      "space": {
-        "id": 2,
-        "code": "R-102",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "164-2026-10-29",
-      "session_id": 164,
-      "date": "2026-10-29",
-      "day": "Thu",
-      "period": 6,
-      "start": "15:00",
-      "end": "16:00",
-      "batch": {
-        "id": 3,
-        "code": "S3-A"
-      },
-      "subject": {
-        "id": 10,
-        "code": "DM",
-        "name": "Discrete Mathematics",
+        "code": "DS6A-201",
+        "name": "Design and Analysis of Algorithm",
         "kind": "theory"
       },
       "faculty": {
         "id": 1,
-        "code": "AS",
-        "name": "Dr. Anil Sharma"
+        "code": "RV",
+        "name": "Ms. Ritika Verma"
       },
       "space": {
-        "id": 3,
-        "code": "R-103",
+        "id": 1,
+        "code": "B-002",
         "kind": "room"
       },
       "status": "pending",
-      "reason": "Dr. Anil Sharma on leave",
-      "proposal_id": 6,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "188-2026-10-29",
-      "session_id": 188,
-      "date": "2026-10-29",
-      "day": "Thu",
-      "period": 6,
-      "start": "15:00",
-      "end": "16:00",
-      "batch": {
-        "id": 4,
-        "code": "S3-B"
-      },
-      "subject": {
-        "id": 12,
-        "code": "OOP-LAB",
-        "name": "OOP Lab",
-        "kind": "lab"
-      },
-      "faculty": {
-        "id": 7,
-        "code": "AM",
-        "name": "Dr. Arjun Mehta"
-      },
-      "space": {
-        "id": 10,
-        "code": "LAB-2",
-        "kind": "lab"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "237-2026-10-29",
-      "session_id": 237,
-      "date": "2026-10-29",
-      "day": "Thu",
-      "period": 6,
-      "start": "15:00",
-      "end": "16:00",
-      "batch": {
-        "id": 6,
-        "code": "S5-B"
-      },
-      "subject": {
-        "id": 13,
-        "code": "ML",
-        "name": "Machine Learning",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 5,
-        "code": "SK",
-        "name": "Dr. Sameer Khan"
-      },
-      "space": {
-        "id": 6,
-        "code": "R-202",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "117-2026-10-30",
-      "session_id": 117,
-      "date": "2026-10-30",
-      "day": "Fri",
-      "period": 1,
-      "start": "09:00",
-      "end": "10:00",
-      "batch": {
-        "id": 1,
-        "code": "S1-A"
-      },
-      "subject": {
-        "id": 4,
-        "code": "COMM",
-        "name": "Communication Skills",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 10,
-        "code": "PA",
-        "name": "Prof. Pooja Agrawal"
-      },
-      "space": {
-        "id": 1,
-        "code": "R-101",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "141-2026-10-30",
-      "session_id": 141,
-      "date": "2026-10-30",
-      "day": "Fri",
-      "period": 1,
-      "start": "09:00",
-      "end": "10:00",
-      "batch": {
-        "id": 2,
-        "code": "S1-B"
-      },
-      "subject": {
-        "id": 6,
-        "code": "PROG-LAB",
-        "name": "C Programming Lab",
-        "kind": "lab"
-      },
-      "faculty": {
-        "id": 12,
-        "code": "RC",
-        "name": "Prof. Ritu Choudhary"
-      },
-      "space": {
-        "id": 9,
-        "code": "LAB-1",
-        "kind": "lab"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "165-2026-10-30",
-      "session_id": 165,
-      "date": "2026-10-30",
-      "day": "Fri",
-      "period": 1,
-      "start": "09:00",
-      "end": "10:00",
-      "batch": {
-        "id": 3,
-        "code": "S3-A"
-      },
-      "subject": {
-        "id": 8,
-        "code": "OOP",
-        "name": "Object-Oriented Programming",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 4,
-        "code": "NG",
-        "name": "Prof. Neha Gupta"
-      },
-      "space": {
-        "id": 3,
-        "code": "R-103",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "189-2026-10-30",
-      "session_id": 189,
-      "date": "2026-10-30",
-      "day": "Fri",
-      "period": 1,
-      "start": "09:00",
-      "end": "10:00",
-      "batch": {
-        "id": 4,
-        "code": "S3-B"
-      },
-      "subject": {
-        "id": 7,
-        "code": "DAA",
-        "name": "Design and Analysis of Algorithms",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 1,
-        "code": "AS",
-        "name": "Dr. Anil Sharma"
-      },
-      "space": {
-        "id": 4,
-        "code": "R-104",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "214-2026-10-30",
-      "session_id": 214,
-      "date": "2026-10-30",
-      "day": "Fri",
-      "period": 1,
-      "start": "09:00",
-      "end": "10:00",
-      "batch": {
-        "id": 5,
-        "code": "S5-A"
-      },
-      "subject": {
-        "id": 14,
-        "code": "DBMS",
-        "name": "Database Management Systems",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 7,
-        "code": "AM",
-        "name": "Dr. Arjun Mehta"
-      },
-      "space": {
-        "id": 5,
-        "code": "R-201",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "238-2026-10-30",
-      "session_id": 238,
-      "date": "2026-10-30",
-      "day": "Fri",
-      "period": 1,
-      "start": "09:00",
-      "end": "10:00",
-      "batch": {
-        "id": 6,
-        "code": "S5-B"
-      },
-      "subject": {
-        "id": 17,
-        "code": "DV",
-        "name": "Data Visualisation",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 11,
-        "code": "MT",
-        "name": "Dr. Manish Tiwari"
-      },
-      "space": {
-        "id": 6,
-        "code": "R-202",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "118-2026-10-30",
-      "session_id": 118,
-      "date": "2026-10-30",
-      "day": "Fri",
-      "period": 2,
-      "start": "10:00",
-      "end": "11:00",
-      "batch": {
-        "id": 1,
-        "code": "S1-A"
-      },
-      "subject": {
-        "id": 2,
-        "code": "PROG",
-        "name": "Programming in C",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 2,
-        "code": "PV",
-        "name": "Dr. Priya Verma"
-      },
-      "space": {
-        "id": 1,
-        "code": "R-101",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "142-2026-10-30",
-      "session_id": 142,
-      "date": "2026-10-30",
-      "day": "Fri",
-      "period": 2,
-      "start": "10:00",
-      "end": "11:00",
-      "batch": {
-        "id": 2,
-        "code": "S1-B"
-      },
-      "subject": {
-        "id": 6,
-        "code": "PROG-LAB",
-        "name": "C Programming Lab",
-        "kind": "lab"
-      },
-      "faculty": {
-        "id": 12,
-        "code": "RC",
-        "name": "Prof. Ritu Choudhary"
-      },
-      "space": {
-        "id": 9,
-        "code": "LAB-1",
-        "kind": "lab"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "190-2026-10-30",
-      "session_id": 190,
-      "date": "2026-10-30",
-      "day": "Fri",
-      "period": 2,
-      "start": "10:00",
-      "end": "11:00",
-      "batch": {
-        "id": 4,
-        "code": "S3-B"
-      },
-      "subject": {
-        "id": 8,
-        "code": "OOP",
-        "name": "Object-Oriented Programming",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 4,
-        "code": "NG",
-        "name": "Prof. Neha Gupta"
-      },
-      "space": {
-        "id": 4,
-        "code": "R-104",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "143-2026-10-30",
-      "session_id": 143,
-      "date": "2026-10-30",
-      "day": "Fri",
-      "period": 3,
-      "start": "11:00",
-      "end": "12:00",
-      "batch": {
-        "id": 2,
-        "code": "S1-B"
-      },
-      "subject": {
-        "id": 4,
-        "code": "COMM",
-        "name": "Communication Skills",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 10,
-        "code": "PA",
-        "name": "Prof. Pooja Agrawal"
-      },
-      "space": {
-        "id": 2,
-        "code": "R-102",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "166-2026-10-30",
-      "session_id": 166,
-      "date": "2026-10-30",
-      "day": "Fri",
-      "period": 3,
-      "start": "11:00",
-      "end": "12:00",
-      "batch": {
-        "id": 3,
-        "code": "S3-A"
-      },
-      "subject": {
-        "id": 9,
-        "code": "CA",
-        "name": "Computer Architecture",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 3,
-        "code": "RJ",
-        "name": "Dr. Rakesh Jain"
-      },
-      "space": {
-        "id": 3,
-        "code": "R-103",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "215-2026-10-30",
-      "session_id": 215,
-      "date": "2026-10-30",
-      "day": "Fri",
-      "period": 3,
-      "start": "11:00",
-      "end": "12:00",
-      "batch": {
-        "id": 5,
-        "code": "S5-A"
-      },
-      "subject": {
-        "id": 16,
-        "code": "CN",
-        "name": "Computer Networks",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 9,
-        "code": "VS",
-        "name": "Dr. Vikram Singh"
-      },
-      "space": {
-        "id": 5,
-        "code": "R-201",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "239-2026-10-30",
-      "session_id": 239,
-      "date": "2026-10-30",
-      "day": "Fri",
-      "period": 3,
-      "start": "11:00",
-      "end": "12:00",
-      "batch": {
-        "id": 6,
-        "code": "S5-B"
-      },
-      "subject": {
-        "id": 18,
-        "code": "ML-LAB",
-        "name": "Machine Learning Lab",
-        "kind": "lab"
-      },
-      "faculty": {
-        "id": 11,
-        "code": "MT",
-        "name": "Dr. Manish Tiwari"
-      },
-      "space": {
-        "id": 11,
-        "code": "LAB-3",
-        "kind": "lab"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "119-2026-10-30",
-      "session_id": 119,
-      "date": "2026-10-30",
-      "day": "Fri",
-      "period": 4,
-      "start": "12:00",
-      "end": "13:00",
-      "batch": {
-        "id": 1,
-        "code": "S1-A"
-      },
-      "subject": {
-        "id": 5,
-        "code": "EVS",
-        "name": "Environmental Studies",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 10,
-        "code": "PA",
-        "name": "Prof. Pooja Agrawal"
-      },
-      "space": {
-        "id": 1,
-        "code": "R-101",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "167-2026-10-30",
-      "session_id": 167,
-      "date": "2026-10-30",
-      "day": "Fri",
-      "period": 4,
-      "start": "12:00",
-      "end": "13:00",
-      "batch": {
-        "id": 3,
-        "code": "S3-A"
-      },
-      "subject": {
-        "id": 10,
-        "code": "DM",
-        "name": "Discrete Mathematics",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 1,
-        "code": "AS",
-        "name": "Dr. Anil Sharma"
-      },
-      "space": {
-        "id": 3,
-        "code": "R-103",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "191-2026-10-30",
-      "session_id": 191,
-      "date": "2026-10-30",
-      "day": "Fri",
-      "period": 4,
-      "start": "12:00",
-      "end": "13:00",
-      "batch": {
-        "id": 4,
-        "code": "S3-B"
-      },
-      "subject": {
-        "id": 10,
-        "code": "DM",
-        "name": "Discrete Mathematics",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 12,
-        "code": "RC",
-        "name": "Prof. Ritu Choudhary"
-      },
-      "space": {
-        "id": 4,
-        "code": "R-104",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "240-2026-10-30",
-      "session_id": 240,
-      "date": "2026-10-30",
-      "day": "Fri",
-      "period": 4,
-      "start": "12:00",
-      "end": "13:00",
-      "batch": {
-        "id": 6,
-        "code": "S5-B"
-      },
-      "subject": {
-        "id": 18,
-        "code": "ML-LAB",
-        "name": "Machine Learning Lab",
-        "kind": "lab"
-      },
-      "faculty": {
-        "id": 11,
-        "code": "MT",
-        "name": "Dr. Manish Tiwari"
-      },
-      "space": {
-        "id": 11,
-        "code": "LAB-3",
-        "kind": "lab"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "120-2026-10-30",
-      "session_id": 120,
-      "date": "2026-10-30",
-      "day": "Fri",
-      "period": 5,
-      "start": "14:00",
-      "end": "15:00",
-      "batch": {
-        "id": 1,
-        "code": "S1-A"
-      },
-      "subject": {
-        "id": 3,
-        "code": "PHY",
-        "name": "Engineering Physics",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 8,
-        "code": "SR",
-        "name": "Prof. Sunita Rao"
-      },
-      "space": {
-        "id": 1,
-        "code": "R-101",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "144-2026-10-30",
-      "session_id": 144,
-      "date": "2026-10-30",
-      "day": "Fri",
-      "period": 5,
-      "start": "14:00",
-      "end": "15:00",
-      "batch": {
-        "id": 2,
-        "code": "S1-B"
-      },
-      "subject": {
-        "id": 5,
-        "code": "EVS",
-        "name": "Environmental Studies",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 12,
-        "code": "RC",
-        "name": "Prof. Ritu Choudhary"
-      },
-      "space": {
-        "id": 2,
-        "code": "R-102",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "168-2026-10-30",
-      "session_id": 168,
-      "date": "2026-10-30",
-      "day": "Fri",
-      "period": 5,
-      "start": "14:00",
-      "end": "15:00",
-      "batch": {
-        "id": 3,
-        "code": "S3-A"
-      },
-      "subject": {
-        "id": 12,
-        "code": "OOP-LAB",
-        "name": "OOP Lab",
-        "kind": "lab"
-      },
-      "faculty": {
-        "id": 4,
-        "code": "NG",
-        "name": "Prof. Neha Gupta"
-      },
-      "space": {
-        "id": 12,
-        "code": "LAB-4",
-        "kind": "lab"
-      },
-      "status": "room_changed",
-      "reason": "LAB-2 closed",
+      "reason": "Ms. Ritika Verma on leave",
       "proposal_id": 3,
       "moved_to": null,
-      "moved_from": {
-        "date": "2026-10-30",
-        "day": "Fri",
-        "period": 5,
-        "start": "14:00",
-        "end": "15:00",
-        "space": {
-          "id": 10,
-          "code": "LAB-2",
-          "kind": "lab"
-        }
-      }
+      "moved_from": null
     },
     {
-      "key": "192-2026-10-30",
-      "session_id": 192,
-      "date": "2026-10-30",
-      "day": "Fri",
-      "period": 5,
-      "start": "14:00",
-      "end": "15:00",
+      "key": "117-2026-10-29",
+      "session_id": 117,
+      "date": "2026-10-29",
+      "day": "Thu",
+      "period": 2,
+      "start": "10:00",
+      "end": "11:00",
       "batch": {
-        "id": 4,
-        "code": "S3-B"
+        "id": 1,
+        "code": "AI&DS-3"
       },
       "subject": {
-        "id": 9,
-        "code": "CA",
-        "name": "Computer Architecture",
+        "id": 7,
+        "code": "DS6A-201 (Lab)",
+        "name": "Design and Analysis of Algorithm (Lab)",
+        "kind": "lab"
+      },
+      "faculty": {
+        "id": 1,
+        "code": "RV",
+        "name": "Ms. Ritika Verma"
+      },
+      "space": {
+        "id": 1,
+        "code": "B-002",
+        "kind": "room"
+      },
+      "status": "pending",
+      "reason": "Ms. Ritika Verma on leave",
+      "proposal_id": 4,
+      "moved_to": null,
+      "moved_from": null
+    },
+    {
+      "key": "118-2026-10-29",
+      "session_id": 118,
+      "date": "2026-10-29",
+      "day": "Thu",
+      "period": 3,
+      "start": "11:00",
+      "end": "12:00",
+      "batch": {
+        "id": 1,
+        "code": "AI&DS-3"
+      },
+      "subject": {
+        "id": 7,
+        "code": "DS6A-201 (Lab)",
+        "name": "Design and Analysis of Algorithm (Lab)",
+        "kind": "lab"
+      },
+      "faculty": {
+        "id": 1,
+        "code": "RV",
+        "name": "Ms. Ritika Verma"
+      },
+      "space": {
+        "id": 1,
+        "code": "B-002",
+        "kind": "room"
+      },
+      "status": "pending",
+      "reason": "Ms. Ritika Verma on leave",
+      "proposal_id": 5,
+      "moved_to": null,
+      "moved_from": null
+    },
+    {
+      "key": "119-2026-10-29",
+      "session_id": 119,
+      "date": "2026-10-29",
+      "day": "Thu",
+      "period": 4,
+      "start": "13:00",
+      "end": "14:00",
+      "batch": {
+        "id": 1,
+        "code": "AI&DS-3"
+      },
+      "subject": {
+        "id": 4,
+        "code": "DS6A-204",
+        "name": "Numerical Methods/Engineering Economics",
         "kind": "theory"
       },
       "faculty": {
-        "id": 3,
-        "code": "RJ",
-        "name": "Dr. Rakesh Jain"
+        "id": 4,
+        "code": "PP",
+        "name": "Ms. Pallavi Pandey"
       },
       "space": {
-        "id": 4,
-        "code": "R-104",
+        "id": 1,
+        "code": "B-002",
         "kind": "room"
       },
       "status": "scheduled",
@@ -4121,65 +710,31 @@
       "moved_from": null
     },
     {
-      "key": "216-2026-10-30",
-      "session_id": 216,
-      "date": "2026-10-30",
-      "day": "Fri",
+      "key": "120-2026-10-29",
+      "session_id": 120,
+      "date": "2026-10-29",
+      "day": "Thu",
       "period": 5,
       "start": "14:00",
       "end": "15:00",
       "batch": {
-        "id": 5,
-        "code": "S5-A"
+        "id": 1,
+        "code": "AI&DS-3"
       },
       "subject": {
-        "id": 15,
-        "code": "OS",
-        "name": "Operating Systems",
+        "id": 4,
+        "code": "DS6A-204",
+        "name": "Numerical Methods/Engineering Economics",
         "kind": "theory"
       },
       "faculty": {
-        "id": 9,
-        "code": "VS",
-        "name": "Dr. Vikram Singh"
+        "id": 4,
+        "code": "PP",
+        "name": "Ms. Pallavi Pandey"
       },
       "space": {
-        "id": 5,
-        "code": "R-201",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "241-2026-10-30",
-      "session_id": 241,
-      "date": "2026-10-30",
-      "day": "Fri",
-      "period": 5,
-      "start": "14:00",
-      "end": "15:00",
-      "batch": {
-        "id": 6,
-        "code": "S5-B"
-      },
-      "subject": {
-        "id": 13,
-        "code": "ML",
-        "name": "Machine Learning",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 5,
-        "code": "SK",
-        "name": "Dr. Sameer Khan"
-      },
-      "space": {
-        "id": 6,
-        "code": "R-202",
+        "id": 1,
+        "code": "B-002",
         "kind": "room"
       },
       "status": "scheduled",
@@ -4193,27 +748,27 @@
       "session_id": 121,
       "date": "2026-10-30",
       "day": "Fri",
-      "period": 6,
-      "start": "15:00",
-      "end": "16:00",
+      "period": 1,
+      "start": "09:00",
+      "end": "10:00",
       "batch": {
         "id": 1,
-        "code": "S1-A"
+        "code": "AI&DS-3"
       },
       "subject": {
         "id": 1,
-        "code": "MATH1",
-        "name": "Engineering Mathematics I",
+        "code": "DS6A-201",
+        "name": "Design and Analysis of Algorithm",
         "kind": "theory"
       },
       "faculty": {
-        "id": 6,
-        "code": "KJ",
-        "name": "Prof. Kavita Joshi"
+        "id": 1,
+        "code": "RV",
+        "name": "Ms. Ritika Verma"
       },
       "space": {
         "id": 1,
-        "code": "R-101",
+        "code": "B-002",
         "kind": "room"
       },
       "status": "scheduled",
@@ -4223,382 +778,31 @@
       "moved_from": null
     },
     {
-      "key": "145-2026-10-30",
-      "session_id": 145,
-      "date": "2026-10-30",
-      "day": "Fri",
-      "period": 6,
-      "start": "15:00",
-      "end": "16:00",
-      "batch": {
-        "id": 2,
-        "code": "S1-B"
-      },
-      "subject": {
-        "id": 2,
-        "code": "PROG",
-        "name": "Programming in C",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 2,
-        "code": "PV",
-        "name": "Dr. Priya Verma"
-      },
-      "space": {
-        "id": 2,
-        "code": "R-102",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "169-2026-10-30",
-      "session_id": 169,
-      "date": "2026-10-30",
-      "day": "Fri",
-      "period": 6,
-      "start": "15:00",
-      "end": "16:00",
-      "batch": {
-        "id": 3,
-        "code": "S3-A"
-      },
-      "subject": {
-        "id": 12,
-        "code": "OOP-LAB",
-        "name": "OOP Lab",
-        "kind": "lab"
-      },
-      "faculty": {
-        "id": 4,
-        "code": "NG",
-        "name": "Prof. Neha Gupta"
-      },
-      "space": {
-        "id": 12,
-        "code": "LAB-4",
-        "kind": "lab"
-      },
-      "status": "room_changed",
-      "reason": "LAB-2 closed",
-      "proposal_id": 4,
-      "moved_to": null,
-      "moved_from": {
-        "date": "2026-10-30",
-        "day": "Fri",
-        "period": 6,
-        "start": "15:00",
-        "end": "16:00",
-        "space": {
-          "id": 10,
-          "code": "LAB-2",
-          "kind": "lab"
-        }
-      }
-    },
-    {
-      "key": "193-2026-10-30",
-      "session_id": 193,
-      "date": "2026-10-30",
-      "day": "Fri",
-      "period": 6,
-      "start": "15:00",
-      "end": "16:00",
-      "batch": {
-        "id": 4,
-        "code": "S3-B"
-      },
-      "subject": {
-        "id": 11,
-        "code": "PROB",
-        "name": "Probability and Statistics",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 8,
-        "code": "SR",
-        "name": "Prof. Sunita Rao"
-      },
-      "space": {
-        "id": 4,
-        "code": "R-104",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "217-2026-10-30",
-      "session_id": 217,
-      "date": "2026-10-30",
-      "day": "Fri",
-      "period": 6,
-      "start": "15:00",
-      "end": "16:00",
-      "batch": {
-        "id": 5,
-        "code": "S5-A"
-      },
-      "subject": {
-        "id": 17,
-        "code": "DV",
-        "name": "Data Visualisation",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 11,
-        "code": "MT",
-        "name": "Dr. Manish Tiwari"
-      },
-      "space": {
-        "id": 5,
-        "code": "R-201",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "146-2026-10-31",
-      "session_id": 146,
-      "date": "2026-10-31",
-      "day": "Sat",
-      "period": 1,
-      "start": "09:00",
-      "end": "10:00",
-      "batch": {
-        "id": 2,
-        "code": "S1-B"
-      },
-      "subject": {
-        "id": 3,
-        "code": "PHY",
-        "name": "Engineering Physics",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 8,
-        "code": "SR",
-        "name": "Prof. Sunita Rao"
-      },
-      "space": {
-        "id": 2,
-        "code": "R-102",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "170-2026-10-31",
-      "session_id": 170,
-      "date": "2026-10-31",
-      "day": "Sat",
-      "period": 1,
-      "start": "09:00",
-      "end": "10:00",
-      "batch": {
-        "id": 3,
-        "code": "S3-A"
-      },
-      "subject": {
-        "id": 11,
-        "code": "PROB",
-        "name": "Probability and Statistics",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 6,
-        "code": "KJ",
-        "name": "Prof. Kavita Joshi"
-      },
-      "space": {
-        "id": 3,
-        "code": "R-103",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "194-2026-10-31",
-      "session_id": 194,
-      "date": "2026-10-31",
-      "day": "Sat",
-      "period": 1,
-      "start": "09:00",
-      "end": "10:00",
-      "batch": {
-        "id": 4,
-        "code": "S3-B"
-      },
-      "subject": {
-        "id": 10,
-        "code": "DM",
-        "name": "Discrete Mathematics",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 12,
-        "code": "RC",
-        "name": "Prof. Ritu Choudhary"
-      },
-      "space": {
-        "id": 4,
-        "code": "R-104",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "242-2026-10-31",
-      "session_id": 242,
-      "date": "2026-10-31",
-      "day": "Sat",
-      "period": 1,
-      "start": "09:00",
-      "end": "10:00",
-      "batch": {
-        "id": 6,
-        "code": "S5-B"
-      },
-      "subject": {
-        "id": 16,
-        "code": "CN",
-        "name": "Computer Networks",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 9,
-        "code": "VS",
-        "name": "Dr. Vikram Singh"
-      },
-      "space": {
-        "id": 6,
-        "code": "R-202",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "122-2026-10-31",
+      "key": "122-2026-10-30",
       "session_id": 122,
-      "date": "2026-10-31",
-      "day": "Sat",
+      "date": "2026-10-30",
+      "day": "Fri",
       "period": 2,
       "start": "10:00",
       "end": "11:00",
       "batch": {
         "id": 1,
-        "code": "S1-A"
+        "code": "AI&DS-3"
       },
       "subject": {
         "id": 1,
-        "code": "MATH1",
-        "name": "Engineering Mathematics I",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 6,
-        "code": "KJ",
-        "name": "Prof. Kavita Joshi"
-      },
-      "space": {
-        "id": 1,
-        "code": "R-101",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "171-2026-10-31",
-      "session_id": 171,
-      "date": "2026-10-31",
-      "day": "Sat",
-      "period": 2,
-      "start": "10:00",
-      "end": "11:00",
-      "batch": {
-        "id": 3,
-        "code": "S3-A"
-      },
-      "subject": {
-        "id": 8,
-        "code": "OOP",
-        "name": "Object-Oriented Programming",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 4,
-        "code": "NG",
-        "name": "Prof. Neha Gupta"
-      },
-      "space": {
-        "id": 3,
-        "code": "R-103",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "195-2026-10-31",
-      "session_id": 195,
-      "date": "2026-10-31",
-      "day": "Sat",
-      "period": 2,
-      "start": "10:00",
-      "end": "11:00",
-      "batch": {
-        "id": 4,
-        "code": "S3-B"
-      },
-      "subject": {
-        "id": 7,
-        "code": "DAA",
-        "name": "Design and Analysis of Algorithms",
+        "code": "DS6A-201",
+        "name": "Design and Analysis of Algorithm",
         "kind": "theory"
       },
       "faculty": {
         "id": 1,
-        "code": "AS",
-        "name": "Dr. Anil Sharma"
+        "code": "RV",
+        "name": "Ms. Ritika Verma"
       },
       "space": {
-        "id": 4,
-        "code": "R-104",
+        "id": 1,
+        "code": "B-002",
         "kind": "room"
       },
       "status": "scheduled",
@@ -4608,133 +812,31 @@
       "moved_from": null
     },
     {
-      "key": "218-2026-10-31",
-      "session_id": 218,
-      "date": "2026-10-31",
-      "day": "Sat",
-      "period": 2,
-      "start": "10:00",
-      "end": "11:00",
-      "batch": {
-        "id": 5,
-        "code": "S5-A"
-      },
-      "subject": {
-        "id": 15,
-        "code": "OS",
-        "name": "Operating Systems",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 9,
-        "code": "VS",
-        "name": "Dr. Vikram Singh"
-      },
-      "space": {
-        "id": 5,
-        "code": "R-201",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "243-2026-10-31",
-      "session_id": 243,
-      "date": "2026-10-31",
-      "day": "Sat",
-      "period": 2,
-      "start": "10:00",
-      "end": "11:00",
-      "batch": {
-        "id": 6,
-        "code": "S5-B"
-      },
-      "subject": {
-        "id": 17,
-        "code": "DV",
-        "name": "Data Visualisation",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 11,
-        "code": "MT",
-        "name": "Dr. Manish Tiwari"
-      },
-      "space": {
-        "id": 6,
-        "code": "R-202",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "123-2026-10-31",
+      "key": "123-2026-10-30",
       "session_id": 123,
-      "date": "2026-10-31",
-      "day": "Sat",
+      "date": "2026-10-30",
+      "day": "Fri",
       "period": 3,
       "start": "11:00",
       "end": "12:00",
       "batch": {
         "id": 1,
-        "code": "S1-A"
+        "code": "AI&DS-3"
       },
       "subject": {
-        "id": 5,
-        "code": "EVS",
-        "name": "Environmental Studies",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 10,
-        "code": "PA",
-        "name": "Prof. Pooja Agrawal"
-      },
-      "space": {
-        "id": 1,
-        "code": "R-101",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "147-2026-10-31",
-      "session_id": 147,
-      "date": "2026-10-31",
-      "day": "Sat",
-      "period": 3,
-      "start": "11:00",
-      "end": "12:00",
-      "batch": {
-        "id": 2,
-        "code": "S1-B"
-      },
-      "subject": {
-        "id": 1,
-        "code": "MATH1",
-        "name": "Engineering Mathematics I",
+        "id": 6,
+        "code": "DS6A-206",
+        "name": "Object Oriented Programming",
         "kind": "theory"
       },
       "faculty": {
         "id": 6,
-        "code": "KJ",
-        "name": "Prof. Kavita Joshi"
+        "code": "KP",
+        "name": "Ms. Khushi Patidar"
       },
       "space": {
-        "id": 2,
-        "code": "R-102",
+        "id": 1,
+        "code": "B-002",
         "kind": "room"
       },
       "status": "scheduled",
@@ -4744,235 +846,65 @@
       "moved_from": null
     },
     {
-      "key": "196-2026-10-31",
-      "session_id": 196,
-      "date": "2026-10-31",
-      "day": "Sat",
-      "period": 3,
-      "start": "11:00",
-      "end": "12:00",
-      "batch": {
-        "id": 4,
-        "code": "S3-B"
-      },
-      "subject": {
-        "id": 11,
-        "code": "PROB",
-        "name": "Probability and Statistics",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 8,
-        "code": "SR",
-        "name": "Prof. Sunita Rao"
-      },
-      "space": {
-        "id": 4,
-        "code": "R-104",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "219-2026-10-31",
-      "session_id": 219,
-      "date": "2026-10-31",
-      "day": "Sat",
-      "period": 3,
-      "start": "11:00",
-      "end": "12:00",
-      "batch": {
-        "id": 5,
-        "code": "S5-A"
-      },
-      "subject": {
-        "id": 16,
-        "code": "CN",
-        "name": "Computer Networks",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 9,
-        "code": "VS",
-        "name": "Dr. Vikram Singh"
-      },
-      "space": {
-        "id": 5,
-        "code": "R-201",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "124-2026-10-31",
+      "key": "124-2026-10-30",
       "session_id": 124,
-      "date": "2026-10-31",
-      "day": "Sat",
+      "date": "2026-10-30",
+      "day": "Fri",
       "period": 4,
-      "start": "12:00",
-      "end": "13:00",
+      "start": "13:00",
+      "end": "14:00",
       "batch": {
         "id": 1,
-        "code": "S1-A"
+        "code": "AI&DS-3"
       },
       "subject": {
-        "id": 3,
-        "code": "PHY",
-        "name": "Engineering Physics",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 8,
-        "code": "SR",
-        "name": "Prof. Sunita Rao"
-      },
-      "space": {
-        "id": 1,
-        "code": "R-101",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "148-2026-10-31",
-      "session_id": 148,
-      "date": "2026-10-31",
-      "day": "Sat",
-      "period": 4,
-      "start": "12:00",
-      "end": "13:00",
-      "batch": {
-        "id": 2,
-        "code": "S1-B"
-      },
-      "subject": {
-        "id": 5,
-        "code": "EVS",
-        "name": "Environmental Studies",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 12,
-        "code": "RC",
-        "name": "Prof. Ritu Choudhary"
-      },
-      "space": {
-        "id": 2,
-        "code": "R-102",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "172-2026-10-31",
-      "session_id": 172,
-      "date": "2026-10-31",
-      "day": "Sat",
-      "period": 4,
-      "start": "12:00",
-      "end": "13:00",
-      "batch": {
-        "id": 3,
-        "code": "S3-A"
-      },
-      "subject": {
-        "id": 7,
-        "code": "DAA",
-        "name": "Design and Analysis of Algorithms",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 1,
-        "code": "AS",
-        "name": "Dr. Anil Sharma"
-      },
-      "space": {
-        "id": 3,
-        "code": "R-103",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "220-2026-10-31",
-      "session_id": 220,
-      "date": "2026-10-31",
-      "day": "Sat",
-      "period": 4,
-      "start": "12:00",
-      "end": "13:00",
-      "batch": {
-        "id": 5,
-        "code": "S5-A"
-      },
-      "subject": {
-        "id": 13,
-        "code": "ML",
-        "name": "Machine Learning",
-        "kind": "theory"
-      },
-      "faculty": {
-        "id": 5,
-        "code": "SK",
-        "name": "Dr. Sameer Khan"
-      },
-      "space": {
-        "id": 5,
-        "code": "R-201",
-        "kind": "room"
-      },
-      "status": "scheduled",
-      "reason": null,
-      "proposal_id": null,
-      "moved_to": null,
-      "moved_from": null
-    },
-    {
-      "key": "244-2026-10-31",
-      "session_id": 244,
-      "date": "2026-10-31",
-      "day": "Sat",
-      "period": 4,
-      "start": "12:00",
-      "end": "13:00",
-      "batch": {
-        "id": 6,
-        "code": "S5-B"
-      },
-      "subject": {
-        "id": 15,
-        "code": "OS",
-        "name": "Operating Systems",
-        "kind": "theory"
-      },
-      "faculty": {
         "id": 9,
-        "code": "VS",
-        "name": "Dr. Vikram Singh"
+        "code": "DS6A-206 (Lab)",
+        "name": "Object Oriented Programming (Lab)",
+        "kind": "lab"
+      },
+      "faculty": {
+        "id": 6,
+        "code": "KP",
+        "name": "Ms. Khushi Patidar"
       },
       "space": {
+        "id": 1,
+        "code": "B-002",
+        "kind": "room"
+      },
+      "status": "scheduled",
+      "reason": null,
+      "proposal_id": null,
+      "moved_to": null,
+      "moved_from": null
+    },
+    {
+      "key": "125-2026-10-30",
+      "session_id": 125,
+      "date": "2026-10-30",
+      "day": "Fri",
+      "period": 5,
+      "start": "14:00",
+      "end": "15:00",
+      "batch": {
+        "id": 1,
+        "code": "AI&DS-3"
+      },
+      "subject": {
+        "id": 9,
+        "code": "DS6A-206 (Lab)",
+        "name": "Object Oriented Programming (Lab)",
+        "kind": "lab"
+      },
+      "faculty": {
         "id": 6,
-        "code": "R-202",
+        "code": "KP",
+        "name": "Ms. Khushi Patidar"
+      },
+      "space": {
+        "id": 1,
+        "code": "B-002",
         "kind": "room"
       },
       "status": "scheduled",

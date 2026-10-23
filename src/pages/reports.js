@@ -200,7 +200,7 @@ function drawHeatmap(container, cells) {
     }
   }
   container.innerHTML = `
-    <div class="grid grid-cols-[2.5rem_repeat(7,minmax(0,1fr))] gap-1">${html}</div>
+    <div class="grid gap-1" style="grid-template-columns: 2.5rem repeat(${periods.length}, minmax(0, 1fr));">${html}</div>
     <div class="mt-3 flex items-center justify-end gap-1 text-xs text-slate-500">
       Fewer ${SHADES.slice(1).map((s) => `<span class="inline-block h-3 w-5 rounded-[3px] ${s}"></span>`).join('')} More
     </div>`;

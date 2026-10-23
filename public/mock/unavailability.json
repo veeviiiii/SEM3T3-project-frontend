@@ -1,33 +1,11 @@
 [
   {
     "id": 2,
-    "kind": "room_closure",
-    "target": {
-      "type": "space",
-      "id": 10,
-      "label": "LAB-2"
-    },
-    "start_date": "2026-10-30",
-    "end_date": "2026-10-30",
-    "periods": null,
-    "reason": "AC repair",
-    "status": "active",
-    "created_by": {
-      "id": 3,
-      "name": "Dr. Rakesh Jain",
-      "role": "hod"
-    },
-    "created_at": "2026-10-27T11:20:00+05:30",
-    "affected_count": 2,
-    "pending_count": 0
-  },
-  {
-    "id": 3,
     "kind": "faculty_leave",
     "target": {
       "type": "faculty",
       "id": 1,
-      "label": "Dr. Anil Sharma"
+      "label": "Ms. Ritika Verma"
     },
     "start_date": "2026-10-29",
     "end_date": "2026-10-29",
@@ -36,7 +14,7 @@
     "status": "active",
     "created_by": {
       "id": 1,
-      "name": "Dr. Anil Sharma",
+      "name": "Ms. Ritika Verma",
       "role": "faculty"
     },
     "created_at": "2026-10-28T09:12:00+05:30",
@@ -49,21 +27,16 @@
     "target": {
       "type": "faculty",
       "id": 2,
-      "label": "Dr. Priya Verma"
+      "label": "Simran Prajapati"
     },
-    "start_date": "2026-10-26",
-    "end_date": "2026-10-26",
-    "periods": [
-      1,
-      2,
-      3,
-      4
-    ],
+    "start_date": "2026-10-27",
+    "end_date": "2026-10-27",
+    "periods": null,
     "reason": "Personal work",
     "status": "active",
     "created_by": {
       "id": 2,
-      "name": "Dr. Priya Verma",
+      "name": "Simran Prajapati",
       "role": "faculty"
     },
     "created_at": "2026-10-25T18:40:00+05:30",

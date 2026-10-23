@@ -3,15 +3,15 @@
   "clashes": [
     {
       "resource": "faculty",
-      "message": "Dr. Anil Sharma is not free in this slot"
+      "message": "Ms. Ritika Verma is not free in this slot"
     },
     {
       "resource": "batch",
-      "message": "S3-A already has OOP in this slot"
+      "message": "AI&DS-3 already has DS6A-201 in this slot"
     },
     {
       "resource": "space",
-      "message": "R-103 is used by S3-A in this slot"
+      "message": "B-002 is used by AI&DS-3 in this slot"
     }
   ],
   "score": null,

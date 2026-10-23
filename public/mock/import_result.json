@@ -1,6 +1,6 @@
 {
   "dry_run": true,
-  "rows": 144,
+  "rows": 25,
   "imported": 0,
   "errors": [
     {
@@ -8,14 +8,14 @@
       "message": "Unknown faculty code 'XY'"
     },
     {
-      "row": 88,
-      "message": "Period must be between 1 and 7, got 9"
+      "row": 22,
+      "message": "Period must be between 1 and 6, got 9"
     }
   ],
   "clashes": [
     {
-      "row": 52,
-      "message": "R-101 is used by S1-A and S1-B on Tue period 3"
+      "row": 12,
+      "message": "B-002 is used twice on Tue period 3"
     }
   ]
 }

@@ -71,9 +71,12 @@ export function statusInfo(entry) {
   }
 }
 
-/** "Dr. Rakesh Jain" -> "RJ" (titles like "Dr." and "Prof." are skipped). Used for the round avatars. */
+/**
+ * "Govind Maheswari" -> "GM", "Ms. Ritika Verma" -> "RV". Used for the round avatars.
+ * Titles like "Dr." and "Ms." are skipped, and so are words that do not start with a letter, like "(Lab)".
+ */
 export function initials(name) {
-  const words = String(name ?? '').split(' ').filter((w) => w && !w.endsWith('.'));
+  const words = String(name ?? '').split(' ').filter((w) => w && !w.endsWith('.') && /\p{L}/u.test(w[0]));
   if (words.length === 0) return '?';
   const first = words[0][0];
   const last = words.length > 1 ? words[words.length - 1][0] : '';
