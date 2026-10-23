@@ -77,40 +77,6 @@
       },
       {
         "rank": 2,
-        "date": "2026-11-03",
-        "day": "Tue",
-        "period": 6,
-        "start": "15:00",
-        "end": "16:00",
-        "space": {
-          "id": 2,
-          "code": "B-002",
-          "kind": "room"
-        },
-        "score": 33,
-        "breakdown": [
-          {
-            "rule": "same_room",
-            "label": "Same room",
-            "points": 2
-          },
-          {
-            "rule": "batch_load",
-            "label": "Batch not overloaded",
-            "points": 2
-          },
-          {
-            "rule": "sooner",
-            "label": "Sooner",
-            "points": 0.29
-          }
-        ],
-        "warnings": [
-          "Last period of the day"
-        ]
-      },
-      {
-        "rank": 3,
         "date": "2026-11-04",
         "day": "Wed",
         "period": 6,
@@ -144,7 +110,7 @@
         ]
       },
       {
-        "rank": 4,
+        "rank": 3,
         "date": "2026-11-05",
         "day": "Thu",
         "period": 6,
@@ -173,7 +139,7 @@
         ]
       },
       {
-        "rank": 5,
+        "rank": 4,
         "date": "2026-11-06",
         "day": "Fri",
         "period": 6,
@@ -284,40 +250,6 @@
       },
       {
         "rank": 2,
-        "date": "2026-11-03",
-        "day": "Tue",
-        "period": 6,
-        "start": "15:00",
-        "end": "16:00",
-        "space": {
-          "id": 2,
-          "code": "B-002",
-          "kind": "room"
-        },
-        "score": 33,
-        "breakdown": [
-          {
-            "rule": "same_room",
-            "label": "Same room",
-            "points": 2
-          },
-          {
-            "rule": "batch_load",
-            "label": "Batch not overloaded",
-            "points": 2
-          },
-          {
-            "rule": "sooner",
-            "label": "Sooner",
-            "points": 0.29
-          }
-        ],
-        "warnings": [
-          "Last period of the day"
-        ]
-      },
-      {
-        "rank": 3,
         "date": "2026-11-04",
         "day": "Wed",
         "period": 6,
@@ -351,7 +283,7 @@
         ]
       },
       {
-        "rank": 4,
+        "rank": 3,
         "date": "2026-11-05",
         "day": "Thu",
         "period": 6,
@@ -380,7 +312,7 @@
         ]
       },
       {
-        "rank": 5,
+        "rank": 4,
         "date": "2026-11-06",
         "day": "Fri",
         "period": 6,
@@ -491,40 +423,6 @@
       },
       {
         "rank": 2,
-        "date": "2026-11-03",
-        "day": "Tue",
-        "period": 6,
-        "start": "15:00",
-        "end": "16:00",
-        "space": {
-          "id": 2,
-          "code": "B-002",
-          "kind": "room"
-        },
-        "score": 33,
-        "breakdown": [
-          {
-            "rule": "same_room",
-            "label": "Same room",
-            "points": 2
-          },
-          {
-            "rule": "batch_load",
-            "label": "Batch not overloaded",
-            "points": 2
-          },
-          {
-            "rule": "sooner",
-            "label": "Sooner",
-            "points": 0.29
-          }
-        ],
-        "warnings": [
-          "Last period of the day"
-        ]
-      },
-      {
-        "rank": 3,
         "date": "2026-11-04",
         "day": "Wed",
         "period": 6,
@@ -558,7 +456,7 @@
         ]
       },
       {
-        "rank": 4,
+        "rank": 3,
         "date": "2026-11-05",
         "day": "Thu",
         "period": 6,
@@ -587,7 +485,7 @@
         ]
       },
       {
-        "rank": 5,
+        "rank": 4,
         "date": "2026-11-06",
         "day": "Fri",
         "period": 6,

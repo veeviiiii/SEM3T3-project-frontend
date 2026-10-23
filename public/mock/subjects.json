@@ -1171,19 +1171,6 @@
   },
   {
     "id": 91,
-    "code": "DS5B-505 (Lab)",
-    "name": "Advanced Database Management System (Lab)",
-    "kind": "lab",
-    "semester": 1,
-    "batch_id": 8,
-    "batch_code": "MSc-DSA-1",
-    "credits": "4 (2-1-2)",
-    "category": "core",
-    "faculty_id": 1,
-    "note": null
-  },
-  {
-    "id": 92,
     "code": "DS5B-509 (Lab)",
     "name": "Python for Analytics (Lab)",
     "kind": "lab",
@@ -1193,6 +1180,19 @@
     "credits": "3(2-0-2)",
     "category": "core",
     "faculty_id": 25,
+    "note": null
+  },
+  {
+    "id": 92,
+    "code": "DS5B-505 (Lab)",
+    "name": "Advanced Database Management System (Lab)",
+    "kind": "lab",
+    "semester": 1,
+    "batch_id": 8,
+    "batch_code": "MSc-DSA-1",
+    "credits": "4 (2-1-2)",
+    "category": "core",
+    "faculty_id": 1,
     "note": null
   },
   {
@@ -1223,19 +1223,6 @@
   },
   {
     "id": 95,
-    "code": "DS5B-523 (Lab)",
-    "name": "Technical communication (Lab)",
-    "kind": "lab",
-    "semester": 1,
-    "batch_id": 8,
-    "batch_code": "MSc-DSA-1",
-    "credits": "3(2-0-2)",
-    "category": "elective",
-    "faculty_id": 27,
-    "note": null
-  },
-  {
-    "id": 96,
     "code": "DS5B-601",
     "name": "Deep Learning",
     "kind": "theory",
@@ -1248,7 +1235,7 @@
     "note": null
   },
   {
-    "id": 97,
+    "id": 96,
     "code": "DS5B-603",
     "name": "Forecasting methods",
     "kind": "theory",
@@ -1261,7 +1248,7 @@
     "note": null
   },
   {
-    "id": 98,
+    "id": 97,
     "code": "DS5B-605",
     "name": "Reinforcement Learning",
     "kind": "theory",
@@ -1274,7 +1261,7 @@
     "note": "NPTEL"
   },
   {
-    "id": 99,
+    "id": 98,
     "code": "DS5B-607",
     "name": "Research Methodology",
     "kind": "theory",
@@ -1287,7 +1274,7 @@
     "note": null
   },
   {
-    "id": 100,
+    "id": 99,
     "code": "DS5B-621",
     "name": "Social Media Analytics",
     "kind": "theory",
@@ -1300,7 +1287,7 @@
     "note": null
   },
   {
-    "id": 101,
+    "id": 100,
     "code": "DS5B-623",
     "name": "Text and Image Analytics",
     "kind": "theory",
@@ -1313,7 +1300,7 @@
     "note": "Not opted"
   },
   {
-    "id": 102,
+    "id": 101,
     "code": "DS5B-641",
     "name": "Introduction To LLM",
     "kind": "theory",
@@ -1326,7 +1313,7 @@
     "note": "NPTEL (Self Study)"
   },
   {
-    "id": 103,
+    "id": 102,
     "code": "Comprehensive Viva-Voce",
     "name": "Comprehensive Viva-Voce",
     "kind": "viva",
@@ -1339,7 +1326,7 @@
     "note": null
   },
   {
-    "id": 104,
+    "id": 103,
     "code": "DS5B-621 (Lab)",
     "name": "Social Media Analytics (Lab)",
     "kind": "lab",
@@ -1352,7 +1339,7 @@
     "note": null
   },
   {
-    "id": 105,
+    "id": 104,
     "code": "DS5B-603 (Lab)",
     "name": "Forecasting methods (Lab)",
     "kind": "lab",
@@ -1365,7 +1352,7 @@
     "note": null
   },
   {
-    "id": 106,
+    "id": 105,
     "code": "DS7E-701",
     "name": "Statistical Research Methods",
     "kind": "theory",
@@ -1378,7 +1365,7 @@
     "note": null
   },
   {
-    "id": 107,
+    "id": 106,
     "code": "DS7E-703",
     "name": "Machine Learning Using Python",
     "kind": "theory",
@@ -1391,7 +1378,7 @@
     "note": null
   },
   {
-    "id": 108,
+    "id": 107,
     "code": "DS7E-705",
     "name": "Advanced Excel",
     "kind": "theory",
@@ -1404,7 +1391,7 @@
     "note": null
   },
   {
-    "id": 109,
+    "id": 108,
     "code": "DS7E-707",
     "name": "Advanced Database Management Systems",
     "kind": "theory",
@@ -1417,7 +1404,7 @@
     "note": null
   },
   {
-    "id": 110,
+    "id": 109,
     "code": "DS7E-741",
     "name": "Minor Project-I",
     "kind": "project",
@@ -1430,7 +1417,7 @@
     "note": null
   },
   {
-    "id": 111,
+    "id": 110,
     "code": "DS7E-703 (Lab)",
     "name": "Machine Learning Using Python (Lab)",
     "kind": "lab",
@@ -1443,7 +1430,7 @@
     "note": null
   },
   {
-    "id": 112,
+    "id": 111,
     "code": "DS7E-707 (Lab)",
     "name": "Advanced Database Management Systems (Lab)",
     "kind": "lab",
@@ -1456,7 +1443,7 @@
     "note": null
   },
   {
-    "id": 113,
+    "id": 112,
     "code": "DS7E-801",
     "name": "Linear Algebra and Advanced Calculus",
     "kind": "theory",
@@ -1469,7 +1456,7 @@
     "note": null
   },
   {
-    "id": 114,
+    "id": 113,
     "code": "DS7E-803",
     "name": "Machine Learning",
     "kind": "theory",
@@ -1482,7 +1469,7 @@
     "note": null
   },
   {
-    "id": 115,
+    "id": 114,
     "code": "DS7E-805",
     "name": "Statistical Programming in R",
     "kind": "theory",
@@ -1495,7 +1482,7 @@
     "note": null
   },
   {
-    "id": 116,
+    "id": 115,
     "code": "DS7E-823",
     "name": "Natural Language Processing",
     "kind": "theory",
@@ -1508,7 +1495,7 @@
     "note": "NPTEL"
   },
   {
-    "id": 117,
+    "id": 116,
     "code": "DS7E-841",
     "name": "Minor Project-III",
     "kind": "project",
@@ -1521,7 +1508,7 @@
     "note": null
   },
   {
-    "id": 118,
+    "id": 117,
     "code": "Comprehensive Viva-Voce",
     "name": "Comprehensive Viva-Voce",
     "kind": "viva",
@@ -1534,7 +1521,7 @@
     "note": null
   },
   {
-    "id": 119,
+    "id": 118,
     "code": "DS7E-805 (Lab)",
     "name": "Statistical Programming in R (Lab)",
     "kind": "lab",
@@ -1547,7 +1534,7 @@
     "note": null
   },
   {
-    "id": 120,
+    "id": 119,
     "code": "DS7E-803 (Lab)",
     "name": "Machine Learning (Lab)",
     "kind": "lab",

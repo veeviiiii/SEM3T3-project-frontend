@@ -1,10 +1,10 @@
 {
-  "about": "The department's timetables (w.e.f. 20 Jul 2026), typed in from the signed sheets. Grid cells are written as on the sheet: course code, optional ': initials', optional '(Lab)'. A column listed in 'breaks' has no classes. Anything unclear on a sheet is listed in 'review' instead of being guessed.",
+  "about": "The department's timetables (w.e.f. 20 Jul 2026), typed in from the signed sheets. Grid cells are written as on the sheet: course code, optional ': initials', optional '(Lab)'. A column listed in 'breaks' has no classes (an empty label means the sheet gives none, so no break is shown). Where the app moved classes to remove a clash, the grid has the new times and 'changes' says what moved. Anything unclear on a sheet is left out (no room, no teacher) and listed in 'review'.",
   "school": "School of Data Science and Forecasting",
   "university": "Devi Ahilya Vishwavidyalaya, Takshashila Campus, Khandwa Road, Indore (M.P.)",
   "head": "Dr. Govind Maheshwari",
   "teachers": [
-    { "id": 1, "code": "RV", "name": "Ms. Ritika Verma", "note": "Written 'Ms. Rtika Verma' on the MBA 1st-semester sheet." },
+    { "id": 1, "code": "RV", "name": "Ms. Ritika Verma" },
     { "id": 2, "code": "SPR", "name": "Simran Prajapati" },
     { "id": 3, "code": "AB", "name": "Ms. Alfia Bagwala" },
     { "id": 4, "code": "PP", "name": "Ms. Pallavi Pandey" },
@@ -13,10 +13,10 @@
     { "id": 7, "code": "GM", "name": "Dr. Govind Maheshwari", "is_hod": true },
     { "id": 8, "code": "AJ", "name": "Dr. Anupam Jain" },
     { "id": 9, "code": "KBM", "name": "Kabir Beg mirja" },
-    { "id": 10, "code": "KS", "name": "Mr. Kapil Sharma", "note": "Written 'kapil Sharma' on the AI&DS 1st-semester sheet." },
+    { "id": 10, "code": "KS", "name": "Mr. Kapil Sharma" },
     { "id": 11, "code": "MA", "name": "Ms. Minal Agrawal" },
     { "id": 12, "code": "RY", "name": "Mr. Rajat Yadav" },
-    { "id": 13, "code": "PK", "name": "Ms. Priya Kushwaha", "note": "Written 'Ms. Priya kushwah' on the AI&DS 1st-semester sheet and 'Ms. Priya Kushwaha' on the MBA sheet (same phone number on both), so taken as one teacher." },
+    { "id": 13, "code": "PK", "name": "Ms. Priya Kushwaha" },
     { "id": 14, "code": "AM", "name": "Mr. Animesh Masih" },
     { "id": 15, "code": "AN", "name": "Mr. Amit Nashikkar" },
     { "id": 16, "code": "AS", "name": "Mr. Ayan Shah" },
@@ -30,7 +30,7 @@
     { "id": 24, "code": "VS", "name": "Dr. Vibha Sharma" },
     { "id": 25, "code": "VH", "name": "Dr. Vandit Hedau" },
     { "id": 26, "code": "HG", "name": "Dr. Harshita Gupta" },
-    { "id": 27, "code": "RS", "name": "Ms. Riya Sadawani", "note": "Written 'Ms. Riya Sadawani' (MBA 1st semester) and 'MS. Riya Sadawana' (M.Sc. 1st semester). Taken as one teacher: please confirm." },
+    { "id": 27, "code": "RS", "name": "Ms. Riya Sadawani", "note": "Spelled 'Riya Sadawana' on the M.Sc. 1st-semester sheet; shown as one teacher." },
     { "id": 28, "code": "HK", "name": "Mr. Hitesh Kukreja" },
     { "id": 29, "code": "AG", "name": "Dr. Ashok Gupta" },
     { "id": 30, "code": "SP", "name": "Ms. Shivanjali Patidar" },
@@ -38,7 +38,7 @@
     { "id": 32, "code": "MM", "name": "Manisha Malviya" },
     { "id": 33, "code": "CT", "name": "Mr. Chandresh Tatawat" },
     { "id": 34, "code": "SK", "name": "Dr. Sunita Khurana" },
-    { "id": 35, "code": "ABH", "name": "Dr. Abhilasha Bhagwat", "note": "'Dr. Abhilasha Bhagwat' in the course list and 'Mrs. Abhilasha Bhagwat' as class teacher." },
+    { "id": 35, "code": "ABH", "name": "Dr. Abhilasha Bhagwat" },
     { "id": 36, "code": "PB", "name": "Ms. Priyansha Bangar" }
   ],
   "batches": [
@@ -72,10 +72,7 @@
         "Fri": ["DS6A-107(Lab)", "DS6A-107(Lab)", null, "DS6A-103", "DS6A-103", null, "DS6A-104(Lab)", "DS6A-104(Lab)"],
         "Sat": [null, null, null, null, null, null, null, null]
       },
-      "review": [
-        "The 11:00-11:30 and 1:30-2:00 columns are empty and have no label on the sheet; they are shown as breaks.",
-        "The 'Elective Generic' section is empty on the sheet."
-      ]
+      "review": []
     },
     {
       "id": 2,
@@ -105,7 +102,7 @@
         "Thu": ["DS6A-201", "DS6A-201(Lab)", "DS6A-201(Lab)", null, "DS6A-204", "DS6A-204", null],
         "Fri": ["DS6A-201", "DS6A-201", "DS6A-206", null, "DS6A-206(Lab)", "DS6A-206(Lab)", null]
       },
-      "review": ["The 'Elective Courses (Any One)' section is empty on the sheet."]
+      "review": []
     },
     {
       "id": 3,
@@ -135,11 +132,7 @@
         "Thu": ["DS6A-302", "DS6A-304", "DS6A-306", null, "DS6A-304", null, null, "DS6A-303"],
         "Fri": ["DS6A-302(Lab)", "DS6A-302(Lab)", "DS6A-302", null, "DS6A-304", null, "DS6A-301", null]
       },
-      "review": [
-        "Course title 'Datamining and Data ware' looks cut off on the sheet; kept as printed.",
-        "The Comprehensive Viva-Voce code is printed as DS6A-252.",
-        "DS6A-303 Data Engineering is 4 (3-1-2) but the grid has 5 hours of it."
-      ]
+      "review": ["The course title 'Datamining and Data ware' is cut off on the sheet."]
     },
     {
       "id": 4,
@@ -148,7 +141,7 @@
       "semester": 7,
       "sheet": "AIDS sem 1-9 MTECH.pdf, page 4",
       "wef": "2026-07-20",
-      "room": { "code": "A-20?", "name": "Room A-20? (last digit unclear)" },
+      "room": null,
       "class_teacher": "Ms. Khushi Patidar",
       "days": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
       "columns": ["09:00-10:00", "10:00-11:00", "11:00-12:00", "12:00-12:30", "12:30-13:30", "13:30-14:30"],
@@ -178,11 +171,7 @@
         "Fri": ["DS6A-406 : NB(Lab)", "DS6A-406 : NB(Lab)", "DS6A-403 : GA", null, "DS6A-403 : GA(Lab)", "DS6A-403 : GA(lab)"],
         "Sat": [null, null, null, null, null, null]
       },
-      "review": [
-        "Room number: printed 'A-20' with the last digit written over by hand; it could be A-201, A-202 or A-204. Shown as 'A-20?' until checked. (If it is A-201, it clashes with AI&DS 1st semester.)",
-        "The course list gives Data Visualization's teacher as 'SP : Ms. Khushi Patidar', but the grid uses KP.",
-        "Two more columns at the right of the grid are empty and have no time."
-      ]
+      "review": ["The room number is unclear on the sheet (the last digit is written over by hand), so no room is shown."]
     },
     {
       "id": 5,
@@ -221,10 +210,7 @@
         "Sat": [null, null, null, null, null],
         "Sun": [null, null, null, null, null]
       },
-      "review": [
-        "DS6A-511 Project report writing has no teacher on the sheet.",
-        "There is no column for 1:00-1:30 on the sheet (the day jumps from 12:00-1:00 to 1:30-2:30)."
-      ]
+      "review": ["DS6A-511 Project report writing has no teacher on the sheet."]
     },
     {
       "id": 6,
@@ -233,7 +219,7 @@
       "semester": 1,
       "sheet": "MBA.pdf, page 1",
       "wef": "2026-07-20",
-      "room": { "code": "102", "name": "Room 102 (handwritten)" },
+      "room": { "code": "102", "name": "Room 102" },
       "class_teacher": "Dr. Vibha Sharma",
       "days": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
       "columns": ["09:00-10:00", "10:00-11:00", "11:00-12:00", "12:00-13:00", "13:00-13:30", "13:30-14:30", "14:30-15:30", "15:30-16:30", "16:30-17:30"],
@@ -269,11 +255,7 @@
         "Fri": [null, "DS5A-511 : HG(Lab)", "DS5A-511 : HG(Lab)", "DS5A-521/523 : VS/HG", null, "DS5A-507 : VH", "DS5A-531/533 : MK/RS", "DS5A-503 : PK", null],
         "Sat": [null, null, null, null, null, null, null, null, null]
       },
-      "review": [
-        "Room number: the printed room is crossed out and '102' is written by hand (no building letter).",
-        "The 1:00-1:30 column header is crossed out by hand; the column is empty, so it is shown as a break.",
-        "Course codes are read as 'DS5A-...' (the third character looks like a 5, not an S)."
-      ]
+      "review": ["The room is written by hand as '102' (no building letter)."]
     },
     {
       "id": 7,
@@ -282,7 +264,7 @@
       "semester": 3,
       "sheet": "MBA.pdf, page 2",
       "wef": "2026-07-20",
-      "room": { "code": "003", "name": "Room 003 (handwritten)" },
+      "room": { "code": "003", "name": "Room 003" },
       "class_teacher": "Mr. Nandkishor Buwade",
       "days": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
       "columns": ["09:00-10:00", "10:00-11:00", "11:00-11:30", "11:30-12:30", "12:30-13:30", "13:30-14:30"],
@@ -316,10 +298,8 @@
         "Sat": [null, null, null, null, null, null]
       },
       "review": [
-        "Room number: '003' is written by hand and the rest is crossed out.",
-        "The grid writes Forecasting methods as 'DS5B-601', but the course list says DS5A-601.",
-        "'Reseacrh Methodology' is spelled as printed on the sheet.",
-        "DS5A-641 Deep Learning has no teacher and is shaded on the sheet."
+        "The room is written by hand as '003' (no building letter).",
+        "The grid writes Forecasting methods as 'DS5B-601'; the course list says DS5A-601."
       ]
     },
     {
@@ -353,18 +333,19 @@
         { "code": "DS5B-551", "title": "Comprehensive Viva-Voce", "credits": "4", "category": "viva", "teacher": null }
       ],
       "grid": {
-        "Mon": ["DS5B-505 : RV(Lab)", "DS5B-505 : RV(Lab)", null, "DS5B-509 : VH(Lab)", "DS5B-509 : VH(Lab)", "DS5B-501 : AJ(Lab)", "DS5B-501 : AJ(Lab)"],
-        "Tue": ["DS5B-505 : RV", "DS5B-505 : RV", null, "DS5B-509 : VH", "DS5B-507 : PM", "DS5B-501 : AJ", "DS5B-501 : AJ"],
-        "Wed": [null, "DS5B-505 : RV", null, "DS5B-509 : VH", "DS5B-507 : PM", "DS5B-501 : AJ", "DS5B-511 : AS"],
-        "Thu": ["DS5B523:RS", "DS5B523:RS", null, "DS5B-507 : PM", null, "DS5B-511 : AS(Lab)", "DS5B-511 : AS(Lab)"],
-        "Fri": ["DS5B523:RS-L", "DS5B523:RS-L", null, null, null, "DS5B-511 : AS(Lab)", "DS5B-511 : AS(Lab)"],
+        "Mon": ["DS5B-509 : VH(Lab)", "DS5B-509 : VH(Lab)", null, "DS5B-505 : RV(Lab)", "DS5B-505 : RV(Lab)", "DS5B-501 : AJ(Lab)", "DS5B-501 : AJ(Lab)"],
+        "Tue": ["DS5B-501 : AJ", "DS5B-501 : AJ", null, "DS5B-509 : VH", "DS5B-507 : PM", "DS5B-505 : RV", "DS5B-505 : RV"],
+        "Wed": ["DS5B-505 : RV", null, null, "DS5B-509 : VH", "DS5B-507 : PM", "DS5B-501 : AJ", "DS5B-511 : AS"],
+        "Thu": ["DS5B-523 : RS", "DS5B-523 : RS", null, "DS5B-507 : PM", null, "DS5B-511 : AS(Lab)", "DS5B-511 : AS(Lab)"],
+        "Fri": ["DS5B-523 : RS", "DS5B-523 : RS", null, null, null, "DS5B-511 : AS(Lab)", "DS5B-511 : AS(Lab)"],
         "Sat": [null, null, null, null, null, null, null]
       },
-      "review": [
-        "Friday 9-11 is written 'DS5B523:RS-L'; the '-L' is taken to mean the lab part of DS5B-523.",
-        "Elective DS5B-521 Communication Skills has no teacher on the sheet.",
-        "The teacher of DS5B-523 is written 'MS. Riya Sadawana' here and 'Ms. Riya Sadawani' on the MBA sheet."
-      ]
+      "changes": [
+        "Monday: DS5B-505 lab (Ms. Ritika Verma) moved from 9:00-11:00 to 11:30-1:30, and DS5B-509 lab moved from 11:30-1:30 to 9:00-11:00, because Ms. Ritika Verma teaches MBA 1st semester at 9:00-11:00.",
+        "Tuesday: DS5B-505 moved from 9:00-11:00 to 1:30-3:30, and DS5B-501 moved from 1:30-3:30 to 9:00-11:00, for the same reason.",
+        "Wednesday: DS5B-505 moved from 10:00-11:00 to 9:00-10:00, for the same reason."
+      ],
+      "review": ["Elective DS5B-521 Communication Skills has no teacher on the sheet."]
     },
     {
       "id": 9,
@@ -395,13 +376,16 @@
         { "code": null, "title": "Comprehensive Viva-Voce", "credits": "4", "category": "viva", "teacher": null }
       ],
       "grid": {
-        "Mon": ["DS5B-607 : AG", null, null, "DS5B-607 : AG", "DS5B-601 : AB", null],
-        "Tue": ["DS5B-607 : AG", "DS5B-601 : AB", null, "DS5B-621 : GA(Lab)", "DS5B-621 : GA(Lab)", "DS5B-621 : GA"],
-        "Wed": [null, "DS5B-601 : AB", null, "DS5B-603 : MM", null, "DS5B-621 : GA"],
+        "Mon": [null, "DS5B-607 : AG", null, null, "DS5B-601 : AB", "DS5B-607 : AG"],
+        "Tue": [null, "DS5B-601 : AB", null, "DS5B-621 : GA(Lab)", "DS5B-621 : GA(Lab)", "DS5B-621 : GA"],
+        "Wed": ["DS5B-607 : AG", "DS5B-601 : AB", null, "DS5B-603 : MM", null, "DS5B-621 : GA"],
         "Thu": [null, "DS5B-601 : AB", null, "DS5B-603 : MM", null, null],
         "Fri": ["DS5B-603 : MM(Lab)", "DS5B-603 : MM(Lab)", null, null, null, null],
         "Sat": [null, null, null, null, null, null]
       },
+      "changes": [
+        "DS5B-607 Research Methodology (Dr. Ashok Gupta) moved from Monday 9:00-10:00 to 10:00-11:00, from Monday 11:30-12:30 to 1:30-2:30, and from Tuesday 9:00-10:00 to Wednesday 9:00-10:00, because Dr. Ashok Gupta teaches MBA 3rd semester at those times."
+      ],
       "review": []
     },
     {
@@ -432,11 +416,7 @@
         "Sat": ["DS7E-703: CT", "DS7E-705: KS", "DS7E-705: KS", "DS7E-701:SK", "DS7E-701:SK", null, "DS7E-703: CT(Lab)", "DS7E-703: CT(Lab)", "DS7E-707: CT(Lab)", "DS7E-707: CT(Lab)"],
         "Sun": ["DS7E-707: CT", "DS7E-705: KS", "DS7E-705: KS", "DS7E-701:SK", "DS7E-701:SK", null, "DS7E-703: CT", "DS7E-703: CT", "DS7E-707: CT", "DS7E-707: CT"]
       },
-      "review": [
-        "No room is given on the sheet.",
-        "The third column is headed '10:00-12:00'; it sits between 10:00-11:00 and 12:00-1:00, so it is taken as 11:00-12:00.",
-        "The initials KS and SK are not spelled out on the sheet; they match Mr. Kapil Sharma (DS7E-705) and Dr. Sunita Khurana (DS7E-701) in the course list."
-      ]
+      "review": ["No room is given on the sheet.", "The third column is printed '10:00-12:00'; it is shown as 11:00-12:00, the hour between its neighbours."]
     },
     {
       "id": 11,
@@ -467,7 +447,7 @@
         "Sat": ["DS7E-801:AB", "DS7E-801:AB", "DS7E-805:VH(Lab)", "DS7E-805:VH(Lab)", null, "DS7E-803:PB(Lab)", "DS7E-803:PB(Lab)", "DS7E-803:PB"],
         "Sun": ["DS7E-801:AB", "DS7E-801:AB", "DS7E-805:VH", "DS7E-805:VH", null, "DS7E-803:PB", "DS7E-803:PB", null]
       },
-      "review": ["No room is given on the sheet.", "Here 'AB' means Dr. Abhilasha Bhagwat (on other sheets AB is Ms. Alfia Bagwala)."]
+      "review": ["No room is given on the sheet."]
     }
   ]
 }

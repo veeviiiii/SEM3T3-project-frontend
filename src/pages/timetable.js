@@ -175,6 +175,13 @@ function showDetails(item) {
   siblings.classList.toggle('hidden', others.length <= 1);
   siblings.classList.toggle('flex', others.length > 1);
 
+  // Classes the app moved away from the sheet's times, to remove a clash.
+  const moved = item && mode === 'batch' ? item.changes ?? [] : [];
+  $('#batch-changes').innerHTML = moved.length
+    ? `<p class="font-medium">Changed from the sheet to remove clashes:</p><ul class="mt-1 list-disc space-y-0.5 pl-5">${moved.map((n) => `<li>${escapeHtml(n)}</li>`).join('')}</ul>`
+    : '';
+  $('#batch-changes').classList.toggle('hidden', moved.length === 0);
+
   // What needs checking on this batch's sheet.
   const notes = item && mode === 'batch' ? item.review : [];
   review.innerHTML = notes.length

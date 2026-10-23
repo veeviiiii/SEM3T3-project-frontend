@@ -25,14 +25,6 @@
   },
   {
     "id": 4,
-    "code": "A-20?",
-    "name": "Room A-20? (last digit unclear)",
-    "kind": "room",
-    "capacity": null,
-    "floor": null
-  },
-  {
-    "id": 5,
     "code": "B-006",
     "name": "Class Room B-006",
     "kind": "room",
@@ -40,23 +32,23 @@
     "floor": null
   },
   {
-    "id": 6,
+    "id": 5,
     "code": "102",
-    "name": "Room 102 (handwritten)",
+    "name": "Room 102",
+    "kind": "room",
+    "capacity": null,
+    "floor": null
+  },
+  {
+    "id": 6,
+    "code": "003",
+    "name": "Room 003",
     "kind": "room",
     "capacity": null,
     "floor": null
   },
   {
     "id": 7,
-    "code": "003",
-    "name": "Room 003 (handwritten)",
-    "kind": "room",
-    "capacity": null,
-    "floor": null
-  },
-  {
-    "id": 8,
     "code": "B010",
     "name": "Room B010",
     "kind": "room",
@@ -64,7 +56,7 @@
     "floor": null
   },
   {
-    "id": 9,
+    "id": 8,
     "code": "A-203",
     "name": "Room A-203",
     "kind": "room",

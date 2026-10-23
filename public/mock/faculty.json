@@ -5,13 +5,17 @@
     "name": "Ms. Ritika Verma",
     "email": "ritika.verma@example.com",
     "is_hod": false,
-    "note": "Written 'Ms. Rtika Verma' on the MBA 1st-semester sheet.",
+    "note": null,
     "designation": "Class teacher, AI&DS-3",
     "weekly_load": 15,
     "preferred_periods": [
       1,
       2,
-      3
+      3,
+      4,
+      5,
+      6,
+      7
     ],
     "batches": [
       "AI&DS-3",
@@ -140,6 +144,8 @@
     "designation": "Faculty",
     "weekly_load": 9,
     "preferred_periods": [
+      1,
+      2,
       4,
       5,
       6,
@@ -173,7 +179,7 @@
     "name": "Mr. Kapil Sharma",
     "email": "kapil.sharma@example.com",
     "is_hod": false,
-    "note": "Written 'kapil Sharma' on the AI&DS 1st-semester sheet.",
+    "note": null,
     "designation": "Faculty",
     "weekly_load": 8,
     "preferred_periods": [
@@ -233,7 +239,7 @@
     "name": "Ms. Priya Kushwaha",
     "email": "priya.kushwaha@example.com",
     "is_hod": false,
-    "note": "Written 'Ms. Priya kushwah' on the AI&DS 1st-semester sheet and 'Ms. Priya Kushwaha' on the MBA sheet (same phone number on both), so taken as one teacher.",
+    "note": null,
     "designation": "Class teacher, AI&DS-1",
     "weekly_load": 6,
     "preferred_periods": [
@@ -473,6 +479,8 @@
     "designation": "Faculty",
     "weekly_load": 12,
     "preferred_periods": [
+      1,
+      2,
       3,
       4,
       5,
@@ -511,7 +519,7 @@
     "name": "Ms. Riya Sadawani",
     "email": "riya.sadawani@example.com",
     "is_hod": false,
-    "note": "Written 'Ms. Riya Sadawani' (MBA 1st semester) and 'MS. Riya Sadawana' (M.Sc. 1st semester). Taken as one teacher: please confirm.",
+    "note": "Spelled 'Riya Sadawana' on the M.Sc. 1st-semester sheet; shown as one teacher.",
     "designation": "Faculty",
     "weekly_load": 7,
     "preferred_periods": [
@@ -554,8 +562,11 @@
     "weekly_load": 6,
     "preferred_periods": [
       1,
+      2,
       3,
-      4
+      4,
+      5,
+      6
     ],
     "batches": [
       "MBA-BA-3",
@@ -661,7 +672,7 @@
     "name": "Dr. Abhilasha Bhagwat",
     "email": "abhilasha.bhagwat@example.com",
     "is_hod": false,
-    "note": "'Dr. Abhilasha Bhagwat' in the course list and 'Mrs. Abhilasha Bhagwat' as class teacher.",
+    "note": null,
     "designation": "Class teacher, Exec-DS-3",
     "weekly_load": 4,
     "preferred_periods": [

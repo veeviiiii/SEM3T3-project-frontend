@@ -35,11 +35,7 @@
             "code": "GA",
             "name": "Ms. Garima Agrawal"
           },
-          "space": {
-            "id": 4,
-            "code": "A-20?",
-            "kind": "room"
-          },
+          "space": null,
           "status": "pending",
           "reason": "Ms. Garima Agrawal on leave",
           "proposal_id": 0,
@@ -70,11 +66,7 @@
             "code": "GA",
             "name": "Ms. Garima Agrawal"
           },
-          "space": {
-            "id": 4,
-            "code": "A-20?",
-            "kind": "room"
-          },
+          "space": null,
           "status": "pending",
           "reason": "Ms. Garima Agrawal on leave",
           "proposal_id": 0,
@@ -105,11 +97,7 @@
             "code": "GA",
             "name": "Ms. Garima Agrawal"
           },
-          "space": {
-            "id": 4,
-            "code": "A-20?",
-            "kind": "room"
-          },
+          "space": null,
           "status": "pending",
           "reason": "Ms. Garima Agrawal on leave",
           "proposal_id": 0,
@@ -144,11 +132,7 @@
           "code": "GA",
           "name": "Ms. Garima Agrawal"
         },
-        "space": {
-          "id": 4,
-          "code": "A-20?",
-          "kind": "room"
-        }
+        "space": null
       },
       "option": null
     },
@@ -175,11 +159,7 @@
           "code": "GA",
           "name": "Ms. Garima Agrawal"
         },
-        "space": {
-          "id": 4,
-          "code": "A-20?",
-          "kind": "room"
-        }
+        "space": null
       },
       "option": null
     },
@@ -206,11 +186,7 @@
           "code": "GA",
           "name": "Ms. Garima Agrawal"
         },
-        "space": {
-          "id": 4,
-          "code": "A-20?",
-          "kind": "room"
-        }
+        "space": null
       },
       "option": null
     }

@@ -878,248 +878,6 @@
     {
       "space": {
         "id": 4,
-        "code": "A-20?",
-        "name": "Room A-20? (last digit unclear)",
-        "kind": "room",
-        "capacity": null,
-        "floor": null
-      },
-      "slots": [
-        {
-          "period": 1,
-          "status": "busy",
-          "entry": {
-            "key": "91-2026-10-28",
-            "session_id": 91,
-            "date": "2026-10-28",
-            "day": "Wed",
-            "period": 1,
-            "start": "09:00",
-            "end": "10:00",
-            "batch": {
-              "id": 4,
-              "code": "AI&DS-7"
-            },
-            "subject": {
-              "id": 37,
-              "code": "DS6A-406",
-              "name": "Machine Learning Using Python",
-              "kind": "theory"
-            },
-            "faculty": {
-              "id": 22,
-              "code": "NB",
-              "name": "Mr. Nandkishor Buwade"
-            },
-            "space": {
-              "id": 4,
-              "code": "A-20?",
-              "kind": "room"
-            },
-            "status": "scheduled",
-            "reason": null,
-            "proposal_id": null,
-            "moved_to": null,
-            "moved_from": null,
-            "elective_group": null
-          },
-          "note": null
-        },
-        {
-          "period": 2,
-          "status": "busy",
-          "entry": {
-            "key": "92-2026-10-28",
-            "session_id": 92,
-            "date": "2026-10-28",
-            "day": "Wed",
-            "period": 2,
-            "start": "10:00",
-            "end": "11:00",
-            "batch": {
-              "id": 4,
-              "code": "AI&DS-7"
-            },
-            "subject": {
-              "id": 41,
-              "code": "DS6A-401 (Lab)",
-              "name": "Data Visualization (Lab)",
-              "kind": "lab"
-            },
-            "faculty": {
-              "id": 6,
-              "code": "KP",
-              "name": "Ms. Khushi Patidar"
-            },
-            "space": {
-              "id": 4,
-              "code": "A-20?",
-              "kind": "room"
-            },
-            "status": "scheduled",
-            "reason": null,
-            "proposal_id": null,
-            "moved_to": null,
-            "moved_from": null,
-            "elective_group": null
-          },
-          "note": null
-        },
-        {
-          "period": 3,
-          "status": "busy",
-          "entry": {
-            "key": "93-2026-10-28",
-            "session_id": 93,
-            "date": "2026-10-28",
-            "day": "Wed",
-            "period": 3,
-            "start": "11:00",
-            "end": "12:00",
-            "batch": {
-              "id": 4,
-              "code": "AI&DS-7"
-            },
-            "subject": {
-              "id": 41,
-              "code": "DS6A-401 (Lab)",
-              "name": "Data Visualization (Lab)",
-              "kind": "lab"
-            },
-            "faculty": {
-              "id": 6,
-              "code": "KP",
-              "name": "Ms. Khushi Patidar"
-            },
-            "space": {
-              "id": 4,
-              "code": "A-20?",
-              "kind": "room"
-            },
-            "status": "scheduled",
-            "reason": null,
-            "proposal_id": null,
-            "moved_to": null,
-            "moved_from": null,
-            "elective_group": null
-          },
-          "note": null
-        },
-        {
-          "period": 4,
-          "status": "busy",
-          "entry": {
-            "key": "94-2026-10-28",
-            "session_id": 94,
-            "date": "2026-10-28",
-            "day": "Wed",
-            "period": 4,
-            "start": "12:30",
-            "end": "13:30",
-            "batch": {
-              "id": 4,
-              "code": "AI&DS-7"
-            },
-            "subject": {
-              "id": 38,
-              "code": "DS6A-405",
-              "name": "Cryptography",
-              "kind": "theory"
-            },
-            "faculty": {
-              "id": 18,
-              "code": "SKS",
-              "name": "Dr. Shishir Kumar Shandilya"
-            },
-            "space": {
-              "id": 4,
-              "code": "A-20?",
-              "kind": "room"
-            },
-            "status": "scheduled",
-            "reason": null,
-            "proposal_id": null,
-            "moved_to": null,
-            "moved_from": null,
-            "elective_group": null
-          },
-          "note": null
-        },
-        {
-          "period": 5,
-          "status": "busy",
-          "entry": {
-            "key": "94-2026-10-28",
-            "session_id": 94,
-            "date": "2026-10-28",
-            "day": "Wed",
-            "period": 4,
-            "start": "12:30",
-            "end": "13:30",
-            "batch": {
-              "id": 4,
-              "code": "AI&DS-7"
-            },
-            "subject": {
-              "id": 38,
-              "code": "DS6A-405",
-              "name": "Cryptography",
-              "kind": "theory"
-            },
-            "faculty": {
-              "id": 18,
-              "code": "SKS",
-              "name": "Dr. Shishir Kumar Shandilya"
-            },
-            "space": {
-              "id": 4,
-              "code": "A-20?",
-              "kind": "room"
-            },
-            "status": "scheduled",
-            "reason": null,
-            "proposal_id": null,
-            "moved_to": null,
-            "moved_from": null,
-            "elective_group": null
-          },
-          "note": null
-        },
-        {
-          "period": 6,
-          "status": "free",
-          "entry": null,
-          "note": null
-        },
-        {
-          "period": 7,
-          "status": "free",
-          "entry": null,
-          "note": null
-        },
-        {
-          "period": 8,
-          "status": "free",
-          "entry": null,
-          "note": null
-        },
-        {
-          "period": 9,
-          "status": "free",
-          "entry": null,
-          "note": null
-        },
-        {
-          "period": 10,
-          "status": "free",
-          "entry": null,
-          "note": null
-        }
-      ]
-    },
-    {
-      "space": {
-        "id": 5,
         "code": "B-006",
         "name": "Class Room B-006",
         "kind": "room",
@@ -1156,7 +914,7 @@
             },
             "faculty": null,
             "space": {
-              "id": 5,
+              "id": 4,
               "code": "B-006",
               "kind": "room"
             },
@@ -1196,7 +954,7 @@
               "name": "Ms. Alfia Bagwala"
             },
             "space": {
-              "id": 5,
+              "id": 4,
               "code": "B-006",
               "kind": "room"
             },
@@ -1236,7 +994,7 @@
               "name": "Ms. Garima Agrawal"
             },
             "space": {
-              "id": 5,
+              "id": 4,
               "code": "B-006",
               "kind": "room"
             },
@@ -1276,7 +1034,7 @@
               "name": "Dr. Shishir Kumar Shandilya"
             },
             "space": {
-              "id": 5,
+              "id": 4,
               "code": "B-006",
               "kind": "room"
             },
@@ -1316,7 +1074,7 @@
               "name": "Dr. Shishir Kumar Shandilya"
             },
             "space": {
-              "id": 5,
+              "id": 4,
               "code": "B-006",
               "kind": "room"
             },
@@ -1356,7 +1114,7 @@
               "name": "Ms. Garima Agrawal"
             },
             "space": {
-              "id": 5,
+              "id": 4,
               "code": "B-006",
               "kind": "room"
             },
@@ -1391,9 +1149,9 @@
     },
     {
       "space": {
-        "id": 6,
+        "id": 5,
         "code": "102",
-        "name": "Room 102 (handwritten)",
+        "name": "Room 102",
         "kind": "room",
         "capacity": null,
         "floor": null
@@ -1432,7 +1190,7 @@
               "name": "Ms. Ritika Verma"
             },
             "space": {
-              "id": 6,
+              "id": 5,
               "code": "102",
               "kind": "room"
             },
@@ -1478,7 +1236,7 @@
               "name": "Dr. Meenu Kumar"
             },
             "space": {
-              "id": 6,
+              "id": 5,
               "code": "102",
               "kind": "room"
             },
@@ -1518,7 +1276,7 @@
               "name": "Dr. Vandit Hedau"
             },
             "space": {
-              "id": 6,
+              "id": 5,
               "code": "102",
               "kind": "room"
             },
@@ -1558,7 +1316,7 @@
               "name": "Dr. Vandit Hedau"
             },
             "space": {
-              "id": 6,
+              "id": 5,
               "code": "102",
               "kind": "room"
             },
@@ -1598,7 +1356,7 @@
               "name": "Dr. Vandit Hedau"
             },
             "space": {
-              "id": 6,
+              "id": 5,
               "code": "102",
               "kind": "room"
             },
@@ -1638,7 +1396,7 @@
               "name": "Dr. Vibha Sharma"
             },
             "space": {
-              "id": 6,
+              "id": 5,
               "code": "102",
               "kind": "room"
             },
@@ -1667,9 +1425,9 @@
     },
     {
       "space": {
-        "id": 7,
+        "id": 6,
         "code": "003",
-        "name": "Room 003 (handwritten)",
+        "name": "Room 003",
         "kind": "room",
         "capacity": null,
         "floor": null
@@ -1702,7 +1460,7 @@
               "name": "Mr. Hitesh Kukreja"
             },
             "space": {
-              "id": 7,
+              "id": 6,
               "code": "003",
               "kind": "room"
             },
@@ -1742,7 +1500,7 @@
               "name": "Mr. Nandkishor Buwade"
             },
             "space": {
-              "id": 7,
+              "id": 6,
               "code": "003",
               "kind": "room"
             },
@@ -1782,7 +1540,7 @@
               "name": "Ms. Shivanjali Patidar"
             },
             "space": {
-              "id": 7,
+              "id": 6,
               "code": "003",
               "kind": "room"
             },
@@ -1822,7 +1580,7 @@
               "name": "Ms. Shivanjali Patidar"
             },
             "space": {
-              "id": 7,
+              "id": 6,
               "code": "003",
               "kind": "room"
             },
@@ -1862,7 +1620,7 @@
               "name": "Ms. Shivanjali Patidar"
             },
             "space": {
-              "id": 7,
+              "id": 6,
               "code": "003",
               "kind": "room"
             },
@@ -1909,7 +1667,7 @@
     },
     {
       "space": {
-        "id": 8,
+        "id": 7,
         "code": "B010",
         "name": "Room B010",
         "kind": "room",
@@ -1919,21 +1677,15 @@
       "slots": [
         {
           "period": 1,
-          "status": "free",
-          "entry": null,
-          "note": null
-        },
-        {
-          "period": 2,
           "status": "busy",
           "entry": {
             "key": "201-2026-10-28",
             "session_id": 201,
             "date": "2026-10-28",
             "day": "Wed",
-            "period": 2,
-            "start": "10:00",
-            "end": "11:00",
+            "period": 1,
+            "start": "09:00",
+            "end": "10:00",
             "batch": {
               "id": 8,
               "code": "MSc-DSA-1"
@@ -1950,7 +1702,7 @@
               "name": "Ms. Ritika Verma"
             },
             "space": {
-              "id": 8,
+              "id": 7,
               "code": "B010",
               "kind": "room"
             },
@@ -1961,6 +1713,12 @@
             "moved_from": null,
             "elective_group": null
           },
+          "note": null
+        },
+        {
+          "period": 2,
+          "status": "free",
+          "entry": null,
           "note": null
         },
         {
@@ -1990,7 +1748,7 @@
               "name": "Dr. Vandit Hedau"
             },
             "space": {
-              "id": 8,
+              "id": 7,
               "code": "B010",
               "kind": "room"
             },
@@ -2030,7 +1788,7 @@
               "name": "Dr. Vandit Hedau"
             },
             "space": {
-              "id": 8,
+              "id": 7,
               "code": "B010",
               "kind": "room"
             },
@@ -2070,7 +1828,7 @@
               "name": "Dr. Priyanka Malviya"
             },
             "space": {
-              "id": 8,
+              "id": 7,
               "code": "B010",
               "kind": "room"
             },
@@ -2110,7 +1868,7 @@
               "name": "Dr. Anupam Jain"
             },
             "space": {
-              "id": 8,
+              "id": 7,
               "code": "B010",
               "kind": "room"
             },
@@ -2150,7 +1908,7 @@
               "name": "Mr. Ayan Shah"
             },
             "space": {
-              "id": 8,
+              "id": 7,
               "code": "B010",
               "kind": "room"
             },
@@ -2185,7 +1943,7 @@
     },
     {
       "space": {
-        "id": 9,
+        "id": 8,
         "code": "A-203",
         "name": "Room A-203",
         "kind": "room",
@@ -2195,8 +1953,42 @@
       "slots": [
         {
           "period": 1,
-          "status": "free",
-          "entry": null,
+          "status": "busy",
+          "entry": {
+            "key": "222-2026-10-28",
+            "session_id": 222,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 1,
+            "start": "09:00",
+            "end": "10:00",
+            "batch": {
+              "id": 9,
+              "code": "MSc-DSA-3"
+            },
+            "subject": {
+              "id": 98,
+              "code": "DS5B-607",
+              "name": "Research Methodology",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 29,
+              "code": "AG",
+              "name": "Dr. Ashok Gupta"
+            },
+            "space": {
+              "id": 8,
+              "code": "A-203",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
           "note": null
         },
         {
@@ -2215,7 +2007,7 @@
               "code": "MSc-DSA-3"
             },
             "subject": {
-              "id": 96,
+              "id": 95,
               "code": "DS5B-601",
               "name": "Deep Learning",
               "kind": "theory"
@@ -2226,7 +2018,7 @@
               "name": "Ms. Alfia Bagwala"
             },
             "space": {
-              "id": 9,
+              "id": 8,
               "code": "A-203",
               "kind": "room"
             },
@@ -2255,7 +2047,7 @@
               "code": "MSc-DSA-3"
             },
             "subject": {
-              "id": 97,
+              "id": 96,
               "code": "DS5B-603",
               "name": "Forecasting methods",
               "kind": "theory"
@@ -2266,7 +2058,7 @@
               "name": "Manisha Malviya"
             },
             "space": {
-              "id": 9,
+              "id": 8,
               "code": "A-203",
               "kind": "room"
             },
@@ -2295,7 +2087,7 @@
               "code": "MSc-DSA-3"
             },
             "subject": {
-              "id": 97,
+              "id": 96,
               "code": "DS5B-603",
               "name": "Forecasting methods",
               "kind": "theory"
@@ -2306,7 +2098,7 @@
               "name": "Manisha Malviya"
             },
             "space": {
-              "id": 9,
+              "id": 8,
               "code": "A-203",
               "kind": "room"
             },
@@ -2335,7 +2127,7 @@
               "code": "MSc-DSA-3"
             },
             "subject": {
-              "id": 100,
+              "id": 99,
               "code": "DS5B-621",
               "name": "Social Media Analytics",
               "kind": "theory"
@@ -2346,7 +2138,7 @@
               "name": "Ms. Garima Agrawal"
             },
             "space": {
-              "id": 9,
+              "id": 8,
               "code": "A-203",
               "kind": "room"
             },
@@ -2375,7 +2167,7 @@
               "code": "MSc-DSA-3"
             },
             "subject": {
-              "id": 100,
+              "id": 99,
               "code": "DS5B-621",
               "name": "Social Media Analytics",
               "kind": "theory"
@@ -2386,7 +2178,7 @@
               "name": "Ms. Garima Agrawal"
             },
             "space": {
-              "id": 9,
+              "id": 8,
               "code": "A-203",
               "kind": "room"
             },

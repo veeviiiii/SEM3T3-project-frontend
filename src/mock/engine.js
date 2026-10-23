@@ -108,13 +108,14 @@ export function buildCatalog(source) {
         spaces.push(space);
       }
     }
-    // Columns become numbered teaching slots (P1, P2, ...) and breaks.
+    // Columns become numbered teaching slots (P1, P2, ...) and breaks. A break the sheet does not name
+    // (an empty, unlabelled column) is simply left out, rather than given a made-up label.
     const slots = [];
     const breaks = [];
     const columnPeriod = b.columns.map((column) => {
       const [start, end] = column.split('-');
       if (b.breaks && column in b.breaks) {
-        breaks.push({ start, end, label: b.breaks[column] || 'Break' });
+        if (b.breaks[column]) breaks.push({ start, end, label: b.breaks[column] });
         return null;
       }
       slots.push({ period: slots.length + 1, start, end });
@@ -137,6 +138,8 @@ export function buildCatalog(source) {
       slots,
       breaks,
       sheet: b.sheet,
+      // Classes the app moved away from the sheet's times to remove a clash.
+      changes: [...(b.changes ?? [])],
       review: [...(b.review ?? [])],
     };
     batches.push(batch);

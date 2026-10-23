@@ -356,7 +356,7 @@ Roles: `['hod']`
 - Include a link to `reports.html`.
 
 **Acceptance** (as Dr. Govind Maheshwari)
-- [ ] The cards show `260 / 3 / 1 / 1`, with a red line about the 8 timetable clashes under them.
+- [ ] The cards show `260 / 3 / 1 / 1`, with a red line about the 2 timetable clashes under them.
 - [ ] 3 pending classes are listed, each with its suggestion.
 - [ ] A student or faculty user opening `hod.html` is redirected (already handled by `requireLogin`).
 
@@ -456,9 +456,11 @@ Call the **function**. The HTTP route is listed for reference only and must neve
 
 **Mock data**: every timetable from the School of Data Science and Forecasting's signed sheets (w.e.f. 20 Jul 2026),
 in `public/mock/timetables.json`: 11 batches (M.Tech. (Dual Degree) AI&DS semesters 1, 3, 5, 7, 9; MBA (Business Analytics)
-1, 3; M.Sc. (Data Science & Analytics) 1, 3; Executive M.Tech. (Data Science) 1, 3), 36 teachers, 9 rooms, 260 classes a week.
-Each batch keeps the time slots of its own sheet, so clashes are found by overlapping times. Anything unclear on a sheet is
-listed in the batch's `review` notes (shown on the Timetables page) instead of being guessed.
+1, 3; M.Sc. (Data Science & Analytics) 1, 3; Executive M.Tech. (Data Science) 1, 3), 36 teachers, 8 rooms, 260 classes a week.
+Each batch keeps the time slots of its own sheet, so clashes are found by overlapping times. Anything unclear on a sheet
+(a room, a teacher) is left out and listed in the batch's `review` notes instead of being guessed. To remove clashes, some
+M.Sc. classes were moved off the sheets' times; each batch's `changes` says what moved (both are shown on the Timetables page).
+2 clashes remain on purpose (Mr. Nandkishor Buwade and Ms. Alfia Bagwala, both on Thursday).
 Demo story on top of it (`public/mock/demo.json`): Simran Prajapati on leave Tue 27 Oct (one class moved, one kept
 cancelled), Ms. Ritika Verma on leave Thu 29 Oct (3 classes waiting for the HOD).
 
