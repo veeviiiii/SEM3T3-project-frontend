@@ -2,7 +2,7 @@
 import Chart from 'chart.js/auto';
 import { getAnalyticsTrends, listActivity } from '../api.js';
 import { requireLogin, renderHeader } from '../lib/layout.js';
-import { $, escapeHtml, formatDate, initials, renderLoading, renderError, renderEmpty, showToast } from '../lib/ui.js';
+import { $, escapeHtml, formatDate, initials, renderLoading, renderError, renderEmpty, showToast, prefersReducedMotion } from '../lib/ui.js';
 
 const PAGE_SIZE = 20;
 // Heatmap shades, quiet to busy: pastel blues (colours in styles.css). Written out in full so Tailwind can see them.
@@ -101,11 +101,26 @@ const colour = (name) => getComputedStyle(document.documentElement).getPropertyV
 /** The two Chart.js charts. Called again (without animation) when light / dark mode is switched. */
 function drawCharts({ animate = true } = {}) {
   charts.forEach((c) => c.destroy());
-  const motion = animate ? {} : { animation: false };
+  // The bars grow up one after the other the first time; a theme switch redraws them at once.
+  const motion =
+    animate && !prefersReducedMotion()
+      ? { animation: { duration: 700, easing: 'easeOutQuart', delay: (ctx) => (ctx.type === 'data' && ctx.mode === 'default' ? ctx.dataIndex * 45 : 0) } }
+      : { animation: false };
   const axis = axisColours();
+  const dark = document.documentElement.classList.contains('dark');
   Chart.defaults.color = axis.text;
   Chart.defaults.borderColor = axis.grid;
   Chart.defaults.font.family = getComputedStyle(document.body).fontFamily;
+  // The hover label: a small rounded box, dark on the light theme and light on the dark one.
+  Object.assign(Chart.defaults.plugins.tooltip, {
+    backgroundColor: dark ? '#e9e9e9' : '#0f172a',
+    titleColor: dark ? '#191919' : '#ffffff',
+    bodyColor: dark ? '#191919' : '#ffffff',
+    padding: 10,
+    cornerRadius: 8,
+    boxPadding: 4,
+    usePointStyle: true,
+  });
   // No vertical grid lines and no axis border, like the design.
   const x = { grid: { display: false }, border: { display: false } };
   const bar = { borderRadius: 6, borderSkipped: false, maxBarThickness: 22 };

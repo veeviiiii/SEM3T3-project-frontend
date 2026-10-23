@@ -4,6 +4,7 @@ import { animate, stagger } from 'motion';
 import { getCalendar, getTimetable, listBatches, listFaculty, listSpaces } from '../api.js';
 import { requireLogin, renderHeader } from '../lib/layout.js';
 import { renderTimetableGrid } from '../lib/timetable-grid.js';
+import { refreshPills } from '../lib/motion.js';
 import { $, escapeHtml, formatDate, addDays, renderLoading, renderError, renderEmpty, prefersReducedMotion } from '../lib/ui.js';
 
 // What each choice means: its URL parameter, its getTimetable() option and what the grid cards show.
@@ -40,6 +41,7 @@ async function start() {
 
   [mode, targetId] = initialChoice();
   document.querySelector(`input[name="mode"][value="${mode}"]`).checked = true;
+  refreshPills(); // the sliding highlight moves to that tab
   fillTargets();
 
   document.querySelectorAll('input[name="mode"]').forEach((radio) =>

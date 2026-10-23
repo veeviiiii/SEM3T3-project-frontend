@@ -1,5 +1,6 @@
 // The weekly timetable grid. Every page that shows a timetable uses this one function.
 import { escapeHtml, statusInfo, addDays, formatDate } from './ui.js';
+import { slideIn } from './motion.js';
 
 /**
  * Draws a week into `container`.
@@ -52,6 +53,11 @@ export function renderTimetableGrid(container, week, calendar, { show = 'faculty
         ${html}
       </div>
     </div>`;
+
+  // 5. After a week change, the new week slides in from the side you moved to (later weeks from the right).
+  const before = container.dataset.week;
+  container.dataset.week = week.week_start;
+  if (before && before !== week.week_start) slideIn(container.firstElementChild, week.week_start > before ? 1 : -1);
 }
 
 function card(entry, show) {

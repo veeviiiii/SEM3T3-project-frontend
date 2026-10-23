@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@preline/dropdown": "5.0.0",
+    "@preline/tooltip": "5.0.0",
     "chart.js": "^4.4.0",
     "motion": "^12.0.0"
   },

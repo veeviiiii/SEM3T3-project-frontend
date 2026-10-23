@@ -1,4 +1,5 @@
 // Small helpers used by every page.
+import { animate } from 'motion';
 
 /** Find one element: $('#week-grid') */
 export const $ = (selector, root = document) => root.querySelector(selector);
@@ -80,14 +81,22 @@ export function initials(name) {
 }
 
 /**
- * A grey "Loading..." box. Show it before every api.js call.
- * It fades in after a short moment, so a quick answer does not make the screen flicker.
+ * A "Loading..." box with grey placeholder bars that shimmer (.skeleton in styles.css).
+ * Show it before every api.js call. It fades in after a short moment, so a quick answer
+ * does not make the screen flicker.
  */
 export function renderLoading(container, text = 'Loading...') {
   container.innerHTML = `
-    <div class="flex animate-fade-in items-center gap-3 rounded-xl border border-slate-200/70 bg-white p-5 text-sm text-slate-500 [animation-delay:120ms]">
-      <span class="inline-block h-4 w-4 animate-spin rounded-full border-2 border-slate-200 border-t-blue-400"></span>
-      ${escapeHtml(text)}
+    <div class="animate-fade-in rounded-xl border border-slate-200/70 bg-white p-5 [animation-delay:120ms]" role="status">
+      <p class="flex items-center gap-2 text-sm text-slate-500">
+        <span class="inline-block h-3.5 w-3.5 animate-spin rounded-full border-2 border-slate-200 border-t-blue-400" aria-hidden="true"></span>
+        ${escapeHtml(text)}
+      </p>
+      <div class="mt-4 space-y-2.5" aria-hidden="true">
+        <span class="skeleton h-2.5 w-2/5"></span>
+        <span class="skeleton h-2.5 w-full"></span>
+        <span class="skeleton h-2.5 w-4/5"></span>
+      </div>
     </div>`;
 }
 
@@ -123,12 +132,16 @@ export function showToast(message, kind = 'info') {
   const colours = { info: 'bg-slate-900 text-white', success: 'bg-green-200 text-green-950', error: 'bg-red-200 text-red-950' };
   const toast = document.createElement('div');
   toast.setAttribute('role', 'status');
-  // It slides up when it appears and fades away before it is removed.
-  toast.className = `animate-toast-in rounded-xl px-4 py-3 text-sm shadow-lg transition duration-300 ${colours[kind] || colours.info}`;
+  toast.className = `rounded-xl px-4 py-3 text-sm shadow-lg ${colours[kind] || colours.info}`;
   toast.textContent = message;
   root.append(toast);
-  setTimeout(() => toast.classList.add('translate-y-2', 'opacity-0'), 3700);
-  setTimeout(() => toast.remove(), 4000);
+  // It springs up when it appears, and slides away to the right before it is removed (Motion).
+  const still = prefersReducedMotion();
+  if (!still) animate(toast, { opacity: [0, 1], y: [16, 0], scale: [0.96, 1] }, { type: 'spring', stiffness: 380, damping: 28 });
+  setTimeout(() => {
+    if (still) toast.remove();
+    else animate(toast, { opacity: 0, x: 24 }, { duration: 0.2 }).then(() => toast.remove());
+  }, 4000);
 }
 
 /** True when the user asked their computer for less animation. Check it before animating. */

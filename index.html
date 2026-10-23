@@ -20,6 +20,8 @@
     <script type="module" src="/src/pages/login.js" blocking="render"></script>
   </head>
   <body class="min-h-screen bg-gradient-to-b from-[#d4e1f6] to-[#eef3fb] text-slate-800 dark:from-[#161616] dark:to-[#0f0f0f]">
+    <!-- A faint grid of dots behind the page (Magic UI-style "dot pattern", see .dot-pattern in styles.css). -->
+    <div class="dot-pattern pointer-events-none fixed inset-0 -z-10" aria-hidden="true"></div>
     <button type="button" id="theme-toggle" class="fixed right-4 top-4 flex h-10 w-10 items-center justify-center rounded-full bg-white text-slate-700 shadow-sm transition hover:-translate-y-px hover:text-slate-900 hover:shadow-md" aria-label="Dark mode" aria-pressed="false"></button>
 
     <main class="mx-auto flex min-h-screen max-w-md flex-col justify-center px-4 py-10">

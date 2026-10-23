@@ -14,6 +14,10 @@ import {
 import { $, escapeHtml, formatDate, initials, renderLoading, renderEmpty, renderError, showToast } from './ui.js';
 import { icon, logoMark } from './icons.js';
 import { setupThemeToggle, themeIcons } from './theme.js';
+import { setupMotion, staggerIn, shake } from './motion.js';
+// Preline UI plugins: the account menu (dropdown) and the small labels on icon buttons (tooltips).
+import HSDropdown from '@preline/dropdown/non-auto';
+import HSTooltip from '@preline/tooltip/non-auto';
 
 // Which links each role sees in the menu: address, label, icon.
 const NAV = {
@@ -71,14 +75,46 @@ export function requireLogin(allowedRoles = ['hod', 'faculty', 'student']) {
   return user;
 }
 
-/** One menu link. The page you are on is highlighted. */
+/**
+ * One menu link. The page you are on is highlighted by a pill behind it (.nav-pill), which glides
+ * from the old item to the new one when you change page (styles.css).
+ */
 function navLink([href, label, iconName]) {
   const active = window.location.pathname === href;
-  return `<a href="${href}" class="flex items-center gap-3 rounded-lg px-3 py-2 text-sm transition duration-200 ${
-    active
-      ? 'bg-nav font-medium text-slate-900'
-      : 'text-slate-600 hover:translate-x-1 hover:bg-blue-50 hover:text-slate-900'
-  }" ${active ? 'aria-current="page"' : ''}>${icon(iconName)}${label}</a>`;
+  return `<a href="${href}" class="relative isolate flex items-center gap-3 rounded-lg px-3 py-2 text-sm transition duration-200 ${
+    active ? 'font-medium text-slate-900' : 'text-slate-600 hover:translate-x-1 hover:bg-blue-50 hover:text-slate-900'
+  }" ${active ? 'aria-current="page"' : ''}>${
+    active ? '<span class="nav-pill absolute inset-0 -z-10 rounded-lg bg-nav" aria-hidden="true"></span>' : ''
+  }${icon(iconName)}${label}</a>`;
+}
+
+// One row of the account menu.
+const MENU_ITEM =
+  'flex w-full items-center gap-2.5 rounded-lg px-2.5 py-2 text-left text-sm text-slate-700 transition-colors hover:bg-blue-50 hover:text-slate-900 focus:bg-blue-50 focus:outline-none';
+
+/** The round avatar at the top right: a Preline dropdown with the person's name, their pages and Log out. */
+function accountMenu(user) {
+  const [homeHref, homeLabel, homeIcon] = NAV[user.role][0];
+  const links = [[homeHref, homeLabel, homeIcon], ...NAV_BOTTOM[user.role]]
+    .map(([href, label, iconName]) => `<a href="${href}" class="${MENU_ITEM}" role="menuitem">${icon(iconName)}${label}</a>`)
+    .join('');
+  return `
+    <div class="hs-dropdown relative inline-flex [--placement:bottom-right] [--offset:8]">
+      <button type="button" id="account-button" class="hs-dropdown-toggle flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-card-orange text-sm font-semibold text-slate-800 ring-2 ring-white transition hover:scale-105 hs-dropdown-open:ring-blue-300" aria-haspopup="menu" aria-expanded="false" aria-label="Account menu for ${escapeHtml(user.name)}">${escapeHtml(initials(user.name))}</button>
+      <div class="hs-dropdown-menu z-50 hidden min-w-60 rounded-xl border border-slate-200 bg-white p-1.5 opacity-0 shadow-lg transition-[opacity,margin] duration-150 hs-dropdown-open:opacity-100" role="menu" aria-labelledby="account-button">
+        <div class="flex items-center gap-3 px-2.5 py-2">
+          <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-card-orange text-xs font-semibold text-slate-800" aria-hidden="true">${escapeHtml(initials(user.name))}</span>
+          <div class="min-w-0">
+            <p class="truncate text-sm font-semibold text-slate-900">${escapeHtml(user.name)}</p>
+            <p class="text-xs text-slate-500">${ROLE_NAME[user.role] || ''}</p>
+          </div>
+        </div>
+        <div class="my-1 h-px bg-slate-200"></div>
+        ${links}
+        <div class="my-1 h-px bg-slate-200"></div>
+        <button type="button" class="${MENU_ITEM} hover:bg-red-50 hover:text-red-700 focus:bg-red-50" role="menuitem" data-logout>${icon('logout')}Log out</button>
+      </div>
+    </div>`;
 }
 
 /**
@@ -95,7 +131,10 @@ export function renderHeader(user) {
           <span class="transition-transform duration-500 group-hover:rotate-180">${logoMark()}</span>
           <span class="logo-glow">Smart Scheduling</span>
         </a>
-        <button type="button" id="close-menu" class="rounded-md p-1 text-slate-500 hover:bg-slate-100 lg:hidden" aria-label="Close menu">${icon('panel')}</button>
+        <div class="hs-tooltip inline-flex [--placement:bottom] lg:hidden">
+          <button type="button" id="close-menu" class="hs-tooltip-toggle rounded-md p-1 text-slate-500 hover:bg-slate-100" aria-label="Close menu">${icon('panel')}</button>
+          <span class="hs-tooltip-content tip hidden" role="tooltip">Close menu</span>
+        </div>
       </div>
       <nav class="flex-1 space-y-1 overflow-y-auto px-3 py-2">${NAV[user.role].map(navLink).join('')}</nav>
       <div class="p-3">
@@ -107,14 +146,17 @@ export function renderHeader(user) {
       </div>
       <div class="space-y-1 border-t border-slate-200 px-3 py-3">
         ${bottom.map(navLink).join('')}
-        <button type="button" id="logout" class="flex w-full items-center gap-3 rounded-lg px-3 py-2 text-left text-sm text-slate-600 transition duration-200 hover:translate-x-1 hover:bg-red-50 hover:text-red-700">
+        <button type="button" id="logout" data-logout class="flex w-full items-center gap-3 rounded-lg px-3 py-2 text-left text-sm text-slate-600 transition duration-200 hover:translate-x-1 hover:bg-red-50 hover:text-red-700">
           ${icon('logout')}Log out
         </button>
       </div>
     </aside>
 
     <div id="topbar" class="relative z-30 mx-auto flex max-w-7xl flex-wrap items-center gap-3 px-4 pb-2 pt-5 sm:px-6">
-      <button type="button" id="open-menu" class="flex h-10 w-10 items-center justify-center rounded-full bg-white text-slate-700 shadow-sm transition hover:-translate-y-px hover:shadow-md lg:hidden" aria-label="Open menu" aria-expanded="false" aria-controls="sidebar">${icon('menu')}</button>
+      <div class="hs-tooltip inline-flex [--placement:bottom] lg:hidden">
+        <button type="button" id="open-menu" class="hs-tooltip-toggle flex h-10 w-10 items-center justify-center rounded-full bg-white text-slate-700 shadow-sm transition hover:-translate-y-px hover:shadow-md" aria-label="Open menu" aria-expanded="false" aria-controls="sidebar">${icon('menu')}</button>
+        <span class="hs-tooltip-content tip hidden" role="tooltip">Menu</span>
+      </div>
       <div class="min-w-0 flex-1" id="title-slot"></div>
       <div class="relative order-last w-full sm:order-none sm:w-64" id="search-box">
         <label for="search" class="sr-only">Search teachers, batches, rooms and subjects</label>
@@ -122,13 +164,19 @@ export function renderHeader(user) {
         <input type="search" id="search" class="h-10 w-full rounded-full border border-transparent bg-white pl-10 pr-4 text-sm text-slate-800 shadow-sm transition placeholder:text-slate-400 hover:shadow-md focus:border-blue-300 focus:ring-4 focus:ring-blue-100 focus:outline-none" placeholder="Search" autocomplete="off" />
         <div id="search-results" class="absolute left-0 right-0 top-full z-40 mt-1 hidden origin-top animate-pop-in rounded-xl shadow-lg sm:left-auto sm:w-80"></div>
       </div>
-      <button type="button" id="theme-toggle" class="flex h-10 w-10 items-center justify-center rounded-full bg-white text-slate-700 shadow-sm transition hover:-translate-y-px hover:text-slate-900 hover:shadow-md" aria-label="Dark mode" aria-pressed="false">
-        ${themeIcons(icon('moon', 'h-5 w-5'), icon('sun', 'h-5 w-5'))}
-      </button>
-      <button type="button" id="bell" class="group relative flex h-10 w-10 items-center justify-center rounded-full bg-white text-slate-700 shadow-sm transition hover:-translate-y-px hover:text-slate-900 hover:shadow-md" aria-label="Notifications" aria-expanded="false" aria-controls="notif-panel">
-        <span class="origin-top group-hover:animate-bell-ring">${icon('bell', 'h-5 w-5')}</span>
-        <span id="bell-count" class="absolute -right-1 -top-1 hidden min-w-5 animate-badge-pop rounded-full bg-red-300 px-1 text-center text-xs font-bold leading-5 text-red-950 shadow-[0_0_10px_var(--color-red-300)] dark:shadow-none"></span>
-      </button>
+      <div class="hs-tooltip inline-flex [--placement:bottom]">
+        <button type="button" id="theme-toggle" class="hs-tooltip-toggle flex h-10 w-10 items-center justify-center rounded-full bg-white text-slate-700 shadow-sm transition hover:-translate-y-px hover:text-slate-900 hover:shadow-md" aria-label="Dark mode" aria-pressed="false">
+          ${themeIcons(icon('moon', 'h-5 w-5'), icon('sun', 'h-5 w-5'))}
+        </button>
+        <span class="hs-tooltip-content tip hidden" role="tooltip"><span class="dark:hidden">Dark mode</span><span class="hidden dark:inline">Light mode</span></span>
+      </div>
+      <div class="hs-tooltip inline-flex [--placement:bottom]">
+        <button type="button" id="bell" class="hs-tooltip-toggle group relative flex h-10 w-10 items-center justify-center rounded-full bg-white text-slate-700 shadow-sm transition hover:-translate-y-px hover:text-slate-900 hover:shadow-md" aria-label="Notifications" aria-expanded="false" aria-controls="notif-panel">
+          <span class="origin-top group-hover:animate-bell-ring">${icon('bell', 'h-5 w-5')}</span>
+          <span id="bell-count" class="absolute -right-1 -top-1 hidden min-w-5 animate-badge-pop rounded-full bg-red-300 px-1 text-center text-xs font-bold leading-5 text-red-950 shadow-[0_0_10px_var(--color-red-300)] dark:shadow-none"></span>
+        </button>
+        <span class="hs-tooltip-content tip hidden" role="tooltip">Notifications</span>
+      </div>
       <section id="notif-panel" class="absolute left-4 right-4 top-full z-40 mt-1 hidden origin-top-right animate-pop-in rounded-xl border border-slate-200 bg-white shadow-lg sm:left-auto sm:right-6 sm:w-96" aria-label="Notifications">
         <div class="flex items-center justify-between gap-2 border-b border-slate-200 px-4 py-3">
           <h2 class="font-semibold text-slate-900">Notifications</h2>
@@ -136,7 +184,7 @@ export function renderHeader(user) {
         </div>
         <div id="notif-list" class="max-h-96 overflow-y-auto p-2"></div>
       </section>
-      <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-card-orange text-sm font-semibold text-slate-800 ring-2 ring-white transition hover:scale-105" role="img" aria-label="Logged in as ${escapeHtml(user.name)}" title="${escapeHtml(user.name)}">${escapeHtml(initials(user.name))}</span>
+      ${accountMenu(user)}
     </div>`;
 
   // Make room on the left for the menu (on wide screens it is always shown).
@@ -146,15 +194,22 @@ export function renderHeader(user) {
   const title = document.querySelector('main h1');
   if (title) $('#title-slot').append(title);
 
-  document.getElementById('logout').addEventListener('click', () => {
-    logout();
-    window.location.href = '/index.html';
-  });
+  // "Log out" is in the menu on the left and in the account menu.
+  document.querySelectorAll('[data-logout]').forEach((button) =>
+    button.addEventListener('click', () => {
+      logout();
+      window.location.href = '/index.html';
+    }),
+  );
   setupThemeToggle($('#theme-toggle'));
   setupMenu();
   setupSearch();
   setupNotifications(user);
   refreshBell();
+  // Start the Preline plugins (for the header and any tooltips already in the page) and the animations.
+  HSDropdown.autoInit();
+  HSTooltip.autoInit();
+  setupMotion();
 }
 
 /** Phones: the ☰ button slides the menu in; ✕, Escape or a tap outside closes it. */
@@ -255,6 +310,7 @@ function setupSearch() {
       results.querySelectorAll('button').forEach((button, i) =>
         button.addEventListener('click', () => openResult(button, found[i])),
       );
+      staggerIn(results.querySelectorAll('li'));
     } catch (err) {
       renderError(results, err, runSearch);
     }
@@ -333,10 +389,11 @@ function setupNotifications(user) {
     }
   });
 
-  // Live updates: a new notification pops up as a toast and the bell count goes up.
+  // Live updates: a new notification pops up as a toast, the bell shakes and its count goes up.
   subscribeToEvents({
     notification: (n) => {
       showToast(n.title);
+      shake(bell);
       refreshBell();
       if (isOpen()) loadNotifications();
     },

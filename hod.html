@@ -55,13 +55,19 @@
                 <span class="text-xs text-slate-500" id="calendar-label"></span>
               </div>
               <div class="flex items-center gap-1">
-                <button type="button" class="rounded-md p-1.5 text-slate-600 hover:bg-slate-100" id="prev-week" aria-label="Previous week">
-                  <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
-                </button>
+                <div class="hs-tooltip inline-flex [--placement:top]">
+                  <button type="button" class="hs-tooltip-toggle rounded-md p-1.5 text-slate-600 hover:bg-slate-100" id="prev-week" aria-label="Previous week">
+                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+                  </button>
+                  <span class="hs-tooltip-content tip hidden" role="tooltip">Previous week</span>
+                </div>
                 <button type="button" class="rounded-md bg-slate-100 px-3 py-1 text-xs font-medium text-slate-800 hover:bg-slate-200" id="this-week">This week</button>
-                <button type="button" class="rounded-md p-1.5 text-slate-600 hover:bg-slate-100" id="next-week" aria-label="Next week">
-                  <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
-                </button>
+                <div class="hs-tooltip inline-flex [--placement:top]">
+                  <button type="button" class="hs-tooltip-toggle rounded-md p-1.5 text-slate-600 hover:bg-slate-100" id="next-week" aria-label="Next week">
+                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+                  </button>
+                  <span class="hs-tooltip-content tip hidden" role="tooltip">Next week</span>
+                </div>
               </div>
             </div>
             <p class="mb-3 text-xs text-slate-500">Only the classes that changed: waiting for a new time, cancelled, moved or in another room.</p>

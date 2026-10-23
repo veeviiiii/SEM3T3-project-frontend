@@ -18,6 +18,7 @@ import {
 import { requireLogin, renderHeader } from '../lib/layout.js';
 import { renderTimetableGrid } from '../lib/timetable-grid.js';
 import { logoMark } from '../lib/icons.js';
+import { tickNumber } from '../lib/motion.js';
 import {
   $,
   escapeHtml,
@@ -29,7 +30,6 @@ import {
   renderError,
   renderEmpty,
   showToast,
-  prefersReducedMotion,
 } from '../lib/ui.js';
 
 // The four number cards: label, field of getAnalyticsSummary(), and card colour (full class names for Tailwind).
@@ -139,26 +139,15 @@ function drawStats(summary) {
       </div>`;
     // "Waiting for you" is the blue one and opens the Approvals page.
     return s.field === 'pending_approvals'
-      ? `<a href="/approvals.html" class="lift flex min-h-36 animate-fade-up flex-col rounded-xl ${s.colour} p-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400" ${delay}>${inside}</a>`
-      : `<div class="lift flex min-h-36 animate-fade-up flex-col rounded-xl ${s.colour} p-4" ${delay}>${inside}</div>`;
+      ? `<a href="/approvals.html" data-tilt class="lift flex min-h-36 animate-fade-up flex-col rounded-xl ${s.colour} p-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400" ${delay}>${inside}</a>`
+      : `<div data-tilt class="lift flex min-h-36 animate-fade-up flex-col rounded-xl ${s.colour} p-4" ${delay}>${inside}</div>`;
   }).join('')}</div>`;
   countUp($('#stats'));
 }
 
-/** The big numbers count up from 0 when they appear (not for people who asked for less motion). */
+/** The big numbers count up from 0 when they appear (Motion number ticker, see src/lib/motion.js). */
 function countUp(root) {
-  if (prefersReducedMotion()) return;
-  root.querySelectorAll('[data-count]').forEach((el) => {
-    const end = Number(el.dataset.count);
-    if (!Number.isFinite(end) || end <= 0) return;
-    const start = performance.now();
-    const step = (now) => {
-      const t = Math.min((now - start) / 700, 1);
-      el.textContent = Math.round(end * (1 - (1 - t) ** 3)); // fast at first, slow at the end
-      if (t < 1) requestAnimationFrame(step);
-    };
-    requestAnimationFrame(step);
-  });
+  root.querySelectorAll('[data-count]').forEach((el) => tickNumber(el, el.dataset.count));
 }
 
 /** A ring split into this week's changes, drawn with SVG: each piece is a dashed circle. */

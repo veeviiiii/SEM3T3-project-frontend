@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+/* Preline UI plugins (the account menu and the tooltips): their hs-dropdown-open: and hs-tooltip-shown: variants. */
+@import "../node_modules/@preline/dropdown/variants.css";
+@import "../node_modules/@preline/tooltip/variants.css";
+@source "../node_modules/@preline/dropdown/non-auto.mjs";
+@source "../node_modules/@preline/tooltip/non-auto.mjs";
+
 /* dark:... classes apply while <html> has class="dark" (src/lib/theme.js switches it). */
 @custom-variant dark (&:where(.dark, .dark *));
 
@@ -163,6 +169,10 @@
   --ring-edge-green: #4b7d60;
   --ring-edge-red: #995b5b;
   --logo-glow: 0 0 10px rgb(125 165 220 / 0.55), 0 0 2px rgb(125 165 220 / 0.55);
+  --spotlight: rgb(125 165 220 / 0.09);
+  --shine: rgb(255 255 255 / 0.18);
+  --shimmer: rgb(255 255 255 / 0.06);
+  --dot: rgb(255 255 255 / 0.14);
 
   --color-slate-50: #1f1f1f;
   --color-slate-100: #242424;
@@ -227,6 +237,11 @@
   --color-blue-950: oklch(93% 0.03 250);
 }
 
+/* Tab groups with a sliding pill (motion.js adds .has-pill) hide the tabs' own plain highlight. */
+.has-pill :is([aria-pressed="true"], input:checked + *) {
+  background-color: transparent;
+}
+
 /* Dark mode: pop-up forms get a thin edge, because shadows hardly show on charcoal. */
 .dark dialog {
   box-shadow: 0 0 0 1px var(--color-slate-200), 0 24px 60px -16px rgb(0 0 0 / 0.8);
@@ -277,6 +292,14 @@
 ::view-transition-group(topbar) {
   animation-duration: 0.24s;
 }
+/* The highlight behind the current menu item glides from the old page's item to the new one. */
+.nav-pill {
+  view-transition-name: nav-pill;
+}
+::view-transition-group(nav-pill) {
+  animation-duration: 0.3s;
+  animation-timing-function: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
 @keyframes page-out {
   to { opacity: 0; }
 }
@@ -304,6 +327,12 @@
     --ring-edge-red: var(--color-card-red);
     /* The still glow round the app's name. Stronger than dark mode's, so it shows on white. */
     --logo-glow: 0 0 14px rgb(59 130 246 / 0.6), 0 0 4px rgb(96 165 250 / 0.5);
+    /* The Magic UI-style effects (dark mode has its own, see .dark): the light that follows the mouse over
+       cards, the sweep across main buttons, the shimmer on loading bars and the login page's dot grid. */
+    --spotlight: rgb(96 165 250 / 0.14);
+    --shine: rgb(255 255 255 / 0.7);
+    --shimmer: rgb(255 255 255 / 0.7);
+    --dot: rgb(15 23 42 / 0.18);
   }
   :focus-visible {
     outline: 2px solid var(--color-blue-400);
@@ -330,17 +359,22 @@
     text-transform: uppercase;
   }
 
-  /* Things drawn after the data arrives (a new tab, another week...) ease in, one shortly after the other.
-     (Option cards and timetable chips are animated with Motion in the page scripts instead.) */
-  main .card,
+  /* Rows and list items drawn after the data arrives (a new tab, another week...) ease in, one shortly
+     after the other. (Cards are revealed by Motion as they scroll into view, see src/lib/motion.js;
+     option cards and timetable chips are animated with Motion in the page scripts.) */
   main :is(tbody > tr, ul > li, ol > li):not(.option-card) {
     animation: var(--animate-fade-up);
   }
-  main :is(.card, tbody > tr, ul > li, ol > li):nth-child(2) { animation-delay: 30ms; }
-  main :is(.card, tbody > tr, ul > li, ol > li):nth-child(3) { animation-delay: 60ms; }
-  main :is(.card, tbody > tr, ul > li, ol > li):nth-child(4) { animation-delay: 90ms; }
-  main :is(.card, tbody > tr, ul > li, ol > li):nth-child(5) { animation-delay: 120ms; }
-  main :is(.card, tbody > tr, ul > li, ol > li):nth-child(n + 6) { animation-delay: 150ms; }
+  main :is(tbody > tr, ul > li, ol > li):nth-child(2) { animation-delay: 30ms; }
+  main :is(tbody > tr, ul > li, ol > li):nth-child(3) { animation-delay: 60ms; }
+  main :is(tbody > tr, ul > li, ol > li):nth-child(4) { animation-delay: 90ms; }
+  main :is(tbody > tr, ul > li, ol > li):nth-child(5) { animation-delay: 120ms; }
+  main :is(tbody > tr, ul > li, ol > li):nth-child(n + 6) { animation-delay: 150ms; }
+
+  /* A card waits, invisible, until Motion reveals it (only while motion.js has added .motion-reveal). */
+  .motion-reveal main .card:not([data-shown]) {
+    opacity: 0;
+  }
 
   /* Pop-up forms slide up and the page behind them fades. */
   dialog[open] {
@@ -360,7 +394,7 @@
    Use them like: <button class="btn-primary">Approve</button> */
 @layer components {
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-brand px-4 py-2.5 text-sm font-medium text-ink transition duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400 disabled:cursor-not-allowed disabled:opacity-50;
+    @apply relative isolate inline-flex items-center justify-center gap-2 overflow-hidden rounded-lg bg-brand px-4 py-2.5 text-sm font-medium text-ink transition duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400 disabled:cursor-not-allowed disabled:opacity-50;
   }
   .btn-secondary {
     @apply inline-flex items-center justify-center gap-2 rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-sm font-medium text-slate-800 transition duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400 disabled:cursor-not-allowed disabled:opacity-50;
@@ -382,6 +416,20 @@
     background-color: var(--color-brand-strong);
     box-shadow: 0 8px 22px -8px var(--color-brand);
   }
+  /* Shiny button: a light sweeps across the main button once when the mouse arrives. */
+  .btn-primary::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background: linear-gradient(110deg, transparent 30%, var(--shine) 50%, transparent 70%);
+    translate: -110% 0;
+  }
+  .btn-primary:not(:disabled):hover::after {
+    translate: 110% 0;
+    transition: translate 0.7s ease;
+  }
   .btn-secondary:not(:disabled):hover {
     border-color: var(--color-slate-300);
     background-color: var(--color-slate-50);
@@ -393,14 +441,29 @@
   }
 
   .card {
-    @apply rounded-xl border border-slate-200/70 bg-white p-5 transition-[box-shadow,border-color] duration-300;
+    @apply relative isolate rounded-xl border border-slate-200/70 bg-white p-5 transition-[box-shadow,border-color] duration-300;
   }
   .card:hover {
     box-shadow: 0 12px 30px -20px rgb(15 23 42 / 0.3);
   }
   /* Cards you can click (or that stand alone, like a room): lift and glow on hover. */
   .lift {
-    @apply transition-[translate,box-shadow] duration-300;
+    @apply relative isolate transition-[translate,box-shadow] duration-300;
+  }
+  /* Spotlight (Magic UI's "magic card"): a soft light under the mouse. motion.js sets --mx / --my. */
+  :is(.card, .lift)::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: inherit;
+    pointer-events: none;
+    background: radial-gradient(360px circle at var(--mx, 50%) var(--my, 50%), var(--spotlight), transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  :is(.card, .lift):hover::before {
+    opacity: 1;
   }
   .lift:hover {
     translate: 0 -3px;
@@ -432,6 +495,39 @@
   }
   .page-title {
     @apply truncate text-lg font-semibold text-slate-900 sm:text-xl;
+  }
+
+  /* The coloured pill that slides behind the chosen tab (motion.js moves it; the group is data-pill). */
+  .tab-pill {
+    @apply pointer-events-none absolute top-0 left-0 -z-10 rounded-md bg-card-blue opacity-0;
+  }
+
+  /* Loading bars with a light passing over them, while data is on its way. */
+  .skeleton {
+    @apply relative block overflow-hidden rounded-full bg-slate-100;
+  }
+  .skeleton::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, transparent, var(--shimmer), transparent);
+    translate: -100% 0;
+    animation: shimmer 1.2s ease-in-out infinite;
+  }
+  @keyframes shimmer {
+    to { translate: 100% 0; }
+  }
+
+  /* A faint grid of dots that fades out towards the edges (Magic UI's "dot pattern"). */
+  .dot-pattern {
+    background-image: radial-gradient(var(--dot) 1.2px, transparent 1.6px);
+    background-size: 22px 22px;
+    mask-image: radial-gradient(ellipse at center, black 35%, transparent 85%);
+  }
+
+  /* The small label of a Preline tooltip. Use: <span class="hs-tooltip-content tip hidden" role="tooltip"> (Preline un-hides it). */
+  .tip {
+    @apply invisible absolute z-50 rounded-md bg-slate-900 px-2 py-1 text-xs font-medium whitespace-nowrap text-white opacity-0 shadow-md transition-opacity duration-150 hs-tooltip-shown:visible hs-tooltip-shown:opacity-100;
   }
 
   /* Drop-downs (<select class="input">): a rounded white list with soft pastel rows instead of the
