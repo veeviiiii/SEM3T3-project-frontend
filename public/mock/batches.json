@@ -1,11 +1,758 @@
 [
   {
     "id": 1,
+    "code": "AI&DS-1",
+    "name": "M.Tech. (Dual Degree) AI&DS, First Semester",
+    "program": "M.Tech. (Dual Degree) AI&DS",
+    "school": "School of Data Science and Forecasting",
+    "semester": 1,
+    "section": null,
+    "size": null,
+    "home_space_id": 1,
+    "class_teacher": {
+      "id": 13,
+      "name": "Ms. Priya Kushwaha"
+    },
+    "wef": "2026-07-20",
+    "days": [
+      "Mon",
+      "Tue",
+      "Wed",
+      "Thu",
+      "Fri",
+      "Sat"
+    ],
+    "slots": [
+      {
+        "period": 1,
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "period": 2,
+        "start": "10:00",
+        "end": "11:00"
+      },
+      {
+        "period": 3,
+        "start": "11:30",
+        "end": "12:30"
+      },
+      {
+        "period": 4,
+        "start": "12:30",
+        "end": "13:30"
+      },
+      {
+        "period": 5,
+        "start": "14:00",
+        "end": "15:00"
+      },
+      {
+        "period": 6,
+        "start": "15:00",
+        "end": "16:00"
+      }
+    ],
+    "breaks": [
+      {
+        "start": "11:00",
+        "end": "11:30",
+        "label": "Break"
+      },
+      {
+        "start": "13:30",
+        "end": "14:00",
+        "label": "Break"
+      }
+    ],
+    "sheet": "AIDS sem 1-9 MTECH.pdf, page 1",
+    "review": [
+      "The 11:00-11:30 and 1:30-2:00 columns are empty and have no label on the sheet; they are shown as breaks.",
+      "The 'Elective Generic' section is empty on the sheet."
+    ]
+  },
+  {
+    "id": 2,
     "code": "AI&DS-3",
     "name": "M.Tech. (Dual Degree) AI&DS, Third Semester",
+    "program": "M.Tech. (Dual Degree) AI&DS",
+    "school": "School of Data Science and Forecasting",
     "semester": 3,
     "section": null,
     "size": null,
-    "home_space_id": 1
+    "home_space_id": 2,
+    "class_teacher": {
+      "id": 1,
+      "name": "Ms. Ritika Verma"
+    },
+    "wef": "2026-07-20",
+    "days": [
+      "Mon",
+      "Tue",
+      "Wed",
+      "Thu",
+      "Fri"
+    ],
+    "slots": [
+      {
+        "period": 1,
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "period": 2,
+        "start": "10:00",
+        "end": "11:00"
+      },
+      {
+        "period": 3,
+        "start": "11:00",
+        "end": "12:00"
+      },
+      {
+        "period": 4,
+        "start": "13:00",
+        "end": "14:00"
+      },
+      {
+        "period": 5,
+        "start": "14:00",
+        "end": "15:00"
+      },
+      {
+        "period": 6,
+        "start": "15:00",
+        "end": "16:00"
+      }
+    ],
+    "breaks": [
+      {
+        "start": "12:00",
+        "end": "13:00",
+        "label": "Break"
+      }
+    ],
+    "sheet": "AIDS sem 1-9 MTECH.pdf, page 2",
+    "review": [
+      "The 'Elective Courses (Any One)' section is empty on the sheet."
+    ]
+  },
+  {
+    "id": 3,
+    "code": "AI&DS-5",
+    "name": "M.Tech. (Dual Degree) AI&DS, Fifth Semester",
+    "program": "M.Tech. (Dual Degree) AI&DS",
+    "school": "School of Data Science and Forecasting",
+    "semester": 5,
+    "section": null,
+    "size": null,
+    "home_space_id": 3,
+    "class_teacher": {
+      "id": 12,
+      "name": "Mr. Rajat Yadav"
+    },
+    "wef": "2026-07-20",
+    "days": [
+      "Mon",
+      "Tue",
+      "Wed",
+      "Thu",
+      "Fri"
+    ],
+    "slots": [
+      {
+        "period": 1,
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "period": 2,
+        "start": "10:00",
+        "end": "11:00"
+      },
+      {
+        "period": 3,
+        "start": "11:00",
+        "end": "12:00"
+      },
+      {
+        "period": 4,
+        "start": "12:30",
+        "end": "13:30"
+      },
+      {
+        "period": 5,
+        "start": "13:30",
+        "end": "14:30"
+      },
+      {
+        "period": 6,
+        "start": "14:30",
+        "end": "15:30"
+      },
+      {
+        "period": 7,
+        "start": "15:30",
+        "end": "16:30"
+      }
+    ],
+    "breaks": [
+      {
+        "start": "12:00",
+        "end": "12:30",
+        "label": "Lunch"
+      }
+    ],
+    "sheet": "AIDS sem 1-9 MTECH.pdf, page 3",
+    "review": [
+      "Course title 'Datamining and Data ware' looks cut off on the sheet; kept as printed.",
+      "The Comprehensive Viva-Voce code is printed as DS6A-252.",
+      "DS6A-303 Data Engineering is 4 (3-1-2) but the grid has 5 hours of it."
+    ]
+  },
+  {
+    "id": 4,
+    "code": "AI&DS-7",
+    "name": "M.Tech. (Dual Degree) AI&DS, Seventh Semester",
+    "program": "M.Tech. (Dual Degree) AI&DS",
+    "school": "School of Data Science and Forecasting",
+    "semester": 7,
+    "section": null,
+    "size": null,
+    "home_space_id": 4,
+    "class_teacher": {
+      "id": 6,
+      "name": "Ms. Khushi Patidar"
+    },
+    "wef": "2026-07-20",
+    "days": [
+      "Mon",
+      "Tue",
+      "Wed",
+      "Thu",
+      "Fri",
+      "Sat"
+    ],
+    "slots": [
+      {
+        "period": 1,
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "period": 2,
+        "start": "10:00",
+        "end": "11:00"
+      },
+      {
+        "period": 3,
+        "start": "11:00",
+        "end": "12:00"
+      },
+      {
+        "period": 4,
+        "start": "12:30",
+        "end": "13:30"
+      },
+      {
+        "period": 5,
+        "start": "13:30",
+        "end": "14:30"
+      }
+    ],
+    "breaks": [
+      {
+        "start": "12:00",
+        "end": "12:30",
+        "label": "Break"
+      }
+    ],
+    "sheet": "AIDS sem 1-9 MTECH.pdf, page 4",
+    "review": [
+      "Room number: printed 'A-20' with the last digit written over by hand; it could be A-201, A-202 or A-204. Shown as 'A-20?' until checked. (If it is A-201, it clashes with AI&DS 1st semester.)",
+      "The course list gives Data Visualization's teacher as 'SP : Ms. Khushi Patidar', but the grid uses KP.",
+      "Two more columns at the right of the grid are empty and have no time."
+    ]
+  },
+  {
+    "id": 5,
+    "code": "AI&DS-9",
+    "name": "M.Tech. (Dual Degree) AI&DS, Ninth Semester",
+    "program": "M.Tech. (Dual Degree) AI&DS",
+    "school": "School of Data Science and Forecasting",
+    "semester": 9,
+    "section": null,
+    "size": null,
+    "home_space_id": 5,
+    "class_teacher": {
+      "id": 20,
+      "name": "Ms. Garima Agrawal"
+    },
+    "wef": "2026-07-20",
+    "days": [
+      "Mon",
+      "Tue",
+      "Wed",
+      "Thu",
+      "Fri",
+      "Sat",
+      "Sun"
+    ],
+    "slots": [
+      {
+        "period": 1,
+        "start": "10:00",
+        "end": "11:00"
+      },
+      {
+        "period": 2,
+        "start": "11:00",
+        "end": "12:00"
+      },
+      {
+        "period": 3,
+        "start": "12:00",
+        "end": "13:00"
+      },
+      {
+        "period": 4,
+        "start": "13:30",
+        "end": "14:30"
+      },
+      {
+        "period": 5,
+        "start": "14:30",
+        "end": "15:30"
+      }
+    ],
+    "breaks": [],
+    "sheet": "AIDS sem 1-9 MTECH.pdf, page 5",
+    "review": [
+      "DS6A-511 Project report writing has no teacher on the sheet.",
+      "There is no column for 1:00-1:30 on the sheet (the day jumps from 12:00-1:00 to 1:30-2:30)."
+    ]
+  },
+  {
+    "id": 6,
+    "code": "MBA-BA-1",
+    "name": "MBA (Business Analytics), First Semester",
+    "program": "MBA (Business Analytics)",
+    "school": "School of Data Science and Forecasting",
+    "semester": 1,
+    "section": null,
+    "size": null,
+    "home_space_id": 6,
+    "class_teacher": {
+      "id": 24,
+      "name": "Dr. Vibha Sharma"
+    },
+    "wef": "2026-07-20",
+    "days": [
+      "Mon",
+      "Tue",
+      "Wed",
+      "Thu",
+      "Fri",
+      "Sat"
+    ],
+    "slots": [
+      {
+        "period": 1,
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "period": 2,
+        "start": "10:00",
+        "end": "11:00"
+      },
+      {
+        "period": 3,
+        "start": "11:00",
+        "end": "12:00"
+      },
+      {
+        "period": 4,
+        "start": "12:00",
+        "end": "13:00"
+      },
+      {
+        "period": 5,
+        "start": "13:30",
+        "end": "14:30"
+      },
+      {
+        "period": 6,
+        "start": "14:30",
+        "end": "15:30"
+      },
+      {
+        "period": 7,
+        "start": "15:30",
+        "end": "16:30"
+      },
+      {
+        "period": 8,
+        "start": "16:30",
+        "end": "17:30"
+      }
+    ],
+    "breaks": [
+      {
+        "start": "13:00",
+        "end": "13:30",
+        "label": "Break"
+      }
+    ],
+    "sheet": "MBA.pdf, page 1",
+    "review": [
+      "Room number: the printed room is crossed out and '102' is written by hand (no building letter).",
+      "The 1:00-1:30 column header is crossed out by hand; the column is empty, so it is shown as a break.",
+      "Course codes are read as 'DS5A-...' (the third character looks like a 5, not an S)."
+    ]
+  },
+  {
+    "id": 7,
+    "code": "MBA-BA-3",
+    "name": "MBA (Business Analytics), Third Semester",
+    "program": "MBA (Business Analytics)",
+    "school": "School of Data Science and Forecasting",
+    "semester": 3,
+    "section": null,
+    "size": null,
+    "home_space_id": 7,
+    "class_teacher": {
+      "id": 22,
+      "name": "Mr. Nandkishor Buwade"
+    },
+    "wef": "2026-07-20",
+    "days": [
+      "Mon",
+      "Tue",
+      "Wed",
+      "Thu",
+      "Fri",
+      "Sat"
+    ],
+    "slots": [
+      {
+        "period": 1,
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "period": 2,
+        "start": "10:00",
+        "end": "11:00"
+      },
+      {
+        "period": 3,
+        "start": "11:30",
+        "end": "12:30"
+      },
+      {
+        "period": 4,
+        "start": "12:30",
+        "end": "13:30"
+      },
+      {
+        "period": 5,
+        "start": "13:30",
+        "end": "14:30"
+      }
+    ],
+    "breaks": [
+      {
+        "start": "11:00",
+        "end": "11:30",
+        "label": "Tea break"
+      }
+    ],
+    "sheet": "MBA.pdf, page 2",
+    "review": [
+      "Room number: '003' is written by hand and the rest is crossed out.",
+      "The grid writes Forecasting methods as 'DS5B-601', but the course list says DS5A-601.",
+      "'Reseacrh Methodology' is spelled as printed on the sheet.",
+      "DS5A-641 Deep Learning has no teacher and is shaded on the sheet."
+    ]
+  },
+  {
+    "id": 8,
+    "code": "MSc-DSA-1",
+    "name": "M.Sc. (Data Science & Analytics), First Semester",
+    "program": "M.Sc. (Data Science & Analytics)",
+    "school": "School of Data Science and Forecasting",
+    "semester": 1,
+    "section": null,
+    "size": null,
+    "home_space_id": 8,
+    "class_teacher": {
+      "id": 17,
+      "name": "Dr. Priyanka Malviya"
+    },
+    "wef": "2026-07-20",
+    "days": [
+      "Mon",
+      "Tue",
+      "Wed",
+      "Thu",
+      "Fri",
+      "Sat"
+    ],
+    "slots": [
+      {
+        "period": 1,
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "period": 2,
+        "start": "10:00",
+        "end": "11:00"
+      },
+      {
+        "period": 3,
+        "start": "11:30",
+        "end": "12:30"
+      },
+      {
+        "period": 4,
+        "start": "12:30",
+        "end": "13:30"
+      },
+      {
+        "period": 5,
+        "start": "13:30",
+        "end": "14:30"
+      },
+      {
+        "period": 6,
+        "start": "14:30",
+        "end": "15:30"
+      }
+    ],
+    "breaks": [
+      {
+        "start": "11:00",
+        "end": "11:30",
+        "label": "Tea break"
+      }
+    ],
+    "sheet": "MSc TIMETABLE.pdf, page 1",
+    "review": [
+      "Friday 9-11 is written 'DS5B523:RS-L'; the '-L' is taken to mean the lab part of DS5B-523.",
+      "Elective DS5B-521 Communication Skills has no teacher on the sheet.",
+      "The teacher of DS5B-523 is written 'MS. Riya Sadawana' here and 'Ms. Riya Sadawani' on the MBA sheet."
+    ]
+  },
+  {
+    "id": 9,
+    "code": "MSc-DSA-3",
+    "name": "M.Sc. (Data Science & Analytics), Third Semester",
+    "program": "M.Sc. (Data Science & Analytics)",
+    "school": "School of Data Science and Forecasting",
+    "semester": 3,
+    "section": null,
+    "size": null,
+    "home_space_id": 9,
+    "class_teacher": {
+      "id": 29,
+      "name": "Dr. Ashok Gupta"
+    },
+    "wef": "2026-07-20",
+    "days": [
+      "Mon",
+      "Tue",
+      "Wed",
+      "Thu",
+      "Fri",
+      "Sat"
+    ],
+    "slots": [
+      {
+        "period": 1,
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "period": 2,
+        "start": "10:00",
+        "end": "11:00"
+      },
+      {
+        "period": 3,
+        "start": "11:30",
+        "end": "12:30"
+      },
+      {
+        "period": 4,
+        "start": "12:30",
+        "end": "13:30"
+      },
+      {
+        "period": 5,
+        "start": "13:30",
+        "end": "14:30"
+      }
+    ],
+    "breaks": [
+      {
+        "start": "11:00",
+        "end": "11:30",
+        "label": "Tea break"
+      }
+    ],
+    "sheet": "MSc TIMETABLE.pdf, page 2",
+    "review": []
+  },
+  {
+    "id": 10,
+    "code": "Exec-DS-1",
+    "name": "Executive M.Tech. (Data Science), First Semester",
+    "program": "Executive M.Tech. (Data Science)",
+    "school": "School of Data Science and Forecasting",
+    "semester": 1,
+    "section": null,
+    "size": null,
+    "home_space_id": null,
+    "class_teacher": {
+      "id": 33,
+      "name": "Mr. Chandresh Tatawat"
+    },
+    "wef": "2026-07-20",
+    "days": [
+      "Sat",
+      "Sun"
+    ],
+    "slots": [
+      {
+        "period": 1,
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "period": 2,
+        "start": "10:00",
+        "end": "11:00"
+      },
+      {
+        "period": 3,
+        "start": "11:00",
+        "end": "12:00"
+      },
+      {
+        "period": 4,
+        "start": "12:00",
+        "end": "13:00"
+      },
+      {
+        "period": 5,
+        "start": "13:00",
+        "end": "14:00"
+      },
+      {
+        "period": 6,
+        "start": "14:30",
+        "end": "15:30"
+      },
+      {
+        "period": 7,
+        "start": "15:30",
+        "end": "16:30"
+      },
+      {
+        "period": 8,
+        "start": "16:30",
+        "end": "17:30"
+      },
+      {
+        "period": 9,
+        "start": "17:30",
+        "end": "18:30"
+      }
+    ],
+    "breaks": [
+      {
+        "start": "14:00",
+        "end": "14:30",
+        "label": "Break"
+      }
+    ],
+    "sheet": "Executive (1).pdf, page 1",
+    "review": [
+      "No room is given on the sheet.",
+      "The third column is headed '10:00-12:00'; it sits between 10:00-11:00 and 12:00-1:00, so it is taken as 11:00-12:00.",
+      "The initials KS and SK are not spelled out on the sheet; they match Mr. Kapil Sharma (DS7E-705) and Dr. Sunita Khurana (DS7E-701) in the course list."
+    ]
+  },
+  {
+    "id": 11,
+    "code": "Exec-DS-3",
+    "name": "Executive M.Tech. (Data Science), Third Semester",
+    "program": "Executive M.Tech. (Data Science)",
+    "school": "School of Data Science and Forecasting",
+    "semester": 3,
+    "section": null,
+    "size": null,
+    "home_space_id": null,
+    "class_teacher": {
+      "id": 35,
+      "name": "Dr. Abhilasha Bhagwat"
+    },
+    "wef": "2026-07-20",
+    "days": [
+      "Sat",
+      "Sun"
+    ],
+    "slots": [
+      {
+        "period": 1,
+        "start": "11:00",
+        "end": "12:00"
+      },
+      {
+        "period": 2,
+        "start": "12:00",
+        "end": "13:00"
+      },
+      {
+        "period": 3,
+        "start": "13:00",
+        "end": "14:00"
+      },
+      {
+        "period": 4,
+        "start": "14:00",
+        "end": "15:00"
+      },
+      {
+        "period": 5,
+        "start": "15:30",
+        "end": "16:30"
+      },
+      {
+        "period": 6,
+        "start": "16:30",
+        "end": "17:30"
+      },
+      {
+        "period": 7,
+        "start": "17:30",
+        "end": "18:30"
+      }
+    ],
+    "breaks": [
+      {
+        "start": "15:00",
+        "end": "15:30",
+        "label": "Break"
+      }
+    ],
+    "sheet": "Executive (1).pdf, page 2",
+    "review": [
+      "No room is given on the sheet.",
+      "Here 'AB' means Dr. Abhilasha Bhagwat (on other sheets AB is Ms. Alfia Bagwala)."
+    ]
   }
 ]

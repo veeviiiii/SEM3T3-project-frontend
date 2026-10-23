@@ -46,11 +46,15 @@
               </label>
             </div>
           </fieldset>
-          <div class="w-full sm:w-80">
+          <div class="w-full sm:w-96">
             <label class="label" for="target" id="target-label">Batch</label>
             <select class="input" id="target" disabled></select>
           </div>
         </div>
+        <!-- The other semesters of the same programme, one tap away (filled in by timetable.js). -->
+        <div class="mt-3 hidden flex-wrap items-center gap-1.5" id="siblings" role="group" aria-label="Other semesters of this programme"></div>
+        <dl class="mt-3 hidden grid-cols-2 gap-x-6 gap-y-2 text-sm sm:grid-cols-4" id="details"></dl>
+        <div class="mt-3 hidden rounded-lg border border-orange-200 bg-orange-50 p-3 text-sm text-orange-900" id="batch-review"></div>
       </section>
 
       <section class="card p-4">
@@ -75,6 +79,19 @@
           </div>
         </div>
         <div id="week-grid"></div>
+      </section>
+
+      <!-- Checks across every batch: clashes, and details on the sheets that need checking. -->
+      <section class="card mt-4 scroll-mt-24 p-4" id="checks">
+        <div class="mb-3 flex flex-wrap items-baseline justify-between gap-2">
+          <h2 class="font-medium text-slate-900">Clashes across all batches</h2>
+          <span class="text-xs text-slate-500" id="clash-label"></span>
+        </div>
+        <p class="mb-3 text-xs text-slate-500">A teacher, room or batch with two classes at the same time. The red ones in the grid above are part of one.</p>
+        <div id="clashes"></div>
+        <h2 class="mb-2 mt-6 font-medium text-slate-900">Details to check on the sheets</h2>
+        <p class="mb-3 text-xs text-slate-500">Things that were unclear or inconsistent on the timetable sheets. They were not guessed; please confirm them.</p>
+        <div id="review"></div>
       </section>
     </main>
   </body>

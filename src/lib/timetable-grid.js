@@ -1,34 +1,44 @@
 // The weekly timetable. Every page that shows a timetable uses this one function.
 // Wide screens get the whole week as a grid. Phones get one day at a time: a row of day buttons,
 // then that day's classes as a list, so nothing is squeezed and nothing scrolls sideways.
-import { escapeHtml, statusInfo, addDays, formatDate } from './ui.js';
+// Each batch keeps the time slots of its own sheet (9:00-10:00, 11:30-12:30, ...), so the rows come
+// from the week (week.slots and week.breaks), not from one fixed list of periods.
+import { escapeHtml, statusInfo, addDays, formatDate, roomCode, teacherName } from './ui.js';
 import { slideIn } from './motion.js';
+
+const WEEK = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+const time = (t) => Number(t.slice(0, 2)) * 60 + Number(t.slice(3, 5));
 
 /**
  * Draws a week into `container`.
- *   week      - the answer from getTimetable() / getMyTimetable()
- *   calendar  - the answer from getCalendar() (days, period times, today)
+ *   week      - the answer from getTimetable() / getMyTimetable(): days, slots, breaks and entries
+ *   calendar  - the answer from getCalendar() (today)
  *   options.show - what the small second line of each card shows:
  *                  "faculty" (good for students), "batch" (good for teachers) or "both"
  */
 export function renderTimetableGrid(container, week, calendar, { show = 'faculty' } = {}) {
-  // 1. Put entries in buckets by "date|period", so each cell can find its classes quickly,
-  //    and by date (in period order) for the phone list.
+  // 1. The days and the rows. A row is one time slot; the classes in it are matched by their start and end.
+  const days = week.days?.length ? week.days : WEEK.slice(0, 5);
+  const dates = days.map((day) => addDays(week.week_start, WEEK.indexOf(day)));
+  const times = new Map();
+  for (const s of [...(week.slots ?? []), ...week.entries]) times.set(`${s.start}-${s.end}`, { start: s.start, end: s.end });
+  const breaks = week.breaks ?? [];
+  const rows = [...[...times.values()].map((t) => ({ ...t, kind: 'slot' })), ...breaks.map((b) => ({ ...b, kind: 'break' }))].sort(
+    (a, b) => time(a.start) - time(b.start) || time(a.end) - time(b.end),
+  );
+
+  // 2. Classes in buckets by "date|start-end" for the grid, and by date (in time order) for the phone list.
   const cells = new Map();
-  const byDate = new Map();
-  const dates = calendar.days.map((_, i) => addDays(week.week_start, i));
-  dates.forEach((date) => byDate.set(date, []));
-  for (const entry of [...week.entries].sort((a, b) => a.period - b.period)) {
-    const key = `${entry.date}|${entry.period}`;
+  const byDate = new Map(dates.map((date) => [date, []]));
+  for (const entry of [...week.entries].sort((a, b) => time(a.start) - time(b.start))) {
+    const key = `${entry.date}|${entry.start}-${entry.end}`;
     if (!cells.has(key)) cells.set(key, []);
     cells.get(key).push(entry);
     byDate.get(entry.date)?.push(entry);
   }
+  const weekend = days.map((day) => day === 'Sat' || day === 'Sun');
 
-  const weekend = calendar.days.map((day) => day === 'Sat' || day === 'Sun');
-  const lunch = calendar.breaks[0];
-
-  // 2. Header row: "Time", then one column per day. Today is blue.
+  // 3. Header row: "Time", then one column per day. Today is blue.
   let html = '<div class="sticky left-0 z-10 bg-white px-2 py-2 text-xs font-medium text-slate-500">Time</div>';
   dates.forEach((date) => {
     const today = date === calendar.today;
@@ -37,29 +47,29 @@ export function renderTimetableGrid(container, week, calendar, { show = 'faculty
     )}${today ? ' · Today' : ''}</div>`;
   });
 
-  // 3. One row per period (and the lunch break after period 4). Weekend columns are grey, like the design.
-  for (const p of calendar.periods) {
+  // 4. One row per time slot, and a grey band for each break. Weekend columns are grey, like the design.
+  for (const row of rows) {
+    if (row.kind === 'break') {
+      html += `<div class="col-span-full bg-slate-50 py-1.5 text-center text-xs text-slate-500">${escapeHtml(row.label)} · ${escapeHtml(row.start)}-${escapeHtml(row.end)}</div>`;
+      continue;
+    }
     html += `<div class="sticky left-0 z-10 bg-white px-2 py-2 text-xs text-slate-500">
-               <div class="font-medium text-slate-800">${escapeHtml(p.start)}</div><span class="font-mono text-[10px]">P${p.period}</span></div>`;
+               <div class="font-medium text-slate-800">${escapeHtml(row.start)}</div><span class="font-mono text-[10px]">${escapeHtml(row.end)}</span></div>`;
     dates.forEach((date, i) => {
-      const entries = cells.get(`${date}|${p.period}`) || [];
+      const entries = cells.get(`${date}|${row.start}-${row.end}`) || [];
       html += `<div class="min-h-16 space-y-1 p-1.5 ${weekend[i] ? 'bg-slate-100' : 'bg-white'}">${entries.map((e) => card(e, show)).join('')}</div>`;
     });
-    if (lunch && p.period === lunch.after_period) {
-      html += `<div class="col-span-full bg-slate-50 py-1.5 text-center text-xs text-slate-500">
-                 ${escapeHtml(lunch.label)} · ${lunch.start}-${lunch.end}</div>`;
-    }
   }
 
-  // 4. Which day the phone view shows: the same one as before when only the data changed,
+  // 5. Which day the phone view shows: the same one as before when only the data changed,
   //    otherwise today (or the first day that has classes).
   const before = container.dataset.week;
   container.dataset.week = week.week_start;
   let day = before && container.dataset.phoneDay ? Math.min(Number(container.dataset.phoneDay), dates.length - 1) : startDay(dates, byDate, calendar.today);
 
-  // 5. Phones (below 768px): day buttons + the chosen day's list. Wider screens: the grid, which may
-  //    scroll sideways on a tablet; the page itself does not. The 1px gaps between white cells, on a
-  //    grey background, draw the grid lines.
+  // 6. Phones (below 768px): day buttons + the chosen day's list. Wider screens: the grid, which may
+  //    scroll sideways; the page itself does not. The 1px gaps between white cells, on a grey
+  //    background, draw the grid lines.
   container.innerHTML = `
     <div class="animate-fade-in">
       <div class="md:hidden">
@@ -70,7 +80,7 @@ export function renderTimetableGrid(container, week, calendar, { show = 'faculty
         <div data-day-list></div>
       </div>
       <div class="hidden overflow-x-auto rounded-lg border border-slate-200 md:block">
-        <div class="grid min-w-[760px] gap-px bg-slate-200" style="grid-template-columns: 4rem repeat(${dates.length}, minmax(0, 1fr));">
+        <div class="grid gap-px bg-slate-200" style="min-width: ${4 + dates.length * 7.5}rem; grid-template-columns: 4rem repeat(${dates.length}, minmax(0, 1fr));">
           ${html}
         </div>
       </div>
@@ -84,7 +94,7 @@ export function renderTimetableGrid(container, week, calendar, { show = 'faculty
     container.querySelectorAll('[data-day]').forEach((b) => b.setAttribute('aria-pressed', String(Number(b.dataset.day) === day)));
     const count = entries.length === 1 ? '1 class' : `${entries.length} classes`;
     container.querySelector('[data-day-title]').textContent = `${formatDate(date)}${date === calendar.today ? ' · Today' : ''} · ${count}`;
-    list.innerHTML = dayList(date, entries, lunch, show);
+    list.innerHTML = dayList(date, entries, breaks, show);
   };
   showDay();
 
@@ -98,7 +108,7 @@ export function renderTimetableGrid(container, week, calendar, { show = 'faculty
     slideIn(list, direction);
   });
 
-  // 6. After a week change, the new week slides in from the side you moved to (later weeks from the right).
+  // 7. After a week change, the new week slides in from the side you moved to (later weeks from the right).
   if (before && before !== week.week_start) slideIn(container.firstElementChild, week.week_start > before ? 1 : -1);
 }
 
@@ -124,24 +134,31 @@ function dayButton(date, index, today, weekend, entries) {
     </button>`;
 }
 
-/** The phone list for one day: each class with its time on the left, and the lunch break in between. */
-function dayList(date, entries, lunch, show) {
+/** The phone list for one day: each class with its time on the left, and the breaks in between. */
+function dayList(date, entries, breaks, show) {
   if (entries.length === 0) {
     return `<p class="rounded-lg border border-dashed border-slate-300 px-4 py-8 text-center text-sm text-slate-500">Nothing on ${escapeHtml(formatDate(date))}.</p>`;
   }
   const rows = entries.map((entry, i) => {
     const previous = entries[i - 1];
-    const lunchFirst = lunch && previous && previous.period <= lunch.after_period && entry.period > lunch.after_period;
-    return (lunchFirst ? lunchRow(lunch) : '') + listCard(entry, show);
+    const between = breaks.filter((b) => previous && time(previous.end) <= time(b.start) && time(entry.start) >= time(b.end));
+    return between.map(breakRow).join('') + listCard(entry, show);
   });
   return `<ol class="space-y-2">${rows.join('')}</ol>`;
 }
 
-function lunchRow(lunch) {
+function breakRow(b) {
   return `
     <li class="flex items-center gap-2 py-0.5 pl-14 text-[11px] text-slate-500">
-      <span class="h-px flex-1 bg-slate-200" aria-hidden="true"></span>${escapeHtml(lunch.label)} · ${lunch.start}-${lunch.end}<span class="h-px flex-1 bg-slate-200" aria-hidden="true"></span>
+      <span class="h-px flex-1 bg-slate-200" aria-hidden="true"></span>${escapeHtml(b.label)} · ${escapeHtml(b.start)}-${escapeHtml(b.end)}<span class="h-px flex-1 bg-slate-200" aria-hidden="true"></span>
     </li>`;
+}
+
+/** A small red tag on a class that clashes with another one (same teacher, room or batch at the same time). */
+function clashTag(entry) {
+  return entry.clash
+    ? `<span class="mt-1 inline-block rounded bg-red-200 px-1.5 py-0.5 text-[10px] font-semibold text-red-900" title="${escapeHtml(entry.clash)}">Clash</span>`
+    : '';
 }
 
 /** One class in the phone list: full subject name, then code · who · room, then what changed and why. */
@@ -151,13 +168,14 @@ function listCard(entry, show) {
     <li class="flex gap-3">
       <div class="w-11 shrink-0 pt-2.5 text-right">
         <p class="text-sm font-medium tabular-nums text-slate-800">${escapeHtml(entry.start)}</p>
-        <p class="font-mono text-[10px] text-slate-500">P${escapeHtml(entry.period)}</p>
+        <p class="font-mono text-[10px] text-slate-500">${escapeHtml(entry.end)}</p>
       </div>
-      <div class="min-w-0 flex-1 rounded-lg border px-3 py-2.5 ${info.card}">
+      <div class="min-w-0 flex-1 rounded-lg border px-3 py-2.5 ${info.card} ${entry.clash ? 'ring-2 ring-red-300' : ''}">
         <p class="text-sm font-semibold leading-snug ${info.strike ? 'line-through' : ''}">${escapeHtml(entry.subject.name)}</p>
-        <p class="mt-0.5 text-xs opacity-75">${escapeHtml(entry.subject.code)} · ${escapeHtml(who(entry, show))} · ${escapeHtml(entry.space.code)}</p>
+        <p class="mt-0.5 text-xs opacity-75">${escapeHtml(entry.subject.code)} · ${escapeHtml(who(entry, show))} · ${escapeHtml(roomCode(entry.space))}</p>
         ${info.badge ? `<span class="mt-2 inline-block rounded px-2 py-0.5 text-[11px] font-semibold ${info.badgeClass}">${escapeHtml(info.badge)}</span>` : ''}
         ${info.badge && entry.reason ? `<p class="mt-1 text-xs opacity-75">${escapeHtml(entry.reason)}</p>` : ''}
+        ${entry.clash ? `<p class="mt-1 text-xs font-medium text-red-700">${escapeHtml(entry.clash)}</p>` : ''}
       </div>
     </li>`;
 }
@@ -165,19 +183,20 @@ function listCard(entry, show) {
 // What the small second line of a card shows (see options.show above).
 function who(entry, show) {
   return {
-    faculty: entry.faculty.name,
+    faculty: teacherName(entry.faculty),
     batch: entry.batch.code,
-    both: `${entry.batch.code} · ${entry.faculty.name}`,
+    both: `${entry.batch.code} · ${teacherName(entry.faculty)}`,
   }[show];
 }
 
 function card(entry, show) {
   const info = statusInfo(entry);
   return `
-    <div class="tt-card rounded-md border px-2 py-1.5 text-[11px] leading-snug transition duration-200 hover:-translate-y-0.5 hover:shadow-md ${info.card}" title="${escapeHtml(entry.subject.name)}">
+    <div class="tt-card rounded-md border px-2 py-1.5 text-[11px] leading-snug transition duration-200 hover:-translate-y-0.5 hover:shadow-md ${info.card} ${entry.clash ? 'ring-2 ring-red-300' : ''}" title="${escapeHtml(entry.subject.name)}${entry.clash ? ` (${escapeHtml(entry.clash)})` : ''}">
       <div class="font-semibold ${info.strike ? 'line-through' : ''}">${escapeHtml(entry.subject.code)}</div>
       <div class="truncate opacity-75">${escapeHtml(who(entry, show))}</div>
-      <div class="opacity-75">${escapeHtml(entry.space.code)}</div>
+      <div class="opacity-75">${escapeHtml(roomCode(entry.space))}</div>
       ${info.badge ? `<span class="mt-1 inline-block rounded px-1.5 py-0.5 text-[10px] font-semibold ${info.badgeClass}">${escapeHtml(info.badge)}</span>` : ''}
+      ${clashTag(entry)}
     </div>`;
 }

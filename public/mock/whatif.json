@@ -4,197 +4,118 @@
       "index": 0,
       "change": {
         "kind": "faculty_leave",
-        "target_id": 6,
+        "target_id": 20,
         "start_date": "2026-10-30",
         "end_date": "2026-10-30",
         "periods": null,
         "reason": "What-if: medical leave"
       },
-      "label": "Ms. Khushi Patidar on leave, Fri 30 Oct",
+      "label": "Ms. Garima Agrawal on leave, Fri 30 Oct",
       "affected": [
         {
-          "key": "123-2026-10-30",
-          "session_id": 123,
+          "key": "101-2026-10-30",
+          "session_id": 101,
           "date": "2026-10-30",
           "day": "Fri",
           "period": 3,
           "start": "11:00",
           "end": "12:00",
           "batch": {
-            "id": 1,
-            "code": "AI&DS-3"
+            "id": 4,
+            "code": "AI&DS-7"
           },
           "subject": {
-            "id": 6,
-            "code": "DS6A-206",
-            "name": "Object Oriented Programming",
+            "id": 35,
+            "code": "DS6A-403",
+            "name": "Cloud Computing",
             "kind": "theory"
           },
           "faculty": {
-            "id": 6,
-            "code": "KP",
-            "name": "Ms. Khushi Patidar"
+            "id": 20,
+            "code": "GA",
+            "name": "Ms. Garima Agrawal"
           },
           "space": {
-            "id": 1,
-            "code": "B-002",
+            "id": 4,
+            "code": "A-20?",
             "kind": "room"
           },
           "status": "pending",
-          "reason": "Ms. Khushi Patidar on leave",
+          "reason": "Ms. Garima Agrawal on leave",
           "proposal_id": 0,
           "moved_to": null,
-          "moved_from": null
+          "moved_from": null,
+          "elective_group": null
         },
         {
-          "key": "124-2026-10-30",
-          "session_id": 124,
+          "key": "102-2026-10-30",
+          "session_id": 102,
           "date": "2026-10-30",
           "day": "Fri",
           "period": 4,
-          "start": "13:00",
-          "end": "14:00",
+          "start": "12:30",
+          "end": "13:30",
           "batch": {
-            "id": 1,
-            "code": "AI&DS-3"
+            "id": 4,
+            "code": "AI&DS-7"
           },
           "subject": {
-            "id": 9,
-            "code": "DS6A-206 (Lab)",
-            "name": "Object Oriented Programming (Lab)",
+            "id": 43,
+            "code": "DS6A-403 (Lab)",
+            "name": "Cloud Computing (Lab)",
             "kind": "lab"
           },
           "faculty": {
-            "id": 6,
-            "code": "KP",
-            "name": "Ms. Khushi Patidar"
+            "id": 20,
+            "code": "GA",
+            "name": "Ms. Garima Agrawal"
           },
           "space": {
-            "id": 1,
-            "code": "B-002",
+            "id": 4,
+            "code": "A-20?",
             "kind": "room"
           },
           "status": "pending",
-          "reason": "Ms. Khushi Patidar on leave",
+          "reason": "Ms. Garima Agrawal on leave",
           "proposal_id": 0,
           "moved_to": null,
-          "moved_from": null
+          "moved_from": null,
+          "elective_group": null
         },
         {
-          "key": "125-2026-10-30",
-          "session_id": 125,
+          "key": "103-2026-10-30",
+          "session_id": 103,
           "date": "2026-10-30",
           "day": "Fri",
           "period": 5,
-          "start": "14:00",
-          "end": "15:00",
+          "start": "13:30",
+          "end": "14:30",
           "batch": {
-            "id": 1,
-            "code": "AI&DS-3"
+            "id": 4,
+            "code": "AI&DS-7"
           },
           "subject": {
-            "id": 9,
-            "code": "DS6A-206 (Lab)",
-            "name": "Object Oriented Programming (Lab)",
+            "id": 43,
+            "code": "DS6A-403 (Lab)",
+            "name": "Cloud Computing (Lab)",
             "kind": "lab"
           },
           "faculty": {
-            "id": 6,
-            "code": "KP",
-            "name": "Ms. Khushi Patidar"
+            "id": 20,
+            "code": "GA",
+            "name": "Ms. Garima Agrawal"
           },
           "space": {
-            "id": 1,
-            "code": "B-002",
+            "id": 4,
+            "code": "A-20?",
             "kind": "room"
           },
           "status": "pending",
-          "reason": "Ms. Khushi Patidar on leave",
+          "reason": "Ms. Garima Agrawal on leave",
           "proposal_id": 0,
           "moved_to": null,
-          "moved_from": null
-        }
-      ]
-    },
-    {
-      "index": 1,
-      "change": {
-        "kind": "room_closure",
-        "target_id": 1,
-        "start_date": "2026-10-30",
-        "end_date": "2026-10-30",
-        "periods": null,
-        "reason": "What-if: projector repair"
-      },
-      "label": "B-002 closed, Fri 30 Oct",
-      "affected": [
-        {
-          "key": "121-2026-10-30",
-          "session_id": 121,
-          "date": "2026-10-30",
-          "day": "Fri",
-          "period": 1,
-          "start": "09:00",
-          "end": "10:00",
-          "batch": {
-            "id": 1,
-            "code": "AI&DS-3"
-          },
-          "subject": {
-            "id": 1,
-            "code": "DS6A-201",
-            "name": "Design and Analysis of Algorithm",
-            "kind": "theory"
-          },
-          "faculty": {
-            "id": 1,
-            "code": "RV",
-            "name": "Ms. Ritika Verma"
-          },
-          "space": {
-            "id": 1,
-            "code": "B-002",
-            "kind": "room"
-          },
-          "status": "pending",
-          "reason": "B-002 closed",
-          "proposal_id": 0,
-          "moved_to": null,
-          "moved_from": null
-        },
-        {
-          "key": "122-2026-10-30",
-          "session_id": 122,
-          "date": "2026-10-30",
-          "day": "Fri",
-          "period": 2,
-          "start": "10:00",
-          "end": "11:00",
-          "batch": {
-            "id": 1,
-            "code": "AI&DS-3"
-          },
-          "subject": {
-            "id": 1,
-            "code": "DS6A-201",
-            "name": "Design and Analysis of Algorithm",
-            "kind": "theory"
-          },
-          "faculty": {
-            "id": 1,
-            "code": "RV",
-            "name": "Ms. Ritika Verma"
-          },
-          "space": {
-            "id": 1,
-            "code": "B-002",
-            "kind": "room"
-          },
-          "status": "pending",
-          "reason": "B-002 closed",
-          "proposal_id": 0,
-          "moved_to": null,
-          "moved_from": null
+          "moved_from": null,
+          "elective_group": null
         }
       ]
     }
@@ -202,351 +123,102 @@
   "plan": [
     {
       "original": {
-        "session_id": 121,
-        "date": "2026-10-30",
-        "day": "Fri",
-        "period": 1,
-        "start": "09:00",
-        "end": "10:00",
-        "batch": {
-          "id": 1,
-          "code": "AI&DS-3"
-        },
-        "subject": {
-          "id": 1,
-          "code": "DS6A-201",
-          "name": "Design and Analysis of Algorithm",
-          "kind": "theory"
-        },
-        "faculty": {
-          "id": 1,
-          "code": "RV",
-          "name": "Ms. Ritika Verma"
-        },
-        "space": {
-          "id": 1,
-          "code": "B-002",
-          "kind": "room"
-        }
-      },
-      "option": {
-        "rank": 1,
-        "date": "2026-11-04",
-        "day": "Wed",
-        "period": 2,
-        "start": "10:00",
-        "end": "11:00",
-        "space": {
-          "id": 1,
-          "code": "B-002",
-          "kind": "room"
-        },
-        "score": 48,
-        "breakdown": [
-          {
-            "rule": "same_room",
-            "label": "Same room",
-            "points": 2.0
-          },
-          {
-            "rule": "preferred_hours",
-            "label": "Teacher's preferred hours",
-            "points": 2.0
-          },
-          {
-            "rule": "batch_load",
-            "label": "Batch not overloaded",
-            "points": 2.0
-          },
-          {
-            "rule": "sooner",
-            "label": "Sooner",
-            "points": 0.29
-          }
-        ],
-        "warnings": []
-      }
-    },
-    {
-      "original": {
-        "session_id": 122,
-        "date": "2026-10-30",
-        "day": "Fri",
-        "period": 2,
-        "start": "10:00",
-        "end": "11:00",
-        "batch": {
-          "id": 1,
-          "code": "AI&DS-3"
-        },
-        "subject": {
-          "id": 1,
-          "code": "DS6A-201",
-          "name": "Design and Analysis of Algorithm",
-          "kind": "theory"
-        },
-        "faculty": {
-          "id": 1,
-          "code": "RV",
-          "name": "Ms. Ritika Verma"
-        },
-        "space": {
-          "id": 1,
-          "code": "B-002",
-          "kind": "room"
-        }
-      },
-      "option": {
-        "rank": 1,
-        "date": "2026-11-03",
-        "day": "Tue",
-        "period": 6,
-        "start": "15:00",
-        "end": "16:00",
-        "space": {
-          "id": 1,
-          "code": "B-002",
-          "kind": "room"
-        },
-        "score": 34,
-        "breakdown": [
-          {
-            "rule": "same_room",
-            "label": "Same room",
-            "points": 2.0
-          },
-          {
-            "rule": "batch_load",
-            "label": "Batch not overloaded",
-            "points": 2.0
-          },
-          {
-            "rule": "sooner",
-            "label": "Sooner",
-            "points": 0.43
-          }
-        ],
-        "warnings": [
-          "Last period of the day"
-        ]
-      }
-    },
-    {
-      "original": {
-        "session_id": 123,
+        "session_id": 101,
         "date": "2026-10-30",
         "day": "Fri",
         "period": 3,
         "start": "11:00",
         "end": "12:00",
         "batch": {
-          "id": 1,
-          "code": "AI&DS-3"
+          "id": 4,
+          "code": "AI&DS-7"
         },
         "subject": {
-          "id": 6,
-          "code": "DS6A-206",
-          "name": "Object Oriented Programming",
+          "id": 35,
+          "code": "DS6A-403",
+          "name": "Cloud Computing",
           "kind": "theory"
         },
         "faculty": {
-          "id": 6,
-          "code": "KP",
-          "name": "Ms. Khushi Patidar"
+          "id": 20,
+          "code": "GA",
+          "name": "Ms. Garima Agrawal"
         },
         "space": {
-          "id": 1,
-          "code": "B-002",
+          "id": 4,
+          "code": "A-20?",
           "kind": "room"
         }
       },
-      "option": {
-        "rank": 1,
-        "date": "2026-10-29",
-        "day": "Thu",
-        "period": 2,
-        "start": "10:00",
-        "end": "11:00",
-        "space": {
-          "id": 1,
-          "code": "B-002",
-          "kind": "room"
-        },
-        "score": 76,
-        "breakdown": [
-          {
-            "rule": "same_week",
-            "label": "Same week",
-            "points": 3.0
-          },
-          {
-            "rule": "same_room",
-            "label": "Same room",
-            "points": 2.0
-          },
-          {
-            "rule": "preferred_hours",
-            "label": "Teacher's preferred hours",
-            "points": 2.0
-          },
-          {
-            "rule": "batch_load",
-            "label": "Batch not overloaded",
-            "points": 2.0
-          },
-          {
-            "rule": "sooner",
-            "label": "Sooner",
-            "points": 0.86
-          }
-        ],
-        "warnings": []
-      }
+      "option": null
     },
     {
       "original": {
-        "session_id": 124,
+        "session_id": 102,
         "date": "2026-10-30",
         "day": "Fri",
         "period": 4,
-        "start": "13:00",
-        "end": "14:00",
+        "start": "12:30",
+        "end": "13:30",
         "batch": {
-          "id": 1,
-          "code": "AI&DS-3"
+          "id": 4,
+          "code": "AI&DS-7"
         },
         "subject": {
-          "id": 9,
-          "code": "DS6A-206 (Lab)",
-          "name": "Object Oriented Programming (Lab)",
+          "id": 43,
+          "code": "DS6A-403 (Lab)",
+          "name": "Cloud Computing (Lab)",
           "kind": "lab"
         },
         "faculty": {
-          "id": 6,
-          "code": "KP",
-          "name": "Ms. Khushi Patidar"
+          "id": 20,
+          "code": "GA",
+          "name": "Ms. Garima Agrawal"
         },
         "space": {
-          "id": 1,
-          "code": "B-002",
+          "id": 4,
+          "code": "A-20?",
           "kind": "room"
         }
       },
-      "option": {
-        "rank": 1,
-        "date": "2026-10-29",
-        "day": "Thu",
-        "period": 3,
-        "start": "11:00",
-        "end": "12:00",
-        "space": {
-          "id": 1,
-          "code": "B-002",
-          "kind": "room"
-        },
-        "score": 76,
-        "breakdown": [
-          {
-            "rule": "same_week",
-            "label": "Same week",
-            "points": 3.0
-          },
-          {
-            "rule": "same_room",
-            "label": "Same room",
-            "points": 2.0
-          },
-          {
-            "rule": "preferred_hours",
-            "label": "Teacher's preferred hours",
-            "points": 2.0
-          },
-          {
-            "rule": "batch_load",
-            "label": "Batch not overloaded",
-            "points": 2.0
-          },
-          {
-            "rule": "sooner",
-            "label": "Sooner",
-            "points": 0.86
-          }
-        ],
-        "warnings": []
-      }
+      "option": null
     },
     {
       "original": {
-        "session_id": 125,
+        "session_id": 103,
         "date": "2026-10-30",
         "day": "Fri",
         "period": 5,
-        "start": "14:00",
-        "end": "15:00",
+        "start": "13:30",
+        "end": "14:30",
         "batch": {
-          "id": 1,
-          "code": "AI&DS-3"
+          "id": 4,
+          "code": "AI&DS-7"
         },
         "subject": {
-          "id": 9,
-          "code": "DS6A-206 (Lab)",
-          "name": "Object Oriented Programming (Lab)",
+          "id": 43,
+          "code": "DS6A-403 (Lab)",
+          "name": "Cloud Computing (Lab)",
           "kind": "lab"
         },
         "faculty": {
-          "id": 6,
-          "code": "KP",
-          "name": "Ms. Khushi Patidar"
+          "id": 20,
+          "code": "GA",
+          "name": "Ms. Garima Agrawal"
         },
         "space": {
-          "id": 1,
-          "code": "B-002",
+          "id": 4,
+          "code": "A-20?",
           "kind": "room"
         }
       },
-      "option": {
-        "rank": 1,
-        "date": "2026-10-29",
-        "day": "Thu",
-        "period": 1,
-        "start": "09:00",
-        "end": "10:00",
-        "space": {
-          "id": 1,
-          "code": "B-002",
-          "kind": "room"
-        },
-        "score": 60,
-        "breakdown": [
-          {
-            "rule": "same_week",
-            "label": "Same week",
-            "points": 3.0
-          },
-          {
-            "rule": "same_room",
-            "label": "Same room",
-            "points": 2.0
-          },
-          {
-            "rule": "batch_load",
-            "label": "Batch not overloaded",
-            "points": 2.0
-          },
-          {
-            "rule": "sooner",
-            "label": "Sooner",
-            "points": 0.86
-          }
-        ],
-        "warnings": []
-      }
+      "option": null
     }
   ],
   "summary": {
-    "classes_affected": 5,
-    "classes_placed": 5,
-    "classes_unplaced": 0
+    "classes_affected": 3,
+    "classes_placed": 0,
+    "classes_unplaced": 3
   },
   "runtime_ms": 3.8
 }

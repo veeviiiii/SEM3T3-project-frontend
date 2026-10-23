@@ -3,90 +3,692 @@
     "id": 1,
     "code": "RV",
     "name": "Ms. Ritika Verma",
-    "designation": "Class Teacher",
     "email": "ritika.verma@example.com",
     "is_hod": false,
+    "note": "Written 'Ms. Rtika Verma' on the MBA 1st-semester sheet.",
+    "designation": "Class teacher, AI&DS-3",
+    "weekly_load": 15,
     "preferred_periods": [
       1,
       2,
       3
     ],
-    "weekly_load": 5
+    "batches": [
+      "AI&DS-3",
+      "MBA-BA-1",
+      "MSc-DSA-1"
+    ]
   },
   {
     "id": 2,
-    "code": "SP",
+    "code": "SPR",
     "name": "Simran Prajapati",
-    "designation": "Faculty",
     "email": "simran.prajapati@example.com",
     "is_hod": false,
+    "note": null,
+    "designation": "Faculty",
+    "weekly_load": 4,
     "preferred_periods": [
       3,
-      5
+      6
     ],
-    "weekly_load": 4
+    "batches": [
+      "AI&DS-3"
+    ]
   },
   {
     "id": 3,
     "code": "AB",
     "name": "Ms. Alfia Bagwala",
-    "designation": "Faculty",
     "email": "alfia.bagwala@example.com",
     "is_hod": false,
+    "note": null,
+    "designation": "Faculty",
+    "weekly_load": 16,
     "preferred_periods": [
-      1
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
     ],
-    "weekly_load": 3
+    "batches": [
+      "AI&DS-3",
+      "AI&DS-9",
+      "MBA-BA-3",
+      "MSc-DSA-3"
+    ]
   },
   {
     "id": 4,
     "code": "PP",
     "name": "Ms. Pallavi Pandey",
-    "designation": "Faculty",
     "email": "pallavi.pandey@example.com",
     "is_hod": false,
+    "note": null,
+    "designation": "Faculty",
+    "weekly_load": 5,
     "preferred_periods": [
-      4,
       5,
-      6
+      6,
+      7
     ],
-    "weekly_load": 5
+    "batches": [
+      "AI&DS-3"
+    ]
   },
   {
     "id": 5,
     "code": "MK",
     "name": "Dr. Meenu Kumar",
-    "designation": "Faculty",
     "email": "meenu.kumar@example.com",
     "is_hod": false,
+    "note": null,
+    "designation": "Faculty",
+    "weekly_load": 6,
     "preferred_periods": [
-      4
+      4,
+      5,
+      6,
+      7
     ],
-    "weekly_load": 3
+    "batches": [
+      "AI&DS-3",
+      "MBA-BA-1"
+    ]
   },
   {
     "id": 6,
     "code": "KP",
     "name": "Ms. Khushi Patidar",
-    "designation": "Faculty",
     "email": "khushi.patidar@example.com",
     "is_hod": false,
+    "note": null,
+    "designation": "Class teacher, AI&DS-7",
+    "weekly_load": 10,
     "preferred_periods": [
       2,
       3,
-      4,
-      5
+      5,
+      6
     ],
-    "weekly_load": 5
+    "batches": [
+      "AI&DS-3",
+      "AI&DS-7"
+    ]
   },
   {
     "id": 7,
     "code": "GM",
-    "name": "Govind Maheswari",
-    "designation": "Head of Department",
-    "email": "govind.maheswari@example.com",
+    "name": "Dr. Govind Maheshwari",
+    "email": "govind.maheshwari@example.com",
     "is_hod": true,
+    "note": null,
+    "designation": "Head of Department",
+    "weekly_load": 0,
     "preferred_periods": [],
-    "weekly_load": 0
+    "batches": []
+  },
+  {
+    "id": 8,
+    "code": "AJ",
+    "name": "Dr. Anupam Jain",
+    "email": "anupam.jain@example.com",
+    "is_hod": false,
+    "note": null,
+    "designation": "Faculty",
+    "weekly_load": 9,
+    "preferred_periods": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "batches": [
+      "AI&DS-1",
+      "MSc-DSA-1"
+    ]
+  },
+  {
+    "id": 9,
+    "code": "KBM",
+    "name": "Kabir Beg mirja",
+    "email": "kabir.beg.mirja@example.com",
+    "is_hod": false,
+    "note": null,
+    "designation": "Faculty",
+    "weekly_load": 5,
+    "preferred_periods": [
+      6,
+      7
+    ],
+    "batches": [
+      "AI&DS-1"
+    ]
+  },
+  {
+    "id": 10,
+    "code": "KS",
+    "name": "Mr. Kapil Sharma",
+    "email": "kapil.sharma@example.com",
+    "is_hod": false,
+    "note": "Written 'kapil Sharma' on the AI&DS 1st-semester sheet.",
+    "designation": "Faculty",
+    "weekly_load": 8,
+    "preferred_periods": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "batches": [
+      "AI&DS-1",
+      "Exec-DS-1"
+    ]
+  },
+  {
+    "id": 11,
+    "code": "MA",
+    "name": "Ms. Minal Agrawal",
+    "email": "minal.agrawal@example.com",
+    "is_hod": false,
+    "note": null,
+    "designation": "Faculty",
+    "weekly_load": 4,
+    "preferred_periods": [
+      1,
+      6,
+      7
+    ],
+    "batches": [
+      "AI&DS-1"
+    ]
+  },
+  {
+    "id": 12,
+    "code": "RY",
+    "name": "Mr. Rajat Yadav",
+    "email": "rajat.yadav@example.com",
+    "is_hod": false,
+    "note": null,
+    "designation": "Class teacher, AI&DS-5",
+    "weekly_load": 8,
+    "preferred_periods": [
+      2,
+      5,
+      6,
+      7
+    ],
+    "batches": [
+      "AI&DS-1",
+      "AI&DS-5"
+    ]
+  },
+  {
+    "id": 13,
+    "code": "PK",
+    "name": "Ms. Priya Kushwaha",
+    "email": "priya.kushwaha@example.com",
+    "is_hod": false,
+    "note": "Written 'Ms. Priya kushwah' on the AI&DS 1st-semester sheet and 'Ms. Priya Kushwaha' on the MBA sheet (same phone number on both), so taken as one teacher.",
+    "designation": "Class teacher, AI&DS-1",
+    "weekly_load": 6,
+    "preferred_periods": [
+      3,
+      4,
+      7,
+      8
+    ],
+    "batches": [
+      "AI&DS-1",
+      "MBA-BA-1"
+    ]
+  },
+  {
+    "id": 14,
+    "code": "AM",
+    "name": "Mr. Animesh Masih",
+    "email": "animesh.masih@example.com",
+    "is_hod": false,
+    "note": null,
+    "designation": "Faculty",
+    "weekly_load": 4,
+    "preferred_periods": [
+      1,
+      2
+    ],
+    "batches": [
+      "AI&DS-1"
+    ]
+  },
+  {
+    "id": 15,
+    "code": "AN",
+    "name": "Mr. Amit Nashikkar",
+    "email": "amit.nashikkar@example.com",
+    "is_hod": false,
+    "note": null,
+    "designation": "Faculty",
+    "weekly_load": 5,
+    "preferred_periods": [
+      1,
+      2,
+      3
+    ],
+    "batches": [
+      "AI&DS-5"
+    ]
+  },
+  {
+    "id": 16,
+    "code": "AS",
+    "name": "Mr. Ayan Shah",
+    "email": "ayan.shah@example.com",
+    "is_hod": false,
+    "note": null,
+    "designation": "Faculty",
+    "weekly_load": 10,
+    "preferred_periods": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "batches": [
+      "AI&DS-5",
+      "MSc-DSA-1"
+    ]
+  },
+  {
+    "id": 17,
+    "code": "PM",
+    "name": "Dr. Priyanka Malviya",
+    "email": "priyanka.malviya@example.com",
+    "is_hod": false,
+    "note": null,
+    "designation": "Class teacher, MSc-DSA-1",
+    "weekly_load": 11,
+    "preferred_periods": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "batches": [
+      "AI&DS-5",
+      "MBA-BA-1",
+      "MSc-DSA-1"
+    ]
+  },
+  {
+    "id": 18,
+    "code": "SKS",
+    "name": "Dr. Shishir Kumar Shandilya",
+    "email": "shishir.kumar.shandilya@example.com",
+    "is_hod": false,
+    "note": null,
+    "designation": "Faculty",
+    "weekly_load": 12,
+    "preferred_periods": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "batches": [
+      "AI&DS-5",
+      "AI&DS-7",
+      "AI&DS-9"
+    ]
+  },
+  {
+    "id": 19,
+    "code": "SUP",
+    "name": "Mr. Surya Pratap",
+    "email": "surya.pratap@example.com",
+    "is_hod": false,
+    "note": null,
+    "designation": "Faculty",
+    "weekly_load": 5,
+    "preferred_periods": [
+      1,
+      2,
+      3
+    ],
+    "batches": [
+      "AI&DS-5"
+    ]
+  },
+  {
+    "id": 20,
+    "code": "GA",
+    "name": "Ms. Garima Agrawal",
+    "email": "garima.agrawal@example.com",
+    "is_hod": false,
+    "note": null,
+    "designation": "Class teacher, AI&DS-9",
+    "weekly_load": 14,
+    "preferred_periods": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "batches": [
+      "AI&DS-7",
+      "AI&DS-9",
+      "MSc-DSA-3"
+    ]
+  },
+  {
+    "id": 21,
+    "code": "HR",
+    "name": "Dr. Harsh Ramgir",
+    "email": "harsh.ramgir@example.com",
+    "is_hod": false,
+    "note": null,
+    "designation": "Faculty",
+    "weekly_load": 4,
+    "preferred_periods": [
+      1,
+      2
+    ],
+    "batches": [
+      "AI&DS-7"
+    ]
+  },
+  {
+    "id": 22,
+    "code": "NB",
+    "name": "Mr. Nandkishor Buwade",
+    "email": "nandkishor.buwade@example.com",
+    "is_hod": false,
+    "note": null,
+    "designation": "Class teacher, MBA-BA-3",
+    "weekly_load": 9,
+    "preferred_periods": [
+      1,
+      2,
+      5,
+      6
+    ],
+    "batches": [
+      "AI&DS-7",
+      "MBA-BA-3"
+    ]
+  },
+  {
+    "id": 23,
+    "code": "JK",
+    "name": "Dr. Jalaj Katare",
+    "email": "jalaj.katare@example.com",
+    "is_hod": false,
+    "note": null,
+    "designation": "Faculty",
+    "weekly_load": 5,
+    "preferred_periods": [
+      5,
+      6,
+      7
+    ],
+    "batches": [
+      "AI&DS-9"
+    ]
+  },
+  {
+    "id": 24,
+    "code": "VS",
+    "name": "Dr. Vibha Sharma",
+    "email": "vibha.sharma@example.com",
+    "is_hod": false,
+    "note": null,
+    "designation": "Class teacher, MBA-BA-1",
+    "weekly_load": 7,
+    "preferred_periods": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "batches": [
+      "MBA-BA-1"
+    ]
+  },
+  {
+    "id": 25,
+    "code": "VH",
+    "name": "Dr. Vandit Hedau",
+    "email": "vandit.hedau@example.com",
+    "is_hod": false,
+    "note": null,
+    "designation": "Faculty",
+    "weekly_load": 12,
+    "preferred_periods": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "batches": [
+      "MBA-BA-1",
+      "MSc-DSA-1",
+      "Exec-DS-3"
+    ]
+  },
+  {
+    "id": 26,
+    "code": "HG",
+    "name": "Dr. Harshita Gupta",
+    "email": "harshita.gupta@example.com",
+    "is_hod": false,
+    "note": null,
+    "designation": "Faculty",
+    "weekly_load": 8,
+    "preferred_periods": [
+      2,
+      3,
+      4,
+      7,
+      8
+    ],
+    "batches": [
+      "MBA-BA-1"
+    ]
+  },
+  {
+    "id": 27,
+    "code": "RS",
+    "name": "Ms. Riya Sadawani",
+    "email": "riya.sadawani@example.com",
+    "is_hod": false,
+    "note": "Written 'Ms. Riya Sadawani' (MBA 1st semester) and 'MS. Riya Sadawana' (M.Sc. 1st semester). Taken as one teacher: please confirm.",
+    "designation": "Faculty",
+    "weekly_load": 7,
+    "preferred_periods": [
+      1,
+      2,
+      4,
+      6,
+      7
+    ],
+    "batches": [
+      "MBA-BA-1",
+      "MSc-DSA-1"
+    ]
+  },
+  {
+    "id": 28,
+    "code": "HK",
+    "name": "Mr. Hitesh Kukreja",
+    "email": "hitesh.kukreja@example.com",
+    "is_hod": false,
+    "note": null,
+    "designation": "Faculty",
+    "weekly_load": 4,
+    "preferred_periods": [
+      1,
+      2
+    ],
+    "batches": [
+      "MBA-BA-3"
+    ]
+  },
+  {
+    "id": 29,
+    "code": "AG",
+    "name": "Dr. Ashok Gupta",
+    "email": "ashok.gupta@example.com",
+    "is_hod": false,
+    "note": null,
+    "designation": "Class teacher, MSc-DSA-3",
+    "weekly_load": 6,
+    "preferred_periods": [
+      1,
+      3,
+      4
+    ],
+    "batches": [
+      "MBA-BA-3",
+      "MSc-DSA-3"
+    ]
+  },
+  {
+    "id": 30,
+    "code": "SP",
+    "name": "Ms. Shivanjali Patidar",
+    "email": "shivanjali.patidar@example.com",
+    "is_hod": false,
+    "note": null,
+    "designation": "Faculty",
+    "weekly_load": 5,
+    "preferred_periods": [
+      3,
+      4,
+      5
+    ],
+    "batches": [
+      "MBA-BA-3"
+    ]
+  },
+  {
+    "id": 31,
+    "code": "GV",
+    "name": "Ms. Garima Vyas",
+    "email": "garima.vyas@example.com",
+    "is_hod": false,
+    "note": null,
+    "designation": "Faculty",
+    "weekly_load": 5,
+    "preferred_periods": [
+      3,
+      4,
+      5
+    ],
+    "batches": [
+      "MBA-BA-3"
+    ]
+  },
+  {
+    "id": 32,
+    "code": "MM",
+    "name": "Manisha Malviya",
+    "email": "manisha.malviya@example.com",
+    "is_hod": false,
+    "note": null,
+    "designation": "Faculty",
+    "weekly_load": 4,
+    "preferred_periods": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "batches": [
+      "MSc-DSA-3"
+    ]
+  },
+  {
+    "id": 33,
+    "code": "CT",
+    "name": "Mr. Chandresh Tatawat",
+    "email": "chandresh.tatawat@example.com",
+    "is_hod": false,
+    "note": null,
+    "designation": "Class teacher, Exec-DS-1",
+    "weekly_load": 10,
+    "preferred_periods": [
+      1,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "batches": [
+      "Exec-DS-1"
+    ]
+  },
+  {
+    "id": 34,
+    "code": "SK",
+    "name": "Dr. Sunita Khurana",
+    "email": "sunita.khurana@example.com",
+    "is_hod": false,
+    "note": null,
+    "designation": "Faculty",
+    "weekly_load": 4,
+    "preferred_periods": [
+      4,
+      5
+    ],
+    "batches": [
+      "Exec-DS-1"
+    ]
+  },
+  {
+    "id": 35,
+    "code": "ABH",
+    "name": "Dr. Abhilasha Bhagwat",
+    "email": "abhilasha.bhagwat@example.com",
+    "is_hod": false,
+    "note": "'Dr. Abhilasha Bhagwat' in the course list and 'Mrs. Abhilasha Bhagwat' as class teacher.",
+    "designation": "Class teacher, Exec-DS-3",
+    "weekly_load": 4,
+    "preferred_periods": [
+      3,
+      4
+    ],
+    "batches": [
+      "Exec-DS-3"
+    ]
+  },
+  {
+    "id": 36,
+    "code": "PB",
+    "name": "Ms. Priyansha Bangar",
+    "email": "priyansha.bangar@example.com",
+    "is_hod": false,
+    "note": null,
+    "designation": "Faculty",
+    "weekly_load": 5,
+    "preferred_periods": [
+      7,
+      8,
+      9,
+      10
+    ],
+    "batches": [
+      "Exec-DS-3"
+    ]
   }
 ]

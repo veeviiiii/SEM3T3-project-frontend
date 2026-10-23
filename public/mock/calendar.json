@@ -4,7 +4,9 @@
     "Tue",
     "Wed",
     "Thu",
-    "Fri"
+    "Fri",
+    "Sat",
+    "Sun"
   ],
   "periods": [
     {
@@ -24,31 +26,48 @@
     },
     {
       "period": 4,
+      "start": "12:00",
+      "end": "13:00"
+    },
+    {
+      "period": 5,
       "start": "13:00",
       "end": "14:00"
     },
     {
-      "period": 5,
+      "period": 6,
       "start": "14:00",
       "end": "15:00"
     },
     {
-      "period": 6,
+      "period": 7,
       "start": "15:00",
       "end": "16:00"
-    }
-  ],
-  "breaks": [
+    },
     {
-      "after_period": 3,
-      "label": "Break",
-      "start": "12:00",
-      "end": "13:00"
+      "period": 8,
+      "start": "16:00",
+      "end": "17:00"
+    },
+    {
+      "period": 9,
+      "start": "17:00",
+      "end": "18:00"
+    },
+    {
+      "period": 10,
+      "start": "18:00",
+      "end": "19:00"
     }
   ],
+  "breaks": [],
   "timezone": "Asia/Kolkata",
   "today": "2026-10-28",
+  "now": "2026-10-28T10:30:00+05:30",
   "now_period": 2,
   "current_week_start": "2026-10-26",
-  "demo_mode": true
+  "demo_mode": true,
+  "school": "School of Data Science and Forecasting",
+  "university": "Devi Ahilya Vishwavidyalaya, Takshashila Campus, Khandwa Road, Indore (M.P.)",
+  "head": "Dr. Govind Maheshwari"
 }

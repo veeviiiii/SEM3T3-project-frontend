@@ -71,8 +71,12 @@ export function statusInfo(entry) {
   }
 }
 
+/** A class's room or teacher, or a plain note when the timetable sheet does not give one. */
+export const roomCode = (space) => space?.code ?? 'No room given';
+export const teacherName = (faculty) => faculty?.name ?? 'No teacher given';
+
 /**
- * "Govind Maheswari" -> "GM", "Ms. Ritika Verma" -> "RV". Used for the round avatars.
+ * "Dr. Govind Maheshwari" -> "GM", "Ms. Ritika Verma" -> "RV". Used for the round avatars.
  * Titles like "Dr." and "Ms." are skipped, and so are words that do not start with a letter, like "(Lab)".
  */
 export function initials(name) {

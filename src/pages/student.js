@@ -5,7 +5,7 @@ import { animate, stagger } from 'motion';
 import { getCalendar, getMyTimetable, listBatches } from '../api.js';
 import { requireLogin, renderHeader } from '../lib/layout.js';
 import { renderTimetableGrid } from '../lib/timetable-grid.js';
-import { $, escapeHtml, formatDate, addDays, statusInfo, renderLoading, renderError, renderEmpty, prefersReducedMotion } from '../lib/ui.js';
+import { $, escapeHtml, formatDate, addDays, statusInfo, roomCode, teacherName, renderLoading, renderError, renderEmpty, prefersReducedMotion } from '../lib/ui.js';
 
 // 1 + 2. Only students may be here.
 const user = requireLogin(['student']);
@@ -73,7 +73,7 @@ function renderChanges(changed) {
     return;
   }
   // In date order. Each row reads top to bottom: the day, what happened, which class, and why.
-  changed.sort((a, b) => a.date.localeCompare(b.date) || a.period - b.period);
+  changed.sort((a, b) => a.date.localeCompare(b.date) || a.start.localeCompare(b.start));
   $('#changes').innerHTML = `<ul class="grid gap-2 md:grid-cols-2">${changed
     .map((e) => {
       const info = statusInfo(e);
@@ -87,7 +87,7 @@ function renderChanges(changed) {
           <div class="min-w-0 flex-1">
             <span class="inline-block rounded px-2 py-0.5 text-xs font-semibold ${info.badgeClass}">${escapeHtml(info.badge)}</span>
             <p class="mt-1 font-semibold leading-snug">${escapeHtml(e.subject.name)}</p>
-            <p class="text-sm opacity-80"><span class="sr-only">${escapeHtml(formatDate(e.date))}, </span>${escapeHtml(e.start)} · ${escapeHtml(e.space.code)} · ${escapeHtml(e.faculty.name)}</p>
+            <p class="text-sm opacity-80"><span class="sr-only">${escapeHtml(formatDate(e.date))}, </span>${escapeHtml(e.start)} · ${escapeHtml(roomCode(e.space))} · ${escapeHtml(teacherName(e.faculty))}</p>
             ${e.reason ? `<p class="mt-1 text-xs opacity-80">Why: ${escapeHtml(e.reason)}</p>` : ''}
           </div>
         </li>`;

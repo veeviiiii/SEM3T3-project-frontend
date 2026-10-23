@@ -1,32 +1,32 @@
 {
   "notification": {
-    "id": 14,
+    "id": 10,
     "kind": "proposal_pending",
     "title": "3 classes need a new slot",
     "body": "Ms. Ritika Verma is on leave on Thu 29 Oct (full day). Review the suggested slots.",
     "created_at": "2026-10-28T09:12:00+05:30",
-    "read": false,
     "ref": {
       "type": "unavailability",
       "id": 2,
       "week_start": null
-    }
+    },
+    "read": false
   },
   "timetable_changed": {
     "week_start": "2026-10-26",
     "batch_ids": [
-      1
+      2
     ],
     "faculty_ids": [
       1
     ],
     "space_ids": [
-      1
+      2
     ]
   },
   "proposal_updated": {
     "id": 3,
-    "status": "approved",
-    "version": 2
+    "status": "pending",
+    "version": 1
   }
 }

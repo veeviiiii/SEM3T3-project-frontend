@@ -1,21 +1,48 @@
 {
   "dry_run": true,
-  "rows": 25,
+  "rows": 260,
   "imported": 0,
-  "errors": [
-    {
-      "row": 17,
-      "message": "Unknown faculty code 'XY'"
-    },
-    {
-      "row": 22,
-      "message": "Period must be between 1 and 6, got 9"
-    }
-  ],
+  "errors": [],
   "clashes": [
     {
-      "row": 12,
-      "message": "B-002 is used twice on Tue period 3"
+      "row": 182,
+      "message": "Mr. Nandkishor Buwade has two classes on Thu 10:00 (rows 97 and 182)"
+    },
+    {
+      "row": 183,
+      "message": "Ms. Alfia Bagwala has two classes on Thu 12:00 (rows 122 and 183)"
+    },
+    {
+      "row": 190,
+      "message": "Ms. Ritika Verma has two classes on Mon 09:00 (rows 129 and 190)"
+    },
+    {
+      "row": 191,
+      "message": "Ms. Ritika Verma has two classes on Mon 10:00 (rows 130 and 191)"
+    },
+    {
+      "row": 196,
+      "message": "Ms. Ritika Verma has two classes on Tue 09:00 (rows 136 and 196)"
+    },
+    {
+      "row": 197,
+      "message": "Ms. Ritika Verma has two classes on Tue 10:00 (rows 137 and 197)"
+    },
+    {
+      "row": 202,
+      "message": "Ms. Ritika Verma has two classes on Wed 10:00 (rows 144 and 202)"
+    },
+    {
+      "row": 216,
+      "message": "Dr. Ashok Gupta has two classes on Mon 09:00 (rows 166 and 216)"
+    },
+    {
+      "row": 217,
+      "message": "Dr. Ashok Gupta has two classes on Mon 11:30 (rows 167 and 217)"
+    },
+    {
+      "row": 219,
+      "message": "Dr. Ashok Gupta has two classes on Tue 09:00 (rows 171 and 219)"
     }
   ]
 }

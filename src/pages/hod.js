@@ -26,6 +26,8 @@ import {
   addDays,
   initials,
   statusInfo,
+  roomCode,
+  teacherName,
   renderLoading,
   renderError,
   renderEmpty,
@@ -87,7 +89,7 @@ function greeting() {
   return 'Good evening';
 }
 
-/** "Dr. Meenu Kumar" -> "Dr. Kumar", "Govind Maheswari" -> "Govind" */
+/** "Dr. Govind Maheshwari" -> "Dr. Maheshwari", "Simran Prajapati" -> "Simran" */
 function shortName(name) {
   const parts = name.split(' ');
   return parts[0].endsWith('.') ? `${parts[0]} ${parts[parts.length - 1]}` : parts[0];
@@ -141,8 +143,19 @@ function drawStats(summary) {
     return s.field === 'pending_approvals'
       ? `<a href="/approvals.html" data-tilt class="lift flex min-h-36 animate-fade-up flex-col rounded-xl ${s.colour} p-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400" ${delay}>${inside}</a>`
       : `<div data-tilt class="lift flex min-h-36 animate-fade-up flex-col rounded-xl ${s.colour} p-4" ${delay}>${inside}</div>`;
-  }).join('')}</div>`;
+  }).join('')}</div>${clashBanner(Number(summary.clashes) || 0)}`;
   countUp($('#stats'));
+}
+
+/** A red line under the cards when two classes are timetabled at once (same teacher, room or batch). */
+function clashBanner(n) {
+  if (!n) return '';
+  return `
+    <a href="/timetable.html#checks" class="mt-3 flex flex-wrap items-center gap-3 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-900 transition-colors hover:bg-red-100">
+      <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-red-200 font-semibold tabular-nums" aria-hidden="true">${n}</span>
+      <span class="min-w-0 flex-1"><b>${n} timetable ${n === 1 ? 'clash' : 'clashes'}</b> this week: a teacher, room or batch has two classes at once.</span>
+      <span class="shrink-0 font-medium">See them ›</span>
+    </a>`;
 }
 
 /** The big numbers count up from 0 when they appear (Motion number ticker, see src/lib/motion.js). */
@@ -244,7 +257,9 @@ async function loadChanges() {
       renderEmpty(box, 'Nothing changed this week', 'Every class is on as planned.');
       return;
     }
-    renderTimetableGrid(box, { ...week, entries: changed }, calendar, { show: 'both' });
+    // Rows and days only for the times and days that have a change (every batch has its own slots).
+    const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'].filter((d) => changed.some((e) => e.day === d) || ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'].includes(d));
+    renderTimetableGrid(box, { ...week, entries: changed, slots: [], breaks: [], days }, calendar, { show: 'both' });
   } catch (err) {
     renderError(box, err, loadChanges);
   }
@@ -266,7 +281,7 @@ async function loadWaiting() {
         const o = p.original;
         // The slot the system recommends is the option whose rank is recommended_rank.
         const best = p.options.find((opt) => opt.rank === p.recommended_rank);
-        const suggested = best ? `${formatDate(best.date)} ${best.start}, ${best.space.code}` : 'No free slot found';
+        const suggested = best ? `${formatDate(best.date)} ${best.start}, ${roomCode(best.space)}` : 'No free slot found';
         return `
         <tr>
           <td class="px-3 py-3">
@@ -388,8 +403,7 @@ async function openForm(button) {
       .map(
         (p) => `
         <label class="flex items-center gap-1.5 rounded-lg border border-slate-200 px-2 py-1 text-sm">
-          <input type="checkbox" name="period" value="${escapeHtml(p.period)}" class="accent-blue-400" /> P${escapeHtml(p.period)}
-          <span class="text-xs text-slate-500">${escapeHtml(p.start)}</span>
+          <input type="checkbox" name="period" value="${escapeHtml(p.period)}" class="accent-blue-400" /> ${escapeHtml(p.start)}-${escapeHtml(p.end)}
         </label>`,
       )
       .join('');
@@ -505,7 +519,7 @@ function renderSaved(message, affected) {
           <li class="flex items-start gap-3 rounded-xl border p-3 ${info.card}">
             <div class="min-w-0 flex-1">
               <p class="font-medium">${escapeHtml(e.subject.name)}</p>
-              <p class="text-sm opacity-80">${escapeHtml(formatDate(e.date))}, ${escapeHtml(e.start)} · ${escapeHtml(e.batch.code)} · ${escapeHtml(e.faculty.name)} · ${escapeHtml(e.space.code)}</p>
+              <p class="text-sm opacity-80">${escapeHtml(formatDate(e.date))}, ${escapeHtml(e.start)} · ${escapeHtml(e.batch.code)} · ${escapeHtml(teacherName(e.faculty))} · ${escapeHtml(roomCode(e.space))}</p>
             </div>
             <span class="shrink-0 rounded px-2 py-0.5 text-xs font-semibold ${info.badgeClass}">${escapeHtml(info.badge)}</span>
           </li>`;

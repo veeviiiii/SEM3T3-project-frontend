@@ -7,7 +7,7 @@ import { animate, stagger } from 'motion';
 import { getCalendar, getMyTimetable, createUnavailability, listUnavailability, withdrawUnavailability } from '../api.js';
 import { requireLogin, renderHeader } from '../lib/layout.js';
 import { renderTimetableGrid } from '../lib/timetable-grid.js';
-import { $, escapeHtml, formatDate, addDays, statusInfo, renderLoading, renderError, renderEmpty, showToast, prefersReducedMotion } from '../lib/ui.js';
+import { $, escapeHtml, formatDate, addDays, statusInfo, roomCode, renderLoading, renderError, renderEmpty, showToast, prefersReducedMotion } from '../lib/ui.js';
 
 // Where each field's error message goes: field name from the server -> id of the red text under it.
 const ERROR_BOX = { start_date: 'from-error', end_date: 'to-error', periods: 'periods-error', reason: 'reason-error' };
@@ -38,8 +38,7 @@ async function start() {
     .map(
       (p) => `
       <label class="flex items-center gap-1.5 rounded-lg border border-slate-200 px-2 py-1 text-sm">
-        <input type="checkbox" name="period" value="${escapeHtml(p.period)}" class="accent-blue-400" /> P${escapeHtml(p.period)}
-        <span class="text-xs text-slate-500">${escapeHtml(p.start)}</span>
+        <input type="checkbox" name="period" value="${escapeHtml(p.period)}" class="accent-blue-400" /> ${escapeHtml(p.start)}-${escapeHtml(p.end)}
       </label>`,
     )
     .join('');
@@ -172,6 +171,11 @@ async function saveLeave(event) {
   }
 }
 
+/** [2, 3] -> "10:00-11:00, 11:00-12:00" (the hours of the day in getCalendar().periods). */
+function hoursText(periods) {
+  return periods.map((h) => calendar?.periods.find((p) => p.period === h)).map((p) => (p ? `${p.start}-${p.end}` : '')).filter(Boolean).join(', ') || 'Some periods';
+}
+
 /** "1 class was" / "3 classes were" */
 function classes(n) {
   return n === 1 ? '1 class was' : `${n} classes were`;
@@ -191,7 +195,7 @@ function renderSaved(message, affected) {
           <li class="flex items-start gap-3 rounded-xl border p-3 ${info.card}">
             <div class="min-w-0 flex-1">
               <p class="font-medium">${escapeHtml(e.subject.name)}</p>
-              <p class="text-sm opacity-80">${escapeHtml(formatDate(e.date))}, ${escapeHtml(e.start)} · ${escapeHtml(e.batch.code)} · ${escapeHtml(e.space.code)}</p>
+              <p class="text-sm opacity-80">${escapeHtml(formatDate(e.date))}, ${escapeHtml(e.start)} · ${escapeHtml(e.batch.code)} · ${escapeHtml(roomCode(e.space))}</p>
             </div>
             <span class="shrink-0 rounded px-2 py-0.5 text-xs font-semibold ${info.badgeClass}">${escapeHtml(info.badge)}</span>
           </li>`;
@@ -232,7 +236,7 @@ async function loadLeave() {
         <tr>
           <td class="px-3 py-3">
             <p class="font-medium text-slate-900">${escapeHtml(dateRange(u))}</p>
-            <p class="text-xs text-slate-500">${u.periods ? `P${escapeHtml(u.periods.join(', P'))}` : 'Whole day'}</p>
+            <p class="text-xs text-slate-500">${u.periods ? escapeHtml(hoursText(u.periods)) : 'Whole day'}</p>
             <p class="mt-1 text-xs text-slate-600 md:hidden"><span class="sm:hidden">${escapeHtml(u.reason)} · </span>${counts}</p>
           </td>
           <td class="hidden px-3 py-3 text-slate-700 sm:table-cell">${escapeHtml(u.reason)}</td>

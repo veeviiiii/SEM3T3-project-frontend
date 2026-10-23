@@ -1,8 +1,72 @@
 [
   {
     "id": 1,
+    "code": "A-201",
+    "name": "Room A-201",
+    "kind": "room",
+    "capacity": null,
+    "floor": null
+  },
+  {
+    "id": 2,
     "code": "B-002",
     "name": "Room B-002",
+    "kind": "room",
+    "capacity": null,
+    "floor": null
+  },
+  {
+    "id": 3,
+    "code": "B-003",
+    "name": "Class Room B-003",
+    "kind": "room",
+    "capacity": null,
+    "floor": null
+  },
+  {
+    "id": 4,
+    "code": "A-20?",
+    "name": "Room A-20? (last digit unclear)",
+    "kind": "room",
+    "capacity": null,
+    "floor": null
+  },
+  {
+    "id": 5,
+    "code": "B-006",
+    "name": "Class Room B-006",
+    "kind": "room",
+    "capacity": null,
+    "floor": null
+  },
+  {
+    "id": 6,
+    "code": "102",
+    "name": "Room 102 (handwritten)",
+    "kind": "room",
+    "capacity": null,
+    "floor": null
+  },
+  {
+    "id": 7,
+    "code": "003",
+    "name": "Room 003 (handwritten)",
+    "kind": "room",
+    "capacity": null,
+    "floor": null
+  },
+  {
+    "id": 8,
+    "code": "B010",
+    "name": "Room B010",
+    "kind": "room",
+    "capacity": null,
+    "floor": null
+  },
+  {
+    "id": 9,
+    "code": "A-203",
+    "name": "Room A-203",
     "kind": "room",
     "capacity": null,
     "floor": null

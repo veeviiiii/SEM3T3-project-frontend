@@ -1,14 +1,14 @@
 {
   "unavailability": {
-    "id": 2,
+    "id": 3,
     "kind": "faculty_leave",
     "target": {
       "type": "faculty",
       "id": 1,
       "label": "Ms. Ritika Verma"
     },
-    "start_date": "2026-10-29",
-    "end_date": "2026-10-29",
+    "start_date": "2026-11-02",
+    "end_date": "2026-11-02",
     "periods": null,
     "reason": "Attending a conference",
     "status": "active",
@@ -17,28 +17,28 @@
       "name": "Ms. Ritika Verma",
       "role": "faculty"
     },
-    "created_at": "2026-10-28T09:12:00+05:30",
-    "affected_count": 3,
-    "pending_count": 3
+    "created_at": "2026-10-28T10:31:00+05:30",
+    "affected_count": 4,
+    "pending_count": 4
   },
   "affected": [
     {
-      "key": "116-2026-10-29",
-      "session_id": 116,
-      "date": "2026-10-29",
-      "day": "Thu",
+      "key": "128-2026-11-02",
+      "session_id": 128,
+      "date": "2026-11-02",
+      "day": "Mon",
       "period": 1,
       "start": "09:00",
       "end": "10:00",
       "batch": {
-        "id": 1,
-        "code": "AI&DS-3"
+        "id": 6,
+        "code": "MBA-BA-1"
       },
       "subject": {
-        "id": 1,
-        "code": "DS6A-201",
-        "name": "Design and Analysis of Algorithm",
-        "kind": "theory"
+        "id": 67,
+        "code": "DS5A-505 (Lab)",
+        "name": "Advanced Database Management Systems (Lab)",
+        "kind": "lab"
       },
       "faculty": {
         "id": 1,
@@ -46,32 +46,68 @@
         "name": "Ms. Ritika Verma"
       },
       "space": {
-        "id": 1,
-        "code": "B-002",
+        "id": 6,
+        "code": "102",
         "kind": "room"
       },
       "status": "pending",
       "reason": "Ms. Ritika Verma on leave",
-      "proposal_id": 3,
+      "proposal_id": 6,
       "moved_to": null,
-      "moved_from": null
+      "moved_from": null,
+      "elective_group": null
     },
     {
-      "key": "117-2026-10-29",
-      "session_id": 117,
-      "date": "2026-10-29",
-      "day": "Thu",
+      "key": "189-2026-11-02",
+      "session_id": 189,
+      "date": "2026-11-02",
+      "day": "Mon",
+      "period": 1,
+      "start": "09:00",
+      "end": "10:00",
+      "batch": {
+        "id": 8,
+        "code": "MSc-DSA-1"
+      },
+      "subject": {
+        "id": 91,
+        "code": "DS5B-505 (Lab)",
+        "name": "Advanced Database Management System (Lab)",
+        "kind": "lab"
+      },
+      "faculty": {
+        "id": 1,
+        "code": "RV",
+        "name": "Ms. Ritika Verma"
+      },
+      "space": {
+        "id": 8,
+        "code": "B010",
+        "kind": "room"
+      },
+      "status": "pending",
+      "reason": "Ms. Ritika Verma on leave",
+      "proposal_id": 7,
+      "moved_to": null,
+      "moved_from": null,
+      "elective_group": null
+    },
+    {
+      "key": "129-2026-11-02",
+      "session_id": 129,
+      "date": "2026-11-02",
+      "day": "Mon",
       "period": 2,
       "start": "10:00",
       "end": "11:00",
       "batch": {
-        "id": 1,
-        "code": "AI&DS-3"
+        "id": 6,
+        "code": "MBA-BA-1"
       },
       "subject": {
-        "id": 7,
-        "code": "DS6A-201 (Lab)",
-        "name": "Design and Analysis of Algorithm (Lab)",
+        "id": 67,
+        "code": "DS5A-505 (Lab)",
+        "name": "Advanced Database Management Systems (Lab)",
         "kind": "lab"
       },
       "faculty": {
@@ -80,32 +116,33 @@
         "name": "Ms. Ritika Verma"
       },
       "space": {
-        "id": 1,
-        "code": "B-002",
+        "id": 6,
+        "code": "102",
         "kind": "room"
       },
       "status": "pending",
       "reason": "Ms. Ritika Verma on leave",
-      "proposal_id": 4,
+      "proposal_id": 8,
       "moved_to": null,
-      "moved_from": null
+      "moved_from": null,
+      "elective_group": null
     },
     {
-      "key": "118-2026-10-29",
-      "session_id": 118,
-      "date": "2026-10-29",
-      "day": "Thu",
-      "period": 3,
-      "start": "11:00",
-      "end": "12:00",
+      "key": "190-2026-11-02",
+      "session_id": 190,
+      "date": "2026-11-02",
+      "day": "Mon",
+      "period": 2,
+      "start": "10:00",
+      "end": "11:00",
       "batch": {
-        "id": 1,
-        "code": "AI&DS-3"
+        "id": 8,
+        "code": "MSc-DSA-1"
       },
       "subject": {
-        "id": 7,
-        "code": "DS6A-201 (Lab)",
-        "name": "Design and Analysis of Algorithm (Lab)",
+        "id": 91,
+        "code": "DS5B-505 (Lab)",
+        "name": "Advanced Database Management System (Lab)",
         "kind": "lab"
       },
       "faculty": {
@@ -114,40 +151,41 @@
         "name": "Ms. Ritika Verma"
       },
       "space": {
-        "id": 1,
-        "code": "B-002",
+        "id": 8,
+        "code": "B010",
         "kind": "room"
       },
       "status": "pending",
       "reason": "Ms. Ritika Verma on leave",
-      "proposal_id": 5,
+      "proposal_id": 9,
       "moved_to": null,
-      "moved_from": null
+      "moved_from": null,
+      "elective_group": null
     }
   ],
   "proposals": [
     {
-      "id": 3,
+      "id": 6,
       "status": "pending",
       "version": 1,
-      "unavailability_id": 2,
+      "unavailability_id": 3,
       "reason": "Ms. Ritika Verma on leave",
       "original": {
-        "session_id": 116,
-        "date": "2026-10-29",
-        "day": "Thu",
+        "session_id": 128,
+        "date": "2026-11-02",
+        "day": "Mon",
         "period": 1,
         "start": "09:00",
         "end": "10:00",
         "batch": {
-          "id": 1,
-          "code": "AI&DS-3"
+          "id": 6,
+          "code": "MBA-BA-1"
         },
         "subject": {
-          "id": 1,
-          "code": "DS6A-201",
-          "name": "Design and Analysis of Algorithm",
-          "kind": "theory"
+          "id": 67,
+          "code": "DS5A-505 (Lab)",
+          "name": "Advanced Database Management Systems (Lab)",
+          "kind": "lab"
         },
         "faculty": {
           "id": 1,
@@ -155,22 +193,24 @@
           "name": "Ms. Ritika Verma"
         },
         "space": {
-          "id": 1,
-          "code": "B-002",
+          "id": 6,
+          "code": "102",
           "kind": "room"
-        }
+        },
+        "entry_key": "128-2026-11-02",
+        "elective_group": null
       },
       "options": [
         {
           "rank": 1,
-          "date": "2026-10-30",
-          "day": "Fri",
-          "period": 6,
-          "start": "15:00",
-          "end": "16:00",
+          "date": "2026-11-03",
+          "day": "Tue",
+          "period": 3,
+          "start": "11:00",
+          "end": "12:00",
           "space": {
-            "id": 1,
-            "code": "B-002",
+            "id": 6,
+            "code": "102",
             "kind": "room"
           },
           "score": 60,
@@ -178,17 +218,123 @@
             {
               "rule": "same_week",
               "label": "Same week",
-              "points": 3.0
+              "points": 3
             },
             {
               "rule": "same_room",
               "label": "Same room",
-              "points": 2.0
+              "points": 2
             },
             {
-              "rule": "batch_load",
-              "label": "Batch not overloaded",
-              "points": 2.0
+              "rule": "preferred_hours",
+              "label": "Teacher's preferred hours",
+              "points": 2
+            },
+            {
+              "rule": "sooner",
+              "label": "Sooner",
+              "points": 0.86
+            }
+          ],
+          "warnings": []
+        },
+        {
+          "rank": 2,
+          "date": "2026-11-04",
+          "day": "Wed",
+          "period": 1,
+          "start": "09:00",
+          "end": "10:00",
+          "space": {
+            "id": 6,
+            "code": "102",
+            "kind": "room"
+          },
+          "score": 59,
+          "breakdown": [
+            {
+              "rule": "same_week",
+              "label": "Same week",
+              "points": 3
+            },
+            {
+              "rule": "same_room",
+              "label": "Same room",
+              "points": 2
+            },
+            {
+              "rule": "preferred_hours",
+              "label": "Teacher's preferred hours",
+              "points": 2
+            },
+            {
+              "rule": "sooner",
+              "label": "Sooner",
+              "points": 0.71
+            }
+          ],
+          "warnings": []
+        },
+        {
+          "rank": 3,
+          "date": "2026-11-04",
+          "day": "Wed",
+          "period": 3,
+          "start": "11:00",
+          "end": "12:00",
+          "space": {
+            "id": 6,
+            "code": "102",
+            "kind": "room"
+          },
+          "score": 59,
+          "breakdown": [
+            {
+              "rule": "same_week",
+              "label": "Same week",
+              "points": 3
+            },
+            {
+              "rule": "same_room",
+              "label": "Same room",
+              "points": 2
+            },
+            {
+              "rule": "preferred_hours",
+              "label": "Teacher's preferred hours",
+              "points": 2
+            },
+            {
+              "rule": "sooner",
+              "label": "Sooner",
+              "points": 0.71
+            }
+          ],
+          "warnings": []
+        },
+        {
+          "rank": 4,
+          "date": "2026-11-03",
+          "day": "Tue",
+          "period": 8,
+          "start": "16:30",
+          "end": "17:30",
+          "space": {
+            "id": 6,
+            "code": "102",
+            "kind": "room"
+          },
+          "score": 45,
+          "breakdown": [
+            {
+              "rule": "same_week",
+              "label": "Same week",
+              "points": 3
+            },
+            {
+              "rule": "same_room",
+              "label": "Same room",
+              "points": 2
             },
             {
               "rule": "sooner",
@@ -201,133 +347,33 @@
           ]
         },
         {
-          "rank": 2,
-          "date": "2026-11-04",
-          "day": "Wed",
-          "period": 2,
-          "start": "10:00",
-          "end": "11:00",
-          "space": {
-            "id": 1,
-            "code": "B-002",
-            "kind": "room"
-          },
-          "score": 47,
-          "breakdown": [
-            {
-              "rule": "same_room",
-              "label": "Same room",
-              "points": 2.0
-            },
-            {
-              "rule": "preferred_hours",
-              "label": "Teacher's preferred hours",
-              "points": 2.0
-            },
-            {
-              "rule": "batch_load",
-              "label": "Batch not overloaded",
-              "points": 2.0
-            },
-            {
-              "rule": "sooner",
-              "label": "Sooner",
-              "points": 0.14
-            }
-          ],
-          "warnings": []
-        },
-        {
-          "rank": 3,
-          "date": "2026-11-03",
-          "day": "Tue",
-          "period": 6,
-          "start": "15:00",
-          "end": "16:00",
-          "space": {
-            "id": 1,
-            "code": "B-002",
-            "kind": "room"
-          },
-          "score": 33,
-          "breakdown": [
-            {
-              "rule": "same_room",
-              "label": "Same room",
-              "points": 2.0
-            },
-            {
-              "rule": "batch_load",
-              "label": "Batch not overloaded",
-              "points": 2.0
-            },
-            {
-              "rule": "sooner",
-              "label": "Sooner",
-              "points": 0.29
-            }
-          ],
-          "warnings": [
-            "Last period of the day"
-          ]
-        },
-        {
-          "rank": 4,
-          "date": "2026-11-04",
-          "day": "Wed",
-          "period": 6,
-          "start": "15:00",
-          "end": "16:00",
-          "space": {
-            "id": 1,
-            "code": "B-002",
-            "kind": "room"
-          },
-          "score": 32,
-          "breakdown": [
-            {
-              "rule": "same_room",
-              "label": "Same room",
-              "points": 2.0
-            },
-            {
-              "rule": "batch_load",
-              "label": "Batch not overloaded",
-              "points": 2.0
-            },
-            {
-              "rule": "sooner",
-              "label": "Sooner",
-              "points": 0.14
-            }
-          ],
-          "warnings": [
-            "Last period of the day"
-          ]
-        },
-        {
           "rank": 5,
-          "date": "2026-11-05",
-          "day": "Thu",
-          "period": 6,
-          "start": "15:00",
-          "end": "16:00",
+          "date": "2026-11-04",
+          "day": "Wed",
+          "period": 8,
+          "start": "16:30",
+          "end": "17:30",
           "space": {
-            "id": 1,
-            "code": "B-002",
+            "id": 6,
+            "code": "102",
             "kind": "room"
           },
-          "score": 31,
+          "score": 44,
           "breakdown": [
+            {
+              "rule": "same_week",
+              "label": "Same week",
+              "points": 3
+            },
             {
               "rule": "same_room",
               "label": "Same room",
-              "points": 2.0
+              "points": 2
             },
             {
-              "rule": "batch_load",
-              "label": "Batch not overloaded",
-              "points": 2.0
+              "rule": "sooner",
+              "label": "Sooner",
+              "points": 0.71
             }
           ],
           "warnings": [
@@ -337,29 +383,256 @@
       ],
       "recommended_rank": 1,
       "decision": null,
-      "created_at": "2026-10-28T09:12:00+05:30"
+      "created_at": "2026-10-28T10:31:00+05:30"
     },
     {
-      "id": 4,
+      "id": 7,
       "status": "pending",
       "version": 1,
-      "unavailability_id": 2,
+      "unavailability_id": 3,
       "reason": "Ms. Ritika Verma on leave",
       "original": {
-        "session_id": 117,
-        "date": "2026-10-29",
-        "day": "Thu",
+        "session_id": 189,
+        "date": "2026-11-02",
+        "day": "Mon",
+        "period": 1,
+        "start": "09:00",
+        "end": "10:00",
+        "batch": {
+          "id": 8,
+          "code": "MSc-DSA-1"
+        },
+        "subject": {
+          "id": 91,
+          "code": "DS5B-505 (Lab)",
+          "name": "Advanced Database Management System (Lab)",
+          "kind": "lab"
+        },
+        "faculty": {
+          "id": 1,
+          "code": "RV",
+          "name": "Ms. Ritika Verma"
+        },
+        "space": {
+          "id": 8,
+          "code": "B010",
+          "kind": "room"
+        },
+        "entry_key": "189-2026-11-02",
+        "elective_group": null
+      },
+      "options": [
+        {
+          "rank": 1,
+          "date": "2026-11-04",
+          "day": "Wed",
+          "period": 1,
+          "start": "09:00",
+          "end": "10:00",
+          "space": {
+            "id": 8,
+            "code": "B010",
+            "kind": "room"
+          },
+          "score": 75,
+          "breakdown": [
+            {
+              "rule": "same_week",
+              "label": "Same week",
+              "points": 3
+            },
+            {
+              "rule": "same_room",
+              "label": "Same room",
+              "points": 2
+            },
+            {
+              "rule": "preferred_hours",
+              "label": "Teacher's preferred hours",
+              "points": 2
+            },
+            {
+              "rule": "batch_load",
+              "label": "Batch not overloaded",
+              "points": 2
+            },
+            {
+              "rule": "sooner",
+              "label": "Sooner",
+              "points": 0.71
+            }
+          ],
+          "warnings": []
+        },
+        {
+          "rank": 2,
+          "date": "2026-11-05",
+          "day": "Thu",
+          "period": 4,
+          "start": "12:30",
+          "end": "13:30",
+          "space": {
+            "id": 8,
+            "code": "B010",
+            "kind": "room"
+          },
+          "score": 58,
+          "breakdown": [
+            {
+              "rule": "same_week",
+              "label": "Same week",
+              "points": 3
+            },
+            {
+              "rule": "same_room",
+              "label": "Same room",
+              "points": 2
+            },
+            {
+              "rule": "batch_load",
+              "label": "Batch not overloaded",
+              "points": 2
+            },
+            {
+              "rule": "sooner",
+              "label": "Sooner",
+              "points": 0.57
+            }
+          ],
+          "warnings": []
+        },
+        {
+          "rank": 3,
+          "date": "2026-11-06",
+          "day": "Fri",
+          "period": 3,
+          "start": "11:30",
+          "end": "12:30",
+          "space": {
+            "id": 8,
+            "code": "B010",
+            "kind": "room"
+          },
+          "score": 57,
+          "breakdown": [
+            {
+              "rule": "same_week",
+              "label": "Same week",
+              "points": 3
+            },
+            {
+              "rule": "same_room",
+              "label": "Same room",
+              "points": 2
+            },
+            {
+              "rule": "batch_load",
+              "label": "Batch not overloaded",
+              "points": 2
+            },
+            {
+              "rule": "sooner",
+              "label": "Sooner",
+              "points": 0.43
+            }
+          ],
+          "warnings": []
+        },
+        {
+          "rank": 4,
+          "date": "2026-11-06",
+          "day": "Fri",
+          "period": 4,
+          "start": "12:30",
+          "end": "13:30",
+          "space": {
+            "id": 8,
+            "code": "B010",
+            "kind": "room"
+          },
+          "score": 57,
+          "breakdown": [
+            {
+              "rule": "same_week",
+              "label": "Same week",
+              "points": 3
+            },
+            {
+              "rule": "same_room",
+              "label": "Same room",
+              "points": 2
+            },
+            {
+              "rule": "batch_load",
+              "label": "Batch not overloaded",
+              "points": 2
+            },
+            {
+              "rule": "sooner",
+              "label": "Sooner",
+              "points": 0.43
+            }
+          ],
+          "warnings": []
+        },
+        {
+          "rank": 5,
+          "date": "2026-11-11",
+          "day": "Wed",
+          "period": 1,
+          "start": "09:00",
+          "end": "10:00",
+          "space": {
+            "id": 8,
+            "code": "B010",
+            "kind": "room"
+          },
+          "score": 46,
+          "breakdown": [
+            {
+              "rule": "same_room",
+              "label": "Same room",
+              "points": 2
+            },
+            {
+              "rule": "preferred_hours",
+              "label": "Teacher's preferred hours",
+              "points": 2
+            },
+            {
+              "rule": "batch_load",
+              "label": "Batch not overloaded",
+              "points": 2
+            }
+          ],
+          "warnings": []
+        }
+      ],
+      "recommended_rank": 1,
+      "decision": null,
+      "created_at": "2026-10-28T10:31:00+05:30"
+    },
+    {
+      "id": 8,
+      "status": "pending",
+      "version": 1,
+      "unavailability_id": 3,
+      "reason": "Ms. Ritika Verma on leave",
+      "original": {
+        "session_id": 129,
+        "date": "2026-11-02",
+        "day": "Mon",
         "period": 2,
         "start": "10:00",
         "end": "11:00",
         "batch": {
-          "id": 1,
-          "code": "AI&DS-3"
+          "id": 6,
+          "code": "MBA-BA-1"
         },
         "subject": {
-          "id": 7,
-          "code": "DS6A-201 (Lab)",
-          "name": "Design and Analysis of Algorithm (Lab)",
+          "id": 67,
+          "code": "DS5A-505 (Lab)",
+          "name": "Advanced Database Management Systems (Lab)",
           "kind": "lab"
         },
         "faculty": {
@@ -368,22 +641,24 @@
           "name": "Ms. Ritika Verma"
         },
         "space": {
-          "id": 1,
-          "code": "B-002",
+          "id": 6,
+          "code": "102",
           "kind": "room"
-        }
+        },
+        "entry_key": "129-2026-11-02",
+        "elective_group": null
       },
       "options": [
         {
           "rank": 1,
-          "date": "2026-10-30",
-          "day": "Fri",
-          "period": 6,
-          "start": "15:00",
-          "end": "16:00",
+          "date": "2026-11-03",
+          "day": "Tue",
+          "period": 3,
+          "start": "11:00",
+          "end": "12:00",
           "space": {
-            "id": 1,
-            "code": "B-002",
+            "id": 6,
+            "code": "102",
             "kind": "room"
           },
           "score": 60,
@@ -391,17 +666,123 @@
             {
               "rule": "same_week",
               "label": "Same week",
-              "points": 3.0
+              "points": 3
             },
             {
               "rule": "same_room",
               "label": "Same room",
-              "points": 2.0
+              "points": 2
             },
             {
-              "rule": "batch_load",
-              "label": "Batch not overloaded",
-              "points": 2.0
+              "rule": "preferred_hours",
+              "label": "Teacher's preferred hours",
+              "points": 2
+            },
+            {
+              "rule": "sooner",
+              "label": "Sooner",
+              "points": 0.86
+            }
+          ],
+          "warnings": []
+        },
+        {
+          "rank": 2,
+          "date": "2026-11-04",
+          "day": "Wed",
+          "period": 1,
+          "start": "09:00",
+          "end": "10:00",
+          "space": {
+            "id": 6,
+            "code": "102",
+            "kind": "room"
+          },
+          "score": 59,
+          "breakdown": [
+            {
+              "rule": "same_week",
+              "label": "Same week",
+              "points": 3
+            },
+            {
+              "rule": "same_room",
+              "label": "Same room",
+              "points": 2
+            },
+            {
+              "rule": "preferred_hours",
+              "label": "Teacher's preferred hours",
+              "points": 2
+            },
+            {
+              "rule": "sooner",
+              "label": "Sooner",
+              "points": 0.71
+            }
+          ],
+          "warnings": []
+        },
+        {
+          "rank": 3,
+          "date": "2026-11-04",
+          "day": "Wed",
+          "period": 3,
+          "start": "11:00",
+          "end": "12:00",
+          "space": {
+            "id": 6,
+            "code": "102",
+            "kind": "room"
+          },
+          "score": 59,
+          "breakdown": [
+            {
+              "rule": "same_week",
+              "label": "Same week",
+              "points": 3
+            },
+            {
+              "rule": "same_room",
+              "label": "Same room",
+              "points": 2
+            },
+            {
+              "rule": "preferred_hours",
+              "label": "Teacher's preferred hours",
+              "points": 2
+            },
+            {
+              "rule": "sooner",
+              "label": "Sooner",
+              "points": 0.71
+            }
+          ],
+          "warnings": []
+        },
+        {
+          "rank": 4,
+          "date": "2026-11-03",
+          "day": "Tue",
+          "period": 8,
+          "start": "16:30",
+          "end": "17:30",
+          "space": {
+            "id": 6,
+            "code": "102",
+            "kind": "room"
+          },
+          "score": 45,
+          "breakdown": [
+            {
+              "rule": "same_week",
+              "label": "Same week",
+              "points": 3
+            },
+            {
+              "rule": "same_room",
+              "label": "Same room",
+              "points": 2
             },
             {
               "rule": "sooner",
@@ -414,133 +795,33 @@
           ]
         },
         {
-          "rank": 2,
-          "date": "2026-11-04",
-          "day": "Wed",
-          "period": 2,
-          "start": "10:00",
-          "end": "11:00",
-          "space": {
-            "id": 1,
-            "code": "B-002",
-            "kind": "room"
-          },
-          "score": 47,
-          "breakdown": [
-            {
-              "rule": "same_room",
-              "label": "Same room",
-              "points": 2.0
-            },
-            {
-              "rule": "preferred_hours",
-              "label": "Teacher's preferred hours",
-              "points": 2.0
-            },
-            {
-              "rule": "batch_load",
-              "label": "Batch not overloaded",
-              "points": 2.0
-            },
-            {
-              "rule": "sooner",
-              "label": "Sooner",
-              "points": 0.14
-            }
-          ],
-          "warnings": []
-        },
-        {
-          "rank": 3,
-          "date": "2026-11-03",
-          "day": "Tue",
-          "period": 6,
-          "start": "15:00",
-          "end": "16:00",
-          "space": {
-            "id": 1,
-            "code": "B-002",
-            "kind": "room"
-          },
-          "score": 33,
-          "breakdown": [
-            {
-              "rule": "same_room",
-              "label": "Same room",
-              "points": 2.0
-            },
-            {
-              "rule": "batch_load",
-              "label": "Batch not overloaded",
-              "points": 2.0
-            },
-            {
-              "rule": "sooner",
-              "label": "Sooner",
-              "points": 0.29
-            }
-          ],
-          "warnings": [
-            "Last period of the day"
-          ]
-        },
-        {
-          "rank": 4,
-          "date": "2026-11-04",
-          "day": "Wed",
-          "period": 6,
-          "start": "15:00",
-          "end": "16:00",
-          "space": {
-            "id": 1,
-            "code": "B-002",
-            "kind": "room"
-          },
-          "score": 32,
-          "breakdown": [
-            {
-              "rule": "same_room",
-              "label": "Same room",
-              "points": 2.0
-            },
-            {
-              "rule": "batch_load",
-              "label": "Batch not overloaded",
-              "points": 2.0
-            },
-            {
-              "rule": "sooner",
-              "label": "Sooner",
-              "points": 0.14
-            }
-          ],
-          "warnings": [
-            "Last period of the day"
-          ]
-        },
-        {
           "rank": 5,
-          "date": "2026-11-05",
-          "day": "Thu",
-          "period": 6,
-          "start": "15:00",
-          "end": "16:00",
+          "date": "2026-11-04",
+          "day": "Wed",
+          "period": 8,
+          "start": "16:30",
+          "end": "17:30",
           "space": {
-            "id": 1,
-            "code": "B-002",
+            "id": 6,
+            "code": "102",
             "kind": "room"
           },
-          "score": 31,
+          "score": 44,
           "breakdown": [
+            {
+              "rule": "same_week",
+              "label": "Same week",
+              "points": 3
+            },
             {
               "rule": "same_room",
               "label": "Same room",
-              "points": 2.0
+              "points": 2
             },
             {
-              "rule": "batch_load",
-              "label": "Batch not overloaded",
-              "points": 2.0
+              "rule": "sooner",
+              "label": "Sooner",
+              "points": 0.71
             }
           ],
           "warnings": [
@@ -550,29 +831,29 @@
       ],
       "recommended_rank": 1,
       "decision": null,
-      "created_at": "2026-10-28T09:12:00+05:30"
+      "created_at": "2026-10-28T10:31:00+05:30"
     },
     {
-      "id": 5,
+      "id": 9,
       "status": "pending",
       "version": 1,
-      "unavailability_id": 2,
+      "unavailability_id": 3,
       "reason": "Ms. Ritika Verma on leave",
       "original": {
-        "session_id": 118,
-        "date": "2026-10-29",
-        "day": "Thu",
-        "period": 3,
-        "start": "11:00",
-        "end": "12:00",
+        "session_id": 190,
+        "date": "2026-11-02",
+        "day": "Mon",
+        "period": 2,
+        "start": "10:00",
+        "end": "11:00",
         "batch": {
-          "id": 1,
-          "code": "AI&DS-3"
+          "id": 8,
+          "code": "MSc-DSA-1"
         },
         "subject": {
-          "id": 7,
-          "code": "DS6A-201 (Lab)",
-          "name": "Design and Analysis of Algorithm (Lab)",
+          "id": 91,
+          "code": "DS5B-505 (Lab)",
+          "name": "Advanced Database Management System (Lab)",
           "kind": "lab"
         },
         "faculty": {
@@ -581,189 +862,203 @@
           "name": "Ms. Ritika Verma"
         },
         "space": {
-          "id": 1,
-          "code": "B-002",
+          "id": 8,
+          "code": "B010",
           "kind": "room"
-        }
+        },
+        "entry_key": "190-2026-11-02",
+        "elective_group": null
       },
       "options": [
         {
           "rank": 1,
-          "date": "2026-10-30",
-          "day": "Fri",
-          "period": 6,
-          "start": "15:00",
-          "end": "16:00",
+          "date": "2026-11-04",
+          "day": "Wed",
+          "period": 1,
+          "start": "09:00",
+          "end": "10:00",
           "space": {
-            "id": 1,
-            "code": "B-002",
+            "id": 8,
+            "code": "B010",
             "kind": "room"
           },
-          "score": 60,
+          "score": 75,
           "breakdown": [
             {
               "rule": "same_week",
               "label": "Same week",
-              "points": 3.0
+              "points": 3
             },
             {
               "rule": "same_room",
               "label": "Same room",
-              "points": 2.0
-            },
-            {
-              "rule": "batch_load",
-              "label": "Batch not overloaded",
-              "points": 2.0
-            },
-            {
-              "rule": "sooner",
-              "label": "Sooner",
-              "points": 0.86
-            }
-          ],
-          "warnings": [
-            "Last period of the day"
-          ]
-        },
-        {
-          "rank": 2,
-          "date": "2026-11-04",
-          "day": "Wed",
-          "period": 2,
-          "start": "10:00",
-          "end": "11:00",
-          "space": {
-            "id": 1,
-            "code": "B-002",
-            "kind": "room"
-          },
-          "score": 47,
-          "breakdown": [
-            {
-              "rule": "same_room",
-              "label": "Same room",
-              "points": 2.0
+              "points": 2
             },
             {
               "rule": "preferred_hours",
               "label": "Teacher's preferred hours",
-              "points": 2.0
+              "points": 2
             },
             {
               "rule": "batch_load",
               "label": "Batch not overloaded",
-              "points": 2.0
+              "points": 2
             },
             {
               "rule": "sooner",
               "label": "Sooner",
-              "points": 0.14
+              "points": 0.71
+            }
+          ],
+          "warnings": []
+        },
+        {
+          "rank": 2,
+          "date": "2026-11-05",
+          "day": "Thu",
+          "period": 4,
+          "start": "12:30",
+          "end": "13:30",
+          "space": {
+            "id": 8,
+            "code": "B010",
+            "kind": "room"
+          },
+          "score": 58,
+          "breakdown": [
+            {
+              "rule": "same_week",
+              "label": "Same week",
+              "points": 3
+            },
+            {
+              "rule": "same_room",
+              "label": "Same room",
+              "points": 2
+            },
+            {
+              "rule": "batch_load",
+              "label": "Batch not overloaded",
+              "points": 2
+            },
+            {
+              "rule": "sooner",
+              "label": "Sooner",
+              "points": 0.57
             }
           ],
           "warnings": []
         },
         {
           "rank": 3,
-          "date": "2026-11-03",
-          "day": "Tue",
-          "period": 6,
-          "start": "15:00",
-          "end": "16:00",
+          "date": "2026-11-06",
+          "day": "Fri",
+          "period": 3,
+          "start": "11:30",
+          "end": "12:30",
           "space": {
-            "id": 1,
-            "code": "B-002",
+            "id": 8,
+            "code": "B010",
             "kind": "room"
           },
-          "score": 33,
+          "score": 57,
           "breakdown": [
+            {
+              "rule": "same_week",
+              "label": "Same week",
+              "points": 3
+            },
             {
               "rule": "same_room",
               "label": "Same room",
-              "points": 2.0
+              "points": 2
             },
             {
               "rule": "batch_load",
               "label": "Batch not overloaded",
-              "points": 2.0
+              "points": 2
             },
             {
               "rule": "sooner",
               "label": "Sooner",
-              "points": 0.29
+              "points": 0.43
             }
           ],
-          "warnings": [
-            "Last period of the day"
-          ]
+          "warnings": []
         },
         {
           "rank": 4,
-          "date": "2026-11-04",
-          "day": "Wed",
-          "period": 6,
-          "start": "15:00",
-          "end": "16:00",
+          "date": "2026-11-06",
+          "day": "Fri",
+          "period": 4,
+          "start": "12:30",
+          "end": "13:30",
           "space": {
-            "id": 1,
-            "code": "B-002",
+            "id": 8,
+            "code": "B010",
             "kind": "room"
           },
-          "score": 32,
+          "score": 57,
           "breakdown": [
+            {
+              "rule": "same_week",
+              "label": "Same week",
+              "points": 3
+            },
             {
               "rule": "same_room",
               "label": "Same room",
-              "points": 2.0
+              "points": 2
             },
             {
               "rule": "batch_load",
               "label": "Batch not overloaded",
-              "points": 2.0
+              "points": 2
             },
             {
               "rule": "sooner",
               "label": "Sooner",
-              "points": 0.14
+              "points": 0.43
             }
           ],
-          "warnings": [
-            "Last period of the day"
-          ]
+          "warnings": []
         },
         {
           "rank": 5,
-          "date": "2026-11-05",
-          "day": "Thu",
-          "period": 6,
-          "start": "15:00",
-          "end": "16:00",
+          "date": "2026-11-11",
+          "day": "Wed",
+          "period": 1,
+          "start": "09:00",
+          "end": "10:00",
           "space": {
-            "id": 1,
-            "code": "B-002",
+            "id": 8,
+            "code": "B010",
             "kind": "room"
           },
-          "score": 31,
+          "score": 46,
           "breakdown": [
             {
               "rule": "same_room",
               "label": "Same room",
-              "points": 2.0
+              "points": 2
+            },
+            {
+              "rule": "preferred_hours",
+              "label": "Teacher's preferred hours",
+              "points": 2
             },
             {
               "rule": "batch_load",
               "label": "Batch not overloaded",
-              "points": 2.0
+              "points": 2
             }
           ],
-          "warnings": [
-            "Last period of the day"
-          ]
+          "warnings": []
         }
       ],
       "recommended_rank": 1,
       "decision": null,
-      "created_at": "2026-10-28T09:12:00+05:30"
+      "created_at": "2026-10-28T10:31:00+05:30"
     }
   ]
 }

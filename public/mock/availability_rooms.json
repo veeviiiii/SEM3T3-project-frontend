@@ -1,12 +1,1127 @@
 {
-  "date": "2026-10-29",
-  "day": "Thu",
+  "date": "2026-10-28",
+  "day": "Wed",
   "spaces": [
     {
       "space": {
         "id": 1,
+        "code": "A-201",
+        "name": "Room A-201",
+        "kind": "room",
+        "capacity": null,
+        "floor": null
+      },
+      "slots": [
+        {
+          "period": 1,
+          "status": "busy",
+          "entry": {
+            "key": "12-2026-10-28",
+            "session_id": 12,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 1,
+            "start": "09:00",
+            "end": "10:00",
+            "batch": {
+              "id": 1,
+              "code": "AI&DS-1"
+            },
+            "subject": {
+              "id": 4,
+              "code": "DS6A-104",
+              "name": "Fundamentals of Programming",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 11,
+              "code": "MA",
+              "name": "Ms. Minal Agrawal"
+            },
+            "space": {
+              "id": 1,
+              "code": "A-201",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 2,
+          "status": "busy",
+          "entry": {
+            "key": "13-2026-10-28",
+            "session_id": 13,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 2,
+            "start": "10:00",
+            "end": "11:00",
+            "batch": {
+              "id": 1,
+              "code": "AI&DS-1"
+            },
+            "subject": {
+              "id": 5,
+              "code": "DS6A-105",
+              "name": "Introduction to Computer Science",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 12,
+              "code": "RY",
+              "name": "Mr. Rajat Yadav"
+            },
+            "space": {
+              "id": 1,
+              "code": "A-201",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 3,
+          "status": "busy",
+          "entry": {
+            "key": "14-2026-10-28",
+            "session_id": 14,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 3,
+            "start": "11:30",
+            "end": "12:30",
+            "batch": {
+              "id": 1,
+              "code": "AI&DS-1"
+            },
+            "subject": {
+              "id": 6,
+              "code": "DS6A-106",
+              "name": "Enviromental Science",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 13,
+              "code": "PK",
+              "name": "Ms. Priya Kushwaha"
+            },
+            "space": {
+              "id": 1,
+              "code": "A-201",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 4,
+          "status": "busy",
+          "entry": {
+            "key": "14-2026-10-28",
+            "session_id": 14,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 3,
+            "start": "11:30",
+            "end": "12:30",
+            "batch": {
+              "id": 1,
+              "code": "AI&DS-1"
+            },
+            "subject": {
+              "id": 6,
+              "code": "DS6A-106",
+              "name": "Enviromental Science",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 13,
+              "code": "PK",
+              "name": "Ms. Priya Kushwaha"
+            },
+            "space": {
+              "id": 1,
+              "code": "A-201",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 5,
+          "status": "busy",
+          "entry": {
+            "key": "15-2026-10-28",
+            "session_id": 15,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 4,
+            "start": "12:30",
+            "end": "13:30",
+            "batch": {
+              "id": 1,
+              "code": "AI&DS-1"
+            },
+            "subject": {
+              "id": 1,
+              "code": "DS6A-101",
+              "name": "Mathematics-I",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 8,
+              "code": "AJ",
+              "name": "Dr. Anupam Jain"
+            },
+            "space": {
+              "id": 1,
+              "code": "A-201",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 6,
+          "status": "busy",
+          "entry": {
+            "key": "16-2026-10-28",
+            "session_id": 16,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 5,
+            "start": "14:00",
+            "end": "15:00",
+            "batch": {
+              "id": 1,
+              "code": "AI&DS-1"
+            },
+            "subject": {
+              "id": 2,
+              "code": "DS6A-102",
+              "name": "Physics",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 9,
+              "code": "KBM",
+              "name": "Kabir Beg mirja"
+            },
+            "space": {
+              "id": 1,
+              "code": "A-201",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 7,
+          "status": "busy",
+          "entry": {
+            "key": "17-2026-10-28",
+            "session_id": 17,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 6,
+            "start": "15:00",
+            "end": "16:00",
+            "batch": {
+              "id": 1,
+              "code": "AI&DS-1"
+            },
+            "subject": {
+              "id": 2,
+              "code": "DS6A-102",
+              "name": "Physics",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 9,
+              "code": "KBM",
+              "name": "Kabir Beg mirja"
+            },
+            "space": {
+              "id": 1,
+              "code": "A-201",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 8,
+          "status": "free",
+          "entry": null,
+          "note": null
+        },
+        {
+          "period": 9,
+          "status": "free",
+          "entry": null,
+          "note": null
+        },
+        {
+          "period": 10,
+          "status": "free",
+          "entry": null,
+          "note": null
+        }
+      ]
+    },
+    {
+      "space": {
+        "id": 2,
         "code": "B-002",
         "name": "Room B-002",
+        "kind": "room",
+        "capacity": null,
+        "floor": null
+      },
+      "slots": [
+        {
+          "period": 1,
+          "status": "busy",
+          "entry": {
+            "key": "39-2026-10-28",
+            "session_id": 39,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 1,
+            "start": "09:00",
+            "end": "10:00",
+            "batch": {
+              "id": 2,
+              "code": "AI&DS-3"
+            },
+            "subject": {
+              "id": 14,
+              "code": "DS6A-203",
+              "name": "Computer Architecture",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 3,
+              "code": "AB",
+              "name": "Ms. Alfia Bagwala"
+            },
+            "space": {
+              "id": 2,
+              "code": "B-002",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 2,
+          "status": "busy",
+          "entry": {
+            "key": "36-2026-10-27-new",
+            "session_id": 36,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 2,
+            "start": "10:00",
+            "end": "11:00",
+            "batch": {
+              "id": 2,
+              "code": "AI&DS-3"
+            },
+            "subject": {
+              "id": 13,
+              "code": "DS6A-202",
+              "name": "Probability Distributions",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 2,
+              "code": "SPR",
+              "name": "Simran Prajapati"
+            },
+            "space": {
+              "id": 2,
+              "code": "B-002",
+              "kind": "room"
+            },
+            "status": "moved_here",
+            "reason": "Simran Prajapati on leave",
+            "proposal_id": 1,
+            "moved_to": null,
+            "moved_from": {
+              "date": "2026-10-27",
+              "day": "Tue",
+              "period": 3,
+              "start": "11:00",
+              "end": "12:00",
+              "space": {
+                "id": 2,
+                "code": "B-002",
+                "kind": "room"
+              }
+            },
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 3,
+          "status": "busy",
+          "entry": {
+            "key": "40-2026-10-28",
+            "session_id": 40,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 3,
+            "start": "11:00",
+            "end": "12:00",
+            "batch": {
+              "id": 2,
+              "code": "AI&DS-3"
+            },
+            "subject": {
+              "id": 13,
+              "code": "DS6A-202",
+              "name": "Probability Distributions",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 2,
+              "code": "SPR",
+              "name": "Simran Prajapati"
+            },
+            "space": {
+              "id": 2,
+              "code": "B-002",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 4,
+          "status": "free",
+          "entry": null,
+          "note": null
+        },
+        {
+          "period": 5,
+          "status": "busy",
+          "entry": {
+            "key": "41-2026-10-28",
+            "session_id": 41,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 4,
+            "start": "13:00",
+            "end": "14:00",
+            "batch": {
+              "id": 2,
+              "code": "AI&DS-3"
+            },
+            "subject": {
+              "id": 16,
+              "code": "DS6A-205",
+              "name": "Communication Skills",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 5,
+              "code": "MK",
+              "name": "Dr. Meenu Kumar"
+            },
+            "space": {
+              "id": 2,
+              "code": "B-002",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 6,
+          "status": "busy",
+          "entry": {
+            "key": "42-2026-10-28",
+            "session_id": 42,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 5,
+            "start": "14:00",
+            "end": "15:00",
+            "batch": {
+              "id": 2,
+              "code": "AI&DS-3"
+            },
+            "subject": {
+              "id": 15,
+              "code": "DS6A-204",
+              "name": "Numerical Methods/Engineering Economics",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 4,
+              "code": "PP",
+              "name": "Ms. Pallavi Pandey"
+            },
+            "space": {
+              "id": 2,
+              "code": "B-002",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 7,
+          "status": "free",
+          "entry": null,
+          "note": null
+        },
+        {
+          "period": 8,
+          "status": "free",
+          "entry": null,
+          "note": null
+        },
+        {
+          "period": 9,
+          "status": "free",
+          "entry": null,
+          "note": null
+        },
+        {
+          "period": 10,
+          "status": "free",
+          "entry": null,
+          "note": null
+        }
+      ]
+    },
+    {
+      "space": {
+        "id": 3,
+        "code": "B-003",
+        "name": "Class Room B-003",
+        "kind": "room",
+        "capacity": null,
+        "floor": null
+      },
+      "slots": [
+        {
+          "period": 1,
+          "status": "busy",
+          "entry": {
+            "key": "65-2026-10-28",
+            "session_id": 65,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 1,
+            "start": "09:00",
+            "end": "10:00",
+            "batch": {
+              "id": 3,
+              "code": "AI&DS-5"
+            },
+            "subject": {
+              "id": 23,
+              "code": "DS6A-302",
+              "name": "Java Programming",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 15,
+              "code": "AN",
+              "name": "Mr. Amit Nashikkar"
+            },
+            "space": {
+              "id": 3,
+              "code": "B-003",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 2,
+          "status": "busy",
+          "entry": {
+            "key": "66-2026-10-28",
+            "session_id": 66,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 2,
+            "start": "10:00",
+            "end": "11:00",
+            "batch": {
+              "id": 3,
+              "code": "AI&DS-5"
+            },
+            "subject": {
+              "id": 25,
+              "code": "DS6A-304",
+              "name": "Statistical Inference",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 17,
+              "code": "PM",
+              "name": "Dr. Priyanka Malviya"
+            },
+            "space": {
+              "id": 3,
+              "code": "B-003",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 3,
+          "status": "busy",
+          "entry": {
+            "key": "67-2026-10-28",
+            "session_id": 67,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 3,
+            "start": "11:00",
+            "end": "12:00",
+            "batch": {
+              "id": 3,
+              "code": "AI&DS-5"
+            },
+            "subject": {
+              "id": 26,
+              "code": "DS6A-305",
+              "name": "Soft Computing",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 18,
+              "code": "SKS",
+              "name": "Dr. Shishir Kumar Shandilya"
+            },
+            "space": {
+              "id": 3,
+              "code": "B-003",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 4,
+          "status": "free",
+          "entry": null,
+          "note": null
+        },
+        {
+          "period": 5,
+          "status": "busy",
+          "entry": {
+            "key": "68-2026-10-28",
+            "session_id": 68,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 5,
+            "start": "13:30",
+            "end": "14:30",
+            "batch": {
+              "id": 3,
+              "code": "AI&DS-5"
+            },
+            "subject": {
+              "id": 31,
+              "code": "DS6A-301 (Lab)",
+              "name": "Datamining and Data ware (Lab)",
+              "kind": "lab"
+            },
+            "faculty": {
+              "id": 12,
+              "code": "RY",
+              "name": "Mr. Rajat Yadav"
+            },
+            "space": {
+              "id": 3,
+              "code": "B-003",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 6,
+          "status": "busy",
+          "entry": {
+            "key": "68-2026-10-28",
+            "session_id": 68,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 5,
+            "start": "13:30",
+            "end": "14:30",
+            "batch": {
+              "id": 3,
+              "code": "AI&DS-5"
+            },
+            "subject": {
+              "id": 31,
+              "code": "DS6A-301 (Lab)",
+              "name": "Datamining and Data ware (Lab)",
+              "kind": "lab"
+            },
+            "faculty": {
+              "id": 12,
+              "code": "RY",
+              "name": "Mr. Rajat Yadav"
+            },
+            "space": {
+              "id": 3,
+              "code": "B-003",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 7,
+          "status": "busy",
+          "entry": {
+            "key": "69-2026-10-28",
+            "session_id": 69,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 6,
+            "start": "14:30",
+            "end": "15:30",
+            "batch": {
+              "id": 3,
+              "code": "AI&DS-5"
+            },
+            "subject": {
+              "id": 31,
+              "code": "DS6A-301 (Lab)",
+              "name": "Datamining and Data ware (Lab)",
+              "kind": "lab"
+            },
+            "faculty": {
+              "id": 12,
+              "code": "RY",
+              "name": "Mr. Rajat Yadav"
+            },
+            "space": {
+              "id": 3,
+              "code": "B-003",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 8,
+          "status": "busy",
+          "entry": {
+            "key": "70-2026-10-28",
+            "session_id": 70,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 7,
+            "start": "15:30",
+            "end": "16:30",
+            "batch": {
+              "id": 3,
+              "code": "AI&DS-5"
+            },
+            "subject": {
+              "id": 24,
+              "code": "DS6A-303",
+              "name": "Data Engineering",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 16,
+              "code": "AS",
+              "name": "Mr. Ayan Shah"
+            },
+            "space": {
+              "id": 3,
+              "code": "B-003",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 9,
+          "status": "free",
+          "entry": null,
+          "note": null
+        },
+        {
+          "period": 10,
+          "status": "free",
+          "entry": null,
+          "note": null
+        }
+      ]
+    },
+    {
+      "space": {
+        "id": 4,
+        "code": "A-20?",
+        "name": "Room A-20? (last digit unclear)",
+        "kind": "room",
+        "capacity": null,
+        "floor": null
+      },
+      "slots": [
+        {
+          "period": 1,
+          "status": "busy",
+          "entry": {
+            "key": "91-2026-10-28",
+            "session_id": 91,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 1,
+            "start": "09:00",
+            "end": "10:00",
+            "batch": {
+              "id": 4,
+              "code": "AI&DS-7"
+            },
+            "subject": {
+              "id": 37,
+              "code": "DS6A-406",
+              "name": "Machine Learning Using Python",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 22,
+              "code": "NB",
+              "name": "Mr. Nandkishor Buwade"
+            },
+            "space": {
+              "id": 4,
+              "code": "A-20?",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 2,
+          "status": "busy",
+          "entry": {
+            "key": "92-2026-10-28",
+            "session_id": 92,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 2,
+            "start": "10:00",
+            "end": "11:00",
+            "batch": {
+              "id": 4,
+              "code": "AI&DS-7"
+            },
+            "subject": {
+              "id": 41,
+              "code": "DS6A-401 (Lab)",
+              "name": "Data Visualization (Lab)",
+              "kind": "lab"
+            },
+            "faculty": {
+              "id": 6,
+              "code": "KP",
+              "name": "Ms. Khushi Patidar"
+            },
+            "space": {
+              "id": 4,
+              "code": "A-20?",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 3,
+          "status": "busy",
+          "entry": {
+            "key": "93-2026-10-28",
+            "session_id": 93,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 3,
+            "start": "11:00",
+            "end": "12:00",
+            "batch": {
+              "id": 4,
+              "code": "AI&DS-7"
+            },
+            "subject": {
+              "id": 41,
+              "code": "DS6A-401 (Lab)",
+              "name": "Data Visualization (Lab)",
+              "kind": "lab"
+            },
+            "faculty": {
+              "id": 6,
+              "code": "KP",
+              "name": "Ms. Khushi Patidar"
+            },
+            "space": {
+              "id": 4,
+              "code": "A-20?",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 4,
+          "status": "busy",
+          "entry": {
+            "key": "94-2026-10-28",
+            "session_id": 94,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 4,
+            "start": "12:30",
+            "end": "13:30",
+            "batch": {
+              "id": 4,
+              "code": "AI&DS-7"
+            },
+            "subject": {
+              "id": 38,
+              "code": "DS6A-405",
+              "name": "Cryptography",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 18,
+              "code": "SKS",
+              "name": "Dr. Shishir Kumar Shandilya"
+            },
+            "space": {
+              "id": 4,
+              "code": "A-20?",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 5,
+          "status": "busy",
+          "entry": {
+            "key": "94-2026-10-28",
+            "session_id": 94,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 4,
+            "start": "12:30",
+            "end": "13:30",
+            "batch": {
+              "id": 4,
+              "code": "AI&DS-7"
+            },
+            "subject": {
+              "id": 38,
+              "code": "DS6A-405",
+              "name": "Cryptography",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 18,
+              "code": "SKS",
+              "name": "Dr. Shishir Kumar Shandilya"
+            },
+            "space": {
+              "id": 4,
+              "code": "A-20?",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 6,
+          "status": "free",
+          "entry": null,
+          "note": null
+        },
+        {
+          "period": 7,
+          "status": "free",
+          "entry": null,
+          "note": null
+        },
+        {
+          "period": 8,
+          "status": "free",
+          "entry": null,
+          "note": null
+        },
+        {
+          "period": 9,
+          "status": "free",
+          "entry": null,
+          "note": null
+        },
+        {
+          "period": 10,
+          "status": "free",
+          "entry": null,
+          "note": null
+        }
+      ]
+    },
+    {
+      "space": {
+        "id": 5,
+        "code": "B-006",
+        "name": "Class Room B-006",
         "kind": "room",
         "capacity": null,
         "floor": null
@@ -20,8 +1135,314 @@
         },
         {
           "period": 2,
+          "status": "busy",
+          "entry": {
+            "key": "114-2026-10-28",
+            "session_id": 114,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 1,
+            "start": "10:00",
+            "end": "11:00",
+            "batch": {
+              "id": 5,
+              "code": "AI&DS-9"
+            },
+            "subject": {
+              "id": 49,
+              "code": "DS6A-511",
+              "name": "Project report writing",
+              "kind": "theory"
+            },
+            "faculty": null,
+            "space": {
+              "id": 5,
+              "code": "B-006",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 3,
+          "status": "busy",
+          "entry": {
+            "key": "115-2026-10-28",
+            "session_id": 115,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 2,
+            "start": "11:00",
+            "end": "12:00",
+            "batch": {
+              "id": 5,
+              "code": "AI&DS-9"
+            },
+            "subject": {
+              "id": 44,
+              "code": "DS6A-501",
+              "name": "Natural Language Processing",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 3,
+              "code": "AB",
+              "name": "Ms. Alfia Bagwala"
+            },
+            "space": {
+              "id": 5,
+              "code": "B-006",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 4,
+          "status": "busy",
+          "entry": {
+            "key": "116-2026-10-28",
+            "session_id": 116,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 3,
+            "start": "12:00",
+            "end": "13:00",
+            "batch": {
+              "id": 5,
+              "code": "AI&DS-9"
+            },
+            "subject": {
+              "id": 45,
+              "code": "DS6A-503",
+              "name": "Agentic AI",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 20,
+              "code": "GA",
+              "name": "Ms. Garima Agrawal"
+            },
+            "space": {
+              "id": 5,
+              "code": "B-006",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 5,
+          "status": "busy",
+          "entry": {
+            "key": "117-2026-10-28",
+            "session_id": 117,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 4,
+            "start": "13:30",
+            "end": "14:30",
+            "batch": {
+              "id": 5,
+              "code": "AI&DS-9"
+            },
+            "subject": {
+              "id": 47,
+              "code": "DS6A-507",
+              "name": "High Performance Computing",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 18,
+              "code": "SKS",
+              "name": "Dr. Shishir Kumar Shandilya"
+            },
+            "space": {
+              "id": 5,
+              "code": "B-006",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 6,
+          "status": "busy",
+          "entry": {
+            "key": "117-2026-10-28",
+            "session_id": 117,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 4,
+            "start": "13:30",
+            "end": "14:30",
+            "batch": {
+              "id": 5,
+              "code": "AI&DS-9"
+            },
+            "subject": {
+              "id": 47,
+              "code": "DS6A-507",
+              "name": "High Performance Computing",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 18,
+              "code": "SKS",
+              "name": "Dr. Shishir Kumar Shandilya"
+            },
+            "space": {
+              "id": 5,
+              "code": "B-006",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 7,
+          "status": "busy",
+          "entry": {
+            "key": "118-2026-10-28",
+            "session_id": 118,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 5,
+            "start": "14:30",
+            "end": "15:30",
+            "batch": {
+              "id": 5,
+              "code": "AI&DS-9"
+            },
+            "subject": {
+              "id": 45,
+              "code": "DS6A-503",
+              "name": "Agentic AI",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 20,
+              "code": "GA",
+              "name": "Ms. Garima Agrawal"
+            },
+            "space": {
+              "id": 5,
+              "code": "B-006",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 8,
           "status": "free",
           "entry": null,
+          "note": null
+        },
+        {
+          "period": 9,
+          "status": "free",
+          "entry": null,
+          "note": null
+        },
+        {
+          "period": 10,
+          "status": "free",
+          "entry": null,
+          "note": null
+        }
+      ]
+    },
+    {
+      "space": {
+        "id": 6,
+        "code": "102",
+        "name": "Room 102 (handwritten)",
+        "kind": "room",
+        "capacity": null,
+        "floor": null
+      },
+      "slots": [
+        {
+          "period": 1,
+          "status": "free",
+          "entry": null,
+          "note": null
+        },
+        {
+          "period": 2,
+          "status": "busy",
+          "entry": {
+            "key": "143-2026-10-28",
+            "session_id": 143,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 2,
+            "start": "10:00",
+            "end": "11:00",
+            "batch": {
+              "id": 6,
+              "code": "MBA-BA-1"
+            },
+            "subject": {
+              "id": 58,
+              "code": "DS5A-505",
+              "name": "Advanced Database Management Systems",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 1,
+              "code": "RV",
+              "name": "Ms. Ritika Verma"
+            },
+            "space": {
+              "id": 6,
+              "code": "102",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
           "note": null
         },
         {
@@ -34,38 +1455,39 @@
           "period": 4,
           "status": "busy",
           "entry": {
-            "key": "119-2026-10-29",
-            "session_id": 119,
-            "date": "2026-10-29",
-            "day": "Thu",
+            "key": "144-2026-10-28",
+            "session_id": 144,
+            "date": "2026-10-28",
+            "day": "Wed",
             "period": 4,
-            "start": "13:00",
-            "end": "14:00",
+            "start": "12:00",
+            "end": "13:00",
             "batch": {
-              "id": 1,
-              "code": "AI&DS-3"
+              "id": 6,
+              "code": "MBA-BA-1"
             },
             "subject": {
-              "id": 4,
-              "code": "DS6A-204",
-              "name": "Numerical Methods/Engineering Economics",
+              "id": 64,
+              "code": "DS5A-531",
+              "name": "Technical report writing and communication",
               "kind": "theory"
             },
             "faculty": {
-              "id": 4,
-              "code": "PP",
-              "name": "Ms. Pallavi Pandey"
+              "id": 5,
+              "code": "MK",
+              "name": "Dr. Meenu Kumar"
             },
             "space": {
-              "id": 1,
-              "code": "B-002",
+              "id": 6,
+              "code": "102",
               "kind": "room"
             },
             "status": "scheduled",
             "reason": null,
             "proposal_id": null,
             "moved_to": null,
-            "moved_from": null
+            "moved_from": null,
+            "elective_group": "MBA-BA-1 DS5A-531/DS5A-533"
           },
           "note": null
         },
@@ -73,43 +1495,930 @@
           "period": 5,
           "status": "busy",
           "entry": {
-            "key": "120-2026-10-29",
-            "session_id": 120,
-            "date": "2026-10-29",
-            "day": "Thu",
+            "key": "146-2026-10-28",
+            "session_id": 146,
+            "date": "2026-10-28",
+            "day": "Wed",
             "period": 5,
-            "start": "14:00",
-            "end": "15:00",
+            "start": "13:30",
+            "end": "14:30",
             "batch": {
-              "id": 1,
-              "code": "AI&DS-3"
+              "id": 6,
+              "code": "MBA-BA-1"
             },
             "subject": {
-              "id": 4,
-              "code": "DS6A-204",
-              "name": "Numerical Methods/Engineering Economics",
-              "kind": "theory"
+              "id": 68,
+              "code": "DS5A-507 (Lab)",
+              "name": "Python for Analytics (Lab)",
+              "kind": "lab"
             },
             "faculty": {
-              "id": 4,
-              "code": "PP",
-              "name": "Ms. Pallavi Pandey"
+              "id": 25,
+              "code": "VH",
+              "name": "Dr. Vandit Hedau"
             },
             "space": {
-              "id": 1,
-              "code": "B-002",
+              "id": 6,
+              "code": "102",
               "kind": "room"
             },
             "status": "scheduled",
             "reason": null,
             "proposal_id": null,
             "moved_to": null,
-            "moved_from": null
+            "moved_from": null,
+            "elective_group": null
           },
           "note": null
         },
         {
           "period": 6,
+          "status": "busy",
+          "entry": {
+            "key": "146-2026-10-28",
+            "session_id": 146,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 5,
+            "start": "13:30",
+            "end": "14:30",
+            "batch": {
+              "id": 6,
+              "code": "MBA-BA-1"
+            },
+            "subject": {
+              "id": 68,
+              "code": "DS5A-507 (Lab)",
+              "name": "Python for Analytics (Lab)",
+              "kind": "lab"
+            },
+            "faculty": {
+              "id": 25,
+              "code": "VH",
+              "name": "Dr. Vandit Hedau"
+            },
+            "space": {
+              "id": 6,
+              "code": "102",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 7,
+          "status": "busy",
+          "entry": {
+            "key": "147-2026-10-28",
+            "session_id": 147,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 6,
+            "start": "14:30",
+            "end": "15:30",
+            "batch": {
+              "id": 6,
+              "code": "MBA-BA-1"
+            },
+            "subject": {
+              "id": 68,
+              "code": "DS5A-507 (Lab)",
+              "name": "Python for Analytics (Lab)",
+              "kind": "lab"
+            },
+            "faculty": {
+              "id": 25,
+              "code": "VH",
+              "name": "Dr. Vandit Hedau"
+            },
+            "space": {
+              "id": 6,
+              "code": "102",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 8,
+          "status": "busy",
+          "entry": {
+            "key": "148-2026-10-28",
+            "session_id": 148,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 7,
+            "start": "15:30",
+            "end": "16:30",
+            "batch": {
+              "id": 6,
+              "code": "MBA-BA-1"
+            },
+            "subject": {
+              "id": 62,
+              "code": "DS5A-521",
+              "name": "Marketing Management",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 24,
+              "code": "VS",
+              "name": "Dr. Vibha Sharma"
+            },
+            "space": {
+              "id": 6,
+              "code": "102",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": "MBA-BA-1 DS5A-521/DS5A-523"
+          },
+          "note": null
+        },
+        {
+          "period": 9,
+          "status": "free",
+          "entry": null,
+          "note": null
+        },
+        {
+          "period": 10,
+          "status": "free",
+          "entry": null,
+          "note": null
+        }
+      ]
+    },
+    {
+      "space": {
+        "id": 7,
+        "code": "003",
+        "name": "Room 003 (handwritten)",
+        "kind": "room",
+        "capacity": null,
+        "floor": null
+      },
+      "slots": [
+        {
+          "period": 1,
+          "status": "busy",
+          "entry": {
+            "key": "174-2026-10-28",
+            "session_id": 174,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 1,
+            "start": "09:00",
+            "end": "10:00",
+            "batch": {
+              "id": 7,
+              "code": "MBA-BA-3"
+            },
+            "subject": {
+              "id": 71,
+              "code": "DS5A-601",
+              "name": "Forecasting methods",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 28,
+              "code": "HK",
+              "name": "Mr. Hitesh Kukreja"
+            },
+            "space": {
+              "id": 7,
+              "code": "003",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 2,
+          "status": "busy",
+          "entry": {
+            "key": "175-2026-10-28",
+            "session_id": 175,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 2,
+            "start": "10:00",
+            "end": "11:00",
+            "batch": {
+              "id": 7,
+              "code": "MBA-BA-3"
+            },
+            "subject": {
+              "id": 77,
+              "code": "DS5A-643",
+              "name": "Hadoop & Spark",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 22,
+              "code": "NB",
+              "name": "Mr. Nandkishor Buwade"
+            },
+            "space": {
+              "id": 7,
+              "code": "003",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 3,
+          "status": "busy",
+          "entry": {
+            "key": "176-2026-10-28",
+            "session_id": 176,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 3,
+            "start": "11:30",
+            "end": "12:30",
+            "batch": {
+              "id": 7,
+              "code": "MBA-BA-3"
+            },
+            "subject": {
+              "id": 79,
+              "code": "DS5A-621 (Lab)",
+              "name": "Marketing Analytics (Lab)",
+              "kind": "lab"
+            },
+            "faculty": {
+              "id": 30,
+              "code": "SP",
+              "name": "Ms. Shivanjali Patidar"
+            },
+            "space": {
+              "id": 7,
+              "code": "003",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": "MBA-BA-3 DS5A-621/DS5A-623"
+          },
+          "note": null
+        },
+        {
+          "period": 4,
+          "status": "busy",
+          "entry": {
+            "key": "176-2026-10-28",
+            "session_id": 176,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 3,
+            "start": "11:30",
+            "end": "12:30",
+            "batch": {
+              "id": 7,
+              "code": "MBA-BA-3"
+            },
+            "subject": {
+              "id": 79,
+              "code": "DS5A-621 (Lab)",
+              "name": "Marketing Analytics (Lab)",
+              "kind": "lab"
+            },
+            "faculty": {
+              "id": 30,
+              "code": "SP",
+              "name": "Ms. Shivanjali Patidar"
+            },
+            "space": {
+              "id": 7,
+              "code": "003",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": "MBA-BA-3 DS5A-621/DS5A-623"
+          },
+          "note": null
+        },
+        {
+          "period": 5,
+          "status": "busy",
+          "entry": {
+            "key": "178-2026-10-28",
+            "session_id": 178,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 4,
+            "start": "12:30",
+            "end": "13:30",
+            "batch": {
+              "id": 7,
+              "code": "MBA-BA-3"
+            },
+            "subject": {
+              "id": 79,
+              "code": "DS5A-621 (Lab)",
+              "name": "Marketing Analytics (Lab)",
+              "kind": "lab"
+            },
+            "faculty": {
+              "id": 30,
+              "code": "SP",
+              "name": "Ms. Shivanjali Patidar"
+            },
+            "space": {
+              "id": 7,
+              "code": "003",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": "MBA-BA-3 DS5A-621/DS5A-623"
+          },
+          "note": null
+        },
+        {
+          "period": 6,
+          "status": "free",
+          "entry": null,
+          "note": null
+        },
+        {
+          "period": 7,
+          "status": "free",
+          "entry": null,
+          "note": null
+        },
+        {
+          "period": 8,
+          "status": "free",
+          "entry": null,
+          "note": null
+        },
+        {
+          "period": 9,
+          "status": "free",
+          "entry": null,
+          "note": null
+        },
+        {
+          "period": 10,
+          "status": "free",
+          "entry": null,
+          "note": null
+        }
+      ]
+    },
+    {
+      "space": {
+        "id": 8,
+        "code": "B010",
+        "name": "Room B010",
+        "kind": "room",
+        "capacity": null,
+        "floor": null
+      },
+      "slots": [
+        {
+          "period": 1,
+          "status": "free",
+          "entry": null,
+          "note": null
+        },
+        {
+          "period": 2,
+          "status": "busy",
+          "entry": {
+            "key": "201-2026-10-28",
+            "session_id": 201,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 2,
+            "start": "10:00",
+            "end": "11:00",
+            "batch": {
+              "id": 8,
+              "code": "MSc-DSA-1"
+            },
+            "subject": {
+              "id": 84,
+              "code": "DS5B-505",
+              "name": "Advanced Database Management System",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 1,
+              "code": "RV",
+              "name": "Ms. Ritika Verma"
+            },
+            "space": {
+              "id": 8,
+              "code": "B010",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 3,
+          "status": "busy",
+          "entry": {
+            "key": "202-2026-10-28",
+            "session_id": 202,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 3,
+            "start": "11:30",
+            "end": "12:30",
+            "batch": {
+              "id": 8,
+              "code": "MSc-DSA-1"
+            },
+            "subject": {
+              "id": 86,
+              "code": "DS5B-509",
+              "name": "Python for Analytics",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 25,
+              "code": "VH",
+              "name": "Dr. Vandit Hedau"
+            },
+            "space": {
+              "id": 8,
+              "code": "B010",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 4,
+          "status": "busy",
+          "entry": {
+            "key": "202-2026-10-28",
+            "session_id": 202,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 3,
+            "start": "11:30",
+            "end": "12:30",
+            "batch": {
+              "id": 8,
+              "code": "MSc-DSA-1"
+            },
+            "subject": {
+              "id": 86,
+              "code": "DS5B-509",
+              "name": "Python for Analytics",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 25,
+              "code": "VH",
+              "name": "Dr. Vandit Hedau"
+            },
+            "space": {
+              "id": 8,
+              "code": "B010",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 5,
+          "status": "busy",
+          "entry": {
+            "key": "203-2026-10-28",
+            "session_id": 203,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 4,
+            "start": "12:30",
+            "end": "13:30",
+            "batch": {
+              "id": 8,
+              "code": "MSc-DSA-1"
+            },
+            "subject": {
+              "id": 85,
+              "code": "DS5B-507",
+              "name": "Descriptive Statistics & Probability Theory",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 17,
+              "code": "PM",
+              "name": "Dr. Priyanka Malviya"
+            },
+            "space": {
+              "id": 8,
+              "code": "B010",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 6,
+          "status": "busy",
+          "entry": {
+            "key": "204-2026-10-28",
+            "session_id": 204,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 5,
+            "start": "13:30",
+            "end": "14:30",
+            "batch": {
+              "id": 8,
+              "code": "MSc-DSA-1"
+            },
+            "subject": {
+              "id": 83,
+              "code": "DS5B-501",
+              "name": "Linear Algebra and Advance Calculus",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 8,
+              "code": "AJ",
+              "name": "Dr. Anupam Jain"
+            },
+            "space": {
+              "id": 8,
+              "code": "B010",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 7,
+          "status": "busy",
+          "entry": {
+            "key": "205-2026-10-28",
+            "session_id": 205,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 6,
+            "start": "14:30",
+            "end": "15:30",
+            "batch": {
+              "id": 8,
+              "code": "MSc-DSA-1"
+            },
+            "subject": {
+              "id": 87,
+              "code": "DS5B-511",
+              "name": "Advanced Excel",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 16,
+              "code": "AS",
+              "name": "Mr. Ayan Shah"
+            },
+            "space": {
+              "id": 8,
+              "code": "B010",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 8,
+          "status": "free",
+          "entry": null,
+          "note": null
+        },
+        {
+          "period": 9,
+          "status": "free",
+          "entry": null,
+          "note": null
+        },
+        {
+          "period": 10,
+          "status": "free",
+          "entry": null,
+          "note": null
+        }
+      ]
+    },
+    {
+      "space": {
+        "id": 9,
+        "code": "A-203",
+        "name": "Room A-203",
+        "kind": "room",
+        "capacity": null,
+        "floor": null
+      },
+      "slots": [
+        {
+          "period": 1,
+          "status": "free",
+          "entry": null,
+          "note": null
+        },
+        {
+          "period": 2,
+          "status": "busy",
+          "entry": {
+            "key": "223-2026-10-28",
+            "session_id": 223,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 2,
+            "start": "10:00",
+            "end": "11:00",
+            "batch": {
+              "id": 9,
+              "code": "MSc-DSA-3"
+            },
+            "subject": {
+              "id": 96,
+              "code": "DS5B-601",
+              "name": "Deep Learning",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 3,
+              "code": "AB",
+              "name": "Ms. Alfia Bagwala"
+            },
+            "space": {
+              "id": 9,
+              "code": "A-203",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 3,
+          "status": "busy",
+          "entry": {
+            "key": "224-2026-10-28",
+            "session_id": 224,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 3,
+            "start": "11:30",
+            "end": "12:30",
+            "batch": {
+              "id": 9,
+              "code": "MSc-DSA-3"
+            },
+            "subject": {
+              "id": 97,
+              "code": "DS5B-603",
+              "name": "Forecasting methods",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 32,
+              "code": "MM",
+              "name": "Manisha Malviya"
+            },
+            "space": {
+              "id": 9,
+              "code": "A-203",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 4,
+          "status": "busy",
+          "entry": {
+            "key": "224-2026-10-28",
+            "session_id": 224,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 3,
+            "start": "11:30",
+            "end": "12:30",
+            "batch": {
+              "id": 9,
+              "code": "MSc-DSA-3"
+            },
+            "subject": {
+              "id": 97,
+              "code": "DS5B-603",
+              "name": "Forecasting methods",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 32,
+              "code": "MM",
+              "name": "Manisha Malviya"
+            },
+            "space": {
+              "id": 9,
+              "code": "A-203",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 5,
+          "status": "busy",
+          "entry": {
+            "key": "225-2026-10-28",
+            "session_id": 225,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 5,
+            "start": "13:30",
+            "end": "14:30",
+            "batch": {
+              "id": 9,
+              "code": "MSc-DSA-3"
+            },
+            "subject": {
+              "id": 100,
+              "code": "DS5B-621",
+              "name": "Social Media Analytics",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 20,
+              "code": "GA",
+              "name": "Ms. Garima Agrawal"
+            },
+            "space": {
+              "id": 9,
+              "code": "A-203",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 6,
+          "status": "busy",
+          "entry": {
+            "key": "225-2026-10-28",
+            "session_id": 225,
+            "date": "2026-10-28",
+            "day": "Wed",
+            "period": 5,
+            "start": "13:30",
+            "end": "14:30",
+            "batch": {
+              "id": 9,
+              "code": "MSc-DSA-3"
+            },
+            "subject": {
+              "id": 100,
+              "code": "DS5B-621",
+              "name": "Social Media Analytics",
+              "kind": "theory"
+            },
+            "faculty": {
+              "id": 20,
+              "code": "GA",
+              "name": "Ms. Garima Agrawal"
+            },
+            "space": {
+              "id": 9,
+              "code": "A-203",
+              "kind": "room"
+            },
+            "status": "scheduled",
+            "reason": null,
+            "proposal_id": null,
+            "moved_to": null,
+            "moved_from": null,
+            "elective_group": null
+          },
+          "note": null
+        },
+        {
+          "period": 7,
+          "status": "free",
+          "entry": null,
+          "note": null
+        },
+        {
+          "period": 8,
+          "status": "free",
+          "entry": null,
+          "note": null
+        },
+        {
+          "period": 9,
+          "status": "free",
+          "entry": null,
+          "note": null
+        },
+        {
+          "period": 10,
           "status": "free",
           "entry": null,
           "note": null

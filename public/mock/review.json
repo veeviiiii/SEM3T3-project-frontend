@@ -1,0 +1,204 @@
+[
+  {
+    "batch": null,
+    "text": "Ms. Ritika Verma: Written 'Ms. Rtika Verma' on the MBA 1st-semester sheet."
+  },
+  {
+    "batch": null,
+    "text": "Mr. Kapil Sharma: Written 'kapil Sharma' on the AI&DS 1st-semester sheet."
+  },
+  {
+    "batch": null,
+    "text": "Ms. Priya Kushwaha: Written 'Ms. Priya kushwah' on the AI&DS 1st-semester sheet and 'Ms. Priya Kushwaha' on the MBA sheet (same phone number on both), so taken as one teacher."
+  },
+  {
+    "batch": null,
+    "text": "Ms. Riya Sadawani: Written 'Ms. Riya Sadawani' (MBA 1st semester) and 'MS. Riya Sadawana' (M.Sc. 1st semester). Taken as one teacher: please confirm."
+  },
+  {
+    "batch": null,
+    "text": "Dr. Abhilasha Bhagwat: 'Dr. Abhilasha Bhagwat' in the course list and 'Mrs. Abhilasha Bhagwat' as class teacher."
+  },
+  {
+    "batch": {
+      "id": 1,
+      "code": "AI&DS-1"
+    },
+    "text": "The 11:00-11:30 and 1:30-2:00 columns are empty and have no label on the sheet; they are shown as breaks."
+  },
+  {
+    "batch": {
+      "id": 1,
+      "code": "AI&DS-1"
+    },
+    "text": "The 'Elective Generic' section is empty on the sheet."
+  },
+  {
+    "batch": {
+      "id": 2,
+      "code": "AI&DS-3"
+    },
+    "text": "The 'Elective Courses (Any One)' section is empty on the sheet."
+  },
+  {
+    "batch": {
+      "id": 3,
+      "code": "AI&DS-5"
+    },
+    "text": "Course title 'Datamining and Data ware' looks cut off on the sheet; kept as printed."
+  },
+  {
+    "batch": {
+      "id": 3,
+      "code": "AI&DS-5"
+    },
+    "text": "The Comprehensive Viva-Voce code is printed as DS6A-252."
+  },
+  {
+    "batch": {
+      "id": 3,
+      "code": "AI&DS-5"
+    },
+    "text": "DS6A-303 Data Engineering is 4 (3-1-2) but the grid has 5 hours of it."
+  },
+  {
+    "batch": {
+      "id": 4,
+      "code": "AI&DS-7"
+    },
+    "text": "Room number: printed 'A-20' with the last digit written over by hand; it could be A-201, A-202 or A-204. Shown as 'A-20?' until checked. (If it is A-201, it clashes with AI&DS 1st semester.)"
+  },
+  {
+    "batch": {
+      "id": 4,
+      "code": "AI&DS-7"
+    },
+    "text": "The course list gives Data Visualization's teacher as 'SP : Ms. Khushi Patidar', but the grid uses KP."
+  },
+  {
+    "batch": {
+      "id": 4,
+      "code": "AI&DS-7"
+    },
+    "text": "Two more columns at the right of the grid are empty and have no time."
+  },
+  {
+    "batch": {
+      "id": 5,
+      "code": "AI&DS-9"
+    },
+    "text": "DS6A-511 Project report writing has no teacher on the sheet."
+  },
+  {
+    "batch": {
+      "id": 5,
+      "code": "AI&DS-9"
+    },
+    "text": "There is no column for 1:00-1:30 on the sheet (the day jumps from 12:00-1:00 to 1:30-2:30)."
+  },
+  {
+    "batch": {
+      "id": 6,
+      "code": "MBA-BA-1"
+    },
+    "text": "Room number: the printed room is crossed out and '102' is written by hand (no building letter)."
+  },
+  {
+    "batch": {
+      "id": 6,
+      "code": "MBA-BA-1"
+    },
+    "text": "The 1:00-1:30 column header is crossed out by hand; the column is empty, so it is shown as a break."
+  },
+  {
+    "batch": {
+      "id": 6,
+      "code": "MBA-BA-1"
+    },
+    "text": "Course codes are read as 'DS5A-...' (the third character looks like a 5, not an S)."
+  },
+  {
+    "batch": {
+      "id": 7,
+      "code": "MBA-BA-3"
+    },
+    "text": "Room number: '003' is written by hand and the rest is crossed out."
+  },
+  {
+    "batch": {
+      "id": 7,
+      "code": "MBA-BA-3"
+    },
+    "text": "The grid writes Forecasting methods as 'DS5B-601', but the course list says DS5A-601."
+  },
+  {
+    "batch": {
+      "id": 7,
+      "code": "MBA-BA-3"
+    },
+    "text": "'Reseacrh Methodology' is spelled as printed on the sheet."
+  },
+  {
+    "batch": {
+      "id": 7,
+      "code": "MBA-BA-3"
+    },
+    "text": "DS5A-641 Deep Learning has no teacher and is shaded on the sheet."
+  },
+  {
+    "batch": {
+      "id": 8,
+      "code": "MSc-DSA-1"
+    },
+    "text": "Friday 9-11 is written 'DS5B523:RS-L'; the '-L' is taken to mean the lab part of DS5B-523."
+  },
+  {
+    "batch": {
+      "id": 8,
+      "code": "MSc-DSA-1"
+    },
+    "text": "Elective DS5B-521 Communication Skills has no teacher on the sheet."
+  },
+  {
+    "batch": {
+      "id": 8,
+      "code": "MSc-DSA-1"
+    },
+    "text": "The teacher of DS5B-523 is written 'MS. Riya Sadawana' here and 'Ms. Riya Sadawani' on the MBA sheet."
+  },
+  {
+    "batch": {
+      "id": 10,
+      "code": "Exec-DS-1"
+    },
+    "text": "No room is given on the sheet."
+  },
+  {
+    "batch": {
+      "id": 10,
+      "code": "Exec-DS-1"
+    },
+    "text": "The third column is headed '10:00-12:00'; it sits between 10:00-11:00 and 12:00-1:00, so it is taken as 11:00-12:00."
+  },
+  {
+    "batch": {
+      "id": 10,
+      "code": "Exec-DS-1"
+    },
+    "text": "The initials KS and SK are not spelled out on the sheet; they match Mr. Kapil Sharma (DS7E-705) and Dr. Sunita Khurana (DS7E-701) in the course list."
+  },
+  {
+    "batch": {
+      "id": 11,
+      "code": "Exec-DS-3"
+    },
+    "text": "No room is given on the sheet."
+  },
+  {
+    "batch": {
+      "id": 11,
+      "code": "Exec-DS-3"
+    },
+    "text": "Here 'AB' means Dr. Abhilasha Bhagwat (on other sheets AB is Ms. Alfia Bagwala)."
+  }
+]

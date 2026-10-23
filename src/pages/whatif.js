@@ -1,10 +1,11 @@
 // What-if page (HOD): a stack of pretend changes, simulated on the server without saving anything.
 import { createUnavailability, getCalendar, listBatches, listFaculty, listSpaces, runWhatIf } from '../api.js';
 import { renderHeader, requireLogin } from '../lib/layout.js';
-import { $, escapeHtml, formatDate, renderEmpty, renderError, renderLoading, showToast } from '../lib/ui.js';
+import { $, escapeHtml, formatDate, roomCode, renderEmpty, renderError, renderLoading, showToast } from '../lib/ui.js';
 
 const user = requireLogin(['hod']);
 let lists = { faculty: [], spaces: [], batches: [] };
+let hours = []; // the hours of the day, for "only some periods"
 const changes = []; // a stack: the last one is the newest; "Undo last" pops it
 
 if (user) {
@@ -21,8 +22,9 @@ async function start() {
       $(`#${id}`).value = cal.today;
       $(`#${id}`).min = cal.today;
     }
+    hours = cal.periods;
     $('#periods').innerHTML = cal.periods
-      .map((p) => `<label class="rounded-lg border border-slate-200 px-2 py-1 text-xs"><input type="checkbox" class="accent-blue-400" value="${p.period}" /> P${p.period} ${p.start}</label>`)
+      .map((p) => `<label class="rounded-lg border border-slate-200 px-2 py-1 text-xs"><input type="checkbox" class="accent-blue-400" value="${p.period}" /> ${p.start}-${p.end}</label>`)
       .join('');
     fillTargets();
   } catch (err) {
@@ -93,7 +95,7 @@ function renderChanges() {
         .map((c, i) => {
           const when = c.start_date === c.end_date ? formatDate(c.start_date) : `${formatDate(c.start_date)} to ${formatDate(c.end_date)}`;
           const what = { faculty_leave: 'on leave', room_closure: 'closed', batch_event: 'away' }[c.kind];
-          return `<li class="rounded-lg bg-blue-50 px-3 py-2 text-blue-950"><b>${i + 1}.</b> ${escapeHtml(targetLabel(c))} ${what}, ${escapeHtml(when)}${c.periods ? ` (P${c.periods.join(', P')})` : ''}</li>`;
+          return `<li class="rounded-lg bg-blue-50 px-3 py-2 text-blue-950"><b>${i + 1}.</b> ${escapeHtml(targetLabel(c))} ${what}, ${escapeHtml(when)}${c.periods ? ` (${escapeHtml(c.periods.map((h) => hours.find((p) => p.period === h)?.start).join(', '))})` : ''}</li>`;
         })
         .join('')
     : '<li class="text-slate-500">No changes yet.</li>';
@@ -140,7 +142,7 @@ function renderResult(r) {
         <td class="py-2 pr-3">${escapeHtml(item.original.subject.name)} <span class="text-slate-500">· ${escapeHtml(item.original.batch.code)}</span></td>
         <td class="py-2 pr-3">${escapeHtml(formatDate(item.original.date))} ${item.original.start}</td>
         <td class="py-2 pr-3">${o
-          ? `<span class="font-medium text-green-700">${escapeHtml(formatDate(o.date))} ${o.start}, ${escapeHtml(o.space.code)}</span>${o.warnings.length ? ` <span class="text-xs text-orange-700">(${escapeHtml(o.warnings.join(', '))})</span>` : ''}`
+          ? `<span class="font-medium text-green-700">${escapeHtml(formatDate(o.date))} ${o.start}, ${escapeHtml(roomCode(o.space))}</span>${o.warnings.length ? ` <span class="text-xs text-orange-700">(${escapeHtml(o.warnings.join(', '))})</span>` : ''}`
           : '<span class="font-medium text-red-700">No free slot: the HOD decides</span>'}</td>
         <td class="py-2 text-right">${o ? o.score : '-'}</td>
       </tr>`;

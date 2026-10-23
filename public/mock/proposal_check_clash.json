@@ -2,16 +2,16 @@
   "ok": false,
   "clashes": [
     {
-      "resource": "faculty",
-      "message": "Ms. Ritika Verma is not free in this slot"
+      "resource": "batch",
+      "message": "AI&DS-3 already has DS6A-201 at 09:00-10:00"
     },
     {
-      "resource": "batch",
-      "message": "AI&DS-3 already has DS6A-201 in this slot"
+      "resource": "faculty",
+      "message": "Ms. Ritika Verma is teaching DS6A-201 to AI&DS-3 at 09:00-10:00"
     },
     {
       "resource": "space",
-      "message": "B-002 is used by AI&DS-3 in this slot"
+      "message": "B-002 is used by AI&DS-3 (DS6A-201) at 09:00-10:00"
     }
   ],
   "score": null,

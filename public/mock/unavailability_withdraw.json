@@ -18,24 +18,25 @@
       "role": "faculty"
     },
     "created_at": "2026-10-28T09:12:00+05:30",
+    "withdrawn_at": "2026-10-28T10:31:00+05:30",
     "affected_count": 0,
     "pending_count": 0
   },
   "restored": [
     {
-      "key": "116-2026-10-29",
-      "session_id": 116,
+      "key": "43-2026-10-29",
+      "session_id": 43,
       "date": "2026-10-29",
       "day": "Thu",
       "period": 1,
       "start": "09:00",
       "end": "10:00",
       "batch": {
-        "id": 1,
+        "id": 2,
         "code": "AI&DS-3"
       },
       "subject": {
-        "id": 1,
+        "id": 12,
         "code": "DS6A-201",
         "name": "Design and Analysis of Algorithm",
         "kind": "theory"
@@ -46,7 +47,7 @@
         "name": "Ms. Ritika Verma"
       },
       "space": {
-        "id": 1,
+        "id": 2,
         "code": "B-002",
         "kind": "room"
       },
@@ -54,22 +55,23 @@
       "reason": null,
       "proposal_id": null,
       "moved_to": null,
-      "moved_from": null
+      "moved_from": null,
+      "elective_group": null
     },
     {
-      "key": "117-2026-10-29",
-      "session_id": 117,
+      "key": "44-2026-10-29",
+      "session_id": 44,
       "date": "2026-10-29",
       "day": "Thu",
       "period": 2,
       "start": "10:00",
       "end": "11:00",
       "batch": {
-        "id": 1,
+        "id": 2,
         "code": "AI&DS-3"
       },
       "subject": {
-        "id": 7,
+        "id": 20,
         "code": "DS6A-201 (Lab)",
         "name": "Design and Analysis of Algorithm (Lab)",
         "kind": "lab"
@@ -80,7 +82,7 @@
         "name": "Ms. Ritika Verma"
       },
       "space": {
-        "id": 1,
+        "id": 2,
         "code": "B-002",
         "kind": "room"
       },
@@ -88,22 +90,23 @@
       "reason": null,
       "proposal_id": null,
       "moved_to": null,
-      "moved_from": null
+      "moved_from": null,
+      "elective_group": null
     },
     {
-      "key": "118-2026-10-29",
-      "session_id": 118,
+      "key": "45-2026-10-29",
+      "session_id": 45,
       "date": "2026-10-29",
       "day": "Thu",
       "period": 3,
       "start": "11:00",
       "end": "12:00",
       "batch": {
-        "id": 1,
+        "id": 2,
         "code": "AI&DS-3"
       },
       "subject": {
-        "id": 7,
+        "id": 20,
         "code": "DS6A-201 (Lab)",
         "name": "Design and Analysis of Algorithm (Lab)",
         "kind": "lab"
@@ -114,7 +117,7 @@
         "name": "Ms. Ritika Verma"
       },
       "space": {
-        "id": 1,
+        "id": 2,
         "code": "B-002",
         "kind": "room"
       },
@@ -122,7 +125,8 @@
       "reason": null,
       "proposal_id": null,
       "moved_to": null,
-      "moved_from": null
+      "moved_from": null,
+      "elective_group": null
     }
   ]
 }

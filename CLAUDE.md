@@ -81,7 +81,8 @@ Repo: https://github.com/veeviiiii/SEM3T3-project-frontend (public). Reviewer: V
 | `timetable.html`, `rooms.html`, `reports.html`, `whatif.html`, `settings.html` + matching `src/pages/*.js` | Done by Vedant | Do not touch |
 | `src/lib/layout.js` | **To finish** | Search box + notifications (see §4.1) |
 | `src/api.js` | Read-only | Never edit |
-| `public/mock/` (35 files) | Read-only | Never edit |
+| `public/mock/timetables.json`, `public/mock/demo.json` | Source data | The department's timetables (typed in from the signed sheets) and the demo story. Other `public/mock/*.json` files are examples written by `npm run mock:snapshot` |
+| `src/mock/engine.js` | Demo server | In mock mode `api.js` asks this instead of the backend |
 | `src/lib/ui.js`, `src/lib/timetable-grid.js`, `src/styles.css` | Use | Shared helpers and classes |
 | `vite.config.js` | Edit only to add pages | Every new page = `.html` + `src/pages/<name>.js` + entry here |
 
@@ -322,7 +323,7 @@ const result = await createUnavailability({
 
 Roles: `['hod']`
 
-**A. Header:** a greeting using `user.name` (e.g. "Good morning, Govind") as `page-title`, with the primary action top-right (see D).
+**A. Header:** a greeting using `user.name` (e.g. "Good morning, Dr. Maheshwari") as `page-title`, with the primary action top-right (see D).
 
 **B. Stat cards** (4 cards) from `getAnalyticsSummary()`:
 
@@ -354,8 +355,8 @@ Roles: `['hod']`
 - Data: `listActivity({ limit: 5 })` (the 5 newest rows).
 - Include a link to `reports.html`.
 
-**Acceptance** (as Govind Maheswari)
-- [ ] The cards show `25 / 3 / 1 / 1`.
+**Acceptance** (as Dr. Govind Maheshwari)
+- [ ] The cards show `260 / 3 / 1 / 1`, with a red line about the 8 timetable clashes under them.
 - [ ] 3 pending classes are listed, each with its suggestion.
 - [ ] A student or faculty user opening `hod.html` is redirected (already handled by `requireLogin`).
 
@@ -449,17 +450,24 @@ Call the **function**. The HTTP route is listed for reference only and must neve
 
 | Role | Email | Use for |
 |---|---|---|
-| HOD | `govind.maheswari@example.com` | Dashboard, Approvals, Reports |
+| HOD | `govind.maheshwari@example.com` | Dashboard, Approvals, Reports |
 | Faculty | `ritika.verma@example.com` | My week, Mark leave (on leave Thursday) |
 | Student | `riya.patel@example.com` | My timetable (three Thursday classes waiting for a new time) |
 
-**Mock data**: the real M.Tech. (Dual Degree) AI&DS 3rd-semester timetable (DAVV, room B-002, Mon-Fri, 6 periods,
-break 12:00-13:00). Demo story on top of it: Simran Prajapati on leave Tue 27 Oct (one class moved, one kept cancelled),
-Ms. Ritika Verma on leave Thu 29 Oct (3 classes waiting for the HOD).
+**Mock data**: every timetable from the School of Data Science and Forecasting's signed sheets (w.e.f. 20 Jul 2026),
+in `public/mock/timetables.json`: 11 batches (M.Tech. (Dual Degree) AI&DS semesters 1, 3, 5, 7, 9; MBA (Business Analytics)
+1, 3; M.Sc. (Data Science & Analytics) 1, 3; Executive M.Tech. (Data Science) 1, 3), 36 teachers, 9 rooms, 260 classes a week.
+Each batch keeps the time slots of its own sheet, so clashes are found by overlapping times. Anything unclear on a sheet is
+listed in the batch's `review` notes (shown on the Timetables page) instead of being guessed.
+Demo story on top of it (`public/mock/demo.json`): Simran Prajapati on leave Tue 27 Oct (one class moved, one kept
+cancelled), Ms. Ritika Verma on leave Thu 29 Oct (3 classes waiting for the HOD).
 
-**Mock behaviour**
+**Mock behaviour** (`src/mock/engine.js`)
 - 250 ms artificial latency on every call.
-- Timetable data exists only for the week starting `2026-10-26`; other weeks return empty, and the page must render the empty state.
-- Room availability exists only for Thu 29 Oct and is returned for any date.
-- Mutations are not persisted; a reload resets state.
-- `createUnavailability` always returns the Ms. Ritika Verma example.
+- Every week from 20 Jul 2026 has classes; earlier weeks are empty, and the page must render the empty state.
+- Room availability is worked out for any date and hour.
+- Leave, closures, decisions, settings and read notifications are saved in the browser (localStorage) and survive a
+  reload; Settings > "Reset demo data" goes back to the start.
+- `createUnavailability` really finds the affected classes (in every batch) and ranks free slots for each.
+- After changing `timetables.json` or `demo.json`, run `npm run mock:snapshot` to rewrite the example JSON files and
+  `public/sample_timetable.csv`.

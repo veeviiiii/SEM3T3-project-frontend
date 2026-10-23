@@ -2,7 +2,49 @@
   {
     "type": "faculty",
     "id": 7,
-    "label": "Govind Maheswari",
+    "label": "Dr. Govind Maheshwari",
     "sublabel": "Head of Department"
+  },
+  {
+    "type": "faculty",
+    "id": 14,
+    "label": "Mr. Animesh Masih",
+    "sublabel": "Faculty"
+  },
+  {
+    "type": "faculty",
+    "id": 17,
+    "label": "Dr. Priyanka Malviya",
+    "sublabel": "Class teacher, MSc-DSA-1"
+  },
+  {
+    "type": "faculty",
+    "id": 32,
+    "label": "Manisha Malviya",
+    "sublabel": "Faculty"
+  },
+  {
+    "type": "subject",
+    "id": 1,
+    "label": "Mathematics-I",
+    "sublabel": "DS6A-101 · AI&DS-1"
+  },
+  {
+    "type": "subject",
+    "id": 37,
+    "label": "Machine Learning Using Python",
+    "sublabel": "DS6A-406 · AI&DS-7"
+  },
+  {
+    "type": "subject",
+    "id": 42,
+    "label": "Machine Learning Using Python (Lab)",
+    "sublabel": "DS6A-406 (Lab) · AI&DS-7"
+  },
+  {
+    "type": "subject",
+    "id": 56,
+    "label": "Principles of Management",
+    "sublabel": "DS5A-501 · MBA-BA-1"
   }
 ]

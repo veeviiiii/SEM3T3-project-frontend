@@ -329,7 +329,7 @@ async function openResult(button, result) {
   try {
     const [subjects, batches] = await Promise.all([listSubjects(), listBatches()]);
     const subject = subjects.find((s) => s.id === result.id);
-    const batch = batches.find((b) => b.semester === subject?.semester);
+    const batch = batches.find((b) => b.id === subject?.batch_id) ?? batches.find((b) => b.semester === subject?.semester);
     if (!batch) {
       button.disabled = false;
       showToast('No batch studies this subject yet.', 'error');

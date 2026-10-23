@@ -62,7 +62,7 @@
     {
       "faculty": {
         "id": 2,
-        "code": "SP",
+        "code": "SPR",
         "name": "Simran Prajapati"
       },
       "leaves": 1,
@@ -73,164 +73,514 @@
     {
       "space": {
         "id": 1,
+        "code": "A-201",
+        "kind": "room"
+      },
+      "used": 27,
+      "total": 48,
+      "pct": 56.3
+    },
+    {
+      "space": {
+        "id": 2,
         "code": "B-002",
         "kind": "room"
       },
-      "used": 25,
-      "total": 30,
-      "pct": 83.3
+      "used": 21,
+      "total": 48,
+      "pct": 43.8
+    },
+    {
+      "space": {
+        "id": 3,
+        "code": "B-003",
+        "kind": "room"
+      },
+      "used": 28,
+      "total": 48,
+      "pct": 58.3
+    },
+    {
+      "space": {
+        "id": 4,
+        "code": "A-20?",
+        "kind": "room"
+      },
+      "used": 23,
+      "total": 48,
+      "pct": 47.9
+    },
+    {
+      "space": {
+        "id": 5,
+        "code": "B-006",
+        "kind": "room"
+      },
+      "used": 24,
+      "total": 48,
+      "pct": 50
+    },
+    {
+      "space": {
+        "id": 6,
+        "code": "102",
+        "kind": "room"
+      },
+      "used": 37,
+      "total": 48,
+      "pct": 77.1
+    },
+    {
+      "space": {
+        "id": 7,
+        "code": "003",
+        "kind": "room"
+      },
+      "used": 24,
+      "total": 48,
+      "pct": 50
+    },
+    {
+      "space": {
+        "id": 8,
+        "code": "B010",
+        "kind": "room"
+      },
+      "used": 26,
+      "total": 48,
+      "pct": 54.2
+    },
+    {
+      "space": {
+        "id": 9,
+        "code": "A-203",
+        "kind": "room"
+      },
+      "used": 15,
+      "total": 48,
+      "pct": 31.3
     }
   ],
   "heatmap": [
     {
       "day": "Mon",
       "period": 1,
-      "classes": 1
+      "start": "09:00",
+      "classes": 8
     },
     {
       "day": "Mon",
       "period": 2,
-      "classes": 1
+      "start": "10:00",
+      "classes": 7
     },
     {
       "day": "Mon",
       "period": 3,
-      "classes": 1
+      "start": "11:00",
+      "classes": 8
     },
     {
       "day": "Mon",
       "period": 4,
-      "classes": 1
+      "start": "12:00",
+      "classes": 12
     },
     {
       "day": "Mon",
       "period": 5,
-      "classes": 1
+      "start": "13:00",
+      "classes": 13
     },
     {
       "day": "Mon",
       "period": 6,
+      "start": "14:00",
+      "classes": 12
+    },
+    {
+      "day": "Mon",
+      "period": 7,
+      "start": "15:00",
+      "classes": 6
+    },
+    {
+      "day": "Mon",
+      "period": 8,
+      "start": "16:00",
+      "classes": 2
+    },
+    {
+      "day": "Mon",
+      "period": 9,
+      "start": "17:00",
       "classes": 1
+    },
+    {
+      "day": "Mon",
+      "period": 10,
+      "start": "18:00",
+      "classes": 0
     },
     {
       "day": "Tue",
       "period": 1,
-      "classes": 1
+      "start": "09:00",
+      "classes": 8
     },
     {
       "day": "Tue",
       "period": 2,
-      "classes": 1
+      "start": "10:00",
+      "classes": 9
     },
     {
       "day": "Tue",
       "period": 3,
-      "classes": 1
+      "start": "11:00",
+      "classes": 6
     },
     {
       "day": "Tue",
       "period": 4,
-      "classes": 1
+      "start": "12:00",
+      "classes": 13
     },
     {
       "day": "Tue",
       "period": 5,
-      "classes": 1
+      "start": "13:00",
+      "classes": 14
     },
     {
       "day": "Tue",
       "period": 6,
+      "start": "14:00",
+      "classes": 11
+    },
+    {
+      "day": "Tue",
+      "period": 7,
+      "start": "15:00",
+      "classes": 8
+    },
+    {
+      "day": "Tue",
+      "period": 8,
+      "start": "16:00",
+      "classes": 3
+    },
+    {
+      "day": "Tue",
+      "period": 9,
+      "start": "17:00",
+      "classes": 0
+    },
+    {
+      "day": "Tue",
+      "period": 10,
+      "start": "18:00",
       "classes": 0
     },
     {
       "day": "Wed",
       "period": 1,
-      "classes": 1
+      "start": "09:00",
+      "classes": 5
     },
     {
       "day": "Wed",
       "period": 2,
-      "classes": 0
+      "start": "10:00",
+      "classes": 9
     },
     {
       "day": "Wed",
       "period": 3,
-      "classes": 1
+      "start": "11:00",
+      "classes": 9
     },
     {
       "day": "Wed",
       "period": 4,
-      "classes": 1
+      "start": "12:00",
+      "classes": 13
     },
     {
       "day": "Wed",
       "period": 5,
-      "classes": 1
+      "start": "13:00",
+      "classes": 11
     },
     {
       "day": "Wed",
       "period": 6,
+      "start": "14:00",
+      "classes": 11
+    },
+    {
+      "day": "Wed",
+      "period": 7,
+      "start": "15:00",
+      "classes": 8
+    },
+    {
+      "day": "Wed",
+      "period": 8,
+      "start": "16:00",
+      "classes": 3
+    },
+    {
+      "day": "Wed",
+      "period": 9,
+      "start": "17:00",
+      "classes": 0
+    },
+    {
+      "day": "Wed",
+      "period": 10,
+      "start": "18:00",
       "classes": 0
     },
     {
       "day": "Thu",
       "period": 1,
-      "classes": 1
+      "start": "09:00",
+      "classes": 5
     },
     {
       "day": "Thu",
       "period": 2,
-      "classes": 1
+      "start": "10:00",
+      "classes": 7
     },
     {
       "day": "Thu",
       "period": 3,
-      "classes": 1
+      "start": "11:00",
+      "classes": 7
     },
     {
       "day": "Thu",
       "period": 4,
-      "classes": 1
+      "start": "12:00",
+      "classes": 10
     },
     {
       "day": "Thu",
       "period": 5,
-      "classes": 1
+      "start": "13:00",
+      "classes": 9
     },
     {
       "day": "Thu",
       "period": 6,
+      "start": "14:00",
+      "classes": 9
+    },
+    {
+      "day": "Thu",
+      "period": 7,
+      "start": "15:00",
+      "classes": 7
+    },
+    {
+      "day": "Thu",
+      "period": 8,
+      "start": "16:00",
+      "classes": 2
+    },
+    {
+      "day": "Thu",
+      "period": 9,
+      "start": "17:00",
+      "classes": 0
+    },
+    {
+      "day": "Thu",
+      "period": 10,
+      "start": "18:00",
       "classes": 0
     },
     {
       "day": "Fri",
       "period": 1,
-      "classes": 1
+      "start": "09:00",
+      "classes": 7
     },
     {
       "day": "Fri",
       "period": 2,
-      "classes": 1
+      "start": "10:00",
+      "classes": 8
     },
     {
       "day": "Fri",
       "period": 3,
-      "classes": 1
+      "start": "11:00",
+      "classes": 7
     },
     {
       "day": "Fri",
       "period": 4,
-      "classes": 1
+      "start": "12:00",
+      "classes": 9
     },
     {
       "day": "Fri",
       "period": 5,
-      "classes": 1
+      "start": "13:00",
+      "classes": 9
     },
     {
       "day": "Fri",
       "period": 6,
+      "start": "14:00",
+      "classes": 11
+    },
+    {
+      "day": "Fri",
+      "period": 7,
+      "start": "15:00",
+      "classes": 7
+    },
+    {
+      "day": "Fri",
+      "period": 8,
+      "start": "16:00",
+      "classes": 1
+    },
+    {
+      "day": "Fri",
+      "period": 9,
+      "start": "17:00",
       "classes": 0
+    },
+    {
+      "day": "Fri",
+      "period": 10,
+      "start": "18:00",
+      "classes": 0
+    },
+    {
+      "day": "Sat",
+      "period": 1,
+      "start": "09:00",
+      "classes": 1
+    },
+    {
+      "day": "Sat",
+      "period": 2,
+      "start": "10:00",
+      "classes": 1
+    },
+    {
+      "day": "Sat",
+      "period": 3,
+      "start": "11:00",
+      "classes": 2
+    },
+    {
+      "day": "Sat",
+      "period": 4,
+      "start": "12:00",
+      "classes": 2
+    },
+    {
+      "day": "Sat",
+      "period": 5,
+      "start": "13:00",
+      "classes": 2
+    },
+    {
+      "day": "Sat",
+      "period": 6,
+      "start": "14:00",
+      "classes": 2
+    },
+    {
+      "day": "Sat",
+      "period": 7,
+      "start": "15:00",
+      "classes": 3
+    },
+    {
+      "day": "Sat",
+      "period": 8,
+      "start": "16:00",
+      "classes": 4
+    },
+    {
+      "day": "Sat",
+      "period": 9,
+      "start": "17:00",
+      "classes": 4
+    },
+    {
+      "day": "Sat",
+      "period": 10,
+      "start": "18:00",
+      "classes": 2
+    },
+    {
+      "day": "Sun",
+      "period": 1,
+      "start": "09:00",
+      "classes": 1
+    },
+    {
+      "day": "Sun",
+      "period": 2,
+      "start": "10:00",
+      "classes": 1
+    },
+    {
+      "day": "Sun",
+      "period": 3,
+      "start": "11:00",
+      "classes": 2
+    },
+    {
+      "day": "Sun",
+      "period": 4,
+      "start": "12:00",
+      "classes": 2
+    },
+    {
+      "day": "Sun",
+      "period": 5,
+      "start": "13:00",
+      "classes": 2
+    },
+    {
+      "day": "Sun",
+      "period": 6,
+      "start": "14:00",
+      "classes": 2
+    },
+    {
+      "day": "Sun",
+      "period": 7,
+      "start": "15:00",
+      "classes": 3
+    },
+    {
+      "day": "Sun",
+      "period": 8,
+      "start": "16:00",
+      "classes": 4
+    },
+    {
+      "day": "Sun",
+      "period": 9,
+      "start": "17:00",
+      "classes": 3
+    },
+    {
+      "day": "Sun",
+      "period": 10,
+      "start": "18:00",
+      "classes": 1
     }
   ]
 }

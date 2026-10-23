@@ -1,0 +1,39 @@
+{
+  "about": "The demo's starting story, played on top of timetables.json every time the app loads. 'now' is the moment the demo pretends it is. What people do in the demo is added after these events (saved in the browser) until 'Reset demo data' on the Settings page.",
+  "now": "2026-10-28T10:30:00+05:30",
+  "current_week_start": "2026-10-26",
+  "students": [{ "id": 15, "name": "Riya Patel", "email": "riya.patel@example.com", "batch": "AI&DS-3" }],
+  "events": [
+    {
+      "type": "unavailability",
+      "at": "2026-10-25T18:40:00+05:30",
+      "by": "Simran Prajapati",
+      "kind": "faculty_leave",
+      "target": "Simran Prajapati",
+      "start_date": "2026-10-27",
+      "end_date": "2026-10-27",
+      "periods": null,
+      "reason": "Personal work"
+    },
+    { "type": "decision", "at": "2026-10-26T08:05:00+05:30", "by": "Dr. Govind Maheshwari", "proposal": 1, "action": "approved", "option_rank": 1 },
+    {
+      "type": "decision",
+      "at": "2026-10-26T08:07:00+05:30",
+      "by": "Dr. Govind Maheshwari",
+      "proposal": 2,
+      "action": "rejected",
+      "note": "The topic will be covered in the next class."
+    },
+    {
+      "type": "unavailability",
+      "at": "2026-10-28T09:12:00+05:30",
+      "by": "Ms. Ritika Verma",
+      "kind": "faculty_leave",
+      "target": "Ms. Ritika Verma",
+      "start_date": "2026-10-29",
+      "end_date": "2026-10-29",
+      "periods": null,
+      "reason": "Attending a conference"
+    }
+  ]
+}

@@ -13,9 +13,10 @@ import {
   checkProposalSlot,
   getCalendar,
   listSpaces,
+  listBatches,
 } from '../api.js';
 import { requireLogin, renderHeader } from '../lib/layout.js';
-import { $, escapeHtml, formatDate, initials, renderLoading, renderError, renderEmpty, showToast, prefersReducedMotion } from '../lib/ui.js';
+import { $, escapeHtml, formatDate, initials, roomCode, teacherName, renderLoading, renderError, renderEmpty, showToast, prefersReducedMotion } from '../lib/ui.js';
 
 // What the left list says when a tab has nothing in it.
 const EMPTY = {
@@ -152,7 +153,7 @@ function renderDetail(p) {
         <p class="text-xs font-medium text-slate-500">The class as planned</p>
         <h2 class="text-lg font-semibold text-slate-900">${escapeHtml(o.subject.name)}</h2>
         <p class="text-sm text-slate-600">
-          ${escapeHtml(o.batch.code)} · ${escapeHtml(formatDate(o.date))} ${escapeHtml(o.start)} · ${escapeHtml(o.space.code)} · ${escapeHtml(o.faculty.name)}
+          ${escapeHtml(o.batch.code)} · ${escapeHtml(formatDate(o.date))} ${escapeHtml(o.start)} · ${escapeHtml(roomCode(o.space))} · ${escapeHtml(teacherName(o.faculty))}
         </p>
       </div>
       <span class="inline-flex items-center gap-1.5 rounded-full bg-red-50 px-2.5 py-1 text-xs font-medium text-red-700">
@@ -203,13 +204,13 @@ function renderDetail(p) {
 function optionCard(p, opt) {
   const recommended = opt.rank === p.recommended_rank;
   const score = Math.max(0, Math.min(100, Number(opt.score) || 0));
-  const where = `${formatDate(opt.date)} ${opt.start}, ${opt.space.code}`;
+  const where = `${formatDate(opt.date)} ${opt.start}, ${roomCode(opt.space)}`;
   return `
     <li class="option-card lift flex flex-col rounded-xl border bg-white p-4 ${recommended ? 'border-blue-300 shadow-[0_0_28px_-10px_var(--color-brand)] ring-2 ring-card-blue dark:shadow-none dark:ring-brand/70' : 'border-slate-200/70'}">
       <div class="flex flex-wrap items-start justify-between gap-2">
         <div>
           <p class="font-medium text-slate-900">${escapeHtml(formatDate(opt.date))} · ${escapeHtml(opt.start)}-${escapeHtml(opt.end)}</p>
-          <p class="text-sm text-slate-500">Period ${escapeHtml(opt.period)} · ${escapeHtml(opt.space.code)}</p>
+          <p class="text-sm text-slate-500">Period ${escapeHtml(opt.period)} · ${escapeHtml(roomCode(opt.space))}</p>
         </div>
         ${recommended ? '<span class="rounded-full bg-brand px-2.5 py-0.5 text-xs font-semibold text-ink">Recommended</span>' : ''}
       </div>
@@ -253,7 +254,7 @@ function decisionCard(p) {
   if (!d) return '';
   const approved = d.action === 'approved';
   const what = approved
-    ? `Moved to ${d.slot ? `${formatDate(d.slot.date)} ${d.slot.start}, ${d.slot.space.code}` : 'a slot picked by hand'}`
+    ? `Moved to ${d.slot ? `${formatDate(d.slot.date)} ${d.slot.start}, ${roomCode(d.slot.space)}` : 'a slot picked by hand'}`
     : 'Kept cancelled';
   return `
     <div class="mt-4 rounded-xl border p-5 ${approved ? 'border-green-200 bg-green-50 text-green-900' : 'border-red-200 bg-red-50 text-red-900'}">
@@ -272,7 +273,7 @@ async function approveOption(button, p, opt) {
   try {
     await approveProposal(p.id, { version: p.version, option_rank: opt.rank });
     showToast(
-      `Approved. ${p.original.subject.code} moved to ${formatDate(opt.date)} ${opt.start} in ${opt.space.code} and ${p.original.batch.code} has been told.`,
+      `Approved. ${p.original.subject.code} moved to ${formatDate(opt.date)} ${opt.start} in ${roomCode(opt.space)} and ${p.original.batch.code} has been told.`,
       'success',
     );
     afterDecision(p.id);
@@ -352,22 +353,24 @@ function toggleCustomSlot(p) {
   if (!isOpen && box.innerHTML === '') loadCustomForm(p);
 }
 
-/** The first time: fetch the periods and rooms. Then draw the little form. */
+/** The first time: fetch the batches (each has its own periods) and the rooms. Then draw the little form. */
 async function loadCustomForm(p) {
   const box = $('#custom-slot');
   renderLoading(box, 'Loading rooms...');
   try {
     if (!slotData) {
-      const [calendar, spaces] = await Promise.all([getCalendar(), listSpaces()]);
-      slotData = { calendar, spaces };
+      const [calendar, spaces, batches] = await Promise.all([getCalendar(), listSpaces(), listBatches()]);
+      slotData = { calendar, spaces, batches };
     }
   } catch (err) {
     renderError(box, err, () => loadCustomForm(p));
     return;
   }
 
+  // The periods are the class's own, from its timetable sheet.
+  const batch = slotData.batches.find((b) => b.id === p.original.batch.id);
   const room = (s) =>
-    `<option value="${escapeHtml(s.id)}" ${s.id === p.original.space.id ? 'selected' : ''}>${escapeHtml(s.code)}${s.capacity ? ` · ${escapeHtml(s.capacity)} seats` : ''}</option>`;
+    `<option value="${escapeHtml(s.id)}" ${s.id === p.original.space?.id ? 'selected' : ''}>${escapeHtml(s.code)}${s.capacity ? ` · ${escapeHtml(s.capacity)} seats` : ''}</option>`;
   // A group of rooms or labs, left out when there are none.
   const group = (label, list) => (list.length ? `<optgroup label="${label}">${list.map(room).join('')}</optgroup>` : '');
   box.innerHTML = `
@@ -380,7 +383,7 @@ async function loadCustomForm(p) {
         <label class="label" for="custom-period">Period</label>
         <select class="input" id="custom-period">
           <option value="">Choose...</option>
-          ${slotData.calendar.periods
+          ${batch.slots
             .map((x) => `<option value="${escapeHtml(x.period)}">P${escapeHtml(x.period)} · ${escapeHtml(x.start)}-${escapeHtml(x.end)}</option>`)
             .join('')}
         </select>
@@ -388,11 +391,13 @@ async function loadCustomForm(p) {
       <div>
         <label class="label" for="custom-room">Room</label>
         <select class="input" id="custom-room">
+          ${p.original.space ? '' : '<option value="none" selected>No room (none on the sheet)</option>'}
           ${group('Rooms', slotData.spaces.filter((s) => s.kind === 'room'))}
           ${group('Labs', slotData.spaces.filter((s) => s.kind === 'lab'))}
         </select>
       </div>
     </form>
+    <p class="mt-2 text-xs text-slate-500">${escapeHtml(batch.code)} has classes on ${escapeHtml(batch.days.join(', '))}.</p>
     <div class="mt-3 text-sm" id="custom-result" aria-live="polite">
       <p class="text-slate-500">Pick a date, period and room to check if the slot is free.</p>
     </div>
@@ -410,7 +415,7 @@ function readCustomSlot() {
   const period = $('#custom-period').value;
   const room = $('#custom-room').value;
   if (!date || !period || !room) return null;
-  return { date, period: Number(period), space_id: Number(room) };
+  return { date, period: Number(period), space_id: room === 'none' ? null : Number(room) };
 }
 
 async function checkCustom(p) {
@@ -444,10 +449,10 @@ async function approveCustom(button, p) {
   button.disabled = true;
   try {
     await approveProposal(p.id, { version: p.version, custom: slot });
-    const period = slotData.calendar.periods.find((x) => x.period === slot.period);
+    const period = slotData.batches.find((b) => b.id === p.original.batch.id).slots.find((x) => x.period === slot.period);
     const room = slotData.spaces.find((s) => s.id === slot.space_id);
     showToast(
-      `Approved. ${p.original.subject.code} moved to ${formatDate(slot.date)} ${period.start} in ${room.code} and ${p.original.batch.code} has been told.`,
+      `Approved. ${p.original.subject.code} moved to ${formatDate(slot.date)} ${period.start} in ${roomCode(room)} and ${p.original.batch.code} has been told.`,
       'success',
     );
     afterDecision(p.id);

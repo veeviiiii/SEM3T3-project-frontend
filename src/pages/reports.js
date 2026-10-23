@@ -167,7 +167,7 @@ function drawCharts({ animate = true } = {}) {
             callbacks: {
               label: (ctx) => {
                 const r = trends.room_utilisation[ctx.dataIndex];
-                return `${r.pct}% (${r.used} of ${r.total} slots)`;
+                return `${r.pct}% (${r.used} of ${r.total} hours, Mon-Sat 9-5)`;
               },
             },
           },
@@ -185,18 +185,20 @@ function drawHeatmap(container, cells) {
   }
   const days = [...new Set(cells.map((c) => c.day))];
   const periods = [...new Set(cells.map((c) => c.period))].sort((a, b) => a - b);
+  // Each column is an hour of the day, labelled with its start ("09:00").
+  const label = new Map(cells.map((c) => [c.period, c.start ?? `P${c.period}`]));
   const max = Math.max(...cells.map((c) => c.classes), 1);
   const lookup = new Map(cells.map((c) => [`${c.day}|${c.period}`, c.classes]));
   const shade = (n) => SHADES[n === 0 ? 0 : Math.ceil((n / max) * (SHADES.length - 1))];
 
   let html = '<div></div>';
-  html += periods.map((p) => `<div class="text-center text-xs font-semibold text-slate-500">P${p}</div>`).join('');
+  html += periods.map((p) => `<div class="text-center text-[10px] font-semibold text-slate-500">${escapeHtml(label.get(p))}</div>`).join('');
   for (const day of days) {
     html += `<div class="flex items-center text-xs font-semibold text-slate-500">${escapeHtml(day)}</div>`;
     for (const p of periods) {
       const n = lookup.get(`${day}|${p}`) ?? 0;
       html += `<div class="heat-cell flex h-9 items-center justify-center rounded-md text-xs font-semibold transition duration-200 hover:z-10 hover:scale-110 hover:shadow-md ${shade(n)}"
-                    title="${escapeHtml(day)} P${p}: ${n} classes" aria-label="${escapeHtml(day)} period ${p}: ${n} classes">${n}</div>`;
+                    title="${escapeHtml(day)} ${escapeHtml(label.get(p))}: ${n} classes" aria-label="${escapeHtml(day)} ${escapeHtml(label.get(p))}: ${n} classes">${n}</div>`;
     }
   }
   container.innerHTML = `

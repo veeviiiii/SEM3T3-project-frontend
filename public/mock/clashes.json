@@ -1,0 +1,606 @@
+{
+  "week_start": "2026-10-26",
+  "items": [
+    {
+      "id": 1,
+      "type": "faculty",
+      "who": "Dr. Ashok Gupta",
+      "date": "2026-10-26",
+      "day": "Mon",
+      "start": "09:00",
+      "end": "10:00",
+      "message": "Dr. Ashok Gupta has two classes at once on Monday: MBA-BA-3 DS5A-607 and MSc-DSA-3 DS5B-607",
+      "classes": [
+        {
+          "key": "165-2026-10-26",
+          "batch": {
+            "id": 7,
+            "code": "MBA-BA-3"
+          },
+          "subject": {
+            "id": 73,
+            "code": "DS5A-607",
+            "name": "Reseacrh Methodology",
+            "kind": "theory"
+          },
+          "faculty": {
+            "id": 29,
+            "code": "AG",
+            "name": "Dr. Ashok Gupta"
+          },
+          "space": {
+            "id": 7,
+            "code": "003",
+            "kind": "room"
+          },
+          "start": "09:00",
+          "end": "10:00"
+        },
+        {
+          "key": "215-2026-10-26",
+          "batch": {
+            "id": 9,
+            "code": "MSc-DSA-3"
+          },
+          "subject": {
+            "id": 99,
+            "code": "DS5B-607",
+            "name": "Research Methodology",
+            "kind": "theory"
+          },
+          "faculty": {
+            "id": 29,
+            "code": "AG",
+            "name": "Dr. Ashok Gupta"
+          },
+          "space": {
+            "id": 9,
+            "code": "A-203",
+            "kind": "room"
+          },
+          "start": "09:00",
+          "end": "10:00"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "faculty",
+      "who": "Ms. Ritika Verma",
+      "date": "2026-10-26",
+      "day": "Mon",
+      "start": "09:00",
+      "end": "11:00",
+      "message": "Ms. Ritika Verma has two classes at once on Monday: MBA-BA-1 DS5A-505 and MSc-DSA-1 DS5B-505",
+      "classes": [
+        {
+          "key": "128-2026-10-26",
+          "batch": {
+            "id": 6,
+            "code": "MBA-BA-1"
+          },
+          "subject": {
+            "id": 67,
+            "code": "DS5A-505 (Lab)",
+            "name": "Advanced Database Management Systems (Lab)",
+            "kind": "lab"
+          },
+          "faculty": {
+            "id": 1,
+            "code": "RV",
+            "name": "Ms. Ritika Verma"
+          },
+          "space": {
+            "id": 6,
+            "code": "102",
+            "kind": "room"
+          },
+          "start": "09:00",
+          "end": "10:00"
+        },
+        {
+          "key": "189-2026-10-26",
+          "batch": {
+            "id": 8,
+            "code": "MSc-DSA-1"
+          },
+          "subject": {
+            "id": 91,
+            "code": "DS5B-505 (Lab)",
+            "name": "Advanced Database Management System (Lab)",
+            "kind": "lab"
+          },
+          "faculty": {
+            "id": 1,
+            "code": "RV",
+            "name": "Ms. Ritika Verma"
+          },
+          "space": {
+            "id": 8,
+            "code": "B010",
+            "kind": "room"
+          },
+          "start": "09:00",
+          "end": "10:00"
+        },
+        {
+          "key": "129-2026-10-26",
+          "batch": {
+            "id": 6,
+            "code": "MBA-BA-1"
+          },
+          "subject": {
+            "id": 67,
+            "code": "DS5A-505 (Lab)",
+            "name": "Advanced Database Management Systems (Lab)",
+            "kind": "lab"
+          },
+          "faculty": {
+            "id": 1,
+            "code": "RV",
+            "name": "Ms. Ritika Verma"
+          },
+          "space": {
+            "id": 6,
+            "code": "102",
+            "kind": "room"
+          },
+          "start": "10:00",
+          "end": "11:00"
+        },
+        {
+          "key": "190-2026-10-26",
+          "batch": {
+            "id": 8,
+            "code": "MSc-DSA-1"
+          },
+          "subject": {
+            "id": 91,
+            "code": "DS5B-505 (Lab)",
+            "name": "Advanced Database Management System (Lab)",
+            "kind": "lab"
+          },
+          "faculty": {
+            "id": 1,
+            "code": "RV",
+            "name": "Ms. Ritika Verma"
+          },
+          "space": {
+            "id": 8,
+            "code": "B010",
+            "kind": "room"
+          },
+          "start": "10:00",
+          "end": "11:00"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "faculty",
+      "who": "Dr. Ashok Gupta",
+      "date": "2026-10-26",
+      "day": "Mon",
+      "start": "11:30",
+      "end": "12:30",
+      "message": "Dr. Ashok Gupta has two classes at once on Monday: MBA-BA-3 DS5A-607 and MSc-DSA-3 DS5B-607",
+      "classes": [
+        {
+          "key": "166-2026-10-26",
+          "batch": {
+            "id": 7,
+            "code": "MBA-BA-3"
+          },
+          "subject": {
+            "id": 73,
+            "code": "DS5A-607",
+            "name": "Reseacrh Methodology",
+            "kind": "theory"
+          },
+          "faculty": {
+            "id": 29,
+            "code": "AG",
+            "name": "Dr. Ashok Gupta"
+          },
+          "space": {
+            "id": 7,
+            "code": "003",
+            "kind": "room"
+          },
+          "start": "11:30",
+          "end": "12:30"
+        },
+        {
+          "key": "216-2026-10-26",
+          "batch": {
+            "id": 9,
+            "code": "MSc-DSA-3"
+          },
+          "subject": {
+            "id": 99,
+            "code": "DS5B-607",
+            "name": "Research Methodology",
+            "kind": "theory"
+          },
+          "faculty": {
+            "id": 29,
+            "code": "AG",
+            "name": "Dr. Ashok Gupta"
+          },
+          "space": {
+            "id": 9,
+            "code": "A-203",
+            "kind": "room"
+          },
+          "start": "11:30",
+          "end": "12:30"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "faculty",
+      "who": "Dr. Ashok Gupta",
+      "date": "2026-10-27",
+      "day": "Tue",
+      "start": "09:00",
+      "end": "10:00",
+      "message": "Dr. Ashok Gupta has two classes at once on Tuesday: MBA-BA-3 DS5A-607 and MSc-DSA-3 DS5B-607",
+      "classes": [
+        {
+          "key": "170-2026-10-27",
+          "batch": {
+            "id": 7,
+            "code": "MBA-BA-3"
+          },
+          "subject": {
+            "id": 73,
+            "code": "DS5A-607",
+            "name": "Reseacrh Methodology",
+            "kind": "theory"
+          },
+          "faculty": {
+            "id": 29,
+            "code": "AG",
+            "name": "Dr. Ashok Gupta"
+          },
+          "space": {
+            "id": 7,
+            "code": "003",
+            "kind": "room"
+          },
+          "start": "09:00",
+          "end": "10:00"
+        },
+        {
+          "key": "218-2026-10-27",
+          "batch": {
+            "id": 9,
+            "code": "MSc-DSA-3"
+          },
+          "subject": {
+            "id": 99,
+            "code": "DS5B-607",
+            "name": "Research Methodology",
+            "kind": "theory"
+          },
+          "faculty": {
+            "id": 29,
+            "code": "AG",
+            "name": "Dr. Ashok Gupta"
+          },
+          "space": {
+            "id": 9,
+            "code": "A-203",
+            "kind": "room"
+          },
+          "start": "09:00",
+          "end": "10:00"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "faculty",
+      "who": "Ms. Ritika Verma",
+      "date": "2026-10-27",
+      "day": "Tue",
+      "start": "09:00",
+      "end": "11:00",
+      "message": "Ms. Ritika Verma has two classes at once on Tuesday: MBA-BA-1 DS5A-505 and MSc-DSA-1 DS5B-505",
+      "classes": [
+        {
+          "key": "135-2026-10-27",
+          "batch": {
+            "id": 6,
+            "code": "MBA-BA-1"
+          },
+          "subject": {
+            "id": 58,
+            "code": "DS5A-505",
+            "name": "Advanced Database Management Systems",
+            "kind": "theory"
+          },
+          "faculty": {
+            "id": 1,
+            "code": "RV",
+            "name": "Ms. Ritika Verma"
+          },
+          "space": {
+            "id": 6,
+            "code": "102",
+            "kind": "room"
+          },
+          "start": "09:00",
+          "end": "10:00"
+        },
+        {
+          "key": "195-2026-10-27",
+          "batch": {
+            "id": 8,
+            "code": "MSc-DSA-1"
+          },
+          "subject": {
+            "id": 84,
+            "code": "DS5B-505",
+            "name": "Advanced Database Management System",
+            "kind": "theory"
+          },
+          "faculty": {
+            "id": 1,
+            "code": "RV",
+            "name": "Ms. Ritika Verma"
+          },
+          "space": {
+            "id": 8,
+            "code": "B010",
+            "kind": "room"
+          },
+          "start": "09:00",
+          "end": "10:00"
+        },
+        {
+          "key": "136-2026-10-27",
+          "batch": {
+            "id": 6,
+            "code": "MBA-BA-1"
+          },
+          "subject": {
+            "id": 58,
+            "code": "DS5A-505",
+            "name": "Advanced Database Management Systems",
+            "kind": "theory"
+          },
+          "faculty": {
+            "id": 1,
+            "code": "RV",
+            "name": "Ms. Ritika Verma"
+          },
+          "space": {
+            "id": 6,
+            "code": "102",
+            "kind": "room"
+          },
+          "start": "10:00",
+          "end": "11:00"
+        },
+        {
+          "key": "196-2026-10-27",
+          "batch": {
+            "id": 8,
+            "code": "MSc-DSA-1"
+          },
+          "subject": {
+            "id": 84,
+            "code": "DS5B-505",
+            "name": "Advanced Database Management System",
+            "kind": "theory"
+          },
+          "faculty": {
+            "id": 1,
+            "code": "RV",
+            "name": "Ms. Ritika Verma"
+          },
+          "space": {
+            "id": 8,
+            "code": "B010",
+            "kind": "room"
+          },
+          "start": "10:00",
+          "end": "11:00"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "type": "faculty",
+      "who": "Ms. Ritika Verma",
+      "date": "2026-10-28",
+      "day": "Wed",
+      "start": "10:00",
+      "end": "11:00",
+      "message": "Ms. Ritika Verma has two classes at once on Wednesday: MBA-BA-1 DS5A-505 and MSc-DSA-1 DS5B-505",
+      "classes": [
+        {
+          "key": "143-2026-10-28",
+          "batch": {
+            "id": 6,
+            "code": "MBA-BA-1"
+          },
+          "subject": {
+            "id": 58,
+            "code": "DS5A-505",
+            "name": "Advanced Database Management Systems",
+            "kind": "theory"
+          },
+          "faculty": {
+            "id": 1,
+            "code": "RV",
+            "name": "Ms. Ritika Verma"
+          },
+          "space": {
+            "id": 6,
+            "code": "102",
+            "kind": "room"
+          },
+          "start": "10:00",
+          "end": "11:00"
+        },
+        {
+          "key": "201-2026-10-28",
+          "batch": {
+            "id": 8,
+            "code": "MSc-DSA-1"
+          },
+          "subject": {
+            "id": 84,
+            "code": "DS5B-505",
+            "name": "Advanced Database Management System",
+            "kind": "theory"
+          },
+          "faculty": {
+            "id": 1,
+            "code": "RV",
+            "name": "Ms. Ritika Verma"
+          },
+          "space": {
+            "id": 8,
+            "code": "B010",
+            "kind": "room"
+          },
+          "start": "10:00",
+          "end": "11:00"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "type": "faculty",
+      "who": "Mr. Nandkishor Buwade",
+      "date": "2026-10-29",
+      "day": "Thu",
+      "start": "10:00",
+      "end": "11:00",
+      "message": "Mr. Nandkishor Buwade has two classes at once on Thursday: AI&DS-7 DS6A-406 and MBA-BA-3 DS5A-643",
+      "classes": [
+        {
+          "key": "96-2026-10-29",
+          "batch": {
+            "id": 4,
+            "code": "AI&DS-7"
+          },
+          "subject": {
+            "id": 37,
+            "code": "DS6A-406",
+            "name": "Machine Learning Using Python",
+            "kind": "theory"
+          },
+          "faculty": {
+            "id": 22,
+            "code": "NB",
+            "name": "Mr. Nandkishor Buwade"
+          },
+          "space": {
+            "id": 4,
+            "code": "A-20?",
+            "kind": "room"
+          },
+          "start": "10:00",
+          "end": "11:00"
+        },
+        {
+          "key": "181-2026-10-29",
+          "batch": {
+            "id": 7,
+            "code": "MBA-BA-3"
+          },
+          "subject": {
+            "id": 77,
+            "code": "DS5A-643",
+            "name": "Hadoop & Spark",
+            "kind": "theory"
+          },
+          "faculty": {
+            "id": 22,
+            "code": "NB",
+            "name": "Mr. Nandkishor Buwade"
+          },
+          "space": {
+            "id": 7,
+            "code": "003",
+            "kind": "room"
+          },
+          "start": "10:00",
+          "end": "11:00"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "type": "faculty",
+      "who": "Ms. Alfia Bagwala",
+      "date": "2026-10-29",
+      "day": "Thu",
+      "start": "11:30",
+      "end": "13:00",
+      "message": "Ms. Alfia Bagwala has two classes at once on Thursday: MBA-BA-3 DS5A-605 and AI&DS-9 DS6A-501",
+      "classes": [
+        {
+          "key": "182-2026-10-29",
+          "batch": {
+            "id": 7,
+            "code": "MBA-BA-3"
+          },
+          "subject": {
+            "id": 70,
+            "code": "DS5A-605",
+            "name": "Natural Language Processing",
+            "kind": "theory"
+          },
+          "faculty": {
+            "id": 3,
+            "code": "AB",
+            "name": "Ms. Alfia Bagwala"
+          },
+          "space": {
+            "id": 7,
+            "code": "003",
+            "kind": "room"
+          },
+          "start": "11:30",
+          "end": "12:30"
+        },
+        {
+          "key": "121-2026-10-29",
+          "batch": {
+            "id": 5,
+            "code": "AI&DS-9"
+          },
+          "subject": {
+            "id": 44,
+            "code": "DS6A-501",
+            "name": "Natural Language Processing",
+            "kind": "theory"
+          },
+          "faculty": {
+            "id": 3,
+            "code": "AB",
+            "name": "Ms. Alfia Bagwala"
+          },
+          "space": {
+            "id": 5,
+            "code": "B-006",
+            "kind": "room"
+          },
+          "start": "12:00",
+          "end": "13:00"
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "faculty": 8,
+    "room": 0,
+    "batch": 0
+  }
+}

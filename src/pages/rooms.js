@@ -1,7 +1,7 @@
-// Rooms page: is each room or lab free, busy or closed at a chosen date and period?
+// Rooms page: is each room or lab free, busy or closed at a chosen date and hour?
 import { getCalendar, getRoomAvailability } from '../api.js';
 import { requireLogin, renderHeader } from '../lib/layout.js';
-import { $, escapeHtml, formatDate, renderLoading, renderError, renderEmpty } from '../lib/ui.js';
+import { $, escapeHtml, formatDate, teacherName, renderLoading, renderError, renderEmpty } from '../lib/ui.js';
 
 // How each status looks. Class names are written out in full so Tailwind can see them.
 const STATUS = {
@@ -32,7 +32,7 @@ async function start() {
   }
   $('#date').value = calendar.today;
   $('#period').innerHTML = calendar.periods
-    .map((p) => `<option value="${p.period}">P${p.period} · ${p.start}-${p.end}</option>`)
+    .map((p) => `<option value="${p.period}">${p.start}-${p.end}</option>`)
     .join('');
   $('#period').value = String(calendar.now_period ?? calendar.periods[0].period);
   $('#date').disabled = false;
@@ -74,7 +74,7 @@ async function load() {
 function render() {
   if (!availability) return;
   const p = calendar.periods.find((x) => x.period === availability.period);
-  $('#results-title').textContent = `${formatDate(availability.date)} · P${availability.period}${p ? ` (${p.start}-${p.end})` : ''}`;
+  $('#results-title').textContent = `${formatDate(availability.date)}${p ? ` · ${p.start}-${p.end}` : ''}`;
 
   const shown = availability.spaces
     .filter((s) => kind === 'all' || s.space.kind === kind)
@@ -97,7 +97,7 @@ function roomCard({ space, slot }) {
   if (slot?.status === 'busy' && slot.entry) {
     detail = `
       <p class="mt-3 inline-block rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-900">${escapeHtml(slot.entry.batch.code)} · ${escapeHtml(slot.entry.subject.code)}</p>
-      <p class="mt-1 text-xs text-slate-500">${escapeHtml(slot.entry.subject.name)} · ${escapeHtml(slot.entry.faculty.name)}</p>`;
+      <p class="mt-1 text-xs text-slate-500">${escapeHtml(slot.entry.subject.name)} · ${escapeHtml(teacherName(slot.entry.faculty))}</p>`;
   } else if (slot?.status === 'closed') {
     detail = `<p class="mt-3 text-sm text-red-800">${escapeHtml(slot.note || 'Closed')}</p>`;
   }

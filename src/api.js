@@ -14,6 +14,8 @@
  * .status, .code and .detail (a sentence you can show to the user as-is).
  */
 
+import { createEngine } from './mock/engine.js';
+
 const env = (typeof import.meta !== 'undefined' && import.meta.env) || {};
 export const USE_MOCK = env.VITE_USE_MOCK !== 'false';
 export const API_BASE = (env.VITE_API_BASE || 'http://localhost:8000').replace(/\/$/, '');
@@ -35,9 +37,9 @@ export class ApiError extends Error {
 
 // ------------------------------------------------------------------ session (token + user)
 
-// v2: the demo data became the real AI&DS timetable (new people and ids), so logins saved before are not used.
-const TOKEN_KEY = 'sss.token.v2';
-const USER_KEY = 'sss.user.v2';
+// v3: the demo data now holds every batch from the department's sheets (new ids), so older saved logins are not used.
+const TOKEN_KEY = 'sss.token.v3';
+const USER_KEY = 'sss.user.v3';
 
 function store(key, value) {
   try {
@@ -104,8 +106,8 @@ async function request(method, path, { query, body, form } = {}) {
 // ------------------------------------------------------------------ mock backend helpers
 
 const mockCache = new Map();
-const mockRead = new Set();  // notification ids marked read during this session
 
+/** A fixed mock file (logins, health). */
 async function mock(name) {
   if (!mockCache.has(name)) {
     mockCache.set(name, fetch(`${MOCK_BASE}/${name}.json`).then((r) => {
@@ -118,6 +120,41 @@ async function mock(name) {
   return structuredClone(data);
 }
 
+// In mock mode everything else comes from the demo engine (src/mock/engine.js): it reads the department's
+// timetables (public/mock/timetables.json) and keeps what people do in this browser until "Reset demo data".
+const DEMO_KEY = 'sss.demo.v1';
+let enginePromise = null;
+
+function demoEngine() {
+  if (!enginePromise) {
+    enginePromise = Promise.all(['timetables', 'demo', 'settings_ranking'].map((name) =>
+      fetch(`${MOCK_BASE}/${name}.json`).then((r) => {
+        if (!r.ok) throw new ApiError(404, 'NOT_FOUND', `Mock file ${name}.json is missing.`);
+        return r.json();
+      })))
+      .then(([source, demo, ranking]) => createEngine({
+        source,
+        demo,
+        ranking,
+        saved: (() => { try { return JSON.parse(read(DEMO_KEY)) || []; } catch { return []; } })(),
+        onSave: (events) => store(DEMO_KEY, JSON.stringify(events)),
+        makeError: (status, code, detail, body) => new ApiError(status, code, detail, body),
+      }))
+      .catch((err) => {
+        enginePromise = null;  // try again next time
+        throw err;
+      });
+  }
+  return enginePromise;
+}
+
+/** Asks the demo engine, after a short pretend network delay. */
+async function demo(ask) {
+  const engine = await demoEngine();
+  await new Promise((r) => setTimeout(r, 250));
+  return structuredClone(ask(engine));
+}
+
 function mockUser() {
   const user = getCurrentUser();
   if (!user) throw new ApiError(401, 'UNAUTHORIZED', 'Please log in again.');
@@ -126,10 +163,6 @@ function mockUser() {
 
 function mockRequireHod() {
   if (mockUser().role !== 'hod') throw new ApiError(403, 'FORBIDDEN', 'Only the HOD can do this.');
-}
-
-function mockNotFound(what) {
-  return new ApiError(404, 'NOT_FOUND', `${what} was not found.`);
 }
 
 // ------------------------------------------------------------------ auth
@@ -161,23 +194,23 @@ export async function getMe() {
 
 /** GET /api/health -> Health */
 export const getHealth = () => (USE_MOCK ? mock('health') : request('GET', '/api/health'));
-/** GET /api/calendar -> Calendar (days, period times, today, current week) */
-export const getCalendar = () => (USE_MOCK ? mock('calendar') : request('GET', '/api/calendar'));
+/** GET /api/calendar -> Calendar (days, the hours of the day, today, current week) */
+export const getCalendar = () => (USE_MOCK ? demo((e) => e.calendar()) : request('GET', '/api/calendar'));
 /** GET /api/faculty -> Faculty[] */
-export const listFaculty = () => (USE_MOCK ? mock('faculty') : request('GET', '/api/faculty'));
-/** GET /api/batches -> Batch[] */
-export const listBatches = () => (USE_MOCK ? mock('batches') : request('GET', '/api/batches'));
+export const listFaculty = () => (USE_MOCK ? demo((e) => e.faculty()) : request('GET', '/api/faculty'));
+/** GET /api/batches -> Batch[] (each with its programme, semester, room, days and its own time slots) */
+export const listBatches = () => (USE_MOCK ? demo((e) => e.batches()) : request('GET', '/api/batches'));
 /** GET /api/subjects -> Subject[] */
-export const listSubjects = () => (USE_MOCK ? mock('subjects') : request('GET', '/api/subjects'));
+export const listSubjects = () => (USE_MOCK ? demo((e) => e.subjects()) : request('GET', '/api/subjects'));
 /** GET /api/spaces -> Space[] (rooms and labs) */
-export const listSpaces = () => (USE_MOCK ? mock('spaces') : request('GET', '/api/spaces'));
+export const listSpaces = () => (USE_MOCK ? demo((e) => e.spaces()) : request('GET', '/api/spaces'));
 
 // ------------------------------------------------------------------ timetable, rooms, search
 
 /**
- * GET /api/timetable -> TimetableWeek
- * Give at most one of batchId / facultyId / spaceId; none = whole department.
- * The mock only has the week of 2026-10-26; other weeks come back empty.
+ * GET /api/timetable -> TimetableWeek {week_start, days, slots, breaks, entries}
+ * Give at most one of batchId / facultyId / spaceId; none = every batch.
+ * slots are the rows of the grid: a batch's own time slots, or the times a teacher's or room's classes use.
  */
 export async function getTimetable({ weekStart, batchId, facultyId, spaceId } = {}) {
   if (!USE_MOCK) {
@@ -186,16 +219,7 @@ export async function getTimetable({ weekStart, batchId, facultyId, spaceId } = 
     });
   }
   mockUser();
-  const week = await mock('timetable_week');
-  week.filter = { batch_id: batchId ?? null, faculty_id: facultyId ?? null, space_id: spaceId ?? null };
-  if (weekStart && weekStart !== week.week_start) {
-    return { ...week, week_start: weekStart, week_end: weekStart, entries: [] };
-  }
-  week.entries = week.entries.filter((e) =>
-    (batchId == null || e.batch.id === Number(batchId))
-    && (facultyId == null || e.faculty.id === Number(facultyId))
-    && (spaceId == null || e.space.id === Number(spaceId)));
-  return week;
+  return demo((e) => e.week({ weekStart, batchId, facultyId, spaceId }));
 }
 
 /** GET /api/timetable/me -> TimetableWeek for the logged-in user (student: batch, faculty/HOD: own classes) */
@@ -207,13 +231,18 @@ export async function getMyTimetable({ weekStart } = {}) {
     : getTimetable({ weekStart, facultyId: user.faculty_id });
 }
 
-/** GET /api/availability/rooms -> RoomAvailability (mock: Thursday 29 Oct only) */
+/** GET /api/availability/rooms -> RoomAvailability (period = an hour of the day, see getCalendar().periods) */
 export async function getRoomAvailability({ date, period } = {}) {
   if (!USE_MOCK) return request('GET', '/api/availability/rooms', { query: { date, period } });
   mockUser();
-  const av = await mock('availability_rooms');
-  if (period) av.spaces.forEach((s) => { s.slots = s.slots.filter((x) => x.period === Number(period)); });
-  return av;
+  return demo((e) => e.roomAvailability(date, period));
+}
+
+/** GET /api/clashes -> {week_start, items, counts}: two classes at once for one teacher, room or batch, in that week */
+export async function getClashes({ weekStart } = {}) {
+  if (!USE_MOCK) return request('GET', '/api/clashes', { query: { week_start: weekStart } });
+  mockUser();
+  return demo((e) => e.clashes({ weekStart }));
 }
 
 /** GET /api/search?q= -> SearchResult[] (faculty, batches, rooms, subjects; matches word starts) */
@@ -227,7 +256,7 @@ export async function search(q, limit = 8) {
     ...fac.map((f) => ({ type: 'faculty', id: f.id, label: f.name, sublabel: f.designation, code: f.code })),
     ...bat.map((b) => ({ type: 'batch', id: b.id, label: b.code, sublabel: b.name, code: b.code })),
     ...spa.map((s) => ({ type: 'space', id: s.id, label: s.code, sublabel: s.name, code: s.code })),
-    ...sub.map((s) => ({ type: 'subject', id: s.id, label: s.name, sublabel: `${s.code} - Semester ${s.semester}`, code: s.code })),
+    ...sub.map((s) => ({ type: 'subject', id: s.id, label: s.name, sublabel: `${s.code} · ${s.batch_code}`, code: s.code })),
   ];
   const words = (it) => [...it.label.toLowerCase().replace(/[.,]/g, ' ').split(/\s+/), it.code.toLowerCase()];
   return items.filter((it) => words(it).some((w) => w.startsWith(term)))
@@ -241,34 +270,25 @@ export async function search(q, limit = 8) {
 export async function listUnavailability({ from, to, mine } = {}) {
   if (!USE_MOCK) return request('GET', '/api/unavailability', { query: { from, to, mine } });
   const user = mockUser();
-  if (user.role === 'student') throw new ApiError(403, 'FORBIDDEN', 'Students cannot view leave records.');
-  const all = await mock('unavailability');
-  const own = (u) => u.created_by.id === user.id || (u.target.type === 'faculty' && u.target.id === user.faculty_id);
-  return all.filter((u) => (user.role === 'hod' && !mine ? true : own(u))
-    && (!from || u.end_date >= from) && (!to || u.start_date <= to));
+  return demo((e) => e.unavailability(user, { from, to, mine }));
 }
 
 /**
- * POST /api/unavailability -> UnavailabilityCreated
+ * POST /api/unavailability -> UnavailabilityCreated {unavailability, affected, proposals}
  * body: { kind, target_id, start_date, end_date, periods (null = whole day), reason }
- * The mock always answers with the Ms. Ritika Verma example.
+ * The affected classes are cancelled and each gets ranked suggestions for a new slot.
  */
 export async function createUnavailability(body) {
   if (!USE_MOCK) return request('POST', '/api/unavailability', { body });
   const user = mockUser();
-  if (user.role === 'student') throw new ApiError(403, 'FORBIDDEN', 'Students cannot mark leave.');
-  if (!body?.reason) {
-    throw new ApiError(400, 'VALIDATION', 'Please check the highlighted fields.',
-      { fields: [{ field: 'reason', message: 'Please give a short reason' }] });
-  }
-  return mock('unavailability_create');
+  return demo((e) => e.createUnavailability(user, body));
 }
 
 /** DELETE /api/unavailability/{id} -> UnavailabilityWithdrawn (only while nothing has been decided) */
 export async function withdrawUnavailability(id) {
   if (!USE_MOCK) return request('DELETE', `/api/unavailability/${id}`);
-  mockUser();
-  return mock('unavailability_withdraw');
+  const user = mockUser();
+  return demo((e) => e.withdrawUnavailability(user, id));
 }
 
 // ------------------------------------------------------------------ proposals (HOD)
@@ -277,39 +297,21 @@ export async function withdrawUnavailability(id) {
 export async function listProposals({ status, unavailabilityId } = {}) {
   if (!USE_MOCK) return request('GET', '/api/proposals', { query: { status, unavailability_id: unavailabilityId } });
   mockRequireHod();
-  const all = await mock('proposals');
-  return all.filter((p) => (!status || p.status === status)
-    && (!unavailabilityId || p.unavailability_id === Number(unavailabilityId)));
+  return demo((e) => e.proposals({ status, unavailabilityId }));
 }
 
 /** GET /api/proposals/{id} -> Proposal */
 export async function getProposal(id) {
   if (!USE_MOCK) return request('GET', `/api/proposals/${id}`);
   mockRequireHod();
-  const p = (await mock('proposals')).find((x) => x.id === Number(id));
-  if (!p) throw mockNotFound(`Proposal ${id}`);
-  return p;
+  return demo((e) => e.proposal(id));
 }
 
 /** POST /api/proposals/{id}/check  body {date, period, space_id} -> CheckResult (for the "pick another slot" form) */
 export async function checkProposalSlot(id, slot) {
   if (!USE_MOCK) return request('POST', `/api/proposals/${id}/check`, { body: slot });
-  const p = await getProposal(id);
-  const opt = p.options.find((o) => o.date === slot.date && o.period === Number(slot.period) && o.space.id === Number(slot.space_id));
-  if (opt) return { ok: true, clashes: [], score: opt.score, breakdown: opt.breakdown };
-  return mock('proposal_check_clash');
-}
-
-function mockDecide(p, action, version, extra) {
-  if (p.status !== 'pending') throw new ApiError(409, 'ALREADY_DECIDED', 'A decision was already made for this class.');
-  if (version !== p.version) throw new ApiError(409, 'STALE', 'Someone else changed this proposal. Reload to see the latest version.');
-  const user = mockUser();
-  return {
-    ...p,
-    status: action,
-    version: p.version + 1,
-    decision: { action, by: { id: user.id, name: user.name, role: user.role }, at: new Date().toISOString(), ...extra },
-  };
+  mockRequireHod();
+  return demo((e) => e.checkSlot(id, slot));
 }
 
 /**
@@ -318,25 +320,17 @@ function mockDecide(p, action, version, extra) {
  */
 export async function approveProposal(id, body) {
   if (!USE_MOCK) return request('POST', `/api/proposals/${id}/approve`, { body });
-  const p = await getProposal(id);
-  if (body.custom) {
-    const check = await checkProposalSlot(id, body.custom);
-    if (!check.ok) throw new ApiError(409, 'CLASH', 'This slot is no longer free.', check);
-    const opt = p.options.find((o) => o.date === body.custom.date && o.period === Number(body.custom.period));
-    return mockDecide(p, 'approved', body.version, { custom: true, rank: null, slot: opt ? pickSlot(opt) : null, note: body.note ?? null });
-  }
-  const opt = p.options.find((o) => o.rank === body.option_rank);
-  if (!opt) throw new ApiError(400, 'VALIDATION', `There is no option ${body.option_rank}.`);
-  return mockDecide(p, 'approved', body.version, { custom: false, rank: opt.rank, slot: pickSlot(opt), note: body.note ?? null });
+  mockRequireHod();
+  const user = mockUser();
+  return demo((e) => e.approve(user, id, body));
 }
-
-const pickSlot = ({ date, day, period, start, end, space }) => ({ date, day, period, start, end, space });
 
 /** POST /api/proposals/{id}/reject  body {version, note} -> Proposal (the class stays cancelled) */
 export async function rejectProposal(id, body) {
   if (!USE_MOCK) return request('POST', `/api/proposals/${id}/reject`, { body });
-  const p = await getProposal(id);
-  return mockDecide(p, 'rejected', body.version, { custom: false, rank: null, slot: null, note: body.note ?? null });
+  mockRequireHod();
+  const user = mockUser();
+  return demo((e) => e.reject(user, id, body));
 }
 
 // ------------------------------------------------------------------ what-if (HOD)
@@ -348,43 +342,31 @@ export async function rejectProposal(id, body) {
 export async function runWhatIf(changes) {
   if (!USE_MOCK) return request('POST', '/api/whatif', { body: { changes } });
   mockRequireHod();
-  return mock('whatif');
+  const user = mockUser();
+  return demo((e) => e.whatIf(user, changes));
 }
 
 // ------------------------------------------------------------------ notifications and live updates
 
-async function mockNotifications() {
-  const role = mockUser().role;
-  const page = await mock(`notifications_${role}`);
-  page.items.forEach((n) => { if (mockRead.has(n.id)) n.read = true; });
-  page.unread = page.items.filter((n) => !n.read).length;
-  return page;
-}
-
 /** GET /api/notifications -> NotificationPage {items, total, unread} (newest first) */
 export async function listNotifications({ unreadOnly = false, limit = 20, offset = 0 } = {}) {
   if (!USE_MOCK) return request('GET', '/api/notifications', { query: { unread_only: unreadOnly, limit, offset } });
-  const page = await mockNotifications();
-  const items = page.items.filter((n) => !unreadOnly || !n.read);
-  return { ...page, items: items.slice(offset, offset + limit), total: items.length };
+  const user = mockUser();
+  return demo((e) => e.notifications(user, { unreadOnly, limit, offset }));
 }
 
 /** POST /api/notifications/{id}/read -> Notification */
 export async function markNotificationRead(id) {
   if (!USE_MOCK) return request('POST', `/api/notifications/${id}/read`);
-  const n = (await mockNotifications()).items.find((x) => x.id === Number(id));
-  if (!n) throw mockNotFound(`Notification ${id}`);
-  mockRead.add(n.id);
-  return { ...n, read: true };
+  const user = mockUser();
+  return demo((e) => e.markRead(user, id));
 }
 
 /** POST /api/notifications/read-all -> {updated} */
 export async function markAllNotificationsRead() {
   if (!USE_MOCK) return request('POST', '/api/notifications/read-all');
-  const page = await mockNotifications();
-  const unread = page.items.filter((n) => !n.read);
-  unread.forEach((n) => mockRead.add(n.id));
-  return { updated: unread.length };
+  const user = mockUser();
+  return demo((e) => e.markAllRead(user));
 }
 
 const mockListeners = new Set();
@@ -409,8 +391,9 @@ export function subscribeToEvents(handlers) {
 
 /** Mock only: pretend the server sent an event ("notification", "timetable_changed" or "proposal_updated"). */
 export async function mockEmit(type = 'notification') {
-  const examples = await mock('sse_examples');
-  mockListeners.forEach((h) => h[type]?.(examples[type]));
+  const user = mockUser();
+  const example = await demo((e) => e.liveExample(type, user));
+  if (example) mockListeners.forEach((h) => h[type]?.(example));
 }
 if (USE_MOCK && typeof window !== 'undefined') window.mockEmit = mockEmit;
 
@@ -420,42 +403,36 @@ if (USE_MOCK && typeof window !== 'undefined') window.mockEmit = mockEmit;
 export async function listActivity({ limit = 50, offset = 0 } = {}) {
   if (!USE_MOCK) return request('GET', '/api/activity', { query: { limit, offset } });
   mockRequireHod();
-  const page = await mock('activity');
-  return { items: page.items.slice(offset, offset + limit), total: page.total };
+  return demo((e) => e.activity({ limit, offset }));
 }
 
 /** GET /api/analytics/summary -> AnalyticsSummary (numbers for the HOD dashboard cards) */
 export async function getAnalyticsSummary({ weekStart } = {}) {
   if (!USE_MOCK) return request('GET', '/api/analytics/summary', { query: { week_start: weekStart } });
   mockRequireHod();
-  return mock('analytics_summary');
+  return demo((e) => e.summary({ weekStart }));
 }
 
 /** GET /api/analytics/trends -> AnalyticsTrends (data for the Chart.js charts) */
 export async function getAnalyticsTrends({ weeks = 8 } = {}) {
   if (!USE_MOCK) return request('GET', '/api/analytics/trends', { query: { weeks } });
   mockRequireHod();
-  return mock('analytics_trends');
+  return demo((e) => e.trends({ weeks }));
 }
 
 /** GET /api/settings/ranking -> RankingSettings */
 export async function getRankingSettings() {
   if (!USE_MOCK) return request('GET', '/api/settings/ranking');
   mockRequireHod();
-  return mock('settings_ranking');
+  return demo((e) => e.ranking());
 }
 
 /** PUT /api/settings/ranking  body: any of {weights, k, max_batch_classes_per_day, min_notice_hours, search_weeks} -> RankingSettings */
 export async function updateRankingSettings(patch) {
   if (!USE_MOCK) return request('PUT', '/api/settings/ranking', { body: patch });
   mockRequireHod();
-  const current = await mock('settings_ranking');
-  const missing = patch.weights ? Object.keys(current.weights).filter((k) => !(k in patch.weights)) : [];
-  if (missing.length) {
-    throw new ApiError(400, 'VALIDATION', 'Please check the highlighted fields.',
-      { fields: missing.map((k) => ({ field: `weights.${k}`, message: 'Send all six weights together' })) });
-  }
-  return { ...current, ...patch, weights: { ...current.weights, ...(patch.weights || {}) } };
+  const user = mockUser();
+  return demo((e) => e.updateRanking(user, patch));
 }
 
 // ------------------------------------------------------------------ import, demo tools (HOD)
@@ -468,21 +445,20 @@ export async function importTimetable(file, { dryRun = true } = {}) {
     return request('POST', '/api/import/timetable', { query: { dry_run: dryRun }, form });
   }
   mockRequireHod();
-  return { ...(await mock('import_result')), dry_run: dryRun };
+  const text = await file.text();
+  return demo((e) => e.checkImport(text, dryRun));
 }
 
 /** POST /api/demo/reset -> DemoResetResult (puts the demo data back to the start) */
 export async function resetDemo() {
   if (!USE_MOCK) return request('POST', '/api/demo/reset');
   mockRequireHod();
-  mockRead.clear();
-  return mock('demo_reset');
+  return demo((e) => e.reset());
 }
 
 /** GET /api/outbox -> OutboxPage (emails the system sent; in demo mode they all go to one test inbox) */
 export async function listOutbox({ limit = 50, offset = 0 } = {}) {
   if (!USE_MOCK) return request('GET', '/api/outbox', { query: { limit, offset } });
   mockRequireHod();
-  const page = await mock('outbox');
-  return { items: page.items.slice(offset, offset + limit), total: page.total };
+  return demo((e) => e.outbox({ limit, offset }));
 }

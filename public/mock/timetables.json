@@ -1,0 +1,473 @@
+{
+  "about": "The department's timetables (w.e.f. 20 Jul 2026), typed in from the signed sheets. Grid cells are written as on the sheet: course code, optional ': initials', optional '(Lab)'. A column listed in 'breaks' has no classes. Anything unclear on a sheet is listed in 'review' instead of being guessed.",
+  "school": "School of Data Science and Forecasting",
+  "university": "Devi Ahilya Vishwavidyalaya, Takshashila Campus, Khandwa Road, Indore (M.P.)",
+  "head": "Dr. Govind Maheshwari",
+  "teachers": [
+    { "id": 1, "code": "RV", "name": "Ms. Ritika Verma", "note": "Written 'Ms. Rtika Verma' on the MBA 1st-semester sheet." },
+    { "id": 2, "code": "SPR", "name": "Simran Prajapati" },
+    { "id": 3, "code": "AB", "name": "Ms. Alfia Bagwala" },
+    { "id": 4, "code": "PP", "name": "Ms. Pallavi Pandey" },
+    { "id": 5, "code": "MK", "name": "Dr. Meenu Kumar" },
+    { "id": 6, "code": "KP", "name": "Ms. Khushi Patidar" },
+    { "id": 7, "code": "GM", "name": "Dr. Govind Maheshwari", "is_hod": true },
+    { "id": 8, "code": "AJ", "name": "Dr. Anupam Jain" },
+    { "id": 9, "code": "KBM", "name": "Kabir Beg mirja" },
+    { "id": 10, "code": "KS", "name": "Mr. Kapil Sharma", "note": "Written 'kapil Sharma' on the AI&DS 1st-semester sheet." },
+    { "id": 11, "code": "MA", "name": "Ms. Minal Agrawal" },
+    { "id": 12, "code": "RY", "name": "Mr. Rajat Yadav" },
+    { "id": 13, "code": "PK", "name": "Ms. Priya Kushwaha", "note": "Written 'Ms. Priya kushwah' on the AI&DS 1st-semester sheet and 'Ms. Priya Kushwaha' on the MBA sheet (same phone number on both), so taken as one teacher." },
+    { "id": 14, "code": "AM", "name": "Mr. Animesh Masih" },
+    { "id": 15, "code": "AN", "name": "Mr. Amit Nashikkar" },
+    { "id": 16, "code": "AS", "name": "Mr. Ayan Shah" },
+    { "id": 17, "code": "PM", "name": "Dr. Priyanka Malviya" },
+    { "id": 18, "code": "SKS", "name": "Dr. Shishir Kumar Shandilya" },
+    { "id": 19, "code": "SUP", "name": "Mr. Surya Pratap" },
+    { "id": 20, "code": "GA", "name": "Ms. Garima Agrawal" },
+    { "id": 21, "code": "HR", "name": "Dr. Harsh Ramgir" },
+    { "id": 22, "code": "NB", "name": "Mr. Nandkishor Buwade" },
+    { "id": 23, "code": "JK", "name": "Dr. Jalaj Katare" },
+    { "id": 24, "code": "VS", "name": "Dr. Vibha Sharma" },
+    { "id": 25, "code": "VH", "name": "Dr. Vandit Hedau" },
+    { "id": 26, "code": "HG", "name": "Dr. Harshita Gupta" },
+    { "id": 27, "code": "RS", "name": "Ms. Riya Sadawani", "note": "Written 'Ms. Riya Sadawani' (MBA 1st semester) and 'MS. Riya Sadawana' (M.Sc. 1st semester). Taken as one teacher: please confirm." },
+    { "id": 28, "code": "HK", "name": "Mr. Hitesh Kukreja" },
+    { "id": 29, "code": "AG", "name": "Dr. Ashok Gupta" },
+    { "id": 30, "code": "SP", "name": "Ms. Shivanjali Patidar" },
+    { "id": 31, "code": "GV", "name": "Ms. Garima Vyas" },
+    { "id": 32, "code": "MM", "name": "Manisha Malviya" },
+    { "id": 33, "code": "CT", "name": "Mr. Chandresh Tatawat" },
+    { "id": 34, "code": "SK", "name": "Dr. Sunita Khurana" },
+    { "id": 35, "code": "ABH", "name": "Dr. Abhilasha Bhagwat", "note": "'Dr. Abhilasha Bhagwat' in the course list and 'Mrs. Abhilasha Bhagwat' as class teacher." },
+    { "id": 36, "code": "PB", "name": "Ms. Priyansha Bangar" }
+  ],
+  "batches": [
+    {
+      "id": 1,
+      "code": "AI&DS-1",
+      "program": "M.Tech. (Dual Degree) AI&DS",
+      "semester": 1,
+      "sheet": "AIDS sem 1-9 MTECH.pdf, page 1",
+      "wef": "2026-07-20",
+      "room": { "code": "A-201", "name": "Room A-201" },
+      "class_teacher": "Ms. Priya Kushwaha",
+      "days": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+      "columns": ["09:00-10:00", "10:00-11:00", "11:00-11:30", "11:30-12:30", "12:30-13:30", "13:30-14:00", "14:00-15:00", "15:00-16:00"],
+      "breaks": { "11:00-11:30": "", "13:30-14:00": "" },
+      "courses": [
+        { "code": "DS6A-101", "title": "Mathematics-I", "credits": "4(3-1-0)", "category": "core", "teacher": "Dr. Anupam Jain" },
+        { "code": "DS6A-102", "title": "Physics", "credits": "4(2-1-2)", "category": "core", "teacher": "Kabir Beg mirja" },
+        { "code": "DS6A-103", "title": "Descriptive Statistics & Probability Theory", "credits": "4(3-1-0)", "category": "core", "teacher": "Mr. Kapil Sharma" },
+        { "code": "DS6A-104", "title": "Fundamentals of Programming", "credits": "3(1-1-2)", "category": "core", "teacher": "Ms. Minal Agrawal" },
+        { "code": "DS6A-105", "title": "Introduction to Computer Science", "credits": "3(2-1-0)", "category": "core", "teacher": "Mr. Rajat Yadav" },
+        { "code": "DS6A-106", "title": "Enviromental Science", "credits": "3(2-1-0)", "category": "core", "teacher": "Ms. Priya Kushwaha" },
+        { "code": "DS6A-107", "title": "Fundamentals of Electronics", "credits": "3(1-1-2)", "category": "core", "teacher": "Mr. Animesh Masih" },
+        { "code": null, "title": "Comprehensive Viva-Voce", "credits": "4", "category": "viva", "teacher": null }
+      ],
+      "grid": {
+        "Mon": ["DS6A-107", "DS6A-105", null, "DS6A-106", "DS6A-101", null, "DS6A-102", null],
+        "Tue": ["DS6A-107", "DS6A-105", null, "DS6A-106", "DS6A-101", null, "DS6A-103", "DS6A-103"],
+        "Wed": ["DS6A-104", "DS6A-105", null, "DS6A-106", "DS6A-101", null, "DS6A-102", "DS6A-102"],
+        "Thu": ["DS6A-104", null, null, null, "DS6A-101", null, "DS6A-102(Lab)", "DS6A-102(Lab)"],
+        "Fri": ["DS6A-107(Lab)", "DS6A-107(Lab)", null, "DS6A-103", "DS6A-103", null, "DS6A-104(Lab)", "DS6A-104(Lab)"],
+        "Sat": [null, null, null, null, null, null, null, null]
+      },
+      "review": [
+        "The 11:00-11:30 and 1:30-2:00 columns are empty and have no label on the sheet; they are shown as breaks.",
+        "The 'Elective Generic' section is empty on the sheet."
+      ]
+    },
+    {
+      "id": 2,
+      "code": "AI&DS-3",
+      "program": "M.Tech. (Dual Degree) AI&DS",
+      "semester": 3,
+      "sheet": "AIDS sem 1-9 MTECH.pdf, page 2",
+      "wef": "2026-07-20",
+      "room": { "code": "B-002", "name": "Room B-002" },
+      "class_teacher": "Ms. Ritika Verma",
+      "days": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+      "columns": ["09:00-10:00", "10:00-11:00", "11:00-12:00", "12:00-13:00", "13:00-14:00", "14:00-15:00", "15:00-16:00"],
+      "breaks": { "12:00-13:00": "Break" },
+      "courses": [
+        { "code": "DS6A-201", "title": "Design and Analysis of Algorithm", "credits": "4 (3-0-2)", "category": "core", "teacher": "Ms. Ritika Verma" },
+        { "code": "DS6A-202", "title": "Probability Distributions", "credits": "4(4-0-0)", "category": "core", "teacher": "Simran Prajapati" },
+        { "code": "DS6A-203", "title": "Computer Architecture", "credits": "3 (2-1-0)", "category": "core", "teacher": "Ms. Alfia Bagwala" },
+        { "code": "DS6A-204", "title": "Numerical Methods/Engineering Economics", "credits": "3 (3-0-2)", "category": "core", "teacher": "Ms. Pallavi Pandey" },
+        { "code": "DS6A-205", "title": "Communication Skills", "credits": "3 (3-0-0)", "category": "core", "teacher": "Dr. Meenu Kumar" },
+        { "code": "DS6A-206", "title": "Object Oriented Programming", "credits": "4 (3-0-2)", "category": "core", "teacher": "Ms. Khushi Patidar" },
+        { "code": null, "title": "Comprehensive Viva-Voce", "credits": "4", "category": "viva", "teacher": null }
+      ],
+      "grid": {
+        "Mon": ["DS6A-203", "DS6A-206", "DS6A-202", null, "DS6A-205", "DS6A-204(Lab)", "DS6A-204(Lab)"],
+        "Tue": ["DS6A-203", "DS6A-206", "DS6A-202", null, "DS6A-205", "DS6A-202", null],
+        "Wed": ["DS6A-203", null, "DS6A-202", null, "DS6A-205", "DS6A-204", null],
+        "Thu": ["DS6A-201", "DS6A-201(Lab)", "DS6A-201(Lab)", null, "DS6A-204", "DS6A-204", null],
+        "Fri": ["DS6A-201", "DS6A-201", "DS6A-206", null, "DS6A-206(Lab)", "DS6A-206(Lab)", null]
+      },
+      "review": ["The 'Elective Courses (Any One)' section is empty on the sheet."]
+    },
+    {
+      "id": 3,
+      "code": "AI&DS-5",
+      "program": "M.Tech. (Dual Degree) AI&DS",
+      "semester": 5,
+      "sheet": "AIDS sem 1-9 MTECH.pdf, page 3",
+      "wef": "2026-07-20",
+      "room": { "code": "B-003", "name": "Class Room B-003" },
+      "class_teacher": "Mr. Rajat Yadav",
+      "days": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+      "columns": ["09:00-10:00", "10:00-11:00", "11:00-12:00", "12:00-12:30", "12:30-13:30", "13:30-14:30", "14:30-15:30", "15:30-16:30"],
+      "breaks": { "12:00-12:30": "Lunch" },
+      "courses": [
+        { "code": "DS6A-301", "title": "Datamining and Data ware", "credits": "4(3-0-2)", "category": "core", "teacher": "Mr. Rajat Yadav" },
+        { "code": "DS6A-302", "title": "Java Programming", "credits": "4 (3-0-2)", "category": "core", "teacher": "Mr. Amit Nashikkar" },
+        { "code": "DS6A-303", "title": "Data Engineering", "credits": "4 (3-1-2)", "category": "core", "teacher": "Mr. Ayan Shah" },
+        { "code": "DS6A-304", "title": "Statistical Inference", "credits": "4 (3-1-0)", "category": "core", "teacher": "Dr. Priyanka Malviya" },
+        { "code": "DS6A-305", "title": "Soft Computing", "credits": "4 (3-1-0)", "category": "core", "teacher": "Dr. Shishir Kumar Shandilya" },
+        { "code": "DS6A-306", "title": "Computer Networks", "credits": "4 (3-0-2)", "category": "elective", "teacher": "Mr. Surya Pratap" },
+        { "code": "DS6A-252", "title": "Comprehensive Viva-Voce", "credits": "4", "category": "viva", "teacher": null }
+      ],
+      "grid": {
+        "Mon": ["DS6A-306(LAB)", "DS6A-306(LAB)", "DS6A-305", null, null, "DS6A-305", "DS6A-301", null],
+        "Tue": ["DS6A-306", "DS6A-306", "DS6A-305", null, "DS6A-303", "DS6A-301", "DS6A-303(Lab)", "DS6A-303(Lab)"],
+        "Wed": ["DS6A-302", "DS6A-304", "DS6A-305", null, null, "DS6A-301(Lab)", "DS6A-301(Lab)", "DS6A-303"],
+        "Thu": ["DS6A-302", "DS6A-304", "DS6A-306", null, "DS6A-304", null, null, "DS6A-303"],
+        "Fri": ["DS6A-302(Lab)", "DS6A-302(Lab)", "DS6A-302", null, "DS6A-304", null, "DS6A-301", null]
+      },
+      "review": [
+        "Course title 'Datamining and Data ware' looks cut off on the sheet; kept as printed.",
+        "The Comprehensive Viva-Voce code is printed as DS6A-252.",
+        "DS6A-303 Data Engineering is 4 (3-1-2) but the grid has 5 hours of it."
+      ]
+    },
+    {
+      "id": 4,
+      "code": "AI&DS-7",
+      "program": "M.Tech. (Dual Degree) AI&DS",
+      "semester": 7,
+      "sheet": "AIDS sem 1-9 MTECH.pdf, page 4",
+      "wef": "2026-07-20",
+      "room": { "code": "A-20?", "name": "Room A-20? (last digit unclear)" },
+      "class_teacher": "Ms. Khushi Patidar",
+      "days": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+      "columns": ["09:00-10:00", "10:00-11:00", "11:00-12:00", "12:00-12:30", "12:30-13:30", "13:30-14:30"],
+      "breaks": { "12:00-12:30": "Break" },
+      "initials": {
+        "HR": "Dr. Harsh Ramgir",
+        "KP": "Ms. Khushi Patidar",
+        "SKS": "Dr. Shishir Kumar Shandilya",
+        "GA": "Ms. Garima Agrawal",
+        "NB": "Mr. Nandkishor Buwade"
+      },
+      "courses": [
+        { "code": "DS6A-401", "title": "Data Visualization", "credits": "4(3-0-2)", "category": "core", "teacher": "Ms. Khushi Patidar" },
+        { "code": "DS6A-402", "title": "Big Data Computing", "credits": "4(4-0-0)", "category": "core", "teacher": null, "note": "NPTEL" },
+        { "code": "DS6A-403", "title": "Cloud Computing", "credits": "4(3-0-2)", "category": "core", "teacher": "Ms. Garima Agrawal" },
+        { "code": "DS6A-404", "title": "Forecasting methods", "credits": "4(3-1-0)", "category": "core", "teacher": "Dr. Harsh Ramgir" },
+        { "code": "DS6A-406", "title": "Machine Learning Using Python", "credits": "4(3-0-2)", "category": "core", "teacher": "Mr. Nandkishor Buwade" },
+        { "code": "DS6A-405", "title": "Cryptography", "credits": "3(3-0-0)", "category": "elective", "teacher": "Dr. Shishir Kumar Shandilya" },
+        { "code": null, "title": "Text Image Analytics", "credits": null, "category": "elective", "teacher": null, "note": "Not Opted" },
+        { "code": null, "title": "Comprehensive Viva-Voce", "credits": "4", "category": "viva", "teacher": null }
+      ],
+      "grid": {
+        "Mon": ["DS6A-404 : HR", "DS6A-404 : HR", "DS6A-401 : kP", null, "DS6A-405 : SKS", "DS6A-403 : GA"],
+        "Tue": ["DS6A-404 : HR", "DS6A-404 : HR", "DS6A-401 : KP", null, "DS6A-405 : SKS", "DS6A-406 : NB"],
+        "Wed": ["DS6A-406 : NB", "DS6A-401 : KP(Lab)", "DS6A-401 : KP(Lab)", null, "DS6A-405 : SKS", null],
+        "Thu": ["DS6A-406 : NB", "DS6A-406 : NB", "DS6A-401 : KP", null, "DS6A-403 : GA", null],
+        "Fri": ["DS6A-406 : NB(Lab)", "DS6A-406 : NB(Lab)", "DS6A-403 : GA", null, "DS6A-403 : GA(Lab)", "DS6A-403 : GA(lab)"],
+        "Sat": [null, null, null, null, null, null]
+      },
+      "review": [
+        "Room number: printed 'A-20' with the last digit written over by hand; it could be A-201, A-202 or A-204. Shown as 'A-20?' until checked. (If it is A-201, it clashes with AI&DS 1st semester.)",
+        "The course list gives Data Visualization's teacher as 'SP : Ms. Khushi Patidar', but the grid uses KP.",
+        "Two more columns at the right of the grid are empty and have no time."
+      ]
+    },
+    {
+      "id": 5,
+      "code": "AI&DS-9",
+      "program": "M.Tech. (Dual Degree) AI&DS",
+      "semester": 9,
+      "sheet": "AIDS sem 1-9 MTECH.pdf, page 5",
+      "wef": "2026-07-20",
+      "room": { "code": "B-006", "name": "Class Room B-006" },
+      "class_teacher": "Ms. Garima Agrawal",
+      "days": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      "columns": ["10:00-11:00", "11:00-12:00", "12:00-13:00", "13:30-14:30", "14:30-15:30"],
+      "breaks": {},
+      "initials": {
+        "AB": "Ms. Alfia Bagwala",
+        "GA": "Ms. Garima Agrawal",
+        "SKS": "Dr. Shishir Kumar Shandilya",
+        "JK": "Dr. Jalaj Katare"
+      },
+      "courses": [
+        { "code": "DS6A-501", "title": "Natural Language Processing", "credits": "4(3-0-2)", "category": "core", "teacher": "Ms. Alfia Bagwala" },
+        { "code": "DS6A-503", "title": "Agentic AI", "credits": "4(3-0-1)", "category": "core", "teacher": "Ms. Garima Agrawal" },
+        { "code": "DS6A-505", "title": "Artificial Intelligence: Foundations and Algorithms", "credits": "4(3-0-2)", "category": "core", "teacher": null, "note": "NPTEL" },
+        { "code": "DS6A-507", "title": "High Performance Computing", "credits": "4(3-0-2)", "category": "core", "teacher": "Dr. Shishir Kumar Shandilya" },
+        { "code": "DS6A-509", "title": "Multivariate Analytics", "credits": "4(3-0-2)", "category": "core", "teacher": "Dr. Jalaj Katare" },
+        { "code": "DS6A-511", "title": "Project report writing", "credits": "3(3-0-0)", "category": "core", "teacher": null },
+        { "code": "DS6A-513", "title": "Minor Project", "credits": "6", "category": "project", "teacher": null },
+        { "code": null, "title": "Comprehensive Viva-Voce", "credits": "4", "category": "viva", "teacher": null }
+      ],
+      "grid": {
+        "Mon": ["DS6A-501 AB(Lab)", "DS6A-501 AB(Lab)", "DS6A-503 GA", "DS6A-509 JK(Lab)", "DS6A-509 JK(Lab)"],
+        "Tue": ["DS6A-511", "DS6A-501 AB", "DS6A-511", "DS6A-507 SKS", "DS6A-509 JK"],
+        "Wed": ["DS6A-511", "DS6A-501 AB", "DS6A-503 GA", "DS6A-507 SKS", "DS6A-503 GA"],
+        "Thu": ["DS6A-511", "DS6A-507 SKS", "DS6A-501 AB", "DS6A-503 GA(Lab)", "DS6A-503 GA(Lab)"],
+        "Fri": [null, "DS6A-507 SKS(Lab)", "DS6A-507 SKS(Lab)", "DS6A-509 JK", "DS6A-509 JK"],
+        "Sat": [null, null, null, null, null],
+        "Sun": [null, null, null, null, null]
+      },
+      "review": [
+        "DS6A-511 Project report writing has no teacher on the sheet.",
+        "There is no column for 1:00-1:30 on the sheet (the day jumps from 12:00-1:00 to 1:30-2:30)."
+      ]
+    },
+    {
+      "id": 6,
+      "code": "MBA-BA-1",
+      "program": "MBA (Business Analytics)",
+      "semester": 1,
+      "sheet": "MBA.pdf, page 1",
+      "wef": "2026-07-20",
+      "room": { "code": "102", "name": "Room 102 (handwritten)" },
+      "class_teacher": "Dr. Vibha Sharma",
+      "days": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+      "columns": ["09:00-10:00", "10:00-11:00", "11:00-12:00", "12:00-13:00", "13:00-13:30", "13:30-14:30", "14:30-15:30", "15:30-16:30", "16:30-17:30"],
+      "breaks": { "13:00-13:30": "" },
+      "initials": {
+        "VS": "Dr. Vibha Sharma",
+        "PK": "Ms. Priya Kushwaha",
+        "RV": "Ms. Ritika Verma",
+        "VH": "Dr. Vandit Hedau",
+        "PM": "Dr. Priyanka Malviya",
+        "HG": "Dr. Harshita Gupta",
+        "MK": "Dr. Meenu Kumar",
+        "RS": "Ms. Riya Sadawani"
+      },
+      "courses": [
+        { "code": "DS5A-501", "title": "Principles of Management", "credits": "3(2-1-0)", "category": "core", "teacher": "Dr. Vibha Sharma" },
+        { "code": "DS5A-503", "title": "Principles of Economics", "credits": "3(2-1-0)", "category": "core", "teacher": "Ms. Priya Kushwaha" },
+        { "code": "DS5A-505", "title": "Advanced Database Management Systems", "credits": "4(2-1-2)", "category": "core", "teacher": "Ms. Ritika Verma" },
+        { "code": "DS5A-507", "title": "Python for Analytics", "credits": "4(2-0-2)", "category": "core", "teacher": "Dr. Vandit Hedau" },
+        { "code": "DS5A-509", "title": "Descriptive Statistics & Probability Theory", "credits": "4(3-1-0)", "category": "core", "teacher": "Dr. Priyanka Malviya" },
+        { "code": "DS5A-511", "title": "Spreadsheet Modelling", "credits": "2(0-0-4)", "category": "core", "teacher": "Dr. Harshita Gupta" },
+        { "code": "DS5A-521", "title": "Marketing Management", "credits": "4(3-1-0)", "category": "elective I", "teacher": "Dr. Vibha Sharma" },
+        { "code": "DS5A-523", "title": "Financial Management", "credits": "4(3-1-0)", "category": "elective I", "teacher": "Dr. Harshita Gupta" },
+        { "code": "DS5A-531", "title": "Technical report writing and communication", "credits": "3(3-0-0)", "category": "elective II", "teacher": "Dr. Meenu Kumar" },
+        { "code": "DS5A-533", "title": "Business report writing and communication", "credits": "3(2-1-0)", "category": "elective II", "teacher": "Ms. Riya Sadawani" },
+        { "code": "DS5A-551", "title": "Comprehensive Viva-Voce", "credits": "4", "category": "viva", "teacher": null }
+      ],
+      "grid": {
+        "Mon": ["DS5A-505(Lab)", "DS5A-505(Lab)", null, "DS5A-509 : PM", null, "DS5A-509 : PM", "DS5A-509 : PM", "DS5A-501 : VS", "DS5A-501 : VS"],
+        "Tue": ["DS5A-505", "DS5A-505", null, "DS5A-521/523 : VS/HG", null, "DS5A-501 : VS", "DS5A-509 : PM", "DS5A-521/523 : VS/HG", null],
+        "Wed": [null, "DS5A-505", null, "DS5A-531/533 : MK/RS", null, "DS5A-507 : VH(Lab)", "DS5A-507 : VH(Lab)", "DS5A-521/523 : VS/HG", null],
+        "Thu": [null, "DS5A-511 : HG(Lab)", "DS5A-511 : HG(Lab)", "DS5A-503 : PK", null, "DS5A-507 : VH", "DS5A-531/533 : MK/RS", "DS5A-503 : PK", null],
+        "Fri": [null, "DS5A-511 : HG(Lab)", "DS5A-511 : HG(Lab)", "DS5A-521/523 : VS/HG", null, "DS5A-507 : VH", "DS5A-531/533 : MK/RS", "DS5A-503 : PK", null],
+        "Sat": [null, null, null, null, null, null, null, null, null]
+      },
+      "review": [
+        "Room number: the printed room is crossed out and '102' is written by hand (no building letter).",
+        "The 1:00-1:30 column header is crossed out by hand; the column is empty, so it is shown as a break.",
+        "Course codes are read as 'DS5A-...' (the third character looks like a 5, not an S)."
+      ]
+    },
+    {
+      "id": 7,
+      "code": "MBA-BA-3",
+      "program": "MBA (Business Analytics)",
+      "semester": 3,
+      "sheet": "MBA.pdf, page 2",
+      "wef": "2026-07-20",
+      "room": { "code": "003", "name": "Room 003 (handwritten)" },
+      "class_teacher": "Mr. Nandkishor Buwade",
+      "days": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+      "columns": ["09:00-10:00", "10:00-11:00", "11:00-11:30", "11:30-12:30", "12:30-13:30", "13:30-14:30"],
+      "breaks": { "11:00-11:30": "Tea break" },
+      "aliases": { "DS5B-601": "DS5A-601" },
+      "initials": {
+        "AB": "Ms. Alfia Bagwala",
+        "HK": "Mr. Hitesh Kukreja",
+        "AG": "Dr. Ashok Gupta",
+        "SP": "Ms. Shivanjali Patidar",
+        "GV": "Ms. Garima Vyas",
+        "NB": "Mr. Nandkishor Buwade"
+      },
+      "courses": [
+        { "code": "DS5A-605", "title": "Natural Language Processing", "credits": "3(2-0-2)", "category": "core", "teacher": "Ms. Alfia Bagwala" },
+        { "code": "DS5A-601", "title": "Forecasting methods", "credits": "3(2-0-2)", "category": "core", "teacher": "Mr. Hitesh Kukreja" },
+        { "code": "DS5A-603", "title": "Introduction of LLM", "credits": "3(2-0-2)", "category": "core", "teacher": null, "note": "NPTEL" },
+        { "code": "DS5A-607", "title": "Reseacrh Methodology", "credits": "3(2-1-0)", "category": "core", "teacher": "Dr. Ashok Gupta" },
+        { "code": "DS5A-621", "title": "Marketing Analytics", "credits": "4 (2-1-2)", "category": "elective I", "teacher": "Ms. Shivanjali Patidar" },
+        { "code": "DS5A-623", "title": "Financial Analytics", "credits": "4 (2-1-2)", "category": "elective I", "teacher": "Ms. Garima Vyas" },
+        { "code": "DS5A-641", "title": "Deep Learning", "credits": "3(2-0-2)", "category": "elective", "teacher": null, "note": "No teacher listed (row shaded)" },
+        { "code": "DS5A-643", "title": "Hadoop & Spark", "credits": "3(2-1-0)", "category": "elective", "teacher": "Mr. Nandkishor Buwade" },
+        { "code": null, "title": "Comprehensive Viva-Voce", "credits": "4", "category": "viva", "teacher": null }
+      ],
+      "grid": {
+        "Mon": ["DS5A-607 : AG", null, null, "DS5A-607 : AG", "DS5A-621/623 : SP/GV", "DS5A-605 : AB"],
+        "Tue": ["DS5A-607 : AG", "DS5A-643 : NB", null, null, "DS5A-621/623 : SP/GV", null],
+        "Wed": ["DS5B-601 : HK", "DS5A-643 : NB", null, "DS5A-621/623 : SP/GV(Lab)", "DS5A-621/623 : SP/GV(Lab)", null],
+        "Thu": ["DS5B-601 : HK", "DS5A-643 : NB", null, "DS5A-605 : AB", "DS5A-621/623 : SP/GV", null],
+        "Fri": ["DS5B-601 : HK(Lab)", "DS5B-601 : HK(Lab)", null, "DS5A-605 : AB(Lab)", "DS5A-605 : AB(Lab)", null],
+        "Sat": [null, null, null, null, null, null]
+      },
+      "review": [
+        "Room number: '003' is written by hand and the rest is crossed out.",
+        "The grid writes Forecasting methods as 'DS5B-601', but the course list says DS5A-601.",
+        "'Reseacrh Methodology' is spelled as printed on the sheet.",
+        "DS5A-641 Deep Learning has no teacher and is shaded on the sheet."
+      ]
+    },
+    {
+      "id": 8,
+      "code": "MSc-DSA-1",
+      "program": "M.Sc. (Data Science & Analytics)",
+      "semester": 1,
+      "sheet": "MSc TIMETABLE.pdf, page 1",
+      "wef": "2026-07-20",
+      "room": { "code": "B010", "name": "Room B010" },
+      "class_teacher": "Dr. Priyanka Malviya",
+      "days": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+      "columns": ["09:00-10:00", "10:00-11:00", "11:00-11:30", "11:30-12:30", "12:30-13:30", "13:30-14:30", "14:30-15:30"],
+      "breaks": { "11:00-11:30": "Tea break" },
+      "initials": {
+        "AJ": "Dr. Anupam Jain",
+        "RV": "Ms. Ritika Verma",
+        "PM": "Dr. Priyanka Malviya",
+        "VH": "Dr. Vandit Hedau",
+        "AS": "Mr. Ayan Shah",
+        "RS": "Ms. Riya Sadawani"
+      },
+      "courses": [
+        { "code": "DS5B-501", "title": "Linear Algebra and Advance Calculus", "credits": "4 (2-1-2)", "category": "core", "teacher": "Dr. Anupam Jain" },
+        { "code": "DS5B-505", "title": "Advanced Database Management System", "credits": "4 (2-1-2)", "category": "core", "teacher": "Ms. Ritika Verma" },
+        { "code": "DS5B-507", "title": "Descriptive Statistics & Probability Theory", "credits": "3(2-1-0)", "category": "core", "teacher": "Dr. Priyanka Malviya" },
+        { "code": "DS5B-509", "title": "Python for Analytics", "credits": "3(2-0-2)", "category": "core", "teacher": "Dr. Vandit Hedau" },
+        { "code": "DS5B-511", "title": "Advanced Excel", "credits": "3(1-0-4)", "category": "core", "teacher": "Mr. Ayan Shah" },
+        { "code": "DS5B-521", "title": "Communication Skills", "credits": "3(2-0-2)", "category": "elective", "teacher": null },
+        { "code": "DS5B-523", "title": "Technical communication", "credits": "3(2-0-2)", "category": "elective", "teacher": "Ms. Riya Sadawani" },
+        { "code": "DS5B-551", "title": "Comprehensive Viva-Voce", "credits": "4", "category": "viva", "teacher": null }
+      ],
+      "grid": {
+        "Mon": ["DS5B-505 : RV(Lab)", "DS5B-505 : RV(Lab)", null, "DS5B-509 : VH(Lab)", "DS5B-509 : VH(Lab)", "DS5B-501 : AJ(Lab)", "DS5B-501 : AJ(Lab)"],
+        "Tue": ["DS5B-505 : RV", "DS5B-505 : RV", null, "DS5B-509 : VH", "DS5B-507 : PM", "DS5B-501 : AJ", "DS5B-501 : AJ"],
+        "Wed": [null, "DS5B-505 : RV", null, "DS5B-509 : VH", "DS5B-507 : PM", "DS5B-501 : AJ", "DS5B-511 : AS"],
+        "Thu": ["DS5B523:RS", "DS5B523:RS", null, "DS5B-507 : PM", null, "DS5B-511 : AS(Lab)", "DS5B-511 : AS(Lab)"],
+        "Fri": ["DS5B523:RS-L", "DS5B523:RS-L", null, null, null, "DS5B-511 : AS(Lab)", "DS5B-511 : AS(Lab)"],
+        "Sat": [null, null, null, null, null, null, null]
+      },
+      "review": [
+        "Friday 9-11 is written 'DS5B523:RS-L'; the '-L' is taken to mean the lab part of DS5B-523.",
+        "Elective DS5B-521 Communication Skills has no teacher on the sheet.",
+        "The teacher of DS5B-523 is written 'MS. Riya Sadawana' here and 'Ms. Riya Sadawani' on the MBA sheet."
+      ]
+    },
+    {
+      "id": 9,
+      "code": "MSc-DSA-3",
+      "program": "M.Sc. (Data Science & Analytics)",
+      "semester": 3,
+      "sheet": "MSc TIMETABLE.pdf, page 2",
+      "wef": "2026-07-20",
+      "room": { "code": "A-203", "name": "Room A-203" },
+      "class_teacher": "Dr. Ashok Gupta",
+      "days": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+      "columns": ["09:00-10:00", "10:00-11:00", "11:00-11:30", "11:30-12:30", "12:30-13:30", "13:30-14:30"],
+      "breaks": { "11:00-11:30": "Tea break" },
+      "initials": {
+        "AG": "Dr. Ashok Gupta",
+        "AB": "Ms. Alfia Bagwala",
+        "GA": "Ms. Garima Agrawal",
+        "MM": "Manisha Malviya"
+      },
+      "courses": [
+        { "code": "DS5B-601", "title": "Deep Learning", "credits": "4(3-1-0)", "category": "core", "teacher": "Ms. Alfia Bagwala" },
+        { "code": "DS5B-603", "title": "Forecasting methods", "credits": "3(2-0-2)", "category": "core", "teacher": "Manisha Malviya" },
+        { "code": "DS5B-605", "title": "Reinforcement Learning", "credits": "3(2-0-2)", "category": "core", "teacher": null, "note": "NPTEL" },
+        { "code": "DS5B-607", "title": "Research Methodology", "credits": "3(2-0-2)", "category": "core", "teacher": "Dr. Ashok Gupta" },
+        { "code": "DS5B-621", "title": "Social Media Analytics", "credits": "3(2-0-2)", "category": "elective", "teacher": "Ms. Garima Agrawal" },
+        { "code": "DS5B-623", "title": "Text and Image Analytics", "credits": "3(2-0-2)", "category": "elective", "teacher": null, "note": "Not opted" },
+        { "code": "DS5B-641", "title": "Introduction To LLM", "credits": "4(0-0-8)", "category": "elective generic", "teacher": null, "note": "NPTEL (Self Study)" },
+        { "code": null, "title": "Comprehensive Viva-Voce", "credits": "4", "category": "viva", "teacher": null }
+      ],
+      "grid": {
+        "Mon": ["DS5B-607 : AG", null, null, "DS5B-607 : AG", "DS5B-601 : AB", null],
+        "Tue": ["DS5B-607 : AG", "DS5B-601 : AB", null, "DS5B-621 : GA(Lab)", "DS5B-621 : GA(Lab)", "DS5B-621 : GA"],
+        "Wed": [null, "DS5B-601 : AB", null, "DS5B-603 : MM", null, "DS5B-621 : GA"],
+        "Thu": [null, "DS5B-601 : AB", null, "DS5B-603 : MM", null, null],
+        "Fri": ["DS5B-603 : MM(Lab)", "DS5B-603 : MM(Lab)", null, null, null, null],
+        "Sat": [null, null, null, null, null, null]
+      },
+      "review": []
+    },
+    {
+      "id": 10,
+      "code": "Exec-DS-1",
+      "program": "Executive M.Tech. (Data Science)",
+      "semester": 1,
+      "sheet": "Executive (1).pdf, page 1",
+      "wef": "2026-07-20",
+      "room": null,
+      "class_teacher": "Mr. Chandresh Tatawat",
+      "days": ["Sat", "Sun"],
+      "columns": ["09:00-10:00", "10:00-11:00", "11:00-12:00", "12:00-13:00", "13:00-14:00", "14:00-14:30", "14:30-15:30", "15:30-16:30", "16:30-17:30", "17:30-18:30"],
+      "breaks": { "14:00-14:30": "Break" },
+      "initials": {
+        "CT": "Mr. Chandresh Tatawat",
+        "KS": "Mr. Kapil Sharma",
+        "SK": "Dr. Sunita Khurana"
+      },
+      "courses": [
+        { "code": "DS7E-701", "title": "Statistical Research Methods", "credits": "4 (3-1-0)", "category": "core", "teacher": "Dr. Sunita Khurana" },
+        { "code": "DS7E-703", "title": "Machine Learning Using Python", "credits": "4 (2-1-2)", "category": "core", "teacher": "Mr. Chandresh Tatawat" },
+        { "code": "DS7E-705", "title": "Advanced Excel", "credits": "2 (0-0-4)", "category": "core", "teacher": "Mr. Kapil Sharma" },
+        { "code": "DS7E-707", "title": "Advanced Database Management Systems", "credits": "4 (2-1-2)", "category": "core", "teacher": "Mr. Chandresh Tatawat" },
+        { "code": "DS7E-741", "title": "Minor Project-I", "credits": "6 (0-0-12)", "category": "project", "teacher": null }
+      ],
+      "grid": {
+        "Sat": ["DS7E-703: CT", "DS7E-705: KS", "DS7E-705: KS", "DS7E-701:SK", "DS7E-701:SK", null, "DS7E-703: CT(Lab)", "DS7E-703: CT(Lab)", "DS7E-707: CT(Lab)", "DS7E-707: CT(Lab)"],
+        "Sun": ["DS7E-707: CT", "DS7E-705: KS", "DS7E-705: KS", "DS7E-701:SK", "DS7E-701:SK", null, "DS7E-703: CT", "DS7E-703: CT", "DS7E-707: CT", "DS7E-707: CT"]
+      },
+      "review": [
+        "No room is given on the sheet.",
+        "The third column is headed '10:00-12:00'; it sits between 10:00-11:00 and 12:00-1:00, so it is taken as 11:00-12:00.",
+        "The initials KS and SK are not spelled out on the sheet; they match Mr. Kapil Sharma (DS7E-705) and Dr. Sunita Khurana (DS7E-701) in the course list."
+      ]
+    },
+    {
+      "id": 11,
+      "code": "Exec-DS-3",
+      "program": "Executive M.Tech. (Data Science)",
+      "semester": 3,
+      "sheet": "Executive (1).pdf, page 2",
+      "wef": "2026-07-20",
+      "room": null,
+      "class_teacher": "Dr. Abhilasha Bhagwat",
+      "days": ["Sat", "Sun"],
+      "columns": ["11:00-12:00", "12:00-13:00", "13:00-14:00", "14:00-15:00", "15:00-15:30", "15:30-16:30", "16:30-17:30", "17:30-18:30"],
+      "breaks": { "15:00-15:30": "Break" },
+      "initials": {
+        "AB": "Dr. Abhilasha Bhagwat",
+        "VH": "Dr. Vandit Hedau",
+        "PB": "Ms. Priyansha Bangar"
+      },
+      "courses": [
+        { "code": "DS7E-801", "title": "Linear Algebra and Advanced Calculus", "credits": "4 (3-1-0)", "category": "core", "teacher": "Dr. Abhilasha Bhagwat" },
+        { "code": "DS7E-803", "title": "Machine Learning", "credits": "4 (2-1-2)", "category": "core", "teacher": "Ms. Priyansha Bangar" },
+        { "code": "DS7E-805", "title": "Statistical Programming in R", "credits": "3 (2-0-2)", "category": "core", "teacher": "Dr. Vandit Hedau" },
+        { "code": "DS7E-823", "title": "Natural Language Processing", "credits": "3 (2-0-2)", "category": "elective", "teacher": null, "note": "NPTEL" },
+        { "code": "DS7E-841", "title": "Minor Project-III", "credits": "6 (0-0-12)", "category": "project", "teacher": null },
+        { "code": null, "title": "Comprehensive Viva-Voce", "credits": null, "category": "viva", "teacher": null }
+      ],
+      "grid": {
+        "Sat": ["DS7E-801:AB", "DS7E-801:AB", "DS7E-805:VH(Lab)", "DS7E-805:VH(Lab)", null, "DS7E-803:PB(Lab)", "DS7E-803:PB(Lab)", "DS7E-803:PB"],
+        "Sun": ["DS7E-801:AB", "DS7E-801:AB", "DS7E-805:VH", "DS7E-805:VH", null, "DS7E-803:PB", "DS7E-803:PB", null]
+      },
+      "review": ["No room is given on the sheet.", "Here 'AB' means Dr. Abhilasha Bhagwat (on other sheets AB is Ms. Alfia Bagwala)."]
+    }
+  ]
+}

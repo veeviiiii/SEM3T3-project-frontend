@@ -6,17 +6,17 @@
     {
       "rule": "same_week",
       "label": "Same week",
-      "points": 3.0
+      "points": 3
     },
     {
       "rule": "same_room",
       "label": "Same room",
-      "points": 2.0
+      "points": 2
     },
     {
       "rule": "batch_load",
       "label": "Batch not overloaded",
-      "points": 2.0
+      "points": 2
     },
     {
       "rule": "sooner",
