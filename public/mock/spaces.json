@@ -25,6 +25,14 @@
   },
   {
     "id": 4,
+    "code": "A-202",
+    "name": "Room A-202",
+    "kind": "room",
+    "capacity": null,
+    "floor": null
+  },
+  {
+    "id": 5,
     "code": "B-006",
     "name": "Class Room B-006",
     "kind": "room",
@@ -32,23 +40,23 @@
     "floor": null
   },
   {
-    "id": 5,
-    "code": "102",
-    "name": "Room 102",
-    "kind": "room",
-    "capacity": null,
-    "floor": null
-  },
-  {
     "id": 6,
-    "code": "003",
-    "name": "Room 003",
+    "code": "A-102",
+    "name": "Room A-102",
     "kind": "room",
     "capacity": null,
     "floor": null
   },
   {
     "id": 7,
+    "code": "A-003",
+    "name": "Room A-003",
+    "kind": "room",
+    "capacity": null,
+    "floor": null
+  },
+  {
+    "id": 8,
     "code": "B010",
     "name": "Room B010",
     "kind": "room",
@@ -56,7 +64,7 @@
     "floor": null
   },
   {
-    "id": 8,
+    "id": 9,
     "code": "A-203",
     "name": "Room A-203",
     "kind": "room",

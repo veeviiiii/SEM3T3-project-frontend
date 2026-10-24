@@ -275,7 +275,7 @@
   {
     "id": 22,
     "code": "DS6A-301",
-    "name": "Datamining and Data ware",
+    "name": "Data Mining and Data Warehousing",
     "kind": "theory",
     "semester": 5,
     "batch_id": 3,
@@ -392,7 +392,7 @@
   {
     "id": 31,
     "code": "DS6A-301 (Lab)",
-    "name": "Datamining and Data ware (Lab)",
+    "name": "Data Mining and Data Warehousing (Lab)",
     "kind": "lab",
     "semester": 5,
     "batch_id": 3,
@@ -633,7 +633,7 @@
     "batch_code": "AI&DS-9",
     "credits": "3(3-0-0)",
     "category": "core",
-    "faculty_id": null,
+    "faculty_id": 23,
     "note": null
   },
   {
@@ -1141,7 +1141,7 @@
     "credits": "3(2-0-2)",
     "category": "elective",
     "faculty_id": null,
-    "note": null
+    "note": "Not offered this semester"
   },
   {
     "id": 89,

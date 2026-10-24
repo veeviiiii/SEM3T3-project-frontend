@@ -30,7 +30,7 @@
     { "id": 24, "code": "VS", "name": "Dr. Vibha Sharma" },
     { "id": 25, "code": "VH", "name": "Dr. Vandit Hedau" },
     { "id": 26, "code": "HG", "name": "Dr. Harshita Gupta" },
-    { "id": 27, "code": "RS", "name": "Ms. Riya Sadawani", "note": "Spelled 'Riya Sadawana' on the M.Sc. 1st-semester sheet; shown as one teacher." },
+    { "id": 27, "code": "RS", "name": "Ms. Riya Sadawani" },
     { "id": 28, "code": "HK", "name": "Mr. Hitesh Kukreja" },
     { "id": 29, "code": "AG", "name": "Dr. Ashok Gupta" },
     { "id": 30, "code": "SP", "name": "Ms. Shivanjali Patidar" },
@@ -117,7 +117,7 @@
       "columns": ["09:00-10:00", "10:00-11:00", "11:00-12:00", "12:00-12:30", "12:30-13:30", "13:30-14:30", "14:30-15:30", "15:30-16:30"],
       "breaks": { "12:00-12:30": "Lunch" },
       "courses": [
-        { "code": "DS6A-301", "title": "Datamining and Data ware", "credits": "4(3-0-2)", "category": "core", "teacher": "Mr. Rajat Yadav" },
+        { "code": "DS6A-301", "title": "Data Mining and Data Warehousing", "credits": "4(3-0-2)", "category": "core", "teacher": "Mr. Rajat Yadav" },
         { "code": "DS6A-302", "title": "Java Programming", "credits": "4 (3-0-2)", "category": "core", "teacher": "Mr. Amit Nashikkar" },
         { "code": "DS6A-303", "title": "Data Engineering", "credits": "4 (3-1-2)", "category": "core", "teacher": "Mr. Ayan Shah" },
         { "code": "DS6A-304", "title": "Statistical Inference", "credits": "4 (3-1-0)", "category": "core", "teacher": "Dr. Priyanka Malviya" },
@@ -132,7 +132,7 @@
         "Thu": ["DS6A-302", "DS6A-304", "DS6A-306", null, "DS6A-304", null, null, "DS6A-303"],
         "Fri": ["DS6A-302(Lab)", "DS6A-302(Lab)", "DS6A-302", null, "DS6A-304", null, "DS6A-301", null]
       },
-      "review": ["The course title 'Datamining and Data ware' is cut off on the sheet."]
+      "review": []
     },
     {
       "id": 4,
@@ -141,7 +141,7 @@
       "semester": 7,
       "sheet": "AIDS sem 1-9 MTECH.pdf, page 4",
       "wef": "2026-07-20",
-      "room": null,
+      "room": { "code": "A-202", "name": "Room A-202" },
       "class_teacher": "Ms. Khushi Patidar",
       "days": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
       "columns": ["09:00-10:00", "10:00-11:00", "11:00-12:00", "12:00-12:30", "12:30-13:30", "13:30-14:30"],
@@ -171,7 +171,7 @@
         "Fri": ["DS6A-406 : NB(Lab)", "DS6A-406 : NB(Lab)", "DS6A-403 : GA", null, "DS6A-403 : GA(Lab)", "DS6A-403 : GA(lab)"],
         "Sat": [null, null, null, null, null, null]
       },
-      "review": ["The room number is unclear on the sheet (the last digit is written over by hand), so no room is shown."]
+      "review": []
     },
     {
       "id": 5,
@@ -197,7 +197,7 @@
         { "code": "DS6A-505", "title": "Artificial Intelligence: Foundations and Algorithms", "credits": "4(3-0-2)", "category": "core", "teacher": null, "note": "NPTEL" },
         { "code": "DS6A-507", "title": "High Performance Computing", "credits": "4(3-0-2)", "category": "core", "teacher": "Dr. Shishir Kumar Shandilya" },
         { "code": "DS6A-509", "title": "Multivariate Analytics", "credits": "4(3-0-2)", "category": "core", "teacher": "Dr. Jalaj Katare" },
-        { "code": "DS6A-511", "title": "Project report writing", "credits": "3(3-0-0)", "category": "core", "teacher": null },
+        { "code": "DS6A-511", "title": "Project report writing", "credits": "3(3-0-0)", "category": "core", "teacher": "Dr. Jalaj Katare" },
         { "code": "DS6A-513", "title": "Minor Project", "credits": "6", "category": "project", "teacher": null },
         { "code": null, "title": "Comprehensive Viva-Voce", "credits": "4", "category": "viva", "teacher": null }
       ],
@@ -210,7 +210,7 @@
         "Sat": [null, null, null, null, null],
         "Sun": [null, null, null, null, null]
       },
-      "review": ["DS6A-511 Project report writing has no teacher on the sheet."]
+      "review": []
     },
     {
       "id": 6,
@@ -219,7 +219,7 @@
       "semester": 1,
       "sheet": "MBA.pdf, page 1",
       "wef": "2026-07-20",
-      "room": { "code": "102", "name": "Room 102" },
+      "room": { "code": "A-102", "name": "Room A-102" },
       "class_teacher": "Dr. Vibha Sharma",
       "days": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
       "columns": ["09:00-10:00", "10:00-11:00", "11:00-12:00", "12:00-13:00", "13:00-13:30", "13:30-14:30", "14:30-15:30", "15:30-16:30", "16:30-17:30"],
@@ -255,7 +255,7 @@
         "Fri": [null, "DS5A-511 : HG(Lab)", "DS5A-511 : HG(Lab)", "DS5A-521/523 : VS/HG", null, "DS5A-507 : VH", "DS5A-531/533 : MK/RS", "DS5A-503 : PK", null],
         "Sat": [null, null, null, null, null, null, null, null, null]
       },
-      "review": ["The room is written by hand as '102' (no building letter)."]
+      "review": []
     },
     {
       "id": 7,
@@ -264,12 +264,11 @@
       "semester": 3,
       "sheet": "MBA.pdf, page 2",
       "wef": "2026-07-20",
-      "room": { "code": "003", "name": "Room 003" },
+      "room": { "code": "A-003", "name": "Room A-003" },
       "class_teacher": "Mr. Nandkishor Buwade",
       "days": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
       "columns": ["09:00-10:00", "10:00-11:00", "11:00-11:30", "11:30-12:30", "12:30-13:30", "13:30-14:30"],
       "breaks": { "11:00-11:30": "Tea break" },
-      "aliases": { "DS5B-601": "DS5A-601" },
       "initials": {
         "AB": "Ms. Alfia Bagwala",
         "HK": "Mr. Hitesh Kukreja",
@@ -292,15 +291,12 @@
       "grid": {
         "Mon": ["DS5A-607 : AG", null, null, "DS5A-607 : AG", "DS5A-621/623 : SP/GV", "DS5A-605 : AB"],
         "Tue": ["DS5A-607 : AG", "DS5A-643 : NB", null, null, "DS5A-621/623 : SP/GV", null],
-        "Wed": ["DS5B-601 : HK", "DS5A-643 : NB", null, "DS5A-621/623 : SP/GV(Lab)", "DS5A-621/623 : SP/GV(Lab)", null],
-        "Thu": ["DS5B-601 : HK", "DS5A-643 : NB", null, "DS5A-605 : AB", "DS5A-621/623 : SP/GV", null],
-        "Fri": ["DS5B-601 : HK(Lab)", "DS5B-601 : HK(Lab)", null, "DS5A-605 : AB(Lab)", "DS5A-605 : AB(Lab)", null],
+        "Wed": ["DS5A-601 : HK", "DS5A-643 : NB", null, "DS5A-621/623 : SP/GV(Lab)", "DS5A-621/623 : SP/GV(Lab)", null],
+        "Thu": ["DS5A-601 : HK", "DS5A-643 : NB", null, "DS5A-605 : AB", "DS5A-621/623 : SP/GV", null],
+        "Fri": ["DS5A-601 : HK(Lab)", "DS5A-601 : HK(Lab)", null, "DS5A-605 : AB(Lab)", "DS5A-605 : AB(Lab)", null],
         "Sat": [null, null, null, null, null, null]
       },
-      "review": [
-        "The room is written by hand as '003' (no building letter).",
-        "The grid writes Forecasting methods as 'DS5B-601'; the course list says DS5A-601."
-      ]
+      "review": []
     },
     {
       "id": 8,
@@ -328,7 +324,7 @@
         { "code": "DS5B-507", "title": "Descriptive Statistics & Probability Theory", "credits": "3(2-1-0)", "category": "core", "teacher": "Dr. Priyanka Malviya" },
         { "code": "DS5B-509", "title": "Python for Analytics", "credits": "3(2-0-2)", "category": "core", "teacher": "Dr. Vandit Hedau" },
         { "code": "DS5B-511", "title": "Advanced Excel", "credits": "3(1-0-4)", "category": "core", "teacher": "Mr. Ayan Shah" },
-        { "code": "DS5B-521", "title": "Communication Skills", "credits": "3(2-0-2)", "category": "elective", "teacher": null },
+        { "code": "DS5B-521", "title": "Communication Skills", "credits": "3(2-0-2)", "category": "elective", "teacher": null, "note": "Not offered this semester" },
         { "code": "DS5B-523", "title": "Technical communication", "credits": "3(2-0-2)", "category": "elective", "teacher": "Ms. Riya Sadawani" },
         { "code": "DS5B-551", "title": "Comprehensive Viva-Voce", "credits": "4", "category": "viva", "teacher": null }
       ],
@@ -345,7 +341,7 @@
         "Tuesday: DS5B-505 moved from 9:00-11:00 to 1:30-3:30, and DS5B-501 moved from 1:30-3:30 to 9:00-11:00, for the same reason.",
         "Wednesday: DS5B-505 moved from 10:00-11:00 to 9:00-10:00, for the same reason."
       ],
-      "review": ["Elective DS5B-521 Communication Skills has no teacher on the sheet."]
+      "review": []
     },
     {
       "id": 9,
@@ -395,7 +391,7 @@
       "semester": 1,
       "sheet": "Executive (1).pdf, page 1",
       "wef": "2026-07-20",
-      "room": null,
+      "room": { "code": "A-201", "name": "Room A-201" },
       "class_teacher": "Mr. Chandresh Tatawat",
       "days": ["Sat", "Sun"],
       "columns": ["09:00-10:00", "10:00-11:00", "11:00-12:00", "12:00-13:00", "13:00-14:00", "14:00-14:30", "14:30-15:30", "15:30-16:30", "16:30-17:30", "17:30-18:30"],
@@ -416,7 +412,7 @@
         "Sat": ["DS7E-703: CT", "DS7E-705: KS", "DS7E-705: KS", "DS7E-701:SK", "DS7E-701:SK", null, "DS7E-703: CT(Lab)", "DS7E-703: CT(Lab)", "DS7E-707: CT(Lab)", "DS7E-707: CT(Lab)"],
         "Sun": ["DS7E-707: CT", "DS7E-705: KS", "DS7E-705: KS", "DS7E-701:SK", "DS7E-701:SK", null, "DS7E-703: CT", "DS7E-703: CT", "DS7E-707: CT", "DS7E-707: CT"]
       },
-      "review": ["No room is given on the sheet.", "The third column is printed '10:00-12:00'; it is shown as 11:00-12:00, the hour between its neighbours."]
+      "review": []
     },
     {
       "id": 11,
@@ -425,7 +421,7 @@
       "semester": 3,
       "sheet": "Executive (1).pdf, page 2",
       "wef": "2026-07-20",
-      "room": null,
+      "room": { "code": "B-002", "name": "Room B-002" },
       "class_teacher": "Dr. Abhilasha Bhagwat",
       "days": ["Sat", "Sun"],
       "columns": ["11:00-12:00", "12:00-13:00", "13:00-14:00", "14:00-15:00", "15:00-15:30", "15:30-16:30", "16:30-17:30", "17:30-18:30"],
@@ -447,7 +443,7 @@
         "Sat": ["DS7E-801:AB", "DS7E-801:AB", "DS7E-805:VH(Lab)", "DS7E-805:VH(Lab)", null, "DS7E-803:PB(Lab)", "DS7E-803:PB(Lab)", "DS7E-803:PB"],
         "Sun": ["DS7E-801:AB", "DS7E-801:AB", "DS7E-805:VH", "DS7E-805:VH", null, "DS7E-803:PB", "DS7E-803:PB", null]
       },
-      "review": ["No room is given on the sheet."]
+      "review": []
     }
   ]
 }

@@ -203,7 +203,11 @@
         "code": "HR",
         "name": "Dr. Harsh Ramgir"
       },
-      "space": null,
+      "space": {
+        "id": 4,
+        "code": "A-202",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -235,8 +239,8 @@
         "name": "Ms. Ritika Verma"
       },
       "space": {
-        "id": 5,
-        "code": "102",
+        "id": 6,
+        "code": "A-102",
         "kind": "room"
       },
       "status": "scheduled",
@@ -270,8 +274,8 @@
         "name": "Dr. Ashok Gupta"
       },
       "space": {
-        "id": 6,
-        "code": "003",
+        "id": 7,
+        "code": "A-003",
         "kind": "room"
       },
       "status": "scheduled",
@@ -305,7 +309,7 @@
         "name": "Dr. Vandit Hedau"
       },
       "space": {
-        "id": 7,
+        "id": 8,
         "code": "B010",
         "kind": "room"
       },
@@ -444,7 +448,11 @@
         "code": "HR",
         "name": "Dr. Harsh Ramgir"
       },
-      "space": null,
+      "space": {
+        "id": 4,
+        "code": "A-202",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -476,7 +484,7 @@
         "name": "Ms. Alfia Bagwala"
       },
       "space": {
-        "id": 4,
+        "id": 5,
         "code": "B-006",
         "kind": "room"
       },
@@ -511,8 +519,8 @@
         "name": "Ms. Ritika Verma"
       },
       "space": {
-        "id": 5,
-        "code": "102",
+        "id": 6,
+        "code": "A-102",
         "kind": "room"
       },
       "status": "scheduled",
@@ -546,7 +554,7 @@
         "name": "Dr. Vandit Hedau"
       },
       "space": {
-        "id": 7,
+        "id": 8,
         "code": "B010",
         "kind": "room"
       },
@@ -581,7 +589,7 @@
         "name": "Dr. Ashok Gupta"
       },
       "space": {
-        "id": 8,
+        "id": 9,
         "code": "A-203",
         "kind": "room"
       },
@@ -685,7 +693,11 @@
         "code": "KP",
         "name": "Ms. Khushi Patidar"
       },
-      "space": null,
+      "space": {
+        "id": 4,
+        "code": "A-202",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -717,7 +729,7 @@
         "name": "Ms. Alfia Bagwala"
       },
       "space": {
-        "id": 4,
+        "id": 5,
         "code": "B-006",
         "kind": "room"
       },
@@ -787,8 +799,8 @@
         "name": "Dr. Ashok Gupta"
       },
       "space": {
-        "id": 6,
-        "code": "003",
+        "id": 7,
+        "code": "A-003",
         "kind": "room"
       },
       "status": "scheduled",
@@ -822,7 +834,7 @@
         "name": "Ms. Ritika Verma"
       },
       "space": {
-        "id": 7,
+        "id": 8,
         "code": "B010",
         "kind": "room"
       },
@@ -857,7 +869,7 @@
         "name": "Ms. Garima Agrawal"
       },
       "space": {
-        "id": 4,
+        "id": 5,
         "code": "B-006",
         "kind": "room"
       },
@@ -892,8 +904,8 @@
         "name": "Dr. Priyanka Malviya"
       },
       "space": {
-        "id": 5,
-        "code": "102",
+        "id": 6,
+        "code": "A-102",
         "kind": "room"
       },
       "status": "scheduled",
@@ -961,7 +973,11 @@
         "code": "SKS",
         "name": "Dr. Shishir Kumar Shandilya"
       },
-      "space": null,
+      "space": {
+        "id": 4,
+        "code": "A-202",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -993,8 +1009,8 @@
         "name": "Ms. Shivanjali Patidar"
       },
       "space": {
-        "id": 6,
-        "code": "003",
+        "id": 7,
+        "code": "A-003",
         "kind": "room"
       },
       "status": "scheduled",
@@ -1028,8 +1044,8 @@
         "name": "Ms. Garima Vyas"
       },
       "space": {
-        "id": 6,
-        "code": "003",
+        "id": 7,
+        "code": "A-003",
         "kind": "room"
       },
       "status": "scheduled",
@@ -1063,7 +1079,7 @@
         "name": "Ms. Ritika Verma"
       },
       "space": {
-        "id": 7,
+        "id": 8,
         "code": "B010",
         "kind": "room"
       },
@@ -1098,7 +1114,7 @@
         "name": "Ms. Alfia Bagwala"
       },
       "space": {
-        "id": 8,
+        "id": 9,
         "code": "A-203",
         "kind": "room"
       },
@@ -1202,7 +1218,11 @@
         "code": "GA",
         "name": "Ms. Garima Agrawal"
       },
-      "space": null,
+      "space": {
+        "id": 4,
+        "code": "A-202",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -1234,7 +1254,7 @@
         "name": "Dr. Jalaj Katare"
       },
       "space": {
-        "id": 4,
+        "id": 5,
         "code": "B-006",
         "kind": "room"
       },
@@ -1269,8 +1289,8 @@
         "name": "Dr. Priyanka Malviya"
       },
       "space": {
-        "id": 5,
-        "code": "102",
+        "id": 6,
+        "code": "A-102",
         "kind": "room"
       },
       "status": "scheduled",
@@ -1304,8 +1324,8 @@
         "name": "Ms. Alfia Bagwala"
       },
       "space": {
-        "id": 6,
-        "code": "003",
+        "id": 7,
+        "code": "A-003",
         "kind": "room"
       },
       "status": "scheduled",
@@ -1339,7 +1359,7 @@
         "name": "Dr. Anupam Jain"
       },
       "space": {
-        "id": 7,
+        "id": 8,
         "code": "B010",
         "kind": "room"
       },
@@ -1374,7 +1394,7 @@
         "name": "Dr. Ashok Gupta"
       },
       "space": {
-        "id": 8,
+        "id": 9,
         "code": "A-203",
         "kind": "room"
       },
@@ -1470,7 +1490,7 @@
       "subject": {
         "id": 22,
         "code": "DS6A-301",
-        "name": "Datamining and Data ware",
+        "name": "Data Mining and Data Warehousing",
         "kind": "theory"
       },
       "faculty": {
@@ -1514,7 +1534,7 @@
         "name": "Dr. Jalaj Katare"
       },
       "space": {
-        "id": 4,
+        "id": 5,
         "code": "B-006",
         "kind": "room"
       },
@@ -1549,8 +1569,8 @@
         "name": "Dr. Priyanka Malviya"
       },
       "space": {
-        "id": 5,
-        "code": "102",
+        "id": 6,
+        "code": "A-102",
         "kind": "room"
       },
       "status": "scheduled",
@@ -1584,7 +1604,7 @@
         "name": "Dr. Anupam Jain"
       },
       "space": {
-        "id": 7,
+        "id": 8,
         "code": "B010",
         "kind": "room"
       },
@@ -1654,8 +1674,8 @@
         "name": "Dr. Vibha Sharma"
       },
       "space": {
-        "id": 5,
-        "code": "102",
+        "id": 6,
+        "code": "A-102",
         "kind": "room"
       },
       "status": "scheduled",
@@ -1689,8 +1709,8 @@
         "name": "Dr. Vibha Sharma"
       },
       "space": {
-        "id": 5,
-        "code": "102",
+        "id": 6,
+        "code": "A-102",
         "kind": "room"
       },
       "status": "scheduled",
@@ -1828,7 +1848,11 @@
         "code": "HR",
         "name": "Dr. Harsh Ramgir"
       },
-      "space": null,
+      "space": {
+        "id": 4,
+        "code": "A-202",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -1860,8 +1884,8 @@
         "name": "Ms. Ritika Verma"
       },
       "space": {
-        "id": 5,
-        "code": "102",
+        "id": 6,
+        "code": "A-102",
         "kind": "room"
       },
       "status": "scheduled",
@@ -1895,8 +1919,8 @@
         "name": "Dr. Ashok Gupta"
       },
       "space": {
-        "id": 6,
-        "code": "003",
+        "id": 7,
+        "code": "A-003",
         "kind": "room"
       },
       "status": "scheduled",
@@ -1930,7 +1954,7 @@
         "name": "Dr. Anupam Jain"
       },
       "space": {
-        "id": 7,
+        "id": 8,
         "code": "B010",
         "kind": "room"
       },
@@ -2069,7 +2093,11 @@
         "code": "HR",
         "name": "Dr. Harsh Ramgir"
       },
-      "space": null,
+      "space": {
+        "id": 4,
+        "code": "A-202",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -2095,9 +2123,13 @@
         "name": "Project report writing",
         "kind": "theory"
       },
-      "faculty": null,
+      "faculty": {
+        "id": 23,
+        "code": "JK",
+        "name": "Dr. Jalaj Katare"
+      },
       "space": {
-        "id": 4,
+        "id": 5,
         "code": "B-006",
         "kind": "room"
       },
@@ -2132,8 +2164,8 @@
         "name": "Ms. Ritika Verma"
       },
       "space": {
-        "id": 5,
-        "code": "102",
+        "id": 6,
+        "code": "A-102",
         "kind": "room"
       },
       "status": "scheduled",
@@ -2167,8 +2199,8 @@
         "name": "Mr. Nandkishor Buwade"
       },
       "space": {
-        "id": 6,
-        "code": "003",
+        "id": 7,
+        "code": "A-003",
         "kind": "room"
       },
       "status": "scheduled",
@@ -2202,7 +2234,7 @@
         "name": "Dr. Anupam Jain"
       },
       "space": {
-        "id": 7,
+        "id": 8,
         "code": "B010",
         "kind": "room"
       },
@@ -2237,7 +2269,7 @@
         "name": "Ms. Alfia Bagwala"
       },
       "space": {
-        "id": 8,
+        "id": 9,
         "code": "A-203",
         "kind": "room"
       },
@@ -2352,7 +2384,11 @@
         "code": "KP",
         "name": "Ms. Khushi Patidar"
       },
-      "space": null,
+      "space": {
+        "id": 4,
+        "code": "A-202",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -2384,7 +2420,7 @@
         "name": "Ms. Alfia Bagwala"
       },
       "space": {
-        "id": 4,
+        "id": 5,
         "code": "B-006",
         "kind": "room"
       },
@@ -2454,7 +2490,7 @@
         "name": "Dr. Vandit Hedau"
       },
       "space": {
-        "id": 7,
+        "id": 8,
         "code": "B010",
         "kind": "room"
       },
@@ -2489,7 +2525,7 @@
         "name": "Ms. Garima Agrawal"
       },
       "space": {
-        "id": 8,
+        "id": 9,
         "code": "A-203",
         "kind": "room"
       },
@@ -2518,9 +2554,13 @@
         "name": "Project report writing",
         "kind": "theory"
       },
-      "faculty": null,
+      "faculty": {
+        "id": 23,
+        "code": "JK",
+        "name": "Dr. Jalaj Katare"
+      },
       "space": {
-        "id": 4,
+        "id": 5,
         "code": "B-006",
         "kind": "room"
       },
@@ -2555,8 +2595,8 @@
         "name": "Dr. Vibha Sharma"
       },
       "space": {
-        "id": 5,
-        "code": "102",
+        "id": 6,
+        "code": "A-102",
         "kind": "room"
       },
       "status": "scheduled",
@@ -2590,8 +2630,8 @@
         "name": "Dr. Harshita Gupta"
       },
       "space": {
-        "id": 5,
-        "code": "102",
+        "id": 6,
+        "code": "A-102",
         "kind": "room"
       },
       "status": "scheduled",
@@ -2694,7 +2734,11 @@
         "code": "SKS",
         "name": "Dr. Shishir Kumar Shandilya"
       },
-      "space": null,
+      "space": {
+        "id": 4,
+        "code": "A-202",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -2726,8 +2770,8 @@
         "name": "Ms. Shivanjali Patidar"
       },
       "space": {
-        "id": 6,
-        "code": "003",
+        "id": 7,
+        "code": "A-003",
         "kind": "room"
       },
       "status": "scheduled",
@@ -2761,8 +2805,8 @@
         "name": "Ms. Garima Vyas"
       },
       "space": {
-        "id": 6,
-        "code": "003",
+        "id": 7,
+        "code": "A-003",
         "kind": "room"
       },
       "status": "scheduled",
@@ -2796,7 +2840,7 @@
         "name": "Dr. Priyanka Malviya"
       },
       "space": {
-        "id": 7,
+        "id": 8,
         "code": "B010",
         "kind": "room"
       },
@@ -2831,7 +2875,7 @@
         "name": "Ms. Garima Agrawal"
       },
       "space": {
-        "id": 8,
+        "id": 9,
         "code": "A-203",
         "kind": "room"
       },
@@ -2892,7 +2936,7 @@
       "subject": {
         "id": 22,
         "code": "DS6A-301",
-        "name": "Datamining and Data ware",
+        "name": "Data Mining and Data Warehousing",
         "kind": "theory"
       },
       "faculty": {
@@ -2935,7 +2979,11 @@
         "code": "NB",
         "name": "Mr. Nandkishor Buwade"
       },
-      "space": null,
+      "space": {
+        "id": 4,
+        "code": "A-202",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -2967,7 +3015,7 @@
         "name": "Dr. Shishir Kumar Shandilya"
       },
       "space": {
-        "id": 4,
+        "id": 5,
         "code": "B-006",
         "kind": "room"
       },
@@ -3002,8 +3050,8 @@
         "name": "Dr. Vibha Sharma"
       },
       "space": {
-        "id": 5,
-        "code": "102",
+        "id": 6,
+        "code": "A-102",
         "kind": "room"
       },
       "status": "scheduled",
@@ -3037,7 +3085,7 @@
         "name": "Ms. Ritika Verma"
       },
       "space": {
-        "id": 7,
+        "id": 8,
         "code": "B010",
         "kind": "room"
       },
@@ -3072,7 +3120,7 @@
         "name": "Ms. Garima Agrawal"
       },
       "space": {
-        "id": 8,
+        "id": 9,
         "code": "A-203",
         "kind": "room"
       },
@@ -3212,7 +3260,7 @@
         "name": "Dr. Jalaj Katare"
       },
       "space": {
-        "id": 4,
+        "id": 5,
         "code": "B-006",
         "kind": "room"
       },
@@ -3247,8 +3295,8 @@
         "name": "Dr. Priyanka Malviya"
       },
       "space": {
-        "id": 5,
-        "code": "102",
+        "id": 6,
+        "code": "A-102",
         "kind": "room"
       },
       "status": "scheduled",
@@ -3282,7 +3330,7 @@
         "name": "Ms. Ritika Verma"
       },
       "space": {
-        "id": 7,
+        "id": 8,
         "code": "B010",
         "kind": "room"
       },
@@ -3387,8 +3435,8 @@
         "name": "Dr. Vibha Sharma"
       },
       "space": {
-        "id": 5,
-        "code": "102",
+        "id": 6,
+        "code": "A-102",
         "kind": "room"
       },
       "status": "scheduled",
@@ -3422,8 +3470,8 @@
         "name": "Dr. Harshita Gupta"
       },
       "space": {
-        "id": 5,
-        "code": "102",
+        "id": 6,
+        "code": "A-102",
         "kind": "room"
       },
       "status": "scheduled",
@@ -3561,7 +3609,11 @@
         "code": "NB",
         "name": "Mr. Nandkishor Buwade"
       },
-      "space": null,
+      "space": {
+        "id": 4,
+        "code": "A-202",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -3593,8 +3645,8 @@
         "name": "Mr. Hitesh Kukreja"
       },
       "space": {
-        "id": 6,
-        "code": "003",
+        "id": 7,
+        "code": "A-003",
         "kind": "room"
       },
       "status": "scheduled",
@@ -3628,7 +3680,7 @@
         "name": "Ms. Ritika Verma"
       },
       "space": {
-        "id": 7,
+        "id": 8,
         "code": "B010",
         "kind": "room"
       },
@@ -3663,7 +3715,7 @@
         "name": "Dr. Ashok Gupta"
       },
       "space": {
-        "id": 8,
+        "id": 9,
         "code": "A-203",
         "kind": "room"
       },
@@ -3813,7 +3865,11 @@
         "code": "KP",
         "name": "Ms. Khushi Patidar"
       },
-      "space": null,
+      "space": {
+        "id": 4,
+        "code": "A-202",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -3839,9 +3895,13 @@
         "name": "Project report writing",
         "kind": "theory"
       },
-      "faculty": null,
+      "faculty": {
+        "id": 23,
+        "code": "JK",
+        "name": "Dr. Jalaj Katare"
+      },
       "space": {
-        "id": 4,
+        "id": 5,
         "code": "B-006",
         "kind": "room"
       },
@@ -3876,8 +3936,8 @@
         "name": "Ms. Ritika Verma"
       },
       "space": {
-        "id": 5,
-        "code": "102",
+        "id": 6,
+        "code": "A-102",
         "kind": "room"
       },
       "status": "scheduled",
@@ -3911,8 +3971,8 @@
         "name": "Mr. Nandkishor Buwade"
       },
       "space": {
-        "id": 6,
-        "code": "003",
+        "id": 7,
+        "code": "A-003",
         "kind": "room"
       },
       "status": "scheduled",
@@ -3946,7 +4006,7 @@
         "name": "Ms. Alfia Bagwala"
       },
       "space": {
-        "id": 8,
+        "id": 9,
         "code": "A-203",
         "kind": "room"
       },
@@ -4050,7 +4110,11 @@
         "code": "KP",
         "name": "Ms. Khushi Patidar"
       },
-      "space": null,
+      "space": {
+        "id": 4,
+        "code": "A-202",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -4082,7 +4146,7 @@
         "name": "Ms. Alfia Bagwala"
       },
       "space": {
-        "id": 4,
+        "id": 5,
         "code": "B-006",
         "kind": "room"
       },
@@ -4152,8 +4216,8 @@
         "name": "Ms. Shivanjali Patidar"
       },
       "space": {
-        "id": 6,
-        "code": "003",
+        "id": 7,
+        "code": "A-003",
         "kind": "room"
       },
       "status": "scheduled",
@@ -4187,8 +4251,8 @@
         "name": "Ms. Garima Vyas"
       },
       "space": {
-        "id": 6,
-        "code": "003",
+        "id": 7,
+        "code": "A-003",
         "kind": "room"
       },
       "status": "scheduled",
@@ -4222,7 +4286,7 @@
         "name": "Dr. Vandit Hedau"
       },
       "space": {
-        "id": 7,
+        "id": 8,
         "code": "B010",
         "kind": "room"
       },
@@ -4257,7 +4321,7 @@
         "name": "Manisha Malviya"
       },
       "space": {
-        "id": 8,
+        "id": 9,
         "code": "A-203",
         "kind": "room"
       },
@@ -4292,7 +4356,7 @@
         "name": "Ms. Garima Agrawal"
       },
       "space": {
-        "id": 4,
+        "id": 5,
         "code": "B-006",
         "kind": "room"
       },
@@ -4327,8 +4391,8 @@
         "name": "Dr. Meenu Kumar"
       },
       "space": {
-        "id": 5,
-        "code": "102",
+        "id": 6,
+        "code": "A-102",
         "kind": "room"
       },
       "status": "scheduled",
@@ -4362,8 +4426,8 @@
         "name": "Ms. Riya Sadawani"
       },
       "space": {
-        "id": 5,
-        "code": "102",
+        "id": 6,
+        "code": "A-102",
         "kind": "room"
       },
       "status": "scheduled",
@@ -4431,7 +4495,11 @@
         "code": "SKS",
         "name": "Dr. Shishir Kumar Shandilya"
       },
-      "space": null,
+      "space": {
+        "id": 4,
+        "code": "A-202",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -4463,8 +4531,8 @@
         "name": "Ms. Shivanjali Patidar"
       },
       "space": {
-        "id": 6,
-        "code": "003",
+        "id": 7,
+        "code": "A-003",
         "kind": "room"
       },
       "status": "scheduled",
@@ -4498,8 +4566,8 @@
         "name": "Ms. Garima Vyas"
       },
       "space": {
-        "id": 6,
-        "code": "003",
+        "id": 7,
+        "code": "A-003",
         "kind": "room"
       },
       "status": "scheduled",
@@ -4533,7 +4601,7 @@
         "name": "Dr. Priyanka Malviya"
       },
       "space": {
-        "id": 7,
+        "id": 8,
         "code": "B010",
         "kind": "room"
       },
@@ -4594,7 +4662,7 @@
       "subject": {
         "id": 31,
         "code": "DS6A-301 (Lab)",
-        "name": "Datamining and Data ware (Lab)",
+        "name": "Data Mining and Data Warehousing (Lab)",
         "kind": "lab"
       },
       "faculty": {
@@ -4638,7 +4706,7 @@
         "name": "Dr. Shishir Kumar Shandilya"
       },
       "space": {
-        "id": 4,
+        "id": 5,
         "code": "B-006",
         "kind": "room"
       },
@@ -4673,8 +4741,8 @@
         "name": "Dr. Vandit Hedau"
       },
       "space": {
-        "id": 5,
-        "code": "102",
+        "id": 6,
+        "code": "A-102",
         "kind": "room"
       },
       "status": "scheduled",
@@ -4708,7 +4776,7 @@
         "name": "Dr. Anupam Jain"
       },
       "space": {
-        "id": 7,
+        "id": 8,
         "code": "B010",
         "kind": "room"
       },
@@ -4743,7 +4811,7 @@
         "name": "Ms. Garima Agrawal"
       },
       "space": {
-        "id": 8,
+        "id": 9,
         "code": "A-203",
         "kind": "room"
       },
@@ -4839,7 +4907,7 @@
       "subject": {
         "id": 31,
         "code": "DS6A-301 (Lab)",
-        "name": "Datamining and Data ware (Lab)",
+        "name": "Data Mining and Data Warehousing (Lab)",
         "kind": "lab"
       },
       "faculty": {
@@ -4883,7 +4951,7 @@
         "name": "Ms. Garima Agrawal"
       },
       "space": {
-        "id": 4,
+        "id": 5,
         "code": "B-006",
         "kind": "room"
       },
@@ -4918,8 +4986,8 @@
         "name": "Dr. Vandit Hedau"
       },
       "space": {
-        "id": 5,
-        "code": "102",
+        "id": 6,
+        "code": "A-102",
         "kind": "room"
       },
       "status": "scheduled",
@@ -4953,7 +5021,7 @@
         "name": "Mr. Ayan Shah"
       },
       "space": {
-        "id": 7,
+        "id": 8,
         "code": "B010",
         "kind": "room"
       },
@@ -5058,8 +5126,8 @@
         "name": "Dr. Vibha Sharma"
       },
       "space": {
-        "id": 5,
-        "code": "102",
+        "id": 6,
+        "code": "A-102",
         "kind": "room"
       },
       "status": "scheduled",
@@ -5093,8 +5161,8 @@
         "name": "Dr. Harshita Gupta"
       },
       "space": {
-        "id": 5,
-        "code": "102",
+        "id": 6,
+        "code": "A-102",
         "kind": "room"
       },
       "status": "scheduled",
@@ -5232,7 +5300,11 @@
         "code": "NB",
         "name": "Mr. Nandkishor Buwade"
       },
-      "space": null,
+      "space": {
+        "id": 4,
+        "code": "A-202",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -5264,8 +5336,8 @@
         "name": "Mr. Hitesh Kukreja"
       },
       "space": {
-        "id": 6,
-        "code": "003",
+        "id": 7,
+        "code": "A-003",
         "kind": "room"
       },
       "status": "scheduled",
@@ -5299,7 +5371,7 @@
         "name": "Ms. Riya Sadawani"
       },
       "space": {
-        "id": 7,
+        "id": 8,
         "code": "B010",
         "kind": "room"
       },
@@ -5403,7 +5475,11 @@
         "code": "NB",
         "name": "Mr. Nandkishor Buwade"
       },
-      "space": null,
+      "space": {
+        "id": 4,
+        "code": "A-202",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -5430,9 +5506,13 @@
         "name": "Project report writing",
         "kind": "theory"
       },
-      "faculty": null,
+      "faculty": {
+        "id": 23,
+        "code": "JK",
+        "name": "Dr. Jalaj Katare"
+      },
       "space": {
-        "id": 4,
+        "id": 5,
         "code": "B-006",
         "kind": "room"
       },
@@ -5467,8 +5547,8 @@
         "name": "Dr. Harshita Gupta"
       },
       "space": {
-        "id": 5,
-        "code": "102",
+        "id": 6,
+        "code": "A-102",
         "kind": "room"
       },
       "status": "scheduled",
@@ -5502,8 +5582,8 @@
         "name": "Mr. Nandkishor Buwade"
       },
       "space": {
-        "id": 6,
-        "code": "003",
+        "id": 7,
+        "code": "A-003",
         "kind": "room"
       },
       "status": "scheduled",
@@ -5538,7 +5618,7 @@
         "name": "Ms. Riya Sadawani"
       },
       "space": {
-        "id": 7,
+        "id": 8,
         "code": "B010",
         "kind": "room"
       },
@@ -5573,7 +5653,7 @@
         "name": "Ms. Alfia Bagwala"
       },
       "space": {
-        "id": 8,
+        "id": 9,
         "code": "A-203",
         "kind": "room"
       },
@@ -5677,7 +5757,11 @@
         "code": "KP",
         "name": "Ms. Khushi Patidar"
       },
-      "space": null,
+      "space": {
+        "id": 4,
+        "code": "A-202",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -5709,7 +5793,7 @@
         "name": "Dr. Shishir Kumar Shandilya"
       },
       "space": {
-        "id": 4,
+        "id": 5,
         "code": "B-006",
         "kind": "room"
       },
@@ -5744,8 +5828,8 @@
         "name": "Dr. Harshita Gupta"
       },
       "space": {
-        "id": 5,
-        "code": "102",
+        "id": 6,
+        "code": "A-102",
         "kind": "room"
       },
       "status": "scheduled",
@@ -5779,8 +5863,8 @@
         "name": "Ms. Alfia Bagwala"
       },
       "space": {
-        "id": 6,
-        "code": "003",
+        "id": 7,
+        "code": "A-003",
         "kind": "room"
       },
       "status": "scheduled",
@@ -5815,7 +5899,7 @@
         "name": "Dr. Priyanka Malviya"
       },
       "space": {
-        "id": 7,
+        "id": 8,
         "code": "B010",
         "kind": "room"
       },
@@ -5850,7 +5934,7 @@
         "name": "Manisha Malviya"
       },
       "space": {
-        "id": 8,
+        "id": 9,
         "code": "A-203",
         "kind": "room"
       },
@@ -5885,7 +5969,7 @@
         "name": "Ms. Alfia Bagwala"
       },
       "space": {
-        "id": 4,
+        "id": 5,
         "code": "B-006",
         "kind": "room"
       },
@@ -5921,8 +6005,8 @@
         "name": "Ms. Priya Kushwaha"
       },
       "space": {
-        "id": 5,
-        "code": "102",
+        "id": 6,
+        "code": "A-102",
         "kind": "room"
       },
       "status": "scheduled",
@@ -6025,7 +6109,11 @@
         "code": "GA",
         "name": "Ms. Garima Agrawal"
       },
-      "space": null,
+      "space": {
+        "id": 4,
+        "code": "A-202",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -6057,8 +6145,8 @@
         "name": "Ms. Shivanjali Patidar"
       },
       "space": {
-        "id": 6,
-        "code": "003",
+        "id": 7,
+        "code": "A-003",
         "kind": "room"
       },
       "status": "scheduled",
@@ -6092,8 +6180,8 @@
         "name": "Ms. Garima Vyas"
       },
       "space": {
-        "id": 6,
-        "code": "003",
+        "id": 7,
+        "code": "A-003",
         "kind": "room"
       },
       "status": "scheduled",
@@ -6162,7 +6250,7 @@
         "name": "Ms. Garima Agrawal"
       },
       "space": {
-        "id": 4,
+        "id": 5,
         "code": "B-006",
         "kind": "room"
       },
@@ -6197,8 +6285,8 @@
         "name": "Dr. Vandit Hedau"
       },
       "space": {
-        "id": 5,
-        "code": "102",
+        "id": 6,
+        "code": "A-102",
         "kind": "room"
       },
       "status": "scheduled",
@@ -6232,7 +6320,7 @@
         "name": "Mr. Ayan Shah"
       },
       "space": {
-        "id": 7,
+        "id": 8,
         "code": "B010",
         "kind": "room"
       },
@@ -6337,7 +6425,7 @@
         "name": "Ms. Garima Agrawal"
       },
       "space": {
-        "id": 4,
+        "id": 5,
         "code": "B-006",
         "kind": "room"
       },
@@ -6372,8 +6460,8 @@
         "name": "Dr. Meenu Kumar"
       },
       "space": {
-        "id": 5,
-        "code": "102",
+        "id": 6,
+        "code": "A-102",
         "kind": "room"
       },
       "status": "scheduled",
@@ -6407,8 +6495,8 @@
         "name": "Ms. Riya Sadawani"
       },
       "space": {
-        "id": 5,
-        "code": "102",
+        "id": 6,
+        "code": "A-102",
         "kind": "room"
       },
       "status": "scheduled",
@@ -6442,7 +6530,7 @@
         "name": "Mr. Ayan Shah"
       },
       "space": {
-        "id": 7,
+        "id": 8,
         "code": "B010",
         "kind": "room"
       },
@@ -6547,8 +6635,8 @@
         "name": "Ms. Priya Kushwaha"
       },
       "space": {
-        "id": 5,
-        "code": "102",
+        "id": 6,
+        "code": "A-102",
         "kind": "room"
       },
       "status": "scheduled",
@@ -6686,7 +6774,11 @@
         "code": "NB",
         "name": "Mr. Nandkishor Buwade"
       },
-      "space": null,
+      "space": {
+        "id": 4,
+        "code": "A-202",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -6718,8 +6810,8 @@
         "name": "Mr. Hitesh Kukreja"
       },
       "space": {
-        "id": 6,
-        "code": "003",
+        "id": 7,
+        "code": "A-003",
         "kind": "room"
       },
       "status": "scheduled",
@@ -6753,7 +6845,7 @@
         "name": "Ms. Riya Sadawani"
       },
       "space": {
-        "id": 7,
+        "id": 8,
         "code": "B010",
         "kind": "room"
       },
@@ -6788,7 +6880,7 @@
         "name": "Manisha Malviya"
       },
       "space": {
-        "id": 8,
+        "id": 9,
         "code": "A-203",
         "kind": "room"
       },
@@ -6927,7 +7019,11 @@
         "code": "NB",
         "name": "Mr. Nandkishor Buwade"
       },
-      "space": null,
+      "space": {
+        "id": 4,
+        "code": "A-202",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -6959,8 +7055,8 @@
         "name": "Dr. Harshita Gupta"
       },
       "space": {
-        "id": 5,
-        "code": "102",
+        "id": 6,
+        "code": "A-102",
         "kind": "room"
       },
       "status": "scheduled",
@@ -6994,8 +7090,8 @@
         "name": "Mr. Hitesh Kukreja"
       },
       "space": {
-        "id": 6,
-        "code": "003",
+        "id": 7,
+        "code": "A-003",
         "kind": "room"
       },
       "status": "scheduled",
@@ -7029,7 +7125,7 @@
         "name": "Ms. Riya Sadawani"
       },
       "space": {
-        "id": 7,
+        "id": 8,
         "code": "B010",
         "kind": "room"
       },
@@ -7064,7 +7160,7 @@
         "name": "Manisha Malviya"
       },
       "space": {
-        "id": 8,
+        "id": 9,
         "code": "A-203",
         "kind": "room"
       },
@@ -7168,7 +7264,11 @@
         "code": "GA",
         "name": "Ms. Garima Agrawal"
       },
-      "space": null,
+      "space": {
+        "id": 4,
+        "code": "A-202",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -7200,7 +7300,7 @@
         "name": "Dr. Shishir Kumar Shandilya"
       },
       "space": {
-        "id": 4,
+        "id": 5,
         "code": "B-006",
         "kind": "room"
       },
@@ -7235,8 +7335,8 @@
         "name": "Dr. Harshita Gupta"
       },
       "space": {
-        "id": 5,
-        "code": "102",
+        "id": 6,
+        "code": "A-102",
         "kind": "room"
       },
       "status": "scheduled",
@@ -7305,8 +7405,8 @@
         "name": "Ms. Alfia Bagwala"
       },
       "space": {
-        "id": 6,
-        "code": "003",
+        "id": 7,
+        "code": "A-003",
         "kind": "room"
       },
       "status": "scheduled",
@@ -7340,7 +7440,7 @@
         "name": "Dr. Shishir Kumar Shandilya"
       },
       "space": {
-        "id": 4,
+        "id": 5,
         "code": "B-006",
         "kind": "room"
       },
@@ -7375,8 +7475,8 @@
         "name": "Dr. Vibha Sharma"
       },
       "space": {
-        "id": 5,
-        "code": "102",
+        "id": 6,
+        "code": "A-102",
         "kind": "room"
       },
       "status": "scheduled",
@@ -7410,8 +7510,8 @@
         "name": "Dr. Harshita Gupta"
       },
       "space": {
-        "id": 5,
-        "code": "102",
+        "id": 6,
+        "code": "A-102",
         "kind": "room"
       },
       "status": "scheduled",
@@ -7514,7 +7614,11 @@
         "code": "GA",
         "name": "Ms. Garima Agrawal"
       },
-      "space": null,
+      "space": {
+        "id": 4,
+        "code": "A-202",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -7546,8 +7650,8 @@
         "name": "Ms. Alfia Bagwala"
       },
       "space": {
-        "id": 6,
-        "code": "003",
+        "id": 7,
+        "code": "A-003",
         "kind": "room"
       },
       "status": "scheduled",
@@ -7615,7 +7719,11 @@
         "code": "GA",
         "name": "Ms. Garima Agrawal"
       },
-      "space": null,
+      "space": {
+        "id": 4,
+        "code": "A-202",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -7647,7 +7755,7 @@
         "name": "Dr. Jalaj Katare"
       },
       "space": {
-        "id": 4,
+        "id": 5,
         "code": "B-006",
         "kind": "room"
       },
@@ -7682,8 +7790,8 @@
         "name": "Dr. Vandit Hedau"
       },
       "space": {
-        "id": 5,
-        "code": "102",
+        "id": 6,
+        "code": "A-102",
         "kind": "room"
       },
       "status": "scheduled",
@@ -7717,7 +7825,7 @@
         "name": "Mr. Ayan Shah"
       },
       "space": {
-        "id": 7,
+        "id": 8,
         "code": "B010",
         "kind": "room"
       },
@@ -7813,7 +7921,7 @@
       "subject": {
         "id": 22,
         "code": "DS6A-301",
-        "name": "Datamining and Data ware",
+        "name": "Data Mining and Data Warehousing",
         "kind": "theory"
       },
       "faculty": {
@@ -7857,7 +7965,7 @@
         "name": "Dr. Jalaj Katare"
       },
       "space": {
-        "id": 4,
+        "id": 5,
         "code": "B-006",
         "kind": "room"
       },
@@ -7892,8 +8000,8 @@
         "name": "Dr. Meenu Kumar"
       },
       "space": {
-        "id": 5,
-        "code": "102",
+        "id": 6,
+        "code": "A-102",
         "kind": "room"
       },
       "status": "scheduled",
@@ -7927,8 +8035,8 @@
         "name": "Ms. Riya Sadawani"
       },
       "space": {
-        "id": 5,
-        "code": "102",
+        "id": 6,
+        "code": "A-102",
         "kind": "room"
       },
       "status": "scheduled",
@@ -7962,7 +8070,7 @@
         "name": "Mr. Ayan Shah"
       },
       "space": {
-        "id": 7,
+        "id": 8,
         "code": "B010",
         "kind": "room"
       },
@@ -8032,8 +8140,8 @@
         "name": "Ms. Priya Kushwaha"
       },
       "space": {
-        "id": 5,
-        "code": "102",
+        "id": 6,
+        "code": "A-102",
         "kind": "room"
       },
       "status": "scheduled",
@@ -8066,7 +8174,11 @@
         "code": "CT",
         "name": "Mr. Chandresh Tatawat"
       },
-      "space": null,
+      "space": {
+        "id": 1,
+        "code": "A-201",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -8097,7 +8209,11 @@
         "code": "KS",
         "name": "Mr. Kapil Sharma"
       },
-      "space": null,
+      "space": {
+        "id": 1,
+        "code": "A-201",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -8128,7 +8244,11 @@
         "code": "KS",
         "name": "Mr. Kapil Sharma"
       },
-      "space": null,
+      "space": {
+        "id": 1,
+        "code": "A-201",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -8159,7 +8279,11 @@
         "code": "ABH",
         "name": "Dr. Abhilasha Bhagwat"
       },
-      "space": null,
+      "space": {
+        "id": 2,
+        "code": "B-002",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -8190,7 +8314,11 @@
         "code": "SK",
         "name": "Dr. Sunita Khurana"
       },
-      "space": null,
+      "space": {
+        "id": 1,
+        "code": "A-201",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -8221,7 +8349,11 @@
         "code": "ABH",
         "name": "Dr. Abhilasha Bhagwat"
       },
-      "space": null,
+      "space": {
+        "id": 2,
+        "code": "B-002",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -8252,7 +8384,11 @@
         "code": "SK",
         "name": "Dr. Sunita Khurana"
       },
-      "space": null,
+      "space": {
+        "id": 1,
+        "code": "A-201",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -8283,7 +8419,11 @@
         "code": "VH",
         "name": "Dr. Vandit Hedau"
       },
-      "space": null,
+      "space": {
+        "id": 2,
+        "code": "B-002",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -8314,7 +8454,11 @@
         "code": "VH",
         "name": "Dr. Vandit Hedau"
       },
-      "space": null,
+      "space": {
+        "id": 2,
+        "code": "B-002",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -8345,7 +8489,11 @@
         "code": "CT",
         "name": "Mr. Chandresh Tatawat"
       },
-      "space": null,
+      "space": {
+        "id": 1,
+        "code": "A-201",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -8376,7 +8524,11 @@
         "code": "CT",
         "name": "Mr. Chandresh Tatawat"
       },
-      "space": null,
+      "space": {
+        "id": 1,
+        "code": "A-201",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -8407,7 +8559,11 @@
         "code": "PB",
         "name": "Ms. Priyansha Bangar"
       },
-      "space": null,
+      "space": {
+        "id": 2,
+        "code": "B-002",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -8438,7 +8594,11 @@
         "code": "CT",
         "name": "Mr. Chandresh Tatawat"
       },
-      "space": null,
+      "space": {
+        "id": 1,
+        "code": "A-201",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -8469,7 +8629,11 @@
         "code": "PB",
         "name": "Ms. Priyansha Bangar"
       },
-      "space": null,
+      "space": {
+        "id": 2,
+        "code": "B-002",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -8500,7 +8664,11 @@
         "code": "CT",
         "name": "Mr. Chandresh Tatawat"
       },
-      "space": null,
+      "space": {
+        "id": 1,
+        "code": "A-201",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -8531,7 +8699,11 @@
         "code": "PB",
         "name": "Ms. Priyansha Bangar"
       },
-      "space": null,
+      "space": {
+        "id": 2,
+        "code": "B-002",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -8562,7 +8734,11 @@
         "code": "CT",
         "name": "Mr. Chandresh Tatawat"
       },
-      "space": null,
+      "space": {
+        "id": 1,
+        "code": "A-201",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -8593,7 +8769,11 @@
         "code": "KS",
         "name": "Mr. Kapil Sharma"
       },
-      "space": null,
+      "space": {
+        "id": 1,
+        "code": "A-201",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -8624,7 +8804,11 @@
         "code": "KS",
         "name": "Mr. Kapil Sharma"
       },
-      "space": null,
+      "space": {
+        "id": 1,
+        "code": "A-201",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -8655,7 +8839,11 @@
         "code": "ABH",
         "name": "Dr. Abhilasha Bhagwat"
       },
-      "space": null,
+      "space": {
+        "id": 2,
+        "code": "B-002",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -8686,7 +8874,11 @@
         "code": "SK",
         "name": "Dr. Sunita Khurana"
       },
-      "space": null,
+      "space": {
+        "id": 1,
+        "code": "A-201",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -8717,7 +8909,11 @@
         "code": "ABH",
         "name": "Dr. Abhilasha Bhagwat"
       },
-      "space": null,
+      "space": {
+        "id": 2,
+        "code": "B-002",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -8748,7 +8944,11 @@
         "code": "SK",
         "name": "Dr. Sunita Khurana"
       },
-      "space": null,
+      "space": {
+        "id": 1,
+        "code": "A-201",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -8779,7 +8979,11 @@
         "code": "VH",
         "name": "Dr. Vandit Hedau"
       },
-      "space": null,
+      "space": {
+        "id": 2,
+        "code": "B-002",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -8810,7 +9014,11 @@
         "code": "VH",
         "name": "Dr. Vandit Hedau"
       },
-      "space": null,
+      "space": {
+        "id": 2,
+        "code": "B-002",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -8841,7 +9049,11 @@
         "code": "CT",
         "name": "Mr. Chandresh Tatawat"
       },
-      "space": null,
+      "space": {
+        "id": 1,
+        "code": "A-201",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -8872,7 +9084,11 @@
         "code": "CT",
         "name": "Mr. Chandresh Tatawat"
       },
-      "space": null,
+      "space": {
+        "id": 1,
+        "code": "A-201",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -8903,7 +9119,11 @@
         "code": "PB",
         "name": "Ms. Priyansha Bangar"
       },
-      "space": null,
+      "space": {
+        "id": 2,
+        "code": "B-002",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -8934,7 +9154,11 @@
         "code": "CT",
         "name": "Mr. Chandresh Tatawat"
       },
-      "space": null,
+      "space": {
+        "id": 1,
+        "code": "A-201",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -8965,7 +9189,11 @@
         "code": "PB",
         "name": "Ms. Priyansha Bangar"
       },
-      "space": null,
+      "space": {
+        "id": 2,
+        "code": "B-002",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,
@@ -8996,7 +9224,11 @@
         "code": "CT",
         "name": "Mr. Chandresh Tatawat"
       },
-      "space": null,
+      "space": {
+        "id": 1,
+        "code": "A-201",
+        "kind": "room"
+      },
       "status": "scheduled",
       "reason": null,
       "proposal_id": null,

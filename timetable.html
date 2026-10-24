@@ -90,9 +90,12 @@
         </div>
         <p class="mb-3 text-xs text-slate-500">A teacher, room or batch with two classes at the same time. The red ones in the grid above are part of one.</p>
         <div id="clashes"></div>
-        <h2 class="mb-2 mt-6 font-medium text-slate-900">Details to check on the sheets</h2>
-        <p class="mb-3 text-xs text-slate-500">Things that are unclear on the timetable sheets. Nothing was guessed for them: an unclear room or teacher is simply not shown.</p>
-        <div id="review"></div>
+        <!-- Shown only while something on a sheet still needs checking. -->
+        <div class="hidden" id="review-section">
+          <h2 class="mb-2 mt-6 font-medium text-slate-900">Details to check on the sheets</h2>
+          <p class="mb-3 text-xs text-slate-500">Things that are unclear on the timetable sheets. Nothing was guessed for them: an unclear room or teacher is simply not shown.</p>
+          <div id="review"></div>
+        </div>
       </section>
     </main>
   </body>

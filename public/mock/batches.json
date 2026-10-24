@@ -192,9 +192,7 @@
     ],
     "sheet": "AIDS sem 1-9 MTECH.pdf, page 3",
     "changes": [],
-    "review": [
-      "The course title 'Datamining and Data ware' is cut off on the sheet."
-    ]
+    "review": []
   },
   {
     "id": 4,
@@ -205,7 +203,7 @@
     "semester": 7,
     "section": null,
     "size": null,
-    "home_space_id": null,
+    "home_space_id": 4,
     "class_teacher": {
       "id": 6,
       "name": "Ms. Khushi Patidar"
@@ -255,9 +253,7 @@
     ],
     "sheet": "AIDS sem 1-9 MTECH.pdf, page 4",
     "changes": [],
-    "review": [
-      "The room number is unclear on the sheet (the last digit is written over by hand), so no room is shown."
-    ]
+    "review": []
   },
   {
     "id": 5,
@@ -268,7 +264,7 @@
     "semester": 9,
     "section": null,
     "size": null,
-    "home_space_id": 4,
+    "home_space_id": 5,
     "class_teacher": {
       "id": 20,
       "name": "Ms. Garima Agrawal"
@@ -313,9 +309,7 @@
     "breaks": [],
     "sheet": "AIDS sem 1-9 MTECH.pdf, page 5",
     "changes": [],
-    "review": [
-      "DS6A-511 Project report writing has no teacher on the sheet."
-    ]
+    "review": []
   },
   {
     "id": 6,
@@ -326,7 +320,7 @@
     "semester": 1,
     "section": null,
     "size": null,
-    "home_space_id": 5,
+    "home_space_id": 6,
     "class_teacher": {
       "id": 24,
       "name": "Dr. Vibha Sharma"
@@ -385,9 +379,7 @@
     "breaks": [],
     "sheet": "MBA.pdf, page 1",
     "changes": [],
-    "review": [
-      "The room is written by hand as '102' (no building letter)."
-    ]
+    "review": []
   },
   {
     "id": 7,
@@ -398,7 +390,7 @@
     "semester": 3,
     "section": null,
     "size": null,
-    "home_space_id": 6,
+    "home_space_id": 7,
     "class_teacher": {
       "id": 22,
       "name": "Mr. Nandkishor Buwade"
@@ -448,10 +440,7 @@
     ],
     "sheet": "MBA.pdf, page 2",
     "changes": [],
-    "review": [
-      "The room is written by hand as '003' (no building letter).",
-      "The grid writes Forecasting methods as 'DS5B-601'; the course list says DS5A-601."
-    ]
+    "review": []
   },
   {
     "id": 8,
@@ -462,7 +451,7 @@
     "semester": 1,
     "section": null,
     "size": null,
-    "home_space_id": 7,
+    "home_space_id": 8,
     "class_teacher": {
       "id": 17,
       "name": "Dr. Priyanka Malviya"
@@ -521,9 +510,7 @@
       "Tuesday: DS5B-505 moved from 9:00-11:00 to 1:30-3:30, and DS5B-501 moved from 1:30-3:30 to 9:00-11:00, for the same reason.",
       "Wednesday: DS5B-505 moved from 10:00-11:00 to 9:00-10:00, for the same reason."
     ],
-    "review": [
-      "Elective DS5B-521 Communication Skills has no teacher on the sheet."
-    ]
+    "review": []
   },
   {
     "id": 9,
@@ -534,7 +521,7 @@
     "semester": 3,
     "section": null,
     "size": null,
-    "home_space_id": 8,
+    "home_space_id": 9,
     "class_teacher": {
       "id": 29,
       "name": "Dr. Ashok Gupta"
@@ -597,7 +584,7 @@
     "semester": 1,
     "section": null,
     "size": null,
-    "home_space_id": null,
+    "home_space_id": 1,
     "class_teacher": {
       "id": 33,
       "name": "Mr. Chandresh Tatawat"
@@ -663,10 +650,7 @@
     ],
     "sheet": "Executive (1).pdf, page 1",
     "changes": [],
-    "review": [
-      "No room is given on the sheet.",
-      "The third column is printed '10:00-12:00'; it is shown as 11:00-12:00, the hour between its neighbours."
-    ]
+    "review": []
   },
   {
     "id": 11,
@@ -677,7 +661,7 @@
     "semester": 3,
     "section": null,
     "size": null,
-    "home_space_id": null,
+    "home_space_id": 2,
     "class_teacher": {
       "id": 35,
       "name": "Dr. Abhilasha Bhagwat"
@@ -733,8 +717,6 @@
     ],
     "sheet": "Executive (1).pdf, page 2",
     "changes": [],
-    "review": [
-      "No room is given on the sheet."
-    ]
+    "review": []
   }
 ]

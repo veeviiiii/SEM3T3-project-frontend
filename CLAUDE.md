@@ -456,9 +456,10 @@ Call the **function**. The HTTP route is listed for reference only and must neve
 
 **Mock data**: every timetable from the School of Data Science and Forecasting's signed sheets (w.e.f. 20 Jul 2026),
 in `public/mock/timetables.json`: 11 batches (M.Tech. (Dual Degree) AI&DS semesters 1, 3, 5, 7, 9; MBA (Business Analytics)
-1, 3; M.Sc. (Data Science & Analytics) 1, 3; Executive M.Tech. (Data Science) 1, 3), 36 teachers, 8 rooms, 260 classes a week.
-Each batch keeps the time slots of its own sheet, so clashes are found by overlapping times. Anything unclear on a sheet
-(a room, a teacher) is left out and listed in the batch's `review` notes instead of being guessed. To remove clashes, some
+1, 3; M.Sc. (Data Science & Analytics) 1, 3; Executive M.Tech. (Data Science) 1, 3), 36 teachers, 9 rooms, 260 classes a week.
+Each batch keeps the time slots of its own sheet, so clashes are found by overlapping times. Details that were unclear on
+the sheets (rooms, a missing teacher, a cut-off title, a code typo) were confirmed by the team and filled in; anything still
+unclear goes in the batch's `review` notes instead of being guessed (the list is empty now). To remove clashes, some
 M.Sc. classes were moved off the sheets' times; each batch's `changes` says what moved (both are shown on the Timetables page).
 2 clashes remain on purpose (Mr. Nandkishor Buwade and Ms. Alfia Bagwala, both on Thursday).
 Demo story on top of it (`public/mock/demo.json`): Simran Prajapati on leave Tue 27 Oct (one class moved, one kept

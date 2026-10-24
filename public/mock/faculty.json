@@ -438,8 +438,10 @@
     "is_hod": false,
     "note": null,
     "designation": "Faculty",
-    "weekly_load": 5,
+    "weekly_load": 9,
     "preferred_periods": [
+      2,
+      4,
       5,
       6,
       7
@@ -519,7 +521,7 @@
     "name": "Ms. Riya Sadawani",
     "email": "riya.sadawani@example.com",
     "is_hod": false,
-    "note": "Spelled 'Riya Sadawana' on the M.Sc. 1st-semester sheet; shown as one teacher.",
+    "note": null,
     "designation": "Faculty",
     "weekly_load": 7,
     "preferred_periods": [

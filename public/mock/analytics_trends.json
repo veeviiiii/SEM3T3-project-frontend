@@ -76,9 +76,9 @@
         "code": "A-201",
         "kind": "room"
       },
-      "used": 27,
+      "used": 45,
       "total": 48,
-      "pct": 56.3
+      "pct": 93.8
     },
     {
       "space": {
@@ -86,9 +86,9 @@
         "code": "B-002",
         "kind": "room"
       },
-      "used": 21,
+      "used": 34,
       "total": 48,
-      "pct": 43.8
+      "pct": 70.8
     },
     {
       "space": {
@@ -103,6 +103,16 @@
     {
       "space": {
         "id": 4,
+        "code": "A-202",
+        "kind": "room"
+      },
+      "used": 23,
+      "total": 48,
+      "pct": 47.9
+    },
+    {
+      "space": {
+        "id": 5,
         "code": "B-006",
         "kind": "room"
       },
@@ -112,8 +122,8 @@
     },
     {
       "space": {
-        "id": 5,
-        "code": "102",
+        "id": 6,
+        "code": "A-102",
         "kind": "room"
       },
       "used": 37,
@@ -122,8 +132,8 @@
     },
     {
       "space": {
-        "id": 6,
-        "code": "003",
+        "id": 7,
+        "code": "A-003",
         "kind": "room"
       },
       "used": 24,
@@ -132,7 +142,7 @@
     },
     {
       "space": {
-        "id": 7,
+        "id": 8,
         "code": "B010",
         "kind": "room"
       },
@@ -142,7 +152,7 @@
     },
     {
       "space": {
-        "id": 8,
+        "id": 9,
         "code": "A-203",
         "kind": "room"
       },

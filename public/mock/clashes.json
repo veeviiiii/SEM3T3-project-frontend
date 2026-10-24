@@ -28,7 +28,11 @@
             "code": "NB",
             "name": "Mr. Nandkishor Buwade"
           },
-          "space": null,
+          "space": {
+            "id": 4,
+            "code": "A-202",
+            "kind": "room"
+          },
           "start": "10:00",
           "end": "11:00"
         },
@@ -50,8 +54,8 @@
             "name": "Mr. Nandkishor Buwade"
           },
           "space": {
-            "id": 6,
-            "code": "003",
+            "id": 7,
+            "code": "A-003",
             "kind": "room"
           },
           "start": "10:00",
@@ -87,8 +91,8 @@
             "name": "Ms. Alfia Bagwala"
           },
           "space": {
-            "id": 6,
-            "code": "003",
+            "id": 7,
+            "code": "A-003",
             "kind": "room"
           },
           "start": "11:30",
@@ -112,7 +116,7 @@
             "name": "Ms. Alfia Bagwala"
           },
           "space": {
-            "id": 4,
+            "id": 5,
             "code": "B-006",
             "kind": "room"
           },

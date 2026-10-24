@@ -275,10 +275,9 @@ async function loadClashes() {
 function loadReview() {
   const batches = lists.batch.filter((b) => b.review.length);
   const people = lists.faculty.filter((f) => f.note);
-  if (!batches.length && !people.length) {
-    renderEmpty($('#review'), 'Nothing to check');
-    return;
-  }
+  // Nothing left to check: the whole part stays hidden.
+  $('#review-section').classList.toggle('hidden', !batches.length && !people.length);
+  if (!batches.length && !people.length) return;
   const block = (title, notes, link) => `
     <li class="rounded-xl border border-orange-200 bg-orange-50 p-3 text-sm text-orange-950">
       <p class="font-medium">${link ? `<a class="underline-offset-2 hover:underline" href="${link}">${escapeHtml(title)}</a>` : escapeHtml(title)}</p>
